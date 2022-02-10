@@ -18,6 +18,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var loginButton: Button
     private lateinit var createUserButton: Button
     private lateinit var registerButton: Button
+    private lateinit var createTourney: Button
 
 
     public override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,18 +29,36 @@ class LoginActivity : AppCompatActivity() {
         loginButton = findViewById(R.id.button_login)
         createUserButton = findViewById(R.id.button_create)
         registerButton = findViewById(R.id.registerButton)
+        createTourney = findViewById(R.id.createTournamentButton)
 
         loginButton.setOnClickListener { login(false) }
         //createUserButton.setOnClickListener { login(true) }
 
         //to go to Register Activity page
         registerButton.setOnClickListener { toRegisterActivity() }
+
+        //FOR TESTING PURPOSES(DELETE LATER) to go to Create Tournament Page
+        createTourney.setOnClickListener { toCreateTournamentActivity() }
+
     }
 
     override fun onBackPressed() {
         // Disable going back to the MainActivity
         moveTaskToBack(true)
     }
+
+    //Syntax for going to one activity to another activity
+    private fun toCreateTournamentActivity() {
+        val intent = Intent(this, CreateTournamentActivity::class.java)
+        startActivity(intent)
+    }
+
+    //Syntax for going to one activity to another activity
+    private fun toRegisterActivity() {
+        val intent = Intent(this, RegisterActivity::class.java)
+        startActivity(intent)
+    }
+
 
     private fun onLoginSuccess() {
         // successful login ends this activity, bringing the user back to the project activity
@@ -57,13 +76,6 @@ class LoginActivity : AppCompatActivity() {
         password.text.toString().isEmpty() -> false
         else -> true
     }
-
-    //Syntax for going to one activity to another activity
-    private fun toRegisterActivity() {
-        val intent = Intent(this, RegisterActivity::class.java)
-        startActivity(intent)
-    }
-
 
     // handle user authentication (login) and account creation
     private fun login(createUser: Boolean) {
