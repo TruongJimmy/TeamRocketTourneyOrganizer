@@ -3,36 +3,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#515151">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingTop="10dp"
         android:paddingStart="8dp"
-        android:text="@string/settings"
+        android:text="@string/Settings"
         android:textSize="18sp"
         android:textColor="@color/cardview_light_background"
         android:background="@color/colorPrimaryDark"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry"
+        android:paddingLeft="8dp" />
 
 
     <Button
-        android:id="@+id/editButton"
+        android:id="@+id/button_edit_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/edit_profile" />
+        android:text="@string/Edit_Profile" />
 
     <Button
-        android:id="@+id/changePassButton"
+        android:id="@+id/button_change_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/change_password" />
 
     <Button
-        android:id="@+id/helpButton"
+        android:id="@+id/button_help"
         android:layout_width="match_parent"
 
+        android:layout_height="wrap_content"
+        android:text="@string/help" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/back"
+        tools:ignore="RtlHardcoded" />
+</LinearLayout>
         android:layout_height="wrap_content"
         android:text="@string/help" />
 
