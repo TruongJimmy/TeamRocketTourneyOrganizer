@@ -17,6 +17,9 @@ class SearchTournamentActivity : AppCompatActivity()  {
         setContentView(binding.root)
         //setContentView(com.mongodb.app.R.layout.activity_search_tournament)
 
+        //Below 2 lines - Back button for this page supported by the toolbar in xml file
+        setSupportActionBar(findViewById(com.mongodb.app.R.id.toolBar_SearchTournament))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
         val user = arrayOf("League of Legends Tournament",

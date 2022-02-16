@@ -8,6 +8,15 @@
     android:orientation="vertical"
     tools:context=".SearchTournamentActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar_SearchTournament"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Search Tournament" />
+
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"

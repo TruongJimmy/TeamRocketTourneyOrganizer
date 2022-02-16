@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#515151">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingTop="10dp"
-        android:paddingStart="8dp"
-        android:text="@string/Settings"
-        android:textSize="18sp"
-        android:textColor="@color/cardview_light_background"
-        android:background="@color/colorPrimaryDark"
-        tools:ignore="RtlSymmetry"
-        android:paddingLeft="8dp" />
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar_Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Settings" />
 
     <Button
         android:id="@+id/button_edit_profile"
@@ -44,11 +42,4 @@
         android:layout_height="wrap_content"
         android:text="@string/log_out" />
 
-    <Button
-        android:id="@+id/button_back"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="@string/back"
-        tools:ignore="RtlHardcoded" />
 </LinearLayout>

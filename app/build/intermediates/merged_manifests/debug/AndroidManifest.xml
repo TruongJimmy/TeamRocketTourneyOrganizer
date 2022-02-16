@@ -24,6 +24,7 @@
         android:theme="@style/Theme.App" >
         <activity
             android:name="com.mongodb.app.PlayerActivity"
+            android:parentActivityName="com.mongodb.app.ProfileActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.afterNotification"
@@ -33,18 +34,21 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.SearchTournamentActivity"
+            android:parentActivityName="com.mongodb.app.HomeActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.RegisterActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.CreateTournamentActivity"
+            android:parentActivityName="com.mongodb.app.HomeActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.HomeActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.ProfileActivity"
+            android:parentActivityName="com.mongodb.app.HomeActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.EditProfileActivity"
@@ -54,6 +58,7 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.SettingsActivity"
+            android:parentActivityName="com.mongodb.app.HomeActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.QRCodeActivity"

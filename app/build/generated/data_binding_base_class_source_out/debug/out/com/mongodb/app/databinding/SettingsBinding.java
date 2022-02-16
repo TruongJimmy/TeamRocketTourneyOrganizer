@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
@@ -17,9 +18,6 @@ import java.lang.String;
 public final class SettingsBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
-
-  @NonNull
-  public final Button buttonBack;
 
   @NonNull
   public final Button buttonChangePass;
@@ -33,15 +31,18 @@ public final class SettingsBinding implements ViewBinding {
   @NonNull
   public final Button buttonLogout;
 
-  private SettingsBinding(@NonNull LinearLayout rootView, @NonNull Button buttonBack,
-      @NonNull Button buttonChangePass, @NonNull Button buttonEditProfile,
-      @NonNull Button buttonHelp, @NonNull Button buttonLogout) {
+  @NonNull
+  public final Toolbar toolBarSettings;
+
+  private SettingsBinding(@NonNull LinearLayout rootView, @NonNull Button buttonChangePass,
+      @NonNull Button buttonEditProfile, @NonNull Button buttonHelp, @NonNull Button buttonLogout,
+      @NonNull Toolbar toolBarSettings) {
     this.rootView = rootView;
-    this.buttonBack = buttonBack;
     this.buttonChangePass = buttonChangePass;
     this.buttonEditProfile = buttonEditProfile;
     this.buttonHelp = buttonHelp;
     this.buttonLogout = buttonLogout;
+    this.toolBarSettings = toolBarSettings;
   }
 
   @Override
@@ -71,12 +72,6 @@ public final class SettingsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button_back;
-      Button buttonBack = rootView.findViewById(id);
-      if (buttonBack == null) {
-        break missingId;
-      }
-
       id = R.id.button_change_pass;
       Button buttonChangePass = rootView.findViewById(id);
       if (buttonChangePass == null) {
@@ -101,8 +96,14 @@ public final class SettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SettingsBinding((LinearLayout) rootView, buttonBack, buttonChangePass,
-          buttonEditProfile, buttonHelp, buttonLogout);
+      id = R.id.toolBar_Settings;
+      Toolbar toolBarSettings = rootView.findViewById(id);
+      if (toolBarSettings == null) {
+        break missingId;
+      }
+
+      return new SettingsBinding((LinearLayout) rootView, buttonChangePass, buttonEditProfile,
+          buttonHelp, buttonLogout, toolBarSettings);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

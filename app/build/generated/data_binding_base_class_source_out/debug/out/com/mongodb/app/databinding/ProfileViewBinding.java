@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
@@ -24,7 +25,7 @@ public final class ProfileViewBinding implements ViewBinding {
   public final Button following;
 
   @NonNull
-  public final Button profileBack;
+  public final Toolbar toolBarProfileActivity;
 
   @NonNull
   public final ImageView userAvatarProfile;
@@ -36,11 +37,11 @@ public final class ProfileViewBinding implements ViewBinding {
   public final TextView userName;
 
   private ProfileViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button following,
-      @NonNull Button profileBack, @NonNull ImageView userAvatarProfile,
+      @NonNull Toolbar toolBarProfileActivity, @NonNull ImageView userAvatarProfile,
       @NonNull TextView userLevel, @NonNull TextView userName) {
     this.rootView = rootView;
     this.following = following;
-    this.profileBack = profileBack;
+    this.toolBarProfileActivity = toolBarProfileActivity;
     this.userAvatarProfile = userAvatarProfile;
     this.userLevel = userLevel;
     this.userName = userName;
@@ -79,9 +80,9 @@ public final class ProfileViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.profile_back;
-      Button profileBack = rootView.findViewById(id);
-      if (profileBack == null) {
+      id = R.id.toolBar_ProfileActivity;
+      Toolbar toolBarProfileActivity = rootView.findViewById(id);
+      if (toolBarProfileActivity == null) {
         break missingId;
       }
 
@@ -103,7 +104,7 @@ public final class ProfileViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ProfileViewBinding((ConstraintLayout) rootView, following, profileBack,
+      return new ProfileViewBinding((ConstraintLayout) rootView, following, toolBarProfileActivity,
           userAvatarProfile, userLevel, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);

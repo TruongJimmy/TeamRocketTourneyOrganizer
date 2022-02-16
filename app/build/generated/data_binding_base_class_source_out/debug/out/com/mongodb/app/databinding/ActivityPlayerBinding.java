@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
@@ -28,13 +29,17 @@ public final class ActivityPlayerBinding implements ViewBinding {
   @NonNull
   public final RecyclerView projectUsersList;
 
+  @NonNull
+  public final Toolbar toolBarFollowingPlayer;
+
   private ActivityPlayerBinding(@NonNull CoordinatorLayout rootView,
       @NonNull CoordinatorLayout activityTask, @NonNull FloatingActionButton floatingActionButton,
-      @NonNull RecyclerView projectUsersList) {
+      @NonNull RecyclerView projectUsersList, @NonNull Toolbar toolBarFollowingPlayer) {
     this.rootView = rootView;
     this.activityTask = activityTask;
     this.floatingActionButton = floatingActionButton;
     this.projectUsersList = projectUsersList;
+    this.toolBarFollowingPlayer = toolBarFollowingPlayer;
   }
 
   @Override
@@ -78,8 +83,14 @@ public final class ActivityPlayerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.toolBar_FollowingPlayer;
+      Toolbar toolBarFollowingPlayer = rootView.findViewById(id);
+      if (toolBarFollowingPlayer == null) {
+        break missingId;
+      }
+
       return new ActivityPlayerBinding((CoordinatorLayout) rootView, activityTask,
-          floatingActionButton, projectUsersList);
+          floatingActionButton, projectUsersList, toolBarFollowingPlayer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

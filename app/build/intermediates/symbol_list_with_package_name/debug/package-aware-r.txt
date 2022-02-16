@@ -2041,7 +2041,6 @@ id builtWithSync
 id buttonNotify
 id buttonPanel
 id buttonRegister
-id button_back
 id button_cancel_change_pass
 id button_change_pass
 id button_confirm_change_pass
@@ -2201,6 +2200,7 @@ id listMode
 id list_item
 id locale
 id location_input
+id logoHomepage
 id ltr
 id masked
 id match_constraint
@@ -2430,6 +2430,10 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolBar_FollowingPlayer
+id toolBar_ProfileActivity
+id toolBar_SearchTournament
+id toolBar_Settings
 id toolBar_createTournamentActivity
 id toolBar_registerActivity
 id top
@@ -2438,7 +2442,6 @@ id touch_outside
 id tournamentGame_input
 id tournamentName_input
 id tournamentType
-id tournament_back_button
 id transitionToEnd
 id transitionToStart
 id transition_current_scene

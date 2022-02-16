@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -30,13 +31,18 @@ public final class HomeViewBinding implements ViewBinding {
   @NonNull
   public final Button Settings;
 
+  @NonNull
+  public final ImageView logoHomepage;
+
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
-      @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings) {
+      @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
+      @NonNull ImageView logoHomepage) {
     this.rootView = rootView;
     this.CreateTournament = CreateTournament;
     this.Profile = Profile;
     this.SearchTournament = SearchTournament;
     this.Settings = Settings;
+    this.logoHomepage = logoHomepage;
   }
 
   @Override
@@ -90,8 +96,14 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.logoHomepage;
+      ImageView logoHomepage = rootView.findViewById(id);
+      if (logoHomepage == null) {
+        break missingId;
+      }
+
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings);
+          SearchTournament, Settings, logoHomepage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

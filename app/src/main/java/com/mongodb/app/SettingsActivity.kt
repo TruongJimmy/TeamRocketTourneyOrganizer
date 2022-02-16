@@ -11,7 +11,6 @@ class SettingsActivity: AppCompatActivity() {
     private lateinit var editProfileButton: Button
     private lateinit var changePasswordButton: Button
     private lateinit var helpButton: Button
-    private lateinit var backButton: Button
     private lateinit var logoutButton: Button
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,10 +24,12 @@ class SettingsActivity: AppCompatActivity() {
 
         helpButton = findViewById((R.id.button_help))
         helpButton.setOnClickListener { onHelpButtonClicked()}
-        backButton = findViewById((R.id.button_back))
-        backButton.setOnClickListener {onBackButtonClicked()}
         logoutButton = findViewById(R.id.button_logout)
         logoutButton.setOnClickListener {onLogoutClicked()}
+
+        //Below 2 lines - Back button for this page supported by the toolbar in xml file
+        setSupportActionBar(findViewById(R.id.toolBar_Settings))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
     private fun onEditProfileButtonClicked() {
         startActivity(Intent(this, EditProfileActivity::class.java))

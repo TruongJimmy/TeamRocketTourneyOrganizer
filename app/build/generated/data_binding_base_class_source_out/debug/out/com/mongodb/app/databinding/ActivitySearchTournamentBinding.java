@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
@@ -23,12 +24,17 @@ public final class ActivitySearchTournamentBinding implements ViewBinding {
   public final SearchView searchView;
 
   @NonNull
+  public final Toolbar toolBarSearchTournament;
+
+  @NonNull
   public final ListView userList;
 
   private ActivitySearchTournamentBinding(@NonNull LinearLayout rootView,
-      @NonNull SearchView searchView, @NonNull ListView userList) {
+      @NonNull SearchView searchView, @NonNull Toolbar toolBarSearchTournament,
+      @NonNull ListView userList) {
     this.rootView = rootView;
     this.searchView = searchView;
+    this.toolBarSearchTournament = toolBarSearchTournament;
     this.userList = userList;
   }
 
@@ -65,13 +71,20 @@ public final class ActivitySearchTournamentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.toolBar_SearchTournament;
+      Toolbar toolBarSearchTournament = rootView.findViewById(id);
+      if (toolBarSearchTournament == null) {
+        break missingId;
+      }
+
       id = R.id.userList;
       ListView userList = rootView.findViewById(id);
       if (userList == null) {
         break missingId;
       }
 
-      return new ActivitySearchTournamentBinding((LinearLayout) rootView, searchView, userList);
+      return new ActivitySearchTournamentBinding((LinearLayout) rootView, searchView,
+          toolBarSearchTournament, userList);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -13,7 +13,7 @@
         <activity
             android:name=".PlayerActivity"
             android:screenOrientation="nosensor"
-             />
+            android:parentActivityName=".ProfileActivity"/>
         <activity
             android:name=".afterNotification"
             android:screenOrientation="nosensor"
@@ -25,20 +25,22 @@
         <activity
             android:name=".SearchTournamentActivity"
             android:screenOrientation="nosensor"
-            />
+            android:parentActivityName=".HomeActivity"/>
         <activity
             android:name=".RegisterActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name=".CreateTournamentActivity"
-            android:screenOrientation="nosensor" />
+            android:screenOrientation="nosensor"
+            android:parentActivityName=".HomeActivity"/>
 
         <activity
             android:name=".HomeActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name=".ProfileActivity"
-            android:screenOrientation="nosensor" />
+            android:screenOrientation="nosensor"
+            android:parentActivityName=".HomeActivity"/>
         <activity
             android:name=".EditProfileActivity"
             android:screenOrientation="nosensor" />
@@ -47,7 +49,8 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name=".SettingsActivity"
-            android:screenOrientation="nosensor" />
+            android:screenOrientation="nosensor"
+            android:parentActivityName=".HomeActivity"/>
         <activity
             android:name=".QRCodeActivity"
             android:screenOrientation="nosensor" />

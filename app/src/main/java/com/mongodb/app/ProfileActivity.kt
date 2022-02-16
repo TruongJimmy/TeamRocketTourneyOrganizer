@@ -3,14 +3,12 @@ package com.mongodb.app
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class ProfileActivity : AppCompatActivity() {
-    private lateinit var backButton: Button
     private lateinit var profileView: ImageView
     private lateinit var playerName: TextView
     private lateinit var followingButton: Button
@@ -18,11 +16,12 @@ class ProfileActivity : AppCompatActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profile_view)
-        backButton = findViewById((R.id.profile_back))
-        backButton.setOnClickListener {
-            // go to home page after back button is clicked
-            startActivity(Intent(this, HomeActivity::class.java))
-        }
+
+        //Below 2 lines - Back button for this page supported by the toolbar in xml file
+        setSupportActionBar(findViewById(R.id.toolBar_ProfileActivity))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
         profileView = findViewById((R.id.user_avatar_profile))
         playerName = findViewById((R.id.user_name))
         val email = getIntent().getStringExtra("EMAIL")

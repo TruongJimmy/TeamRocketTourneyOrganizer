@@ -41,6 +41,10 @@ class PlayerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_player)
 
+        //Below 2 lines - Back button for this page supported by the toolbar in xml file
+        setSupportActionBar(findViewById(R.id.toolBar_FollowingPlayer))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         recyclerView = findViewById(R.id.project_users_list)
         fab = findViewById(R.id.floating_action_button)
         // create a dialog to add a user by email when an item is clicked
