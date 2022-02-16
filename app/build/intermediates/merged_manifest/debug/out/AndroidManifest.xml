@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mongodb.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.mongodb.app.App"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.App" >
+        <activity
+            android:name="com.mongodb.app.PlayerActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.afterNotification"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.ReportActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.SearchTournamentActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.RegisterActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.CreateTournamentActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.HomeActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.ProfileActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.EditProfileActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.ChangePassActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.SettingsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.QRCodeActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.LoginActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.TaskActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
