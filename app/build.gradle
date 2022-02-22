@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.mongodb.app"
-        minSdkVersion 16
+        minSdkVersion 24 //changed from 16 to 24 for tournamentlib to work
         targetSdkVersion 32
         versionCode 1
         versionName "1.0"
@@ -21,7 +21,7 @@ android {
     }
 
     buildTypes {
-        def appId = "application-0-bvpbd"  // Replace with proper Application ID
+        def appId = "y-oageg"  // Replace with proper Application ID
         debug {
             buildConfigField "String", "MONGODB_REALM_APP_ID", "\"${appId}\""
         }
@@ -78,4 +78,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //added below to get tournamentBracketsLib from emil
+    implementation 'com.github.emil-ep:TournamentBracketLib:1.0.4'
+
 }

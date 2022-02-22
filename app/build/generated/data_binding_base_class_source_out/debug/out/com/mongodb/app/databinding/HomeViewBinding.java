@@ -32,16 +32,20 @@ public final class HomeViewBinding implements ViewBinding {
   public final Button Settings;
 
   @NonNull
+  public final Button activeTournament;
+
+  @NonNull
   public final ImageView logoHomepage;
 
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
       @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
-      @NonNull ImageView logoHomepage) {
+      @NonNull Button activeTournament, @NonNull ImageView logoHomepage) {
     this.rootView = rootView;
     this.CreateTournament = CreateTournament;
     this.Profile = Profile;
     this.SearchTournament = SearchTournament;
     this.Settings = Settings;
+    this.activeTournament = activeTournament;
     this.logoHomepage = logoHomepage;
   }
 
@@ -96,6 +100,12 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.activeTournament;
+      Button activeTournament = rootView.findViewById(id);
+      if (activeTournament == null) {
+        break missingId;
+      }
+
       id = R.id.logoHomepage;
       ImageView logoHomepage = rootView.findViewById(id);
       if (logoHomepage == null) {
@@ -103,7 +113,7 @@ public final class HomeViewBinding implements ViewBinding {
       }
 
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings, logoHomepage);
+          SearchTournament, Settings, activeTournament, logoHomepage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,11 +1,35 @@
-com/mongodb/app/databinding/LoginViewBinding.java
- com.mongodb.app.databinding.LoginViewBinding
 com/mongodb/app/databinding/QrcodeViewBinding.java
  com.mongodb.app.databinding.QrcodeViewBinding
-com/mongodb/app/databinding/ActivitySearchTournamentBinding.java
- com.mongodb.app.databinding.ActivitySearchTournamentBinding
 io/realm/com_mongodb_app_UserRealmProxyInterface.java
  io.realm.com_mongodb_app_UserRealmProxyInterface
+com/mongodb/app/databinding/ActivityBracketBinding.java
+ com.mongodb.app.databinding.ActivityBracketBinding
+com/mongodb/app/databinding/ActivityAfterNotificationBinding.java
+ com.mongodb.app.databinding.ActivityAfterNotificationBinding
+io/realm/DefaultRealmModuleMediator.java
+ io.realm.DefaultRealmModuleMediator
+com/mongodb/app/databinding/ActivityRegisterBinding.java
+ com.mongodb.app.databinding.ActivityRegisterBinding
+com/mongodb/app/databinding/ActivityCreateTournamentBinding.java
+ com.mongodb.app.databinding.ActivityCreateTournamentBinding
+com/mongodb/app/databinding/ActivityLoginBinding.java
+ com.mongodb.app.databinding.ActivityLoginBinding
+io/realm/com_mongodb_app_UserRealmProxy.java
+ io.realm.com_mongodb_app_UserRealmProxy
+ io.realm.com_mongodb_app_UserRealmProxy$ClassNameHelper
+ io.realm.com_mongodb_app_UserRealmProxy$UserColumnInfo
+com/mongodb/app/databinding/ActivityTaskBinding.java
+ com.mongodb.app.databinding.ActivityTaskBinding
+com/mongodb/app/databinding/PlayerViewBinding.java
+ com.mongodb.app.databinding.PlayerViewBinding
+com/mongodb/app/databinding/TaskViewBinding.java
+ com.mongodb.app.databinding.TaskViewBinding
+com/mongodb/app/databinding/ProfileViewBinding.java
+ com.mongodb.app.databinding.ProfileViewBinding
+com/mongodb/app/databinding/LoginViewBinding.java
+ com.mongodb.app.databinding.LoginViewBinding
+com/mongodb/app/databinding/ActivitySearchTournamentBinding.java
+ com.mongodb.app.databinding.ActivitySearchTournamentBinding
 com/mongodb/app/databinding/ChangePasswordViewBinding.java
  com.mongodb.app.databinding.ChangePasswordViewBinding
 io/realm/DefaultRealmModule.java
@@ -20,33 +44,11 @@ com/mongodb/app/databinding/SettingsBinding.java
  com.mongodb.app.databinding.SettingsBinding
 com/mongodb/app/databinding/ActivityPlayerBinding.java
  com.mongodb.app.databinding.ActivityPlayerBinding
-com/mongodb/app/databinding/ActivityAfterNotificationBinding.java
- com.mongodb.app.databinding.ActivityAfterNotificationBinding
 com/mongodb/app/databinding/HomeViewBinding.java
  com.mongodb.app.databinding.HomeViewBinding
-io/realm/DefaultRealmModuleMediator.java
- io.realm.DefaultRealmModuleMediator
-com/mongodb/app/databinding/ActivityRegisterBinding.java
- com.mongodb.app.databinding.ActivityRegisterBinding
-com/mongodb/app/databinding/ActivityCreateTournamentBinding.java
- com.mongodb.app.databinding.ActivityCreateTournamentBinding
-com/mongodb/app/databinding/ActivityLoginBinding.java
- com.mongodb.app.databinding.ActivityLoginBinding
 com/mongodb/app/databinding/ActivityReportBinding.java
  com.mongodb.app.databinding.ActivityReportBinding
-io/realm/com_mongodb_app_UserRealmProxy.java
- io.realm.com_mongodb_app_UserRealmProxy
- io.realm.com_mongodb_app_UserRealmProxy$ClassNameHelper
- io.realm.com_mongodb_app_UserRealmProxy$UserColumnInfo
 io/realm/com_mongodb_app_TaskRealmProxy.java
  io.realm.com_mongodb_app_TaskRealmProxy
  io.realm.com_mongodb_app_TaskRealmProxy$ClassNameHelper
  io.realm.com_mongodb_app_TaskRealmProxy$TaskColumnInfo
-com/mongodb/app/databinding/ActivityTaskBinding.java
- com.mongodb.app.databinding.ActivityTaskBinding
-com/mongodb/app/databinding/PlayerViewBinding.java
- com.mongodb.app.databinding.PlayerViewBinding
-com/mongodb/app/databinding/TaskViewBinding.java
- com.mongodb.app.databinding.TaskViewBinding
-com/mongodb/app/databinding/ProfileViewBinding.java
- com.mongodb.app.databinding.ProfileViewBinding

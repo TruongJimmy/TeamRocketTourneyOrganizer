@@ -1,366 +1,278 @@
 [
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_activity_player.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_player.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_sampleimage_round.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\sampleimage_round.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_baseline_add_24.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_baseline_add_24.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_sampleimage_foreground.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable-v24\\sampleimage_foreground.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_task_view.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/task_view.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_budokai_round.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-anydpi-v26/budokai_round.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_change_password_view.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\change_password_view.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/navigation_nav_graph.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/navigation/nav_graph.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_budokai_round.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\budokai_round.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-ldpi_sampleimage_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-ldpi/sampleimage_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_profile_view.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/profile_view.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_edit_profile_view.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\edit_profile_view.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_qrcode_view.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/qrcode_view.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_create_tournament.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_create_tournament.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_change_password_view.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/change_password_view.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_budokai_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\budokai_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_baseline_add_24.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_baseline_add_24.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_sampleimage_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\sampleimage_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_budokai_foreground.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-hdpi/budokai_foreground.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_budokai.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\budokai.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_budokai.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-mdpi/budokai.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_sampleimage_background.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/sampleimage_background.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sampleimage_background.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\sampleimage_background.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_baseline_add_24.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_baseline_add_24.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_budokai.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-hdpi/budokai.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_report.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_add_24.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_add_24.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_budokai_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\budokai_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_add_24.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_add_24.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_task_menu.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\menu\\task_menu.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_budokai_foreground.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxhdpi/budokai_foreground.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_sampleimage_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\sampleimage_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_budokai.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\budokai.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_budokai.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\budokai.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_sampleimage.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxxhdpi/sampleimage.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_sampleimage_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\sampleimage_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-hdpi_budokai_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-hdpi/budokai_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_task_view.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\task_view.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_sampleimage.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxhdpi/sampleimage.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-hdpi_sampleimage_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-hdpi/sampleimage_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_home_view.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\home_view.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_sampleimage.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xhdpi/sampleimage.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_sampleimage.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\sampleimage.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_settings.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\settings.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_login.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_budokai.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\budokai.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_login_view.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\login_view.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_sampleimage_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxxhdpi/sampleimage_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_budokai_foreground.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\budokai_foreground.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_home_view.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/home_view.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_sampleimage_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-mdpi/sampleimage_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_player.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_player.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_sampleimage.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\sampleimage.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_budokai_background.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\budokai_background.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_budokai_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xxxhdpi/budokai_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_budokai_foreground.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\budokai_foreground.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_budokai_background.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/budokai_background.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_after_notification.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_after_notification.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_baseline_add_24.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_add_24.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_budokai_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\budokai_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_sampleimage.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-anydpi-v26/sampleimage.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_sampleimage.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\sampleimage.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_player_view.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/player_view.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_sampleimage_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xxhdpi/sampleimage_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_qrcode_view.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\qrcode_view.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_budokai.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-anydpi-v26/budokai.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_sampleimage.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\sampleimage.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_edit_profile_view.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/edit_profile_view.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_sampleimage_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xxxhdpi/sampleimage_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_player_view.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\player_view.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_sampleimage_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xhdpi/sampleimage_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_budokai_foreground.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\budokai_foreground.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_budokai_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\budokai_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_budokai_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xhdpi/budokai_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_sampleimage.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-hdpi/sampleimage.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_budokai_foreground.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\budokai_foreground.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_activity_after_notification.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_after_notification.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_sampleimage.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\sampleimage.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_budokai_foreground.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-mdpi/budokai_foreground.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_tournament.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_search_tournament.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_activity_create_tournament.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_create_tournament.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_sampleimage.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\sampleimage.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_budokai_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xxhdpi/budokai_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_profile_view.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\profile_view.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-ldpi_budokai_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-ldpi/budokai_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_budokai.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\budokai.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_budokai_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxxhdpi/budokai_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_budokai_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\budokai_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_budokai.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xhdpi/budokai.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_sampleimage_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\sampleimage_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_settings.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/settings.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bracket.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_bracket.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_sampleimage_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxhdpi/sampleimage_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_task.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_task.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable_searchview_background.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/drawable/searchview_background.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_sampleimage_round.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\sampleimage_round.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-mdpi_sampleimage_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-mdpi/sampleimage_background.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_sampleimage_round.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-anydpi-v26/sampleimage_round.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_budokai.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\budokai.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_budokai_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxhdpi/budokai_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_send.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\ic_send.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_budokai.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxxhdpi/budokai.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_activity_search_tournament.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_search_tournament.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_searchview_background.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\searchview_background.xml"
     },
     {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_budokai_foreground.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxxhdpi/budokai_foreground.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_budokai_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-mdpi/budokai_round.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_sampleimage_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-xhdpi/sampleimage_background.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_sampleimage_foreground.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-anydpi-v24/sampleimage_foreground.xml"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_login_view.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/login_view.xml"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_activity_register.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_register.xml"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_budokai_foreground.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xhdpi/budokai_foreground.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_budokai_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-hdpi/budokai_round.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_budokai_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xhdpi/budokai_round.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-mdpi_budokai_background.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-mdpi/budokai_background.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_activity_task.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_task.xml"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_budokai.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxhdpi/budokai.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_baseline_add_24.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-hdpi/ic_baseline_add_24.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/menu_task_menu.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/menu/task_menu.xml"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_sampleimage.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-mdpi/sampleimage.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/layout_activity_report.xml.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_report.xml"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_sampleimage_round.png.flat",
-        "source": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/res/mipmap-hdpi/sampleimage_round.png"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_budokai_foreground.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\budokai_foreground.png"
     }
 ]

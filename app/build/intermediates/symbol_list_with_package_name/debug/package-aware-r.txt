@@ -184,6 +184,9 @@ attr boxStrokeColor
 attr boxStrokeErrorColor
 attr boxStrokeWidth
 attr boxStrokeWidthFocused
+attr bracketBackgroundColor
+attr bracketColor
+attr bracketTextColor
 attr brightness
 attr buttonBarButtonStyle
 attr buttonBarNegativeButtonStyle
@@ -1141,6 +1144,8 @@ color background_material_dark
 color background_material_light
 color black
 color blue
+color bracket_background
+color bracket_color
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1882,6 +1887,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_send
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2002,6 +2008,7 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activeTournament
 id activity_chooser_view_content
 id activity_task
 id add
@@ -2037,6 +2044,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id bracket_view
 id builtWithSync
 id buttonNotify
 id buttonPanel
@@ -2079,6 +2087,7 @@ id constraint
 id container
 id content
 id contentPanel
+id content_layout
 id contiguous
 id continuousVelocity
 id coordinator
@@ -2149,6 +2158,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id generate_qr
+id gf_container
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2189,6 +2199,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_root
 id left
 id leftToRight
 id legacy
@@ -2273,6 +2284,7 @@ id neverCompleteToStart
 id newPassword
 id noScroll
 id noState
+id no_content_text
 id none
 id normal
 id north
@@ -2286,6 +2298,7 @@ id on
 id outline
 id outward
 id overshoot
+id pBar
 id packed
 id parallax
 id parent
@@ -2299,6 +2312,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id play_date
 id popup_menu
 id position
 id postLayout
@@ -2320,6 +2334,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id rv_score_board
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2329,6 +2344,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scroll_view
 id scrollable
 id searchView
 id search_badge
@@ -2404,6 +2420,15 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id task_list
 id task_menu
+id team_one_IV
+id team_one_layout
+id team_one_name
+id team_one_score
+id team_title
+id team_two_IV
+id team_two_layout
+id team_two_name
+id team_two_score
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2428,6 +2453,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id title_layout
 id title_template
 id toggle
 id toolBar_FollowingPlayer
@@ -2436,6 +2462,7 @@ id toolBar_SearchTournament
 id toolBar_Settings
 id toolBar_createTournamentActivity
 id toolBar_registerActivity
+id toolbar_CurrentTournament
 id top
 id topPanel
 id touch_outside
@@ -2462,6 +2489,7 @@ id user_avatar_profile
 id user_level
 id user_name
 id vertical_only
+id view
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -2549,8 +2577,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_after_notification
+layout activity_bracket
 layout activity_create_tournament
 layout activity_login
+layout activity_main
 layout activity_player
 layout activity_register
 layout activity_report
@@ -2574,7 +2604,11 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout edit_profile_view
+layout fragment_brackets_colomn
+layout fragment_brackts
 layout home_view
+layout layout_bracket_view
+layout layout_cell_brackets
 layout login_view
 layout material_chip_input_combo
 layout material_clock_display
@@ -2821,6 +2855,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -3564,6 +3599,7 @@ styleable BaseProgressIndicator android_indeterminate hideAnimationBehavior indi
 styleable BottomAppBar backgroundTint elevation fabAlignmentMode fabAnimationMode fabCradleMargin fabCradleRoundedCornerRadius fabCradleVerticalOffset hideOnScroll paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets
 styleable BottomNavigationView itemHorizontalTranslationEnabled
 styleable BottomSheetBehavior_Layout android_maxWidth android_elevation backgroundTint behavior_draggable behavior_expandedOffset behavior_fitToContents behavior_halfExpandedRatio behavior_hideable behavior_peekHeight behavior_saveFlags behavior_skipCollapsed gestureInsetBottomIgnored paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay
+styleable BracketsView bracketBackgroundColor bracketColor bracketTextColor
 styleable ButtonBarLayout allowStacking
 styleable Capability queryPatterns shortcutMatchRequired
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop

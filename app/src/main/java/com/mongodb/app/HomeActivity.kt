@@ -11,6 +11,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var createTournamentButton: Button
     private lateinit var settingsButton: Button
     private lateinit var profileButton: Button
+    private lateinit var activeButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +28,9 @@ class HomeActivity : AppCompatActivity() {
         profileButton = findViewById(R.id.Profile)
         profileButton.setOnClickListener {onProfileButtonClicked()}
 
+        activeButton = findViewById(R.id.activeTournament)
+        activeButton.setOnClickListener { toBracketActivity() }
+
     }
 
     private fun onSearchTournamentButtonClicked(){
@@ -35,6 +39,10 @@ class HomeActivity : AppCompatActivity() {
 
     private fun onCreateTournamentButtonClicked(){
         startActivity(Intent(this, CreateTournamentActivity::class.java))
+    }
+
+    private fun toBracketActivity(){
+        startActivity(Intent(this, BracketActivity::class.java))
     }
 
     private fun onSettingsButtonClicked(){
