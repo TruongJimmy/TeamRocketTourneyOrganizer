@@ -9,5 +9,5 @@ import io.realm.annotations.Required
 open class User(
     @PrimaryKey @RealmField("_id") var id: String = "",
     var _partition: String = "",
-    var name: String = ""
+    var name: String = "",
 ): RealmObject()

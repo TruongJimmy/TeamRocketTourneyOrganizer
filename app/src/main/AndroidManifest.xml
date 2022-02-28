@@ -13,7 +13,7 @@
         <activity
             android:name=".BracketActivity"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".PlayerActivity"
             android:parentActivityName=".ProfileActivity"

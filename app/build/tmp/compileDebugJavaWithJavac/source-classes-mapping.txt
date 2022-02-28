@@ -1,5 +1,9 @@
 com/mongodb/app/databinding/QrcodeViewBinding.java
  com.mongodb.app.databinding.QrcodeViewBinding
+io/realm/com_mongodb_app_TournamentRealmProxy.java
+ io.realm.com_mongodb_app_TournamentRealmProxy
+ io.realm.com_mongodb_app_TournamentRealmProxy$ClassNameHelper
+ io.realm.com_mongodb_app_TournamentRealmProxy$TournamentColumnInfo
 io/realm/com_mongodb_app_UserRealmProxyInterface.java
  io.realm.com_mongodb_app_UserRealmProxyInterface
 com/mongodb/app/databinding/ActivityBracketBinding.java
@@ -44,6 +48,8 @@ com/mongodb/app/databinding/SettingsBinding.java
  com.mongodb.app.databinding.SettingsBinding
 com/mongodb/app/databinding/ActivityPlayerBinding.java
  com.mongodb.app.databinding.ActivityPlayerBinding
+io/realm/com_mongodb_app_TournamentRealmProxyInterface.java
+ io.realm.com_mongodb_app_TournamentRealmProxyInterface
 com/mongodb/app/databinding/HomeViewBinding.java
  com.mongodb.app.databinding.HomeViewBinding
 com/mongodb/app/databinding/ActivityReportBinding.java

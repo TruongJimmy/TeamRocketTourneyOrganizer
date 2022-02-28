@@ -39,7 +39,7 @@
 25        android:theme="@style/Theme.App" >
 25-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:12:9-41
 26        <activity
-26-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:13:9-16:57
+26-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:13:9-16:58
 27            android:name="com.mongodb.app.BracketActivity"
 27-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:14:13-44
 28            android:exported="false"

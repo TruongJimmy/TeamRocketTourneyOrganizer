@@ -133,7 +133,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Le
 	android:name
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:6:9-28
 activity#com.mongodb.app.BracketActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:13:9-16:57
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:13:9-16:58
 	android:parentActivityName
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:16:13-55
 	android:exported
