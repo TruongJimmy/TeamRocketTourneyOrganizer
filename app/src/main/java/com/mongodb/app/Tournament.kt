@@ -11,9 +11,9 @@ open class Tournament(
     var _partition: String = "",
     var name: String = "",
     var game: String = "",
-    var participant: Int = 0,
+    var participant: String = "",
     var location: String = "",
     var tournamentType: String = "",
-    var date: Date? = null,
-    var tournamentOrganizer: User? = null
+    var date: String = "",
+    //var tournamentOrganizer: User? = null
 ): RealmObject() {}

@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.mongodb.app"
-        minSdkVersion 24 //changed from 16 to 24 for tournamentlib to work
+        minSdkVersion 26 //changed from 16 to 24 for tournamentlib to work
         targetSdkVersion 32
         versionCode 1
         versionName "1.0"

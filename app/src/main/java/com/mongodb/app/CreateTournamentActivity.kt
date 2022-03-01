@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import io.realm.Realm
+import java.time.LocalDateTime
+import java.util.*
 
 class CreateTournamentActivity : AppCompatActivity() {
     private lateinit var tournamentNameInput: EditText
@@ -15,6 +18,7 @@ class CreateTournamentActivity : AppCompatActivity() {
     private lateinit var startTimeInput: EditText
     private lateinit var tournamentTypeInput: EditText
     private lateinit var createTourneyButton: Button
+    private lateinit var userRealm: Realm
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +37,22 @@ class CreateTournamentActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolBar_createTournamentActivity))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        createTourneyButton.setOnClickListener { (createTournament()) }
 
+
+    }
+
+    private fun createTournament() {
+        val tournament = Tournament()
+        tournament.game = "HI"
+        tournament.name = "Fred"
+        tournament.participant = "32"
+        tournament.location = "fdsa"
+        tournament.date = "DF"
+        tournament.tournamentType = "DFSF"
+
+        userRealm.executeTransactionAsync { realm ->
+            realm.insert(tournament)
+        }
     }
 }

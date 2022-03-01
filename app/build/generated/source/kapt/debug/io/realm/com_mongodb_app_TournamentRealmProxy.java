@@ -46,10 +46,9 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         long locationColKey;
         long tournamentTypeColKey;
         long dateColKey;
-        long tournamentOrganizerColKey;
 
         TournamentColumnInfo(OsSchemaInfo schemaInfo) {
-            super(9);
+            super(8);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("Tournament");
             this.idColKey = addColumnDetails("id", "_id", objectSchemaInfo);
             this._partitionColKey = addColumnDetails("_partition", "_partition", objectSchemaInfo);
@@ -59,7 +58,6 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
             this.locationColKey = addColumnDetails("location", "location", objectSchemaInfo);
             this.tournamentTypeColKey = addColumnDetails("tournamentType", "tournamentType", objectSchemaInfo);
             this.dateColKey = addColumnDetails("date", "date", objectSchemaInfo);
-            this.tournamentOrganizerColKey = addColumnDetails("tournamentOrganizer", "tournamentOrganizer", objectSchemaInfo);
         }
 
         TournamentColumnInfo(ColumnInfo src, boolean mutable) {
@@ -84,7 +82,6 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
             dst.locationColKey = src.locationColKey;
             dst.tournamentTypeColKey = src.tournamentTypeColKey;
             dst.dateColKey = src.dateColKey;
-            dst.tournamentOrganizerColKey = src.tournamentOrganizerColKey;
         }
     }
 
@@ -215,24 +212,30 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
 
     @Override
     @SuppressWarnings("cast")
-    public int realmGet$participant() {
+    public String realmGet$participant() {
         proxyState.getRealm$realm().checkIfValid();
-        return (int) proxyState.getRow$realm().getLong(columnInfo.participantColKey);
+        return (java.lang.String) proxyState.getRow$realm().getString(columnInfo.participantColKey);
     }
 
     @Override
-    public void realmSet$participant(int value) {
+    public void realmSet$participant(String value) {
         if (proxyState.isUnderConstruction()) {
             if (!proxyState.getAcceptDefaultValue$realm()) {
                 return;
             }
             final Row row = proxyState.getRow$realm();
-            row.getTable().setLong(columnInfo.participantColKey, row.getObjectKey(), value, true);
+            if (value == null) {
+                throw new IllegalArgumentException("Trying to set non-nullable field 'participant' to null.");
+            }
+            row.getTable().setString(columnInfo.participantColKey, row.getObjectKey(), value, true);
             return;
         }
 
         proxyState.getRealm$realm().checkIfValid();
-        proxyState.getRow$realm().setLong(columnInfo.participantColKey, value);
+        if (value == null) {
+            throw new IllegalArgumentException("Trying to set non-nullable field 'participant' to null.");
+        }
+        proxyState.getRow$realm().setString(columnInfo.participantColKey, value);
     }
 
     @Override
@@ -293,90 +296,42 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
 
     @Override
     @SuppressWarnings("cast")
-    public Date realmGet$date() {
+    public String realmGet$date() {
         proxyState.getRealm$realm().checkIfValid();
-        if (proxyState.getRow$realm().isNull(columnInfo.dateColKey)) {
-            return null;
-        }
-        return (java.util.Date) proxyState.getRow$realm().getDate(columnInfo.dateColKey);
+        return (java.lang.String) proxyState.getRow$realm().getString(columnInfo.dateColKey);
     }
 
     @Override
-    public void realmSet$date(Date value) {
+    public void realmSet$date(String value) {
         if (proxyState.isUnderConstruction()) {
             if (!proxyState.getAcceptDefaultValue$realm()) {
                 return;
             }
             final Row row = proxyState.getRow$realm();
             if (value == null) {
-                row.getTable().setNull(columnInfo.dateColKey, row.getObjectKey(), true);
-                return;
+                throw new IllegalArgumentException("Trying to set non-nullable field 'date' to null.");
             }
-            row.getTable().setDate(columnInfo.dateColKey, row.getObjectKey(), value, true);
+            row.getTable().setString(columnInfo.dateColKey, row.getObjectKey(), value, true);
             return;
         }
 
         proxyState.getRealm$realm().checkIfValid();
         if (value == null) {
-            proxyState.getRow$realm().setNull(columnInfo.dateColKey);
-            return;
+            throw new IllegalArgumentException("Trying to set non-nullable field 'date' to null.");
         }
-        proxyState.getRow$realm().setDate(columnInfo.dateColKey, value);
-    }
-
-    @Override
-    public com.mongodb.app.User realmGet$tournamentOrganizer() {
-        proxyState.getRealm$realm().checkIfValid();
-        if (proxyState.getRow$realm().isNullLink(columnInfo.tournamentOrganizerColKey)) {
-            return null;
-        }
-        return proxyState.getRealm$realm().get(com.mongodb.app.User.class, proxyState.getRow$realm().getLink(columnInfo.tournamentOrganizerColKey), false, Collections.<String>emptyList());
-    }
-
-    @Override
-    public void realmSet$tournamentOrganizer(com.mongodb.app.User value) {
-        Realm realm = (Realm) proxyState.getRealm$realm();
-        if (proxyState.isUnderConstruction()) {
-            if (!proxyState.getAcceptDefaultValue$realm()) {
-                return;
-            }
-            if (proxyState.getExcludeFields$realm().contains("tournamentOrganizer")) {
-                return;
-            }
-            if (value != null && !RealmObject.isManaged(value)) {
-                value = realm.copyToRealm(value);
-            }
-            final Row row = proxyState.getRow$realm();
-            if (value == null) {
-                // Table#nullifyLink() does not support default value. Just using Row.
-                row.nullifyLink(columnInfo.tournamentOrganizerColKey);
-                return;
-            }
-            proxyState.checkValidObject(value);
-            row.getTable().setLink(columnInfo.tournamentOrganizerColKey, row.getObjectKey(), ((RealmObjectProxy) value).realmGet$proxyState().getRow$realm().getObjectKey(), true);
-            return;
-        }
-
-        proxyState.getRealm$realm().checkIfValid();
-        if (value == null) {
-            proxyState.getRow$realm().nullifyLink(columnInfo.tournamentOrganizerColKey);
-            return;
-        }
-        proxyState.checkValidObject(value);
-        proxyState.getRow$realm().setLink(columnInfo.tournamentOrganizerColKey, ((RealmObjectProxy) value).realmGet$proxyState().getRow$realm().getObjectKey());
+        proxyState.getRow$realm().setString(columnInfo.dateColKey, value);
     }
 
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
-        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("Tournament", false, 9, 0);
+        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("Tournament", false, 8, 0);
         builder.addPersistedProperty("_id", RealmFieldType.STRING, Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
         builder.addPersistedProperty("_partition", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("name", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("game", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
-        builder.addPersistedProperty("participant", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
+        builder.addPersistedProperty("participant", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("location", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("tournamentType", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
-        builder.addPersistedProperty("date", RealmFieldType.DATE, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
-        builder.addPersistedLinkProperty("tournamentOrganizer", RealmFieldType.OBJECT, "User");
+        builder.addPersistedProperty("date", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         return builder.build();
     }
 
@@ -399,7 +354,7 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
     @SuppressWarnings("cast")
     public static com.mongodb.app.Tournament createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
         throws JSONException {
-        final List<String> excludeFields = new ArrayList<String>(1);
+        final List<String> excludeFields = Collections.<String> emptyList();
         com.mongodb.app.Tournament obj = null;
         if (update) {
             Table table = realm.getTable(com.mongodb.app.Tournament.class);
@@ -422,9 +377,6 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
             }
         }
         if (obj == null) {
-            if (json.has("tournamentOrganizer")) {
-                excludeFields.add("tournamentOrganizer");
-            }
             if (json.has("id")) {
                 if (json.isNull("id")) {
                     obj = (io.realm.com_mongodb_app_TournamentRealmProxy) realm.createObjectInternal(com.mongodb.app.Tournament.class, null, true, excludeFields);
@@ -460,9 +412,9 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         }
         if (json.has("participant")) {
             if (json.isNull("participant")) {
-                throw new IllegalArgumentException("Trying to set non-nullable field 'participant' to null.");
+                objProxy.realmSet$participant(null);
             } else {
-                objProxy.realmSet$participant((int) json.getInt("participant"));
+                objProxy.realmSet$participant((String) json.getString("participant"));
             }
         }
         if (json.has("location")) {
@@ -483,20 +435,7 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
             if (json.isNull("date")) {
                 objProxy.realmSet$date(null);
             } else {
-                Object timestamp = json.get("date");
-                if (timestamp instanceof String) {
-                    objProxy.realmSet$date(JsonUtils.stringToDate((String) timestamp));
-                } else {
-                    objProxy.realmSet$date(new Date(json.getLong("date")));
-                }
-            }
-        }
-        if (json.has("tournamentOrganizer")) {
-            if (json.isNull("tournamentOrganizer")) {
-                objProxy.realmSet$tournamentOrganizer(null);
-            } else {
-                com.mongodb.app.User tournamentOrganizerObj = com_mongodb_app_UserRealmProxy.createOrUpdateUsingJsonObject(realm, json.getJSONObject("tournamentOrganizer"), update);
-                objProxy.realmSet$tournamentOrganizer(tournamentOrganizerObj);
+                objProxy.realmSet$date((String) json.getString("date"));
             }
         }
         return obj;
@@ -544,10 +483,10 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
                 }
             } else if (name.equals("participant")) {
                 if (reader.peek() != JsonToken.NULL) {
-                    objProxy.realmSet$participant((int) reader.nextInt());
+                    objProxy.realmSet$participant((String) reader.nextString());
                 } else {
                     reader.skipValue();
-                    throw new IllegalArgumentException("Trying to set non-nullable field 'participant' to null.");
+                    objProxy.realmSet$participant(null);
                 }
             } else if (name.equals("location")) {
                 if (reader.peek() != JsonToken.NULL) {
@@ -564,24 +503,11 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
                     objProxy.realmSet$tournamentType(null);
                 }
             } else if (name.equals("date")) {
-                if (reader.peek() == JsonToken.NULL) {
+                if (reader.peek() != JsonToken.NULL) {
+                    objProxy.realmSet$date((String) reader.nextString());
+                } else {
                     reader.skipValue();
                     objProxy.realmSet$date(null);
-                } else if (reader.peek() == JsonToken.NUMBER) {
-                    long timestamp = reader.nextLong();
-                    if (timestamp > -1) {
-                        objProxy.realmSet$date(new Date(timestamp));
-                    }
-                } else {
-                    objProxy.realmSet$date(JsonUtils.stringToDate(reader.nextString()));
-                }
-            } else if (name.equals("tournamentOrganizer")) {
-                if (reader.peek() == JsonToken.NULL) {
-                    reader.skipValue();
-                    objProxy.realmSet$tournamentOrganizer(null);
-                } else {
-                    com.mongodb.app.User tournamentOrganizerObj = com_mongodb_app_UserRealmProxy.createUsingJsonStream(realm, reader);
-                    objProxy.realmSet$tournamentOrganizer(tournamentOrganizerObj);
                 }
             } else {
                 reader.skipValue();
@@ -663,29 +589,16 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         builder.addString(columnInfo._partitionColKey, unmanagedSource.realmGet$_partition());
         builder.addString(columnInfo.nameColKey, unmanagedSource.realmGet$name());
         builder.addString(columnInfo.gameColKey, unmanagedSource.realmGet$game());
-        builder.addInteger(columnInfo.participantColKey, unmanagedSource.realmGet$participant());
+        builder.addString(columnInfo.participantColKey, unmanagedSource.realmGet$participant());
         builder.addString(columnInfo.locationColKey, unmanagedSource.realmGet$location());
         builder.addString(columnInfo.tournamentTypeColKey, unmanagedSource.realmGet$tournamentType());
-        builder.addDate(columnInfo.dateColKey, unmanagedSource.realmGet$date());
+        builder.addString(columnInfo.dateColKey, unmanagedSource.realmGet$date());
 
         // Create the underlying object and cache it before setting any object/objectlist references
         // This will allow us to break any circular dependencies by using the object cache.
         Row row = builder.createNewObject();
         io.realm.com_mongodb_app_TournamentRealmProxy managedCopy = newProxyInstance(realm, row);
         cache.put(newObject, managedCopy);
-
-        // Finally add all fields that reference other Realm Objects, either directly or through a list
-        com.mongodb.app.User tournamentOrganizerObj = unmanagedSource.realmGet$tournamentOrganizer();
-        if (tournamentOrganizerObj == null) {
-            managedCopy.realmSet$tournamentOrganizer(null);
-        } else {
-            com.mongodb.app.User cachetournamentOrganizer = (com.mongodb.app.User) cache.get(tournamentOrganizerObj);
-            if (cachetournamentOrganizer != null) {
-                managedCopy.realmSet$tournamentOrganizer(cachetournamentOrganizer);
-            } else {
-                managedCopy.realmSet$tournamentOrganizer(com_mongodb_app_UserRealmProxy.copyOrUpdate(realm, (com_mongodb_app_UserRealmProxy.UserColumnInfo) realm.getSchema().getColumnInfo(com.mongodb.app.User.class), tournamentOrganizerObj, update, cache, flags));
-            }
-        }
 
         return managedCopy;
     }
@@ -723,7 +636,10 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         if (realmGet$game != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.gameColKey, objKey, realmGet$game, false);
         }
-        Table.nativeSetLong(tableNativePtr, columnInfo.participantColKey, objKey, ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$participant(), false);
+        String realmGet$participant = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$participant();
+        if (realmGet$participant != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.participantColKey, objKey, realmGet$participant, false);
+        }
         String realmGet$location = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$location();
         if (realmGet$location != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.locationColKey, objKey, realmGet$location, false);
@@ -732,18 +648,9 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         if (realmGet$tournamentType != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.tournamentTypeColKey, objKey, realmGet$tournamentType, false);
         }
-        java.util.Date realmGet$date = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$date();
+        String realmGet$date = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$date();
         if (realmGet$date != null) {
-            Table.nativeSetTimestamp(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date.getTime(), false);
-        }
-
-        com.mongodb.app.User tournamentOrganizerObj = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$tournamentOrganizer();
-        if (tournamentOrganizerObj != null) {
-            Long cachetournamentOrganizer = cache.get(tournamentOrganizerObj);
-            if (cachetournamentOrganizer == null) {
-                cachetournamentOrganizer = com_mongodb_app_UserRealmProxy.insert(realm, tournamentOrganizerObj, cache);
-            }
-            Table.nativeSetLink(tableNativePtr, columnInfo.tournamentOrganizerColKey, objKey, cachetournamentOrganizer, false);
+            Table.nativeSetString(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date, false);
         }
         return objKey;
     }
@@ -788,7 +695,10 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
             if (realmGet$game != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.gameColKey, objKey, realmGet$game, false);
             }
-            Table.nativeSetLong(tableNativePtr, columnInfo.participantColKey, objKey, ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$participant(), false);
+            String realmGet$participant = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$participant();
+            if (realmGet$participant != null) {
+                Table.nativeSetString(tableNativePtr, columnInfo.participantColKey, objKey, realmGet$participant, false);
+            }
             String realmGet$location = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$location();
             if (realmGet$location != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.locationColKey, objKey, realmGet$location, false);
@@ -797,18 +707,9 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
             if (realmGet$tournamentType != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.tournamentTypeColKey, objKey, realmGet$tournamentType, false);
             }
-            java.util.Date realmGet$date = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$date();
+            String realmGet$date = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$date();
             if (realmGet$date != null) {
-                Table.nativeSetTimestamp(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date.getTime(), false);
-            }
-
-            com.mongodb.app.User tournamentOrganizerObj = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$tournamentOrganizer();
-            if (tournamentOrganizerObj != null) {
-                Long cachetournamentOrganizer = cache.get(tournamentOrganizerObj);
-                if (cachetournamentOrganizer == null) {
-                    cachetournamentOrganizer = com_mongodb_app_UserRealmProxy.insert(realm, tournamentOrganizerObj, cache);
-                }
-                table.setLink(columnInfo.tournamentOrganizerColKey, objKey, cachetournamentOrganizer, false);
+                Table.nativeSetString(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date, false);
             }
         }
     }
@@ -850,7 +751,12 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.gameColKey, objKey, false);
         }
-        Table.nativeSetLong(tableNativePtr, columnInfo.participantColKey, objKey, ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$participant(), false);
+        String realmGet$participant = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$participant();
+        if (realmGet$participant != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.participantColKey, objKey, realmGet$participant, false);
+        } else {
+            Table.nativeSetNull(tableNativePtr, columnInfo.participantColKey, objKey, false);
+        }
         String realmGet$location = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$location();
         if (realmGet$location != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.locationColKey, objKey, realmGet$location, false);
@@ -863,22 +769,11 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.tournamentTypeColKey, objKey, false);
         }
-        java.util.Date realmGet$date = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$date();
+        String realmGet$date = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$date();
         if (realmGet$date != null) {
-            Table.nativeSetTimestamp(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date.getTime(), false);
+            Table.nativeSetString(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date, false);
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.dateColKey, objKey, false);
-        }
-
-        com.mongodb.app.User tournamentOrganizerObj = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$tournamentOrganizer();
-        if (tournamentOrganizerObj != null) {
-            Long cachetournamentOrganizer = cache.get(tournamentOrganizerObj);
-            if (cachetournamentOrganizer == null) {
-                cachetournamentOrganizer = com_mongodb_app_UserRealmProxy.insertOrUpdate(realm, tournamentOrganizerObj, cache);
-            }
-            Table.nativeSetLink(tableNativePtr, columnInfo.tournamentOrganizerColKey, objKey, cachetournamentOrganizer, false);
-        } else {
-            Table.nativeNullifyLink(tableNativePtr, columnInfo.tournamentOrganizerColKey, objKey);
         }
         return objKey;
     }
@@ -927,7 +822,12 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
             } else {
                 Table.nativeSetNull(tableNativePtr, columnInfo.gameColKey, objKey, false);
             }
-            Table.nativeSetLong(tableNativePtr, columnInfo.participantColKey, objKey, ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$participant(), false);
+            String realmGet$participant = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$participant();
+            if (realmGet$participant != null) {
+                Table.nativeSetString(tableNativePtr, columnInfo.participantColKey, objKey, realmGet$participant, false);
+            } else {
+                Table.nativeSetNull(tableNativePtr, columnInfo.participantColKey, objKey, false);
+            }
             String realmGet$location = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$location();
             if (realmGet$location != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.locationColKey, objKey, realmGet$location, false);
@@ -940,22 +840,11 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
             } else {
                 Table.nativeSetNull(tableNativePtr, columnInfo.tournamentTypeColKey, objKey, false);
             }
-            java.util.Date realmGet$date = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$date();
+            String realmGet$date = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$date();
             if (realmGet$date != null) {
-                Table.nativeSetTimestamp(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date.getTime(), false);
+                Table.nativeSetString(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date, false);
             } else {
                 Table.nativeSetNull(tableNativePtr, columnInfo.dateColKey, objKey, false);
-            }
-
-            com.mongodb.app.User tournamentOrganizerObj = ((com_mongodb_app_TournamentRealmProxyInterface) object).realmGet$tournamentOrganizer();
-            if (tournamentOrganizerObj != null) {
-                Long cachetournamentOrganizer = cache.get(tournamentOrganizerObj);
-                if (cachetournamentOrganizer == null) {
-                    cachetournamentOrganizer = com_mongodb_app_UserRealmProxy.insertOrUpdate(realm, tournamentOrganizerObj, cache);
-                }
-                Table.nativeSetLink(tableNativePtr, columnInfo.tournamentOrganizerColKey, objKey, cachetournamentOrganizer, false);
-            } else {
-                Table.nativeNullifyLink(tableNativePtr, columnInfo.tournamentOrganizerColKey, objKey);
             }
         }
     }
@@ -988,9 +877,6 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         unmanagedCopy.realmSet$tournamentType(realmSource.realmGet$tournamentType());
         unmanagedCopy.realmSet$date(realmSource.realmGet$date());
 
-        // Deep copy of tournamentOrganizer
-        unmanagedCopy.realmSet$tournamentOrganizer(com_mongodb_app_UserRealmProxy.createDetachedCopy(realmSource.realmGet$tournamentOrganizer(), currentDepth + 1, maxDepth, cache));
-
         return unmanagedObject;
     }
 
@@ -1003,22 +889,10 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         builder.addString(columnInfo._partitionColKey, realmObjectSource.realmGet$_partition());
         builder.addString(columnInfo.nameColKey, realmObjectSource.realmGet$name());
         builder.addString(columnInfo.gameColKey, realmObjectSource.realmGet$game());
-        builder.addInteger(columnInfo.participantColKey, realmObjectSource.realmGet$participant());
+        builder.addString(columnInfo.participantColKey, realmObjectSource.realmGet$participant());
         builder.addString(columnInfo.locationColKey, realmObjectSource.realmGet$location());
         builder.addString(columnInfo.tournamentTypeColKey, realmObjectSource.realmGet$tournamentType());
-        builder.addDate(columnInfo.dateColKey, realmObjectSource.realmGet$date());
-
-        com.mongodb.app.User tournamentOrganizerObj = realmObjectSource.realmGet$tournamentOrganizer();
-        if (tournamentOrganizerObj == null) {
-            builder.addNull(columnInfo.tournamentOrganizerColKey);
-        } else {
-            com.mongodb.app.User cachetournamentOrganizer = (com.mongodb.app.User) cache.get(tournamentOrganizerObj);
-            if (cachetournamentOrganizer != null) {
-                builder.addObject(columnInfo.tournamentOrganizerColKey, cachetournamentOrganizer);
-            } else {
-                builder.addObject(columnInfo.tournamentOrganizerColKey, com_mongodb_app_UserRealmProxy.copyOrUpdate(realm, (com_mongodb_app_UserRealmProxy.UserColumnInfo) realm.getSchema().getColumnInfo(com.mongodb.app.User.class), tournamentOrganizerObj, true, cache, flags));
-            }
-        }
+        builder.addString(columnInfo.dateColKey, realmObjectSource.realmGet$date());
 
         builder.updateExistingTopLevelObject();
         return realmObject;
@@ -1060,11 +934,7 @@ public class com_mongodb_app_TournamentRealmProxy extends com.mongodb.app.Tourna
         stringBuilder.append("}");
         stringBuilder.append(",");
         stringBuilder.append("{date:");
-        stringBuilder.append(realmGet$date() != null ? realmGet$date() : "null");
-        stringBuilder.append("}");
-        stringBuilder.append(",");
-        stringBuilder.append("{tournamentOrganizer:");
-        stringBuilder.append(realmGet$tournamentOrganizer() != null ? "User" : "null");
+        stringBuilder.append(realmGet$date());
         stringBuilder.append("}");
         stringBuilder.append("]");
         return stringBuilder.toString();

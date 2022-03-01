@@ -64,9 +64,3 @@ com/mongodb/app/databinding/ActivityReportBinding.java
  com.mongodb.app.databinding.ActivityReportBinding
 io/realm/DefaultRealmModuleMediator.java
  io.realm.DefaultRealmModuleMediator
-io/realm/com_mongodb_app_LewisTestRealmProxy.java
- io.realm.com_mongodb_app_LewisTestRealmProxy
- io.realm.com_mongodb_app_LewisTestRealmProxy$ClassNameHelper
- io.realm.com_mongodb_app_LewisTestRealmProxy$LewisTestColumnInfo
-io/realm/com_mongodb_app_LewisTestRealmProxyInterface.java
- io.realm.com_mongodb_app_LewisTestRealmProxyInterface
