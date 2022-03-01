@@ -6,12 +6,18 @@ io/realm/com_mongodb_app_TournamentRealmProxy.java
  io.realm.com_mongodb_app_TournamentRealmProxy$TournamentColumnInfo
 io/realm/com_mongodb_app_UserRealmProxyInterface.java
  io.realm.com_mongodb_app_UserRealmProxyInterface
+io/realm/com_mongodb_app_GamesRealmProxy.java
+ io.realm.com_mongodb_app_GamesRealmProxy
+ io.realm.com_mongodb_app_GamesRealmProxy$ClassNameHelper
+ io.realm.com_mongodb_app_GamesRealmProxy$GamesColumnInfo
 com/mongodb/app/databinding/ActivityBracketBinding.java
  com.mongodb.app.databinding.ActivityBracketBinding
 com/mongodb/app/databinding/ActivityAfterNotificationBinding.java
  com.mongodb.app.databinding.ActivityAfterNotificationBinding
-io/realm/DefaultRealmModuleMediator.java
- io.realm.DefaultRealmModuleMediator
+io/realm/com_mongodb_app_TaskRealmProxy.java
+ io.realm.com_mongodb_app_TaskRealmProxy
+ io.realm.com_mongodb_app_TaskRealmProxy$ClassNameHelper
+ io.realm.com_mongodb_app_TaskRealmProxy$TaskColumnInfo
 com/mongodb/app/databinding/ActivityRegisterBinding.java
  com.mongodb.app.databinding.ActivityRegisterBinding
 com/mongodb/app/databinding/ActivityCreateTournamentBinding.java
@@ -30,6 +36,8 @@ com/mongodb/app/databinding/TaskViewBinding.java
  com.mongodb.app.databinding.TaskViewBinding
 com/mongodb/app/databinding/ProfileViewBinding.java
  com.mongodb.app.databinding.ProfileViewBinding
+io/realm/com_mongodb_app_GamesRealmProxyInterface.java
+ io.realm.com_mongodb_app_GamesRealmProxyInterface
 com/mongodb/app/databinding/LoginViewBinding.java
  com.mongodb.app.databinding.LoginViewBinding
 com/mongodb/app/databinding/ActivitySearchTournamentBinding.java
@@ -54,7 +62,11 @@ com/mongodb/app/databinding/HomeViewBinding.java
  com.mongodb.app.databinding.HomeViewBinding
 com/mongodb/app/databinding/ActivityReportBinding.java
  com.mongodb.app.databinding.ActivityReportBinding
-io/realm/com_mongodb_app_TaskRealmProxy.java
- io.realm.com_mongodb_app_TaskRealmProxy
- io.realm.com_mongodb_app_TaskRealmProxy$ClassNameHelper
- io.realm.com_mongodb_app_TaskRealmProxy$TaskColumnInfo
+io/realm/DefaultRealmModuleMediator.java
+ io.realm.DefaultRealmModuleMediator
+io/realm/com_mongodb_app_LewisTestRealmProxy.java
+ io.realm.com_mongodb_app_LewisTestRealmProxy
+ io.realm.com_mongodb_app_LewisTestRealmProxy$ClassNameHelper
+ io.realm.com_mongodb_app_LewisTestRealmProxy$LewisTestColumnInfo
+io/realm/com_mongodb_app_LewisTestRealmProxyInterface.java
+ io.realm.com_mongodb_app_LewisTestRealmProxyInterface

@@ -91,7 +91,7 @@ class PlayerActivity : AppCompatActivity() {
     private fun setUpRecyclerView() {
         // TODO: Call the `getMyTeamMembers` function to get a list of team members, then display them in a RecyclerView
         val functionsManager: Functions = realmApp.getFunctions(user)
-// get team members by calling a Realm Function which returns a list of members
+    // get team members by calling a Realm Function which returns a list of members
         functionsManager.callFunctionAsync("getMyTeamMembers", ArrayList<String>(), ArrayList::class.java) { result ->
             if (result.isSuccess) {
                 Log.v(TAG(), "successfully fetched team members. Number of team members: ${result.get().size}")
