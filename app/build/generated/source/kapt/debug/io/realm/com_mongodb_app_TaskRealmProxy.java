@@ -39,13 +39,15 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
 
     static final class TaskColumnInfo extends ColumnInfo {
         long idColKey;
+        long _partitionColKey;
         long isCompleteColKey;
         long summaryColKey;
 
         TaskColumnInfo(OsSchemaInfo schemaInfo) {
-            super(3);
+            super(4);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("Task");
             this.idColKey = addColumnDetails("id", "_id", objectSchemaInfo);
+            this._partitionColKey = addColumnDetails("_partition", "_partition", objectSchemaInfo);
             this.isCompleteColKey = addColumnDetails("isComplete", "isComplete", objectSchemaInfo);
             this.summaryColKey = addColumnDetails("summary", "summary", objectSchemaInfo);
         }
@@ -65,6 +67,7 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
             final TaskColumnInfo src = (TaskColumnInfo) rawSrc;
             final TaskColumnInfo dst = (TaskColumnInfo) rawDst;
             dst.idColKey = src.idColKey;
+            dst._partitionColKey = src._partitionColKey;
             dst.isCompleteColKey = src.isCompleteColKey;
             dst.summaryColKey = src.summaryColKey;
         }
@@ -109,6 +112,34 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
 
         proxyState.getRealm$realm().checkIfValid();
         throw new io.realm.exceptions.RealmException("Primary key field 'id' cannot be changed after object was created.");
+    }
+
+    @Override
+    @SuppressWarnings("cast")
+    public String realmGet$_partition() {
+        proxyState.getRealm$realm().checkIfValid();
+        return (java.lang.String) proxyState.getRow$realm().getString(columnInfo._partitionColKey);
+    }
+
+    @Override
+    public void realmSet$_partition(String value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            final Row row = proxyState.getRow$realm();
+            if (value == null) {
+                throw new IllegalArgumentException("Trying to set non-nullable field '_partition' to null.");
+            }
+            row.getTable().setString(columnInfo._partitionColKey, row.getObjectKey(), value, true);
+            return;
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        if (value == null) {
+            throw new IllegalArgumentException("Trying to set non-nullable field '_partition' to null.");
+        }
+        proxyState.getRow$realm().setString(columnInfo._partitionColKey, value);
     }
 
     @Override
@@ -162,8 +193,9 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
     }
 
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
-        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("Task", false, 3, 0);
+        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("Task", false, 4, 0);
         builder.addPersistedProperty("_id", RealmFieldType.OBJECT_ID, Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
+        builder.addPersistedProperty("_partition", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("isComplete", RealmFieldType.BOOLEAN, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("summary", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         return builder.build();
@@ -221,6 +253,13 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
         }
 
         final com_mongodb_app_TaskRealmProxyInterface objProxy = (com_mongodb_app_TaskRealmProxyInterface) obj;
+        if (json.has("_partition")) {
+            if (json.isNull("_partition")) {
+                objProxy.realmSet$_partition(null);
+            } else {
+                objProxy.realmSet$_partition((String) json.getString("_partition"));
+            }
+        }
         if (json.has("isComplete")) {
             if (json.isNull("isComplete")) {
                 throw new IllegalArgumentException("Trying to set non-nullable field 'isComplete' to null.");
@@ -255,6 +294,13 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
                     objProxy.realmSet$id(null);
                 } else {
                     objProxy.realmSet$id(new org.bson.types.ObjectId(reader.nextString()));
+                }
+            } else if (name.equals("_partition")) {
+                if (reader.peek() != JsonToken.NULL) {
+                    objProxy.realmSet$_partition((String) reader.nextString());
+                } else {
+                    reader.skipValue();
+                    objProxy.realmSet$_partition(null);
                 }
             } else if (name.equals("isComplete")) {
                 if (reader.peek() != JsonToken.NULL) {
@@ -341,6 +387,7 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
 
         // Add all non-"object reference" fields
         builder.addObjectId(columnInfo.idColKey, unmanagedSource.realmGet$id());
+        builder.addString(columnInfo._partitionColKey, unmanagedSource.realmGet$_partition());
         builder.addBoolean(columnInfo.isCompleteColKey, unmanagedSource.realmGet$isComplete());
         builder.addString(columnInfo.summaryColKey, unmanagedSource.realmGet$summary());
 
@@ -372,6 +419,10 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
             Table.throwDuplicatePrimaryKeyException(primaryKeyValue);
         }
         cache.put(object, objKey);
+        String realmGet$_partition = ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$_partition();
+        if (realmGet$_partition != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo._partitionColKey, objKey, realmGet$_partition, false);
+        }
         Table.nativeSetBoolean(tableNativePtr, columnInfo.isCompleteColKey, objKey, ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$isComplete(), false);
         String realmGet$summary = ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$summary();
         if (realmGet$summary != null) {
@@ -406,6 +457,10 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
                 Table.throwDuplicatePrimaryKeyException(primaryKeyValue);
             }
             cache.put(object, objKey);
+            String realmGet$_partition = ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$_partition();
+            if (realmGet$_partition != null) {
+                Table.nativeSetString(tableNativePtr, columnInfo._partitionColKey, objKey, realmGet$_partition, false);
+            }
             Table.nativeSetBoolean(tableNativePtr, columnInfo.isCompleteColKey, objKey, ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$isComplete(), false);
             String realmGet$summary = ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$summary();
             if (realmGet$summary != null) {
@@ -431,6 +486,12 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
             objKey = OsObject.createRowWithPrimaryKey(table, pkColumnKey, primaryKeyValue);
         }
         cache.put(object, objKey);
+        String realmGet$_partition = ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$_partition();
+        if (realmGet$_partition != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo._partitionColKey, objKey, realmGet$_partition, false);
+        } else {
+            Table.nativeSetNull(tableNativePtr, columnInfo._partitionColKey, objKey, false);
+        }
         Table.nativeSetBoolean(tableNativePtr, columnInfo.isCompleteColKey, objKey, ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$isComplete(), false);
         String realmGet$summary = ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$summary();
         if (realmGet$summary != null) {
@@ -465,6 +526,12 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
                 objKey = OsObject.createRowWithPrimaryKey(table, pkColumnKey, primaryKeyValue);
             }
             cache.put(object, objKey);
+            String realmGet$_partition = ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$_partition();
+            if (realmGet$_partition != null) {
+                Table.nativeSetString(tableNativePtr, columnInfo._partitionColKey, objKey, realmGet$_partition, false);
+            } else {
+                Table.nativeSetNull(tableNativePtr, columnInfo._partitionColKey, objKey, false);
+            }
             Table.nativeSetBoolean(tableNativePtr, columnInfo.isCompleteColKey, objKey, ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$isComplete(), false);
             String realmGet$summary = ((com_mongodb_app_TaskRealmProxyInterface) object).realmGet$summary();
             if (realmGet$summary != null) {
@@ -495,6 +562,7 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
         com_mongodb_app_TaskRealmProxyInterface unmanagedCopy = (com_mongodb_app_TaskRealmProxyInterface) unmanagedObject;
         com_mongodb_app_TaskRealmProxyInterface realmSource = (com_mongodb_app_TaskRealmProxyInterface) realmObject;
         unmanagedCopy.realmSet$id(realmSource.realmGet$id());
+        unmanagedCopy.realmSet$_partition(realmSource.realmGet$_partition());
         unmanagedCopy.realmSet$isComplete(realmSource.realmGet$isComplete());
         unmanagedCopy.realmSet$summary(realmSource.realmGet$summary());
 
@@ -507,6 +575,7 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
         Table table = realm.getTable(com.mongodb.app.Task.class);
         OsObjectBuilder builder = new OsObjectBuilder(table, flags);
         builder.addObjectId(columnInfo.idColKey, realmObjectSource.realmGet$id());
+        builder.addString(columnInfo._partitionColKey, realmObjectSource.realmGet$_partition());
         builder.addBoolean(columnInfo.isCompleteColKey, realmObjectSource.realmGet$isComplete());
         builder.addString(columnInfo.summaryColKey, realmObjectSource.realmGet$summary());
 
@@ -523,6 +592,10 @@ public class com_mongodb_app_TaskRealmProxy extends com.mongodb.app.Task
         StringBuilder stringBuilder = new StringBuilder("Task = proxy[");
         stringBuilder.append("{id:");
         stringBuilder.append(realmGet$id());
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{_partition:");
+        stringBuilder.append(realmGet$_partition());
         stringBuilder.append("}");
         stringBuilder.append(",");
         stringBuilder.append("{isComplete:");

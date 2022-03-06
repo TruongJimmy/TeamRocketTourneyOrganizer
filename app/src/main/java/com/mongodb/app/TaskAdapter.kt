@@ -32,7 +32,7 @@ internal class TaskAdapter(data: OrderedRealmCollection<Task>, private val confi
 
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         val task: Task = getItem(position) ?: return
-        holder.id = task.id
+        holder.id = task.id  // changed id to _id
         holder.name.text = task.summary
         holder.checkbox.isChecked = task.isComplete
         holder.checkbox.setOnClickListener { onCheckboxClicked(holder) }

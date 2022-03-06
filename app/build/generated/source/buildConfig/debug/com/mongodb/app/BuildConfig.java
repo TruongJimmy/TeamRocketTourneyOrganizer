@@ -10,5 +10,5 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Field from build type: debug
-  public static final String MONGODB_REALM_APP_ID = "application-0-bvpbd";
+  public static final String MONGODB_REALM_APP_ID = "lewisbetesting-bybew";
 }

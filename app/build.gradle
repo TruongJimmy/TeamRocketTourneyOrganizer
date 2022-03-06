@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.mongodb.app"
-        minSdkVersion 26 //changed from 16 to 24 for tournamentlib to work
+        minSdkVersion 26 //changed from 16 to 26 for tournamentlib to work
         targetSdkVersion 32
         versionCode 1
         versionName "1.0"
@@ -21,7 +21,7 @@ android {
     }
 
     buildTypes {
-        def appId = "application-0-bvpbd"  // Replace with proper Application ID
+        def appId = "lewisbetesting-bybew"  // Replace with proper Application ID
         debug {
             buildConfigField "String", "MONGODB_REALM_APP_ID", "\"${appId}\""
         }

@@ -7,6 +7,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import io.realm.Realm
+import io.realm.RealmConfiguration
+import io.realm.kotlin.createObject
+import io.realm.kotlin.where
+import io.realm.mongodb.sync.SyncConfiguration
 import java.time.LocalDateTime
 import java.util.*
 
@@ -19,6 +23,8 @@ class CreateTournamentActivity : AppCompatActivity() {
     private lateinit var tournamentTypeInput: EditText
     private lateinit var createTourneyButton: Button
     private lateinit var userRealm: Realm
+    private lateinit var config: RealmConfiguration
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,22 +43,46 @@ class CreateTournamentActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolBar_createTournamentActivity))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        createTourneyButton.setOnClickListener { (createTournament()) }
-
-
+        //createTourneyButton.setOnClickListener { (createTournament()) }
     }
 
-    private fun createTournament() {
-        val tournament = Tournament()
-        tournament.game = "HI"
-        tournament.name = "Fred"
-        tournament.participant = "32"
-        tournament.location = "fdsa"
-        tournament.date = "DF"
-        tournament.tournamentType = "DFSF"
+//    override fun onStart() {
+//        super.onStart()
+//
+//        val user = realmApp.currentUser()
+//        if (user == null) {
+//            startActivity(Intent(this, LoginActivity::class.java))
+//        }
+//        else {
+//            val partition = user.id
+//            SyncConfiguration.Builder(user, partition).build()
+//            Realm.getInstanceAsync(config, object : Realm.Callback() {
+//                override fun onSuccess(realm: Realm) {
+//                    this@CreateTournamentActivity.userRealm = realm
+//                    //recyclerView.adapter = TaskAdapter(realm.where<Task>().sort("id").findAllAsync(), config)
+//                }
+//            })
+//        }
+//    }
 
-        userRealm.executeTransactionAsync { realm ->
-            realm.insert(tournament)
-        }
+//    private fun createTournament() {
+//        val tournament = Tournament()
+//
+//        tournament.game = typeOfGameInput.text.toString()
+//        tournament.location = locationInput.text.toString()
+//        tournament.name = tournamentNameInput.text.toString()
+//        tournament.participant = participantInput.text.toString()
+//        tournament.startTime = startTimeInput.text.toString()
+//        tournament.tournamentType = tournamentTypeInput.text.toString()
+//
+//        userRealm.executeTransactionAsync { realm ->
+//            realm.insert(tournament)
+//        }
+//    }
+
+
+    override fun onDestroy() {
+        super.onDestroy()
+        userRealm.close()
     }
 }

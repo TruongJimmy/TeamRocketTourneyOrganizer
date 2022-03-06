@@ -25,7 +25,7 @@ class App: Application() {
         super.onCreate()
         Realm.init(this)
         realmApp = App(
-            AppConfiguration.Builder(getString(R.string.realm_app_id))
+            AppConfiguration.Builder("lewisbetesting-bybew")
                 .baseUrl(getString(R.string.realm_base_url))
                 .build())
 
