@@ -23,7 +23,7 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Lewis\
 MERGED from [androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\d0de287dfe5243177be58393c3a027e9\jetified-lifecycle-livedata-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.emil-ep:TournamentBracketLib:1.0.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\26730e8d6bdca262bdc6029ca422ee31\jetified-TournamentBracketLib-1.0.4\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a216a9c2148e3959d97a4d3e4251a991\material-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\cd204134f667170f5ec5eb0676b41170\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\c2d90fa7f5a2d6afab487611f6202381\constraintlayout-2.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\e9a3c176f8841c1f811ae835c2eb0340\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\253ef23aa2008d5fcf83f22f589a25f6\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -46,13 +46,13 @@ MERGED from [androidx.activity:activity:1.2.4] C:\Users\Lewis\.gradle\caches\tra
 MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9518a435ae485cd0887d9c1b5cb1bfd7\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\7adf475d32ece0163e349e641bba7169\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\f3b8a20f19fb47da957ad5099786e56d\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\3bf64fb94c49e5e691c34e069a5e834a\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\1d278ec5ccb0211fd7c7bc61868fe6d4\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\e6862de44216756211a80c446bbcafe2\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\cd352fa093fb57d4fb07e4745d7f70a3\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a5e0a043f2ab1d0d76ebc02a71c5a278\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9005a9f5b874c621517fbab5936a9b0b\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\698d8d1898c364749eed7b8cd3dba356\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\3bf64fb94c49e5e691c34e069a5e834a\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\f1c7db143ded79c7ffe252bc4d691be1\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a3559970ae343c0ffcb2eee19ff37706\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\c5f7c51988548c8675ca73e8aa7c361f\transition-1.4.1\AndroidManifest.xml:17:1-24:12
@@ -94,8 +94,8 @@ application
 ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:5:5-73:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a216a9c2148e3959d97a4d3e4251a991\material-1.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a216a9c2148e3959d97a4d3e4251a991\material-1.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\cd204134f667170f5ec5eb0676b41170\material-1.5.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\cd204134f667170f5ec5eb0676b41170\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\c2d90fa7f5a2d6afab487611f6202381\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\c2d90fa7f5a2d6afab487611f6202381\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-vision:20.1.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\674364f00f1f2f6b8bbadf41ff388289\jetified-play-services-vision-20.1.2\AndroidManifest.xml:7:5-20
@@ -225,12 +225,6 @@ ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidMan
 	android:name
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:57:13-43
 activity#com.mongodb.app.LoginActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:59:9-61:52
-	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:61:13-49
-	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:60:13-42
-activity#com.mongodb.app.TaskActivity
 ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:62:9-72:20
 	android:screenOrientation
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:66:13-49
@@ -239,7 +233,7 @@ ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidMan
 	android:exported
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:64:13-36
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:63:13-41
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:63:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:67:13-71:29
 action#android.intent.action.MAIN
@@ -292,8 +286,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.0] C:\Users\Lewis\.gr
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\d0de287dfe5243177be58393c3a027e9\jetified-lifecycle-livedata-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.emil-ep:TournamentBracketLib:1.0.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\26730e8d6bdca262bdc6029ca422ee31\jetified-TournamentBracketLib-1.0.4\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.emil-ep:TournamentBracketLib:1.0.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\26730e8d6bdca262bdc6029ca422ee31\jetified-TournamentBracketLib-1.0.4\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a216a9c2148e3959d97a4d3e4251a991\material-1.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a216a9c2148e3959d97a4d3e4251a991\material-1.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\cd204134f667170f5ec5eb0676b41170\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\cd204134f667170f5ec5eb0676b41170\material-1.5.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\c2d90fa7f5a2d6afab487611f6202381\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\c2d90fa7f5a2d6afab487611f6202381\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\e9a3c176f8841c1f811ae835c2eb0340\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
@@ -338,6 +332,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\L
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\7adf475d32ece0163e349e641bba7169\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\f3b8a20f19fb47da957ad5099786e56d\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\f3b8a20f19fb47da957ad5099786e56d\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\3bf64fb94c49e5e691c34e069a5e834a\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\3bf64fb94c49e5e691c34e069a5e834a\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\1d278ec5ccb0211fd7c7bc61868fe6d4\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\1d278ec5ccb0211fd7c7bc61868fe6d4\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\e6862de44216756211a80c446bbcafe2\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
@@ -350,8 +346,6 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lewis\.gr
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9005a9f5b874c621517fbab5936a9b0b\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\698d8d1898c364749eed7b8cd3dba356\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\698d8d1898c364749eed7b8cd3dba356\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\3bf64fb94c49e5e691c34e069a5e834a\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\3bf64fb94c49e5e691c34e069a5e834a\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\f1c7db143ded79c7ffe252bc4d691be1\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\f1c7db143ded79c7ffe252bc4d691be1\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a3559970ae343c0ffcb2eee19ff37706\customview-1.1.0\AndroidManifest.xml:20:5-22:41

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/bracketActivity">
+    <activity
+        android:id="@+id/bracketActivity"
+        android:name="com.mongodb.app.BracketActivity"
+        android:label="activity_bracket"
+        tools:layout="@layout/activity_bracket" />
+    <activity
+        android:id="@+id/searchTournamentActivity"
+        android:name="com.mongodb.app.SearchTournamentActivity"
+        android:label="activity_search_tournament"
+        tools:layout="@layout/activity_search_tournament" />
+    <activity
+        android:id="@+id/createTournamentActivity"
+        android:name="com.mongodb.app.CreateTournamentActivity"
+        android:label="activity_create_tournament"
+        tools:layout="@layout/activity_create_tournament" />
+</navigation>

@@ -4,12 +4,12 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,33 +20,17 @@ public final class HomeViewBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button CreateTournament;
+  public final BottomNavigationView bottomNavigationView;
 
   @NonNull
-  public final Button Profile;
+  public final FragmentContainerView fragmentContainerView;
 
-  @NonNull
-  public final Button SearchTournament;
-
-  @NonNull
-  public final Button Settings;
-
-  @NonNull
-  public final Button activeTournament;
-
-  @NonNull
-  public final ImageView logoHomepage;
-
-  private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
-      @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
-      @NonNull Button activeTournament, @NonNull ImageView logoHomepage) {
+  private HomeViewBinding(@NonNull ConstraintLayout rootView,
+      @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull FragmentContainerView fragmentContainerView) {
     this.rootView = rootView;
-    this.CreateTournament = CreateTournament;
-    this.Profile = Profile;
-    this.SearchTournament = SearchTournament;
-    this.Settings = Settings;
-    this.activeTournament = activeTournament;
-    this.logoHomepage = logoHomepage;
+    this.bottomNavigationView = bottomNavigationView;
+    this.fragmentContainerView = fragmentContainerView;
   }
 
   @Override
@@ -76,44 +60,20 @@ public final class HomeViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Create_Tournament;
-      Button CreateTournament = rootView.findViewById(id);
-      if (CreateTournament == null) {
+      id = R.id.bottomNavigationView;
+      BottomNavigationView bottomNavigationView = rootView.findViewById(id);
+      if (bottomNavigationView == null) {
         break missingId;
       }
 
-      id = R.id.Profile;
-      Button Profile = rootView.findViewById(id);
-      if (Profile == null) {
+      id = R.id.fragmentContainerView;
+      FragmentContainerView fragmentContainerView = rootView.findViewById(id);
+      if (fragmentContainerView == null) {
         break missingId;
       }
 
-      id = R.id.Search_Tournament;
-      Button SearchTournament = rootView.findViewById(id);
-      if (SearchTournament == null) {
-        break missingId;
-      }
-
-      id = R.id.Settings;
-      Button Settings = rootView.findViewById(id);
-      if (Settings == null) {
-        break missingId;
-      }
-
-      id = R.id.activeTournament;
-      Button activeTournament = rootView.findViewById(id);
-      if (activeTournament == null) {
-        break missingId;
-      }
-
-      id = R.id.logoHomepage;
-      ImageView logoHomepage = rootView.findViewById(id);
-      if (logoHomepage == null) {
-        break missingId;
-      }
-
-      return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings, activeTournament, logoHomepage);
+      return new HomeViewBinding((ConstraintLayout) rootView, bottomNavigationView,
+          fragmentContainerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

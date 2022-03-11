@@ -69,11 +69,11 @@
         <activity
             android:name="com.mongodb.app.QRCodeActivity"
             android:screenOrientation="nosensor" />
+        <!-- <activity -->
+        <!-- android:name=".LoginActivity" -->
+        <!-- android:screenOrientation="nosensor" /> -->
         <activity
             android:name="com.mongodb.app.LoginActivity"
-            android:screenOrientation="nosensor" />
-        <activity
-            android:name="com.mongodb.app.TaskActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="nosensor" >
