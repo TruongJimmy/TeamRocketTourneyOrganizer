@@ -1,15 +1,14 @@
 package com.mongodb.app
 
 import io.realm.RealmObject;
-import io.realm.annotations.PrimaryKey;
-import io.realm.annotations.RealmField;
+import io.realm.annotations.PrimaryKey
+import io.realm.annotations.RealmField
 import org.bson.types.ObjectId;
-import java.util.*;
 
 open class Tournament(
-    @PrimaryKey var _id: ObjectId = ObjectId(),
+    @RealmField("_id") @PrimaryKey var _id: ObjectId = ObjectId(),
 
-    var _partition: String = "",
+    //var _partition: String = "",
 
     var game: String = "",
 

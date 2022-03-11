@@ -11,3 +11,4 @@ open class User(
     var _partition: String = "",
     var name: String = "",
 ): RealmObject()
+

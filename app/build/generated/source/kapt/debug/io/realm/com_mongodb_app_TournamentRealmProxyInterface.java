@@ -4,8 +4,6 @@ package io.realm;
 public interface com_mongodb_app_TournamentRealmProxyInterface {
     public org.bson.types.ObjectId realmGet$_id();
     public void realmSet$_id(org.bson.types.ObjectId value);
-    public String realmGet$_partition();
-    public void realmSet$_partition(String value);
     public String realmGet$game();
     public void realmSet$game(String value);
     public String realmGet$location();

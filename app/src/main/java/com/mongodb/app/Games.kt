@@ -1,14 +1,13 @@
 package com.mongodb.app
 
-import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey
 import io.realm.annotations.RealmField
-import io.realm.annotations.Required
 
 open class Games(
-    @PrimaryKey @RealmField("_id")
-    var id: String = "",
-    var title: String = "",
+    @RealmField("_id") @PrimaryKey var id: String = "",
+
     var genre: String = "",
-): RealmObject()
+
+    var title: String = ""
+): RealmObject() {}

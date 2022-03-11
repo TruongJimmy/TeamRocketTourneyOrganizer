@@ -39,15 +39,15 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
 
     static final class GamesColumnInfo extends ColumnInfo {
         long idColKey;
-        long titleColKey;
         long genreColKey;
+        long titleColKey;
 
         GamesColumnInfo(OsSchemaInfo schemaInfo) {
             super(3);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("Games");
             this.idColKey = addColumnDetails("id", "_id", objectSchemaInfo);
-            this.titleColKey = addColumnDetails("title", "title", objectSchemaInfo);
             this.genreColKey = addColumnDetails("genre", "genre", objectSchemaInfo);
+            this.titleColKey = addColumnDetails("title", "title", objectSchemaInfo);
         }
 
         GamesColumnInfo(ColumnInfo src, boolean mutable) {
@@ -65,8 +65,8 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
             final GamesColumnInfo src = (GamesColumnInfo) rawSrc;
             final GamesColumnInfo dst = (GamesColumnInfo) rawDst;
             dst.idColKey = src.idColKey;
-            dst.titleColKey = src.titleColKey;
             dst.genreColKey = src.genreColKey;
+            dst.titleColKey = src.titleColKey;
         }
     }
 
@@ -113,34 +113,6 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
 
     @Override
     @SuppressWarnings("cast")
-    public String realmGet$title() {
-        proxyState.getRealm$realm().checkIfValid();
-        return (java.lang.String) proxyState.getRow$realm().getString(columnInfo.titleColKey);
-    }
-
-    @Override
-    public void realmSet$title(String value) {
-        if (proxyState.isUnderConstruction()) {
-            if (!proxyState.getAcceptDefaultValue$realm()) {
-                return;
-            }
-            final Row row = proxyState.getRow$realm();
-            if (value == null) {
-                throw new IllegalArgumentException("Trying to set non-nullable field 'title' to null.");
-            }
-            row.getTable().setString(columnInfo.titleColKey, row.getObjectKey(), value, true);
-            return;
-        }
-
-        proxyState.getRealm$realm().checkIfValid();
-        if (value == null) {
-            throw new IllegalArgumentException("Trying to set non-nullable field 'title' to null.");
-        }
-        proxyState.getRow$realm().setString(columnInfo.titleColKey, value);
-    }
-
-    @Override
-    @SuppressWarnings("cast")
     public String realmGet$genre() {
         proxyState.getRealm$realm().checkIfValid();
         return (java.lang.String) proxyState.getRow$realm().getString(columnInfo.genreColKey);
@@ -167,11 +139,39 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
         proxyState.getRow$realm().setString(columnInfo.genreColKey, value);
     }
 
+    @Override
+    @SuppressWarnings("cast")
+    public String realmGet$title() {
+        proxyState.getRealm$realm().checkIfValid();
+        return (java.lang.String) proxyState.getRow$realm().getString(columnInfo.titleColKey);
+    }
+
+    @Override
+    public void realmSet$title(String value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            final Row row = proxyState.getRow$realm();
+            if (value == null) {
+                throw new IllegalArgumentException("Trying to set non-nullable field 'title' to null.");
+            }
+            row.getTable().setString(columnInfo.titleColKey, row.getObjectKey(), value, true);
+            return;
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        if (value == null) {
+            throw new IllegalArgumentException("Trying to set non-nullable field 'title' to null.");
+        }
+        proxyState.getRow$realm().setString(columnInfo.titleColKey, value);
+    }
+
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
         OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("Games", false, 3, 0);
         builder.addPersistedProperty("_id", RealmFieldType.STRING, Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
-        builder.addPersistedProperty("title", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("genre", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
+        builder.addPersistedProperty("title", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         return builder.build();
     }
 
@@ -227,18 +227,18 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
         }
 
         final com_mongodb_app_GamesRealmProxyInterface objProxy = (com_mongodb_app_GamesRealmProxyInterface) obj;
-        if (json.has("title")) {
-            if (json.isNull("title")) {
-                objProxy.realmSet$title(null);
-            } else {
-                objProxy.realmSet$title((String) json.getString("title"));
-            }
-        }
         if (json.has("genre")) {
             if (json.isNull("genre")) {
                 objProxy.realmSet$genre(null);
             } else {
                 objProxy.realmSet$genre((String) json.getString("genre"));
+            }
+        }
+        if (json.has("title")) {
+            if (json.isNull("title")) {
+                objProxy.realmSet$title(null);
+            } else {
+                objProxy.realmSet$title((String) json.getString("title"));
             }
         }
         return obj;
@@ -263,19 +263,19 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
                     objProxy.realmSet$id(null);
                 }
                 jsonHasPrimaryKey = true;
-            } else if (name.equals("title")) {
-                if (reader.peek() != JsonToken.NULL) {
-                    objProxy.realmSet$title((String) reader.nextString());
-                } else {
-                    reader.skipValue();
-                    objProxy.realmSet$title(null);
-                }
             } else if (name.equals("genre")) {
                 if (reader.peek() != JsonToken.NULL) {
                     objProxy.realmSet$genre((String) reader.nextString());
                 } else {
                     reader.skipValue();
                     objProxy.realmSet$genre(null);
+                }
+            } else if (name.equals("title")) {
+                if (reader.peek() != JsonToken.NULL) {
+                    objProxy.realmSet$title((String) reader.nextString());
+                } else {
+                    reader.skipValue();
+                    objProxy.realmSet$title(null);
                 }
             } else {
                 reader.skipValue();
@@ -348,8 +348,8 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
 
         // Add all non-"object reference" fields
         builder.addString(columnInfo.idColKey, unmanagedSource.realmGet$id());
-        builder.addString(columnInfo.titleColKey, unmanagedSource.realmGet$title());
         builder.addString(columnInfo.genreColKey, unmanagedSource.realmGet$genre());
+        builder.addString(columnInfo.titleColKey, unmanagedSource.realmGet$title());
 
         // Create the underlying object and cache it before setting any object/objectlist references
         // This will allow us to break any circular dependencies by using the object cache.
@@ -379,13 +379,13 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
             Table.throwDuplicatePrimaryKeyException(primaryKeyValue);
         }
         cache.put(object, objKey);
-        String realmGet$title = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$title();
-        if (realmGet$title != null) {
-            Table.nativeSetString(tableNativePtr, columnInfo.titleColKey, objKey, realmGet$title, false);
-        }
         String realmGet$genre = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$genre();
         if (realmGet$genre != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.genreColKey, objKey, realmGet$genre, false);
+        }
+        String realmGet$title = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$title();
+        if (realmGet$title != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.titleColKey, objKey, realmGet$title, false);
         }
         return objKey;
     }
@@ -416,13 +416,13 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
                 Table.throwDuplicatePrimaryKeyException(primaryKeyValue);
             }
             cache.put(object, objKey);
-            String realmGet$title = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$title();
-            if (realmGet$title != null) {
-                Table.nativeSetString(tableNativePtr, columnInfo.titleColKey, objKey, realmGet$title, false);
-            }
             String realmGet$genre = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$genre();
             if (realmGet$genre != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.genreColKey, objKey, realmGet$genre, false);
+            }
+            String realmGet$title = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$title();
+            if (realmGet$title != null) {
+                Table.nativeSetString(tableNativePtr, columnInfo.titleColKey, objKey, realmGet$title, false);
             }
         }
     }
@@ -444,17 +444,17 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
             objKey = OsObject.createRowWithPrimaryKey(table, pkColumnKey, primaryKeyValue);
         }
         cache.put(object, objKey);
-        String realmGet$title = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$title();
-        if (realmGet$title != null) {
-            Table.nativeSetString(tableNativePtr, columnInfo.titleColKey, objKey, realmGet$title, false);
-        } else {
-            Table.nativeSetNull(tableNativePtr, columnInfo.titleColKey, objKey, false);
-        }
         String realmGet$genre = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$genre();
         if (realmGet$genre != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.genreColKey, objKey, realmGet$genre, false);
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.genreColKey, objKey, false);
+        }
+        String realmGet$title = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$title();
+        if (realmGet$title != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.titleColKey, objKey, realmGet$title, false);
+        } else {
+            Table.nativeSetNull(tableNativePtr, columnInfo.titleColKey, objKey, false);
         }
         return objKey;
     }
@@ -483,17 +483,17 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
                 objKey = OsObject.createRowWithPrimaryKey(table, pkColumnKey, primaryKeyValue);
             }
             cache.put(object, objKey);
-            String realmGet$title = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$title();
-            if (realmGet$title != null) {
-                Table.nativeSetString(tableNativePtr, columnInfo.titleColKey, objKey, realmGet$title, false);
-            } else {
-                Table.nativeSetNull(tableNativePtr, columnInfo.titleColKey, objKey, false);
-            }
             String realmGet$genre = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$genre();
             if (realmGet$genre != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.genreColKey, objKey, realmGet$genre, false);
             } else {
                 Table.nativeSetNull(tableNativePtr, columnInfo.genreColKey, objKey, false);
+            }
+            String realmGet$title = ((com_mongodb_app_GamesRealmProxyInterface) object).realmGet$title();
+            if (realmGet$title != null) {
+                Table.nativeSetString(tableNativePtr, columnInfo.titleColKey, objKey, realmGet$title, false);
+            } else {
+                Table.nativeSetNull(tableNativePtr, columnInfo.titleColKey, objKey, false);
             }
         }
     }
@@ -518,8 +518,8 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
         com_mongodb_app_GamesRealmProxyInterface unmanagedCopy = (com_mongodb_app_GamesRealmProxyInterface) unmanagedObject;
         com_mongodb_app_GamesRealmProxyInterface realmSource = (com_mongodb_app_GamesRealmProxyInterface) realmObject;
         unmanagedCopy.realmSet$id(realmSource.realmGet$id());
-        unmanagedCopy.realmSet$title(realmSource.realmGet$title());
         unmanagedCopy.realmSet$genre(realmSource.realmGet$genre());
+        unmanagedCopy.realmSet$title(realmSource.realmGet$title());
 
         return unmanagedObject;
     }
@@ -530,8 +530,8 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
         Table table = realm.getTable(com.mongodb.app.Games.class);
         OsObjectBuilder builder = new OsObjectBuilder(table, flags);
         builder.addString(columnInfo.idColKey, realmObjectSource.realmGet$id());
-        builder.addString(columnInfo.titleColKey, realmObjectSource.realmGet$title());
         builder.addString(columnInfo.genreColKey, realmObjectSource.realmGet$genre());
+        builder.addString(columnInfo.titleColKey, realmObjectSource.realmGet$title());
 
         builder.updateExistingTopLevelObject();
         return realmObject;
@@ -548,12 +548,12 @@ public class com_mongodb_app_GamesRealmProxy extends com.mongodb.app.Games
         stringBuilder.append(realmGet$id());
         stringBuilder.append("}");
         stringBuilder.append(",");
-        stringBuilder.append("{title:");
-        stringBuilder.append(realmGet$title());
-        stringBuilder.append("}");
-        stringBuilder.append(",");
         stringBuilder.append("{genre:");
         stringBuilder.append(realmGet$genre());
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{title:");
+        stringBuilder.append(realmGet$title());
         stringBuilder.append("}");
         stringBuilder.append("]");
         return stringBuilder.toString();

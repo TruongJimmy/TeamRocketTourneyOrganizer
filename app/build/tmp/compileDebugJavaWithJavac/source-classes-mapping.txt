@@ -14,10 +14,8 @@ com/mongodb/app/databinding/ActivityBracketBinding.java
  com.mongodb.app.databinding.ActivityBracketBinding
 com/mongodb/app/databinding/ActivityAfterNotificationBinding.java
  com.mongodb.app.databinding.ActivityAfterNotificationBinding
-io/realm/com_mongodb_app_TaskRealmProxy.java
- io.realm.com_mongodb_app_TaskRealmProxy
- io.realm.com_mongodb_app_TaskRealmProxy$ClassNameHelper
- io.realm.com_mongodb_app_TaskRealmProxy$TaskColumnInfo
+io/realm/DefaultRealmModuleMediator.java
+ io.realm.DefaultRealmModuleMediator
 com/mongodb/app/databinding/ActivityRegisterBinding.java
  com.mongodb.app.databinding.ActivityRegisterBinding
 com/mongodb/app/databinding/ActivityCreateTournamentBinding.java
@@ -62,5 +60,7 @@ com/mongodb/app/databinding/HomeViewBinding.java
  com.mongodb.app.databinding.HomeViewBinding
 com/mongodb/app/databinding/ActivityReportBinding.java
  com.mongodb.app.databinding.ActivityReportBinding
-io/realm/DefaultRealmModuleMediator.java
- io.realm.DefaultRealmModuleMediator
+io/realm/com_mongodb_app_TaskRealmProxy.java
+ io.realm.com_mongodb_app_TaskRealmProxy
+ io.realm.com_mongodb_app_TaskRealmProxy$ClassNameHelper
+ io.realm.com_mongodb_app_TaskRealmProxy$TaskColumnInfo
