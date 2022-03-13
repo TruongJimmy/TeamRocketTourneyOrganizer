@@ -22,11 +22,11 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_view)
 
-//        val bottomNavigationBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-//        val navController = findNavController(R.id.fragmentContainerView)
-//        val appBarConfiguration = AppBarConfiguration(setOf(R.id.bracketActivity, R.id.searchTournamentActivity, R.id.createTournamentActivity))
+        val bottomNavigationBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        val navController = findNavController(R.id.fragmentContainerView)
+//        val appBarConfiguration = AppBarConfiguration(setOf(R.id.activeTournamentsFragment, R.id.searchFragment, R.id.createTourneyFragment, R.id.profileFragment, R.id.settingsFragment))
 //        setupActionBarWithNavController(navController, appBarConfiguration)
-//        bottomNavigationBar.setupWithNavController(navController)
+         bottomNavigationBar.setupWithNavController(navController)
 
 //        searchTournamentButton = findViewById(R.id.Search_Tournament)
 //        searchTournamentButton.setOnClickListener {onSearchTournamentButtonClicked()}

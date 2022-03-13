@@ -40,8 +40,8 @@ class CreateTournamentActivity : AppCompatActivity() {
 
 
         //Below 2 lines - Back button for this page supported by the toolbar in xml file
-        setSupportActionBar(findViewById(R.id.toolBar_createTournamentActivity))
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+//        setSupportActionBar(findViewById(R.id.toolBar_createTournamentActivity))
+//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         //Creates tournament in database
         createTourneyButton.setOnClickListener { (createTournament()) }

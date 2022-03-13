@@ -3,20 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/bracketActivity">
-    <activity
-        android:id="@+id/bracketActivity"
-        android:name="com.mongodb.app.BracketActivity"
-        android:label="activity_bracket"
-        tools:layout="@layout/activity_bracket" />
-    <activity
-        android:id="@+id/searchTournamentActivity"
-        android:name="com.mongodb.app.SearchTournamentActivity"
-        android:label="activity_search_tournament"
-        tools:layout="@layout/activity_search_tournament" />
-    <activity
-        android:id="@+id/createTournamentActivity"
-        android:name="com.mongodb.app.CreateTournamentActivity"
-        android:label="activity_create_tournament"
-        tools:layout="@layout/activity_create_tournament" />
+    app:startDestination="@id/activeTournamentsFragment">
+
+    <fragment
+        android:id="@+id/activeTournamentsFragment"
+        android:name="com.mongodb.app.ActiveTournamentsFragment"
+        android:label="fragment_active_tournaments"
+        tools:layout="@layout/fragment_active_tournaments" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.mongodb.app.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/createTourneyFragment"
+        android:name="com.mongodb.app.CreateTourneyFragment"
+        android:label="fragment_create_tourney"
+        tools:layout="@layout/fragment_create_tourney" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mongodb.app.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.mongodb.app.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

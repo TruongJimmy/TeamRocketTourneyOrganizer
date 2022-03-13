@@ -18,8 +18,8 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(R.layout.profile_view)
 
         //Below 2 lines - Back button for this page supported by the toolbar in xml file
-        setSupportActionBar(findViewById(R.id.toolBar_ProfileActivity))
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+//        setSupportActionBar(findViewById(R.id.toolBar_ProfileActivity))
+//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
         profileView = findViewById((R.id.user_avatar_profile))

@@ -34,6 +34,15 @@
         <entry key="app/src/main/res/layout/activity_report.xml" value="0.259963768115942" />
         <entry key="app/src/main/res/layout/activity_search_tournament.xml" value="0.31927083333333334" />
         <entry key="app/src/main/res/layout/change_password_view.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/fragment_active_tournaments.xml" value="0.2740036231884058" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.15526849037487336" />
+        <entry key="app/src/main/res/layout/fragment_bracket.xml" value="0.2740036231884058" />
+        <entry key="app/src/main/res/layout/fragment_create.xml" value="0.2740036231884058" />
+        <entry key="app/src/main/res/layout/fragment_create_tourney.xml" value="0.2740036231884058" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.2740036231884058" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.2740036231884058" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.2740036231884058" />
+        <entry key="app/src/main/res/layout/fragment_testing.xml" value="0.30344202898550726" />
         <entry key="app/src/main/res/layout/home_view.xml" value="0.25" />
         <entry key="app/src/main/res/layout/login_view.xml" value="0.259963768115942" />
         <entry key="app/src/main/res/layout/player_view.xml" value="0.259963768115942" />
@@ -41,6 +50,7 @@
         <entry key="app/src/main/res/layout/qrcode_view.xml" value="0.259963768115942" />
         <entry key="app/src/main/res/layout/settings.xml" value="0.259963768115942" />
         <entry key="app/src/main/res/layout/task_view.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.31927083333333334" />
       </map>
     </option>
   </component>

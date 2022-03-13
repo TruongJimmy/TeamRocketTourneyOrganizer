@@ -28,8 +28,8 @@ class SettingsActivity: AppCompatActivity() {
         logoutButton.setOnClickListener {onLogoutClicked()}
 
         //Below 2 lines - Back button for this page supported by the toolbar in xml file
-        setSupportActionBar(findViewById(R.id.toolBar_Settings))
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+//        setSupportActionBar(findViewById(R.id.toolBar_Settings))
+//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
     private fun onEditProfileButtonClicked() {
         startActivity(Intent(this, EditProfileActivity::class.java))

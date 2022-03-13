@@ -6,183 +6,183 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
+8-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
+9-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-11-->[io.realm:realm-android-library-object-server:10.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\6b3aa52f542403f687a767b76ceb7987\jetified-realm-android-library-object-server-10.3.1\AndroidManifest.xml:10:5-79
-11-->[io.realm:realm-android-library-object-server:10.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\6b3aa52f542403f687a767b76ceb7987\jetified-realm-android-library-object-server-10.3.1\AndroidManifest.xml:10:22-76
+11-->[io.realm:realm-android-library-object-server:10.3.1] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/6b3aa52f542403f687a767b76ceb7987/jetified-realm-android-library-object-server-10.3.1/AndroidManifest.xml:10:5-79
+11-->[io.realm:realm-android-library-object-server:10.3.1] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/6b3aa52f542403f687a767b76ceb7987/jetified-realm-android-library-object-server-10.3.1/AndroidManifest.xml:10:22-76
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->[io.realm:realm-android-library-object-server:10.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\6b3aa52f542403f687a767b76ceb7987\jetified-realm-android-library-object-server-10.3.1\AndroidManifest.xml:11:5-67
-12-->[io.realm:realm-android-library-object-server:10.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\6b3aa52f542403f687a767b76ceb7987\jetified-realm-android-library-object-server-10.3.1\AndroidManifest.xml:11:22-64
+12-->[io.realm:realm-android-library-object-server:10.3.1] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/6b3aa52f542403f687a767b76ceb7987/jetified-realm-android-library-object-server-10.3.1/AndroidManifest.xml:11:5-67
+12-->[io.realm:realm-android-library-object-server:10.3.1] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/6b3aa52f542403f687a767b76ceb7987/jetified-realm-android-library-object-server-10.3.1/AndroidManifest.xml:11:22-64
 13
 14    <application
-14-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:5:5-73:19
+14-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:5:5-73:19
 15        android:name="com.mongodb.app.App"
-15-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:6:9-28
+15-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:6:9-28
 16        android:allowBackup="true"
-16-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:7:9-35
+16-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:7:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.6.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a3b1d0882299f2f82d4ff5bd089161ca\core-1.6.0\AndroidManifest.xml:24:18-86
+17-->[androidx.core:core:1.6.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/a3b1d0882299f2f82d4ff5bd089161ca/core-1.6.0/AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:extractNativeLibs="false"
 20        android:icon="@mipmap/ic_launcher"
-20-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:8:9-43
+20-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:8:9-43
 21        android:label="@string/app_name"
-21-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:9:9-41
+21-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:9:9-41
 22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:10:9-54
+22-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:10:9-54
 23        android:supportsRtl="true"
-23-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:11:9-35
+23-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:11:9-35
 24        android:testOnly="true"
 25        android:theme="@style/Theme.App" >
-25-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:12:9-41
+25-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:12:9-41
 26        <activity
-26-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:13:9-16:58
+26-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:13:9-16:58
 27            android:name="com.mongodb.app.BracketActivity"
-27-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:14:13-44
+27-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:14:13-44
 28            android:exported="false"
-28-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:15:13-37
+28-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:15:13-37
 29            android:parentActivityName="com.mongodb.app.HomeActivity" />
-29-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:16:13-55
+29-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:16:13-55
 30        <activity
-30-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:17:9-20:52
+30-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:17:9-20:52
 31            android:name="com.mongodb.app.PlayerActivity"
-31-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:18:13-43
+31-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:18:13-43
 32            android:parentActivityName="com.mongodb.app.ProfileActivity"
-32-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:19:13-58
+32-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:19:13-58
 33            android:screenOrientation="nosensor" />
-33-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:20:13-49
+33-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:20:13-49
 34        <activity
-34-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:21:9-23:52
+34-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:21:9-23:52
 35            android:name="com.mongodb.app.afterNotification"
-35-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:22:13-46
+35-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:22:13-46
 36            android:screenOrientation="nosensor" />
-36-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:23:13-49
+36-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:23:13-49
 37        <activity
-37-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:24:9-26:52
+37-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:24:9-26:52
 38            android:name="com.mongodb.app.ReportActivity"
-38-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:25:13-43
+38-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:25:13-43
 39            android:screenOrientation="nosensor" />
-39-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:26:13-49
+39-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:26:13-49
 40        <activity
-40-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:27:9-30:52
+40-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:27:9-30:52
 41            android:name="com.mongodb.app.SearchTournamentActivity"
-41-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:28:13-53
+41-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:28:13-53
 42            android:parentActivityName="com.mongodb.app.HomeActivity"
-42-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:29:13-55
+42-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:29:13-55
 43            android:screenOrientation="nosensor" />
-43-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:30:13-49
+43-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:30:13-49
 44        <activity
-44-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:31:9-34:52
+44-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:31:9-34:52
 45            android:name="com.mongodb.app.RegisterActivity"
-45-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:32:13-45
+45-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:32:13-45
 46            android:parentActivityName="com.mongodb.app.LoginActivity"
-46-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:33:13-56
+46-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:33:13-56
 47            android:screenOrientation="nosensor" />
-47-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:34:13-49
+47-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:34:13-49
 48        <activity
-48-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:35:9-38:52
+48-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:35:9-38:52
 49            android:name="com.mongodb.app.CreateTournamentActivity"
-49-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:36:13-53
+49-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:36:13-53
 50            android:parentActivityName="com.mongodb.app.HomeActivity"
-50-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:37:13-55
+50-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:37:13-55
 51            android:screenOrientation="nosensor" />
-51-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:38:13-49
+51-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:38:13-49
 52        <activity
-52-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:39:9-41:52
+52-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:39:9-41:52
 53            android:name="com.mongodb.app.HomeActivity"
-53-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:40:13-41
+53-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:40:13-41
 54            android:screenOrientation="nosensor" />
-54-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:41:13-49
+54-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:41:13-49
 55        <activity
-55-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:42:9-45:52
+55-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:42:9-45:52
 56            android:name="com.mongodb.app.ProfileActivity"
-56-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:43:13-44
+56-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:43:13-44
 57            android:parentActivityName="com.mongodb.app.HomeActivity"
-57-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:44:13-55
+57-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:44:13-55
 58            android:screenOrientation="nosensor" />
-58-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:45:13-49
+58-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:45:13-49
 59        <activity
-59-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:46:9-48:52
+59-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:46:9-48:52
 60            android:name="com.mongodb.app.EditProfileActivity"
-60-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:47:13-48
+60-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:47:13-48
 61            android:screenOrientation="nosensor" />
-61-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:48:13-49
+61-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:48:13-49
 62        <activity
-62-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:49:9-51:52
+62-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:49:9-51:52
 63            android:name="com.mongodb.app.ChangePassActivity"
-63-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:50:13-47
+63-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:50:13-47
 64            android:screenOrientation="nosensor" />
-64-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:51:13-49
+64-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:51:13-49
 65        <activity
-65-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:52:9-55:52
+65-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:52:9-55:52
 66            android:name="com.mongodb.app.SettingsActivity"
-66-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:53:13-45
+66-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:53:13-45
 67            android:parentActivityName="com.mongodb.app.HomeActivity"
-67-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:54:13-55
+67-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:54:13-55
 68            android:screenOrientation="nosensor" />
-68-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:55:13-49
+68-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:55:13-49
 69        <activity
-69-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:56:9-58:52
+69-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:56:9-58:52
 70            android:name="com.mongodb.app.QRCodeActivity"
-70-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:57:13-43
+70-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:57:13-43
 71            android:screenOrientation="nosensor" />
-71-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:58:13-49
+71-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:58:13-49
 72        <!-- <activity -->
 73        <!-- android:name=".LoginActivity" -->
 74        <!-- android:screenOrientation="nosensor" /> -->
 75        <activity
-75-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:62:9-72:20
+75-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:62:9-72:20
 76            android:name="com.mongodb.app.LoginActivity"
-76-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:63:13-42
+76-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:63:13-42
 77            android:exported="true"
-77-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:64:13-36
+77-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:64:13-36
 78            android:label="@string/app_name"
-78-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:65:13-45
+78-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:65:13-45
 79            android:screenOrientation="nosensor" >
-79-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:66:13-49
+79-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:66:13-49
 80            <intent-filter>
-80-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:67:13-71:29
+80-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:67:13-71:29
 81                <action android:name="android.intent.action.MAIN" />
-81-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:68:17-69
-81-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:68:25-66
+81-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:68:17-69
+81-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:68:25-66
 82
 83                <category android:name="android.intent.category.LAUNCHER" />
-83-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:70:17-77
-83-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:70:27-74
+83-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:70:17-77
+83-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:70:27-74
 84            </intent-filter>
 85        </activity>
 86
 87        <uses-library
-87-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+87-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
 88            android:name="androidx.window.extensions"
-88-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+88-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
 89            android:required="false" />
-89-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+89-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
 90        <uses-library
-90-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+90-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
 91            android:name="androidx.window.sidecar"
-91-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+91-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
 92            android:required="false" />
-92-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+92-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
 93
 94        <activity
-94-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+94-->[com.google.android.gms:play-services-base:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/432443eaee8f15f26f90968382e56747/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
 95            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-95-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+95-->[com.google.android.gms:play-services-base:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/432443eaee8f15f26f90968382e56747/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
 96            android:exported="false"
-96-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+96-->[com.google.android.gms:play-services-base:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/432443eaee8f15f26f90968382e56747/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
 97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-97-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+97-->[com.google.android.gms:play-services-base:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/432443eaee8f15f26f90968382e56747/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
 98
 99        <meta-data
-99-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+99-->[com.google.android.gms:play-services-basement:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/07d9de5a4294010294eb39ff73e0f5e5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
 100            android:name="com.google.android.gms.version"
-100-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+100-->[com.google.android.gms:play-services-basement:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/07d9de5a4294010294eb39ff73e0f5e5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 101            android:value="@integer/google_play_services_version" />
-101-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+101-->[com.google.android.gms:play-services-basement:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/07d9de5a4294010294eb39ff73e0f5e5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 102    </application>
 103
 104</manifest>
