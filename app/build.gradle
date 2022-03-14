@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'realm-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -79,7 +80,11 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
     //added below to get tournamentBracketsLib from emil
     implementation 'com.github.emil-ep:TournamentBracketLib:1.0.4'
+
+    //added below for Paypal sdk
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.14.2'
 
 }

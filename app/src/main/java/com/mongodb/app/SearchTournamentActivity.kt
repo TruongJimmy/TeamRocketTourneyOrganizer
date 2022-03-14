@@ -16,7 +16,7 @@ class SearchTournamentActivity : AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         binding = ActivitySearchTournamentBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //setContentView(com.mongodb.app.R.layout.activity_search_tournament)
+        setContentView(com.mongodb.app.R.layout.activity_search_tournament)
 
 //        //Below 2 lines - Back button for this page supported by the toolbar in xml file
 //        setSupportActionBar(findViewById(com.mongodb.app.R.id.toolBar_SearchTournament))

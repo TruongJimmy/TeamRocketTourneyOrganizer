@@ -12,6 +12,7 @@ public final class ReportActivity extends androidx.appcompat.app.AppCompatActivi
     public java.lang.String email;
     public java.lang.String subject;
     public java.lang.String message;
+    private java.util.HashMap _$_findViewCache;
     
     public ReportActivity() {
         super();

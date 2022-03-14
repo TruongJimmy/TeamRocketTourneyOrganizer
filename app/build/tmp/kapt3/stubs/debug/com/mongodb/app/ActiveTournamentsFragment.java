@@ -13,6 +13,7 @@ public final class ActiveTournamentsFragment extends androidx.fragment.app.Fragm
     private java.lang.String param2;
     @org.jetbrains.annotations.NotNull()
     public static final com.mongodb.app.ActiveTournamentsFragment.Companion Companion = null;
+    private java.util.HashMap _$_findViewCache;
     
     public ActiveTournamentsFragment() {
         super();

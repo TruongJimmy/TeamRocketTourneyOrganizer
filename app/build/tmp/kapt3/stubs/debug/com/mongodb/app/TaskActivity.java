@@ -7,6 +7,7 @@ public final class TaskActivity extends androidx.appcompat.app.AppCompatActivity
     private io.realm.Realm userRealm;
     private io.realm.RealmConfiguration config;
     private androidx.recyclerview.widget.RecyclerView recyclerView;
+    private java.util.HashMap _$_findViewCache;
     
     public TaskActivity() {
         super();

@@ -8,6 +8,7 @@ public final class SettingsActivity extends androidx.appcompat.app.AppCompatActi
     private android.widget.Button changePasswordButton;
     private android.widget.Button helpButton;
     private android.widget.Button logoutButton;
+    private java.util.HashMap _$_findViewCache;
     
     public SettingsActivity() {
         super();

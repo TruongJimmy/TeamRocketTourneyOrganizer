@@ -13,6 +13,7 @@ public final class CreateTournamentActivity extends androidx.appcompat.app.AppCo
     private android.widget.Button createTourneyButton;
     private io.realm.Realm userRealm;
     private io.realm.RealmConfiguration config;
+    private java.util.HashMap _$_findViewCache;
     
     public CreateTournamentActivity() {
         super();

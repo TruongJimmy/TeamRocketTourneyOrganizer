@@ -13,6 +13,7 @@ public final class SettingsFragment extends androidx.fragment.app.Fragment {
     private java.lang.String param2;
     @org.jetbrains.annotations.NotNull()
     public static final com.mongodb.app.SettingsFragment.Companion Companion = null;
+    private java.util.HashMap _$_findViewCache;
     
     public SettingsFragment() {
         super();

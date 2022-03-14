@@ -11,6 +11,7 @@ public final class RegisterActivity extends androidx.appcompat.app.AppCompatActi
     private android.widget.EditText email;
     private android.widget.Button regButton;
     private android.widget.Button alreadyHaveAccountButton;
+    private java.util.HashMap _$_findViewCache;
     
     public RegisterActivity() {
         super();

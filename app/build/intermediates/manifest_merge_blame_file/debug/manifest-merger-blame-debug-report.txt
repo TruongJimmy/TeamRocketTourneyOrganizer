@@ -6,183 +6,267 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml
+8-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml
+9-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-11-->[io.realm:realm-android-library-object-server:10.3.1] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/6b3aa52f542403f687a767b76ceb7987/jetified-realm-android-library-object-server-10.3.1/AndroidManifest.xml:10:5-79
-11-->[io.realm:realm-android-library-object-server:10.3.1] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/6b3aa52f542403f687a767b76ceb7987/jetified-realm-android-library-object-server-10.3.1/AndroidManifest.xml:10:22-76
+11    <!-- Added below for paypal to work -->
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->[io.realm:realm-android-library-object-server:10.3.1] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/6b3aa52f542403f687a767b76ceb7987/jetified-realm-android-library-object-server-10.3.1/AndroidManifest.xml:11:5-67
-12-->[io.realm:realm-android-library-object-server:10.3.1] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/6b3aa52f542403f687a767b76ceb7987/jetified-realm-android-library-object-server-10.3.1/AndroidManifest.xml:11:22-64
-13
-14    <application
-14-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:5:5-73:19
-15        android:name="com.mongodb.app.App"
-15-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:6:9-28
-16        android:allowBackup="true"
-16-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:7:9-35
-17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.6.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/a3b1d0882299f2f82d4ff5bd089161ca/core-1.6.0/AndroidManifest.xml:24:18-86
-18        android:debuggable="true"
-19        android:extractNativeLibs="false"
-20        android:icon="@mipmap/ic_launcher"
-20-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:8:9-43
-21        android:label="@string/app_name"
-21-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:9:9-41
-22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:10:9-54
-23        android:supportsRtl="true"
-23-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:11:9-35
-24        android:testOnly="true"
-25        android:theme="@style/Theme.App" >
-25-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:12:9-41
-26        <activity
-26-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:13:9-16:58
-27            android:name="com.mongodb.app.BracketActivity"
-27-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:14:13-44
-28            android:exported="false"
-28-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:15:13-37
-29            android:parentActivityName="com.mongodb.app.HomeActivity" />
-29-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:16:13-55
-30        <activity
-30-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:17:9-20:52
-31            android:name="com.mongodb.app.PlayerActivity"
-31-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:18:13-43
-32            android:parentActivityName="com.mongodb.app.ProfileActivity"
-32-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:19:13-58
-33            android:screenOrientation="nosensor" />
-33-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:20:13-49
-34        <activity
-34-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:21:9-23:52
-35            android:name="com.mongodb.app.afterNotification"
-35-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:22:13-46
-36            android:screenOrientation="nosensor" />
-36-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:23:13-49
-37        <activity
-37-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:24:9-26:52
-38            android:name="com.mongodb.app.ReportActivity"
-38-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:25:13-43
-39            android:screenOrientation="nosensor" />
-39-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:26:13-49
+12-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[io.realm:realm-android-library-object-server:10.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\6b3aa52f542403f687a767b76ceb7987\jetified-realm-android-library-object-server-10.3.1\AndroidManifest.xml:10:5-79
+13-->[io.realm:realm-android-library-object-server:10.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\6b3aa52f542403f687a767b76ceb7987\jetified-realm-android-library-object-server-10.3.1\AndroidManifest.xml:10:22-76
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:11:5-65
+14-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:11:22-62
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:12:5-66
+15-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:12:22-63
+16
+17    <uses-feature
+17-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:14:5-16:36
+18        android:name="android.hardware.camera"
+18-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:15:9-47
+19        android:required="false" />
+19-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:16:9-33
+20    <uses-feature
+20-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:17:5-19:36
+21        android:name="android.hardware.camera.autofocus"
+21-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:18:9-57
+22        android:required="false" />
+22-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:19:9-33
+23
+24    <application
+24-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:8:5-86:19
+25        android:name="com.mongodb.app.App"
+25-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:9:9-28
+26        android:allowBackup="true"
+26-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:10:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.6.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a3b1d0882299f2f82d4ff5bd089161ca\core-1.6.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:icon="@mipmap/ic_launcher"
+30-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:11:9-43
+31        android:label="@string/app_name"
+31-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:12:9-41
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:13:9-54
+33        android:supportsRtl="true"
+33-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:14:9-35
+34        android:testOnly="true"
+35        android:theme="@style/Theme.App" >
+35-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:15:9-41
+36        <activity
+36-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:16:9-19:58
+37            android:name="com.mongodb.app.BracketActivity"
+37-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:17:13-44
+38            android:exported="false"
+38-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:18:13-37
+39            android:parentActivityName="com.mongodb.app.HomeActivity" />
+39-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:19:13-55
 40        <activity
-40-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:27:9-30:52
-41            android:name="com.mongodb.app.SearchTournamentActivity"
-41-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:28:13-53
-42            android:parentActivityName="com.mongodb.app.HomeActivity"
-42-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:29:13-55
+40-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:20:9-23:52
+41            android:name="com.mongodb.app.PlayerActivity"
+41-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:21:13-43
+42            android:parentActivityName="com.mongodb.app.ProfileActivity"
+42-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:22:13-58
 43            android:screenOrientation="nosensor" />
-43-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:30:13-49
+43-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:23:13-49
 44        <activity
-44-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:31:9-34:52
-45            android:name="com.mongodb.app.RegisterActivity"
-45-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:32:13-45
-46            android:parentActivityName="com.mongodb.app.LoginActivity"
-46-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:33:13-56
-47            android:screenOrientation="nosensor" />
-47-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:34:13-49
-48        <activity
-48-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:35:9-38:52
-49            android:name="com.mongodb.app.CreateTournamentActivity"
-49-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:36:13-53
-50            android:parentActivityName="com.mongodb.app.HomeActivity"
-50-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:37:13-55
-51            android:screenOrientation="nosensor" />
-51-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:38:13-49
-52        <activity
-52-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:39:9-41:52
-53            android:name="com.mongodb.app.HomeActivity"
-53-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:40:13-41
-54            android:screenOrientation="nosensor" />
-54-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:41:13-49
-55        <activity
-55-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:42:9-45:52
-56            android:name="com.mongodb.app.ProfileActivity"
-56-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:43:13-44
-57            android:parentActivityName="com.mongodb.app.HomeActivity"
-57-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:44:13-55
-58            android:screenOrientation="nosensor" />
-58-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:45:13-49
-59        <activity
-59-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:46:9-48:52
-60            android:name="com.mongodb.app.EditProfileActivity"
-60-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:47:13-48
+44-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:24:9-26:52
+45            android:name="com.mongodb.app.afterNotification"
+45-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:25:13-46
+46            android:screenOrientation="nosensor" />
+46-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:26:13-49
+47        <activity
+47-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:27:9-29:52
+48            android:name="com.mongodb.app.ReportActivity"
+48-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:28:13-43
+49            android:screenOrientation="nosensor" />
+49-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:29:13-49
+50        <activity
+50-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:30:9-33:52
+51            android:name="com.mongodb.app.SearchTournamentActivity"
+51-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:31:13-53
+52            android:parentActivityName="com.mongodb.app.HomeActivity"
+52-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:32:13-55
+53            android:screenOrientation="nosensor" />
+53-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:33:13-49
+54        <activity
+54-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:34:9-37:52
+55            android:name="com.mongodb.app.RegisterActivity"
+55-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:35:13-45
+56            android:parentActivityName="com.mongodb.app.LoginActivity"
+56-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:36:13-56
+57            android:screenOrientation="nosensor" />
+57-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:37:13-49
+58        <activity
+58-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:38:9-41:52
+59            android:name="com.mongodb.app.CreateTournamentActivity"
+59-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:39:13-53
+60            android:parentActivityName="com.mongodb.app.HomeActivity"
+60-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:40:13-55
 61            android:screenOrientation="nosensor" />
-61-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:48:13-49
+61-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:41:13-49
 62        <activity
-62-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:49:9-51:52
-63            android:name="com.mongodb.app.ChangePassActivity"
-63-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:50:13-47
+62-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:42:9-44:52
+63            android:name="com.mongodb.app.HomeActivity"
+63-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:43:13-41
 64            android:screenOrientation="nosensor" />
-64-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:51:13-49
+64-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:44:13-49
 65        <activity
-65-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:52:9-55:52
-66            android:name="com.mongodb.app.SettingsActivity"
-66-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:53:13-45
+65-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:45:9-48:52
+66            android:name="com.mongodb.app.ProfileActivity"
+66-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:46:13-44
 67            android:parentActivityName="com.mongodb.app.HomeActivity"
-67-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:54:13-55
+67-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:47:13-55
 68            android:screenOrientation="nosensor" />
-68-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:55:13-49
+68-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:48:13-49
 69        <activity
-69-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:56:9-58:52
-70            android:name="com.mongodb.app.QRCodeActivity"
-70-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:57:13-43
+69-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:49:9-51:52
+70            android:name="com.mongodb.app.EditProfileActivity"
+70-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:50:13-48
 71            android:screenOrientation="nosensor" />
-71-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:58:13-49
-72        <!-- <activity -->
-73        <!-- android:name=".LoginActivity" -->
-74        <!-- android:screenOrientation="nosensor" /> -->
+71-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:51:13-49
+72        <activity
+72-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:52:9-54:52
+73            android:name="com.mongodb.app.ChangePassActivity"
+73-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:53:13-47
+74            android:screenOrientation="nosensor" />
+74-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:54:13-49
 75        <activity
-75-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:62:9-72:20
-76            android:name="com.mongodb.app.LoginActivity"
-76-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:63:13-42
-77            android:exported="true"
-77-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:64:13-36
-78            android:label="@string/app_name"
-78-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:65:13-45
-79            android:screenOrientation="nosensor" >
-79-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:66:13-49
-80            <intent-filter>
-80-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:67:13-71:29
-81                <action android:name="android.intent.action.MAIN" />
-81-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:68:17-69
-81-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:68:25-66
-82
-83                <category android:name="android.intent.category.LAUNCHER" />
-83-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:70:17-77
-83-->/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/src/main/AndroidManifest.xml:70:27-74
-84            </intent-filter>
-85        </activity>
-86
-87        <uses-library
-87-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
-88            android:name="androidx.window.extensions"
-88-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
-89            android:required="false" />
-89-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
-90        <uses-library
-90-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
-91            android:name="androidx.window.sidecar"
-91-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
-92            android:required="false" />
-92-->[androidx.window:window:1.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/44f65ea3e28b195328d0521bc93d22fd/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
-93
-94        <activity
-94-->[com.google.android.gms:play-services-base:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/432443eaee8f15f26f90968382e56747/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-95            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-95-->[com.google.android.gms:play-services-base:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/432443eaee8f15f26f90968382e56747/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-96            android:exported="false"
-96-->[com.google.android.gms:play-services-base:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/432443eaee8f15f26f90968382e56747/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-97-->[com.google.android.gms:play-services-base:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/432443eaee8f15f26f90968382e56747/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-98
-99        <meta-data
-99-->[com.google.android.gms:play-services-basement:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/07d9de5a4294010294eb39ff73e0f5e5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-100            android:name="com.google.android.gms.version"
-100-->[com.google.android.gms:play-services-basement:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/07d9de5a4294010294eb39ff73e0f5e5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-101            android:value="@integer/google_play_services_version" />
-101-->[com.google.android.gms:play-services-basement:17.0.0] /Users/lewisandres/.gradle/caches/transforms-2/files-2.1/07d9de5a4294010294eb39ff73e0f5e5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-102    </application>
-103
-104</manifest>
+75-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:55:9-58:52
+76            android:name="com.mongodb.app.SettingsActivity"
+76-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:56:13-45
+77            android:parentActivityName="com.mongodb.app.HomeActivity"
+77-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:57:13-55
+78            android:screenOrientation="nosensor" />
+78-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:58:13-49
+79        <activity
+79-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:59:9-61:52
+80            android:name="com.mongodb.app.QRCodeActivity"
+80-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:60:13-43
+81            android:screenOrientation="nosensor" />
+81-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:61:13-49
+82        <activity
+82-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:62:9-64:52
+83            android:name="com.mongodb.app.SuggestionPageActivity"
+83-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:63:13-51
+84            android:screenOrientation="nosensor" />
+84-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:64:13-49
+85        <activity
+85-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:65:9-67:52
+86            android:name="com.mongodb.app.RankingActivity"
+86-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:66:13-44
+87            android:screenOrientation="nosensor" />
+87-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:67:13-49
+88        <activity
+88-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:68:9-70:52
+89            android:name="com.mongodb.app.PaypalActivity"
+89-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:69:13-43
+90            android:screenOrientation="nosensor" />
+90-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:70:13-49
+91
+92        <!-- <activity -->
+93        <!-- android:name=".LoginActivity" -->
+94        <!-- android:screenOrientation="nosensor" /> -->
+95        <activity
+95-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:75:9-85:20
+96            android:name="com.mongodb.app.LoginActivity"
+96-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:76:13-42
+97            android:exported="true"
+97-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:77:13-36
+98            android:label="@string/app_name"
+98-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:78:13-45
+99            android:screenOrientation="nosensor" >
+99-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:79:13-49
+100            <intent-filter>
+100-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:80:13-84:29
+101                <action android:name="android.intent.action.MAIN" />
+101-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:81:17-69
+101-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:81:25-66
+102
+103                <category android:name="android.intent.category.LAUNCHER" />
+103-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:83:17-77
+103-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:83:27-74
+104            </intent-filter>
+105        </activity>
+106
+107        <uses-library
+107-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+108            android:name="androidx.window.extensions"
+108-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+109            android:required="false" />
+109-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+110        <uses-library
+110-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+111            android:name="androidx.window.sidecar"
+111-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+112            android:required="false" />
+112-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+113
+114        <activity
+114-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+115            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+115-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+116            android:exported="false"
+116-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+117            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+117-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+118
+119        <meta-data
+119-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+120            android:name="com.google.android.gms.version"
+120-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+121            android:value="@integer/google_play_services_version" />
+121-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+122
+123        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+123-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:13:9-84
+123-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:13:19-81
+124        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+124-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:14:9-90
+124-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:14:19-87
+125        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+125-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:15:9-91
+125-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:15:19-88
+126        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+126-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:16:9-82
+126-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:16:19-79
+127        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+127-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:17:9-96
+127-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:17:19-93
+128        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+128-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:18:9-97
+128-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:18:19-94
+129        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+129-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:19:9-94
+129-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:19:19-91
+130        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+130-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:20:9-97
+130-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:20:19-94
+131        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+131-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:21:9-98
+131-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:21:19-95
+132
+133        <service
+133-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:23:9-25:40
+134            android:name="com.paypal.android.sdk.payments.PayPalService"
+134-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:24:13-73
+135            android:exported="false" />
+135-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:25:13-37
+136
+137        <activity
+137-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:22:9-24:66
+138            android:name="io.card.payment.CardIOActivity"
+138-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:23:13-58
+139            android:configChanges="keyboardHidden|orientation" />
+139-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:24:13-63
+140        <activity android:name="io.card.payment.DataEntryActivity" />
+140-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:25:9-70
+140-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:25:19-67
+141    </application>
+142
+143</manifest>

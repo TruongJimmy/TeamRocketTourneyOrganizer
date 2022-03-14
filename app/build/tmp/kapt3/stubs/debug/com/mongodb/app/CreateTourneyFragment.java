@@ -13,6 +13,7 @@ public final class CreateTourneyFragment extends androidx.fragment.app.Fragment 
     private java.lang.String param2;
     @org.jetbrains.annotations.NotNull()
     public static final com.mongodb.app.CreateTourneyFragment.Companion Companion = null;
+    private java.util.HashMap _$_findViewCache;
     
     public CreateTourneyFragment() {
         super();

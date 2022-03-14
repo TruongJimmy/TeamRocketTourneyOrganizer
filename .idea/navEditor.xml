@@ -60,13 +60,13 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="activeTournamentsFragment">
+                  <entry key="bracketFragment2">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="22" />
+                            <option name="y" value="7" />
                           </Point>
                         </option>
                       </LayoutPositions>

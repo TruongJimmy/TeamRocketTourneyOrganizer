@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/lewisandres/Desktop/Source Code/BudokaiApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+            "outputFile": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/lewisandres/.gradle/caches/transforms-2/files-2.1/a216a9c2148e3959d97a4d3e4251a991/material-1.4.0/res/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+                    "source": "C:\\Users\\Lewis\\.gradle\\caches\\transforms-2\\files-2.1\\a216a9c2148e3959d97a4d3e4251a991\\material-1.4.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

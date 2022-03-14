@@ -14,6 +14,7 @@ public final class LoginActivity extends androidx.appcompat.app.AppCompatActivit
     public android.app.Notification.Builder builder;
     private final java.lang.String channelId = "i.apps.notifications";
     private final java.lang.String description = "Test notification";
+    private java.util.HashMap _$_findViewCache;
     
     public LoginActivity() {
         super();

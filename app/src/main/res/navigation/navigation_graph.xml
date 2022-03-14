@@ -3,13 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/activeTournamentsFragment">
+    app:startDestination="@id/searchFragment">
 
-    <fragment
-        android:id="@+id/activeTournamentsFragment"
-        android:name="com.mongodb.app.ActiveTournamentsFragment"
-        android:label="fragment_active_tournaments"
-        tools:layout="@layout/fragment_active_tournaments" />
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.mongodb.app.SearchFragment"
@@ -30,4 +25,9 @@
         android:name="com.mongodb.app.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/bracketFragment2"
+        android:name="com.mongodb.app.BracketFragment"
+        android:label="fragment_bracket"
+        tools:layout="@layout/fragment_bracket" />
 </navigation>

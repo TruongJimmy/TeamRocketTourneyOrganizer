@@ -11,6 +11,7 @@ import java.lang.System;
 public final class BracketFragment extends androidx.fragment.app.Fragment {
     private java.lang.String param1;
     private java.lang.String param2;
+    private java.util.HashMap _$_findViewCache;
     
     public BracketFragment() {
         super();

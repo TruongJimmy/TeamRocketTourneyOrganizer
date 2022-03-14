@@ -9,6 +9,7 @@ public final class PlayerActivity extends androidx.appcompat.app.AppCompatActivi
     private com.mongodb.app.PlayerAdapter adapter;
     private com.google.android.material.floatingactionbutton.FloatingActionButton fab;
     private java.util.ArrayList<com.mongodb.app.Player> members;
+    private java.util.HashMap _$_findViewCache;
     
     public PlayerActivity() {
         super();

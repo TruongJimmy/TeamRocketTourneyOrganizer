@@ -14,6 +14,7 @@ public final class SearchFragment extends androidx.fragment.app.Fragment {
     private com.mongodb.app.databinding.ActivitySearchTournamentBinding binding;
     @org.jetbrains.annotations.NotNull()
     public static final com.mongodb.app.SearchFragment.Companion Companion = null;
+    private java.util.HashMap _$_findViewCache;
     
     public SearchFragment() {
         super();

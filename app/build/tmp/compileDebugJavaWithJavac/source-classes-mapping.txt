@@ -4,6 +4,9 @@ io/realm/com_mongodb_app_TournamentRealmProxy.java
  io.realm.com_mongodb_app_TournamentRealmProxy
  io.realm.com_mongodb_app_TournamentRealmProxy$ClassNameHelper
  io.realm.com_mongodb_app_TournamentRealmProxy$TournamentColumnInfo
+com/mongodb/app/PaypalActivity.java
+ com.mongodb.app.PaypalActivity
+ com.mongodb.app.PaypalActivity$1
 io/realm/com_mongodb_app_UserRealmProxyInterface.java
  io.realm.com_mongodb_app_UserRealmProxyInterface
 com/mongodb/app/databinding/FragmentBracketBinding.java
@@ -12,6 +15,8 @@ io/realm/com_mongodb_app_GamesRealmProxy.java
  io.realm.com_mongodb_app_GamesRealmProxy
  io.realm.com_mongodb_app_GamesRealmProxy$ClassNameHelper
  io.realm.com_mongodb_app_GamesRealmProxy$GamesColumnInfo
+com/mongodb/app/databinding/ActivityRankingBinding.java
+ com.mongodb.app.databinding.ActivityRankingBinding
 com/mongodb/app/databinding/FragmentProfileBinding.java
  com.mongodb.app.databinding.FragmentProfileBinding
 com/mongodb/app/databinding/FragmentCreateTourneyBinding.java
@@ -30,16 +35,22 @@ com/mongodb/app/databinding/ActivityCreateTournamentBinding.java
  com.mongodb.app.databinding.ActivityCreateTournamentBinding
 com/mongodb/app/databinding/ActivityLoginBinding.java
  com.mongodb.app.databinding.ActivityLoginBinding
+com/mongodb/app/databinding/SuggestionPageRowBinding.java
+ com.mongodb.app.databinding.SuggestionPageRowBinding
 io/realm/com_mongodb_app_UserRealmProxy.java
  io.realm.com_mongodb_app_UserRealmProxy
  io.realm.com_mongodb_app_UserRealmProxy$ClassNameHelper
  io.realm.com_mongodb_app_UserRealmProxy$UserColumnInfo
 com/mongodb/app/databinding/ActivityTaskBinding.java
  com.mongodb.app.databinding.ActivityTaskBinding
+com/mongodb/app/databinding/ActivityRowRankingBinding.java
+ com.mongodb.app.databinding.ActivityRowRankingBinding
 com/mongodb/app/databinding/PlayerViewBinding.java
  com.mongodb.app.databinding.PlayerViewBinding
 com/mongodb/app/databinding/TaskViewBinding.java
  com.mongodb.app.databinding.TaskViewBinding
+com/mongodb/app/databinding/ActivityPaypalBinding.java
+ com.mongodb.app.databinding.ActivityPaypalBinding
 com/mongodb/app/databinding/ProfileViewBinding.java
  com.mongodb.app.databinding.ProfileViewBinding
 io/realm/com_mongodb_app_GamesRealmProxyInterface.java
@@ -66,13 +77,17 @@ com/mongodb/app/databinding/ActivityPlayerBinding.java
  com.mongodb.app.databinding.ActivityPlayerBinding
 io/realm/com_mongodb_app_TournamentRealmProxyInterface.java
  io.realm.com_mongodb_app_TournamentRealmProxyInterface
-com/mongodb/app/databinding/FragmentSettingsBinding.java
- com.mongodb.app.databinding.FragmentSettingsBinding
+com/mongodb/app/databinding/HomeViewBinding.java
+ com.mongodb.app.databinding.HomeViewBinding
 com/mongodb/app/databinding/ActivityReportBinding.java
  com.mongodb.app.databinding.ActivityReportBinding
+com/mongodb/app/databinding/SuggestionPageBinding.java
+ com.mongodb.app.databinding.SuggestionPageBinding
 io/realm/com_mongodb_app_TaskRealmProxy.java
  io.realm.com_mongodb_app_TaskRealmProxy
  io.realm.com_mongodb_app_TaskRealmProxy$ClassNameHelper
  io.realm.com_mongodb_app_TaskRealmProxy$TaskColumnInfo
-com/mongodb/app/databinding/HomeViewBinding.java
- com.mongodb.app.databinding.HomeViewBinding
+com/mongodb/app/databinding/ReworkHomeViewBinding.java
+ com.mongodb.app.databinding.ReworkHomeViewBinding
+com/mongodb/app/databinding/FragmentSettingsBinding.java
+ com.mongodb.app.databinding.FragmentSettingsBinding

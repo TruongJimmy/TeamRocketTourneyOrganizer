@@ -9,6 +9,7 @@ public final class ChangePassActivity extends androidx.appcompat.app.AppCompatAc
     private android.widget.TextView confirmNewPassTextView;
     private android.widget.Button confirmPasswordButton;
     private android.widget.Button cancelPasswordButton;
+    private java.util.HashMap _$_findViewCache;
     
     public ChangePassActivity() {
         super();

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mongodb.app">
 
+<!--    Added below for paypal to work -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -56,6 +59,16 @@
         <activity
             android:name=".QRCodeActivity"
             android:screenOrientation="nosensor" />
+        <activity
+            android:name=".SuggestionPageActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".RankingActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".PaypalActivity"
+            android:screenOrientation="nosensor" />
+
 <!--        <activity-->
 <!--            android:name=".LoginActivity"-->
 <!--            android:screenOrientation="nosensor" />-->

@@ -7,6 +7,7 @@ public final class EditProfileActivity extends androidx.appcompat.app.AppCompatA
     private android.widget.Button backButton;
     private android.widget.ImageView profileView;
     private android.widget.TextView playerName;
+    private java.util.HashMap _$_findViewCache;
     
     public EditProfileActivity() {
         super();

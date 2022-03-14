@@ -38,8 +38,8 @@ class SearchFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-//        val view: View
-//        view = inflater.inflate(R.layout.fragment_search, container, false)
+        val view: View
+        view = inflater.inflate(R.layout.fragment_search, container, false)
 //        val binding = ActivitySearchTournamentBinding.inflate(layoutInflater)
 //        //setContentView(binding.root)
 //        //setContentView(com.mongodb.app.R.layout.activity_search_tournament)

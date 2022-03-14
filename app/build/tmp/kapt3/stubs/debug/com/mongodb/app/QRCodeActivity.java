@@ -6,6 +6,7 @@ import java.lang.System;
 public final class QRCodeActivity extends androidx.appcompat.app.AppCompatActivity {
     private android.widget.ImageView qrCodeView;
     private android.widget.Button generateQRButton;
+    private java.util.HashMap _$_findViewCache;
     
     public QRCodeActivity() {
         super();
