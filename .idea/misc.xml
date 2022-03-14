@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/drawable/custom_xp_bar.xml" value="0.3828125" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_bracket.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_brackets_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_chat_forum.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_create_tournament.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_item_chat_me.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_item_chat_other.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_me_chat.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_message_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_message_list_adapter.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_other_chat.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_player.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_ranking.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_row_ranking.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_search_tournament.xml" value="0.13150684931506848" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_tournament.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/edit_profile_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/example_fragment.xml" value="0.19124544033350704" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/fragment_active_tournaments.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/fragment_bracket.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/fragment_notifications.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/fragment_search.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/home_view.xml" value="0.1" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/login_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/profile_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/rework_home_view.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/settings.xml" value="0.22871376811594202" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/suggestion_page.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/suggestion_page_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/task_view.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/menu/bottom_menu.xml" value="0.33" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/menu/task_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/tournamentBracketsPoolsLibrary/TournamentBracketLib-master/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/layout/activity_after_notification.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/activity_create_tournament.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/activity_player.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/activity_report.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/activity_search_tournament.xml" value="0.31927083333333334" />
+        <entry key="app/src/main/res/layout/change_password_view.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/home_view.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/login_view.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/player_view.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/profile_view.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/qrcode_view.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/settings.xml" value="0.259963768115942" />
+        <entry key="app/src/main/res/layout/task_view.xml" value="0.259963768115942" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
