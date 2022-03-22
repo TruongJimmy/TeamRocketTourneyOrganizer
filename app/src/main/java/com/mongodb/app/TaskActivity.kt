@@ -77,25 +77,7 @@ class TaskActivity : AppCompatActivity() {
      *  Decides actions for all buttons on the task menu.
      *  When "log out" is tapped, logs out the user and brings them back to the login screen.
      */
-    override fun onOptionsItemSelected(menuItem: MenuItem): Boolean {
-        return when (menuItem.itemId) {
-            R.id.action_logout -> {
-                realmApp.currentUser()?.logOutAsync {
-                    if (it.isSuccess) {
-                        Log.v(TAG(), "user logged out")
-                        startActivity(Intent(this, LoginActivity::class.java))
 
-                    } else {
-                        Log.e(TAG(), "log out failed! Error: ${it.error}")
-                    }
-                }
-                true
-            }
-            else -> {
-                super.onOptionsItemSelected(menuItem)
-            }
-        }
-    }
 
     /**
      *  Creates a popup that allows the user to insert a task into the realm.

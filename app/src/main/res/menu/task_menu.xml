@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".CounterActivity">
     <item
-        android:id="@+id/action_logout"
+        android:id="@+id/action_home"
         android:enabled="true"
         android:orderInCategory="100"
-        android:title="@string/log_out"
-        android:text="@string/log_out"
+        android:title="Games"
+        android:text="Games"
         app:showAsAction="always"/>
 </menu>

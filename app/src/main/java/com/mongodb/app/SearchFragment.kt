@@ -1,5 +1,6 @@
 package com.mongodb.app
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -40,6 +41,7 @@ class SearchFragment : Fragment() {
         // Inflate the layout for this fragment
         val view: View
         view = inflater.inflate(R.layout.fragment_search, container, false)
+        startActivity(Intent(this@SearchFragment.context, ProfileActivity::class.java))
 //        val binding = ActivitySearchTournamentBinding.inflate(layoutInflater)
 //        //setContentView(binding.root)
 //        //setContentView(com.mongodb.app.R.layout.activity_search_tournament)

@@ -63,6 +63,18 @@
             android:name="com.mongodb.app.HomeActivity"
             android:screenOrientation="nosensor" />
         <activity
+            android:name="com.mongodb.app.games.GamesListActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.games.GameDetailActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.TournamentActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.TournamentDetailActivity"
+            android:screenOrientation="nosensor" />
+        <activity
             android:name="com.mongodb.app.ProfileActivity"
             android:parentActivityName="com.mongodb.app.HomeActivity"
             android:screenOrientation="nosensor" />
@@ -87,6 +99,7 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name="com.mongodb.app.PaypalActivity"
+            android:exported="true"
             android:screenOrientation="nosensor" />
 
         <!-- <activity -->

@@ -1,5 +1,6 @@
 package com.mongodb.app
 
+import android.content.Intent
 import android.view.*
 import android.widget.CheckBox
 import android.widget.PopupMenu
@@ -55,7 +56,6 @@ internal class TaskAdapter(data: OrderedRealmCollection<Task>, private val confi
      *  Creates a popup menu that allows the user to delete a task from the realm.
      */
     private fun onMenuClicked(holder: TaskViewHolder) {
-
         val popup = PopupMenu(holder.itemView.context, holder.menu)
         popup.menu.add(0, R.id.action_delete, Menu.NONE, "Delete")
         popup.setOnMenuItemClickListener { menuItem: MenuItem ->

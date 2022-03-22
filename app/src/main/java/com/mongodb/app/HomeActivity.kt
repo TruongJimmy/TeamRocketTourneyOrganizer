@@ -5,8 +5,11 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.mongodb.app.games.GamesListActivity
 import kotlinx.android.synthetic.main.home_view.*
 
 
@@ -26,7 +29,7 @@ class HomeActivity : AppCompatActivity() {
 //
 //        val bottomNavigationBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 //        val navController = findNavController(R.id.fragmentContainerView)
-//        val appBarConfiguration = AppBarConfiguration(setOf(R.id.activeTournamentsFragment, R.id.searchFragment, R.id.createTourneyFragment, R.id.profileFragment, R.id.settingsFragment))
+//        val appBarConfiguration = AppBarConfiguration(setOf(R.id.searchFragment, R.id.createTourneyFragment, R.id.profileFragment, R.id.settingsFragment))
 //        setupActionBarWithNavController(navController, appBarConfiguration)
 //        bottomNavigationBar.setupWithNavController(navController)
 
@@ -69,7 +72,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun onSearchTournamentButtonClicked(){
-        startActivity(Intent(this,SearchTournamentActivity::class.java))
+        startActivity(Intent(this, GamesListActivity::class.java))
     }
 
     private fun onCreateTournamentButtonClicked(){

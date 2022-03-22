@@ -43,6 +43,18 @@
             android:name=".HomeActivity"
             android:screenOrientation="nosensor" />
         <activity
+            android:name=".games.GamesListActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".games.GameDetailActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".TournamentActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".TournamentDetailActivity"
+            android:screenOrientation="nosensor" />
+        <activity
             android:name=".ProfileActivity"
             android:parentActivityName=".HomeActivity"
             android:screenOrientation="nosensor" />
@@ -67,7 +79,8 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name=".PaypalActivity"
-            android:screenOrientation="nosensor" />
+            android:screenOrientation="nosensor"
+            android:exported="true"/>
 
 <!--        <activity-->
 <!--            android:name=".LoginActivity"-->

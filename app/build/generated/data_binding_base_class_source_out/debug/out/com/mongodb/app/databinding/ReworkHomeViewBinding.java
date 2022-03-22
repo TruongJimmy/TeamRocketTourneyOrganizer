@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -21,10 +22,14 @@ public final class ReworkHomeViewBinding implements ViewBinding {
   @NonNull
   public final BottomNavigationView bottomNavigationView;
 
+  @NonNull
+  public final Toolbar toolBarProfileActivity;
+
   private ReworkHomeViewBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView) {
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull Toolbar toolBarProfileActivity) {
     this.rootView = rootView;
     this.bottomNavigationView = bottomNavigationView;
+    this.toolBarProfileActivity = toolBarProfileActivity;
   }
 
   @Override
@@ -60,7 +65,14 @@ public final class ReworkHomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ReworkHomeViewBinding((ConstraintLayout) rootView, bottomNavigationView);
+      id = R.id.toolBar_ProfileActivity;
+      Toolbar toolBarProfileActivity = rootView.findViewById(id);
+      if (toolBarProfileActivity == null) {
+        break missingId;
+      }
+
+      return new ReworkHomeViewBinding((ConstraintLayout) rootView, bottomNavigationView,
+          toolBarProfileActivity);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

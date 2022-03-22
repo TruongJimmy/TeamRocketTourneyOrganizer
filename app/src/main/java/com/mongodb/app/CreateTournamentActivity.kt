@@ -55,7 +55,7 @@ class CreateTournamentActivity : AppCompatActivity() {
         super.onStart()
 
         val user = realmApp.currentUser()
-            val partition = user?.id
+            val partition = "123" //user.id
             config = SyncConfiguration.Builder(user, partition).build()
             Realm.getInstanceAsync(config, object : Realm.Callback() {
                 override fun onSuccess(realm: Realm) {
@@ -86,5 +86,6 @@ class CreateTournamentActivity : AppCompatActivity() {
         userRealm.executeTransactionAsync { realm ->
             realm.insert(tournament)
         }
+        startActivity(Intent(this,HomeActivity::class.java))
     }
 }
