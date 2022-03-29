@@ -16,7 +16,7 @@ import com.mongodb.app.games.GamesListActivity
 import com.mongodb.app.games.NAME_GAME
 import io.realm.Sort
 
-class CardViewRecyclerAdapter: RecyclerView.Adapter<CardViewRecyclerAdapter.ViewHolder>() {
+class ActiveUpcomingAdapter: RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHolder>() {
 
     val user = realmApp.currentUser()
     val partition = "123"
