@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
         <activity
-            android:name=".ActiveTournament"
+            android:name=".ActiveUpcomingTournament"
             android:exported="false" />
         <activity
             android:name=".BracketActivity"

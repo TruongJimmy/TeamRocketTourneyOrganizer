@@ -2649,7 +2649,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
-int layout activity_active_tournament 0x7f0b001c
+int layout activity_active_upcoming_tournament 0x7f0b001c
 int layout activity_after_notification 0x7f0b001d
 int layout activity_bracket 0x7f0b001e
 int layout activity_create_tournament 0x7f0b001f

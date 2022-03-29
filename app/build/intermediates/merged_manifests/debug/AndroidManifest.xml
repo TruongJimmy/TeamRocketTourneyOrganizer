@@ -33,7 +33,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.App" >
         <activity
-            android:name="com.mongodb.app.ActiveTournament"
+            android:name="com.mongodb.app.ActiveUpcomingTournament"
             android:exported="false" />
         <activity
             android:name="com.mongodb.app.BracketActivity"

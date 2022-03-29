@@ -4,13 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.mongodb.app.games.GamesListActivity
-import kotlinx.android.synthetic.main.home_view.*
 
 
 class HomeActivity : AppCompatActivity() {
@@ -65,7 +59,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun toActiveTourney (){
-        startActivity(Intent(this, ActiveTournament::class.java))
+        startActivity(Intent(this, ActiveUpcomingTournament::class.java))
     }
 
 
