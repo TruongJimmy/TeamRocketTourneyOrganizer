@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mongodb.app">
-
-<!--    Added below for paypal to work -->
+    <!-- Added below for paypal to work -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
+        <activity
+            android:name=".ActiveTournament"
+            android:exported="false" />
         <activity
             android:name=".BracketActivity"
             android:exported="false"
@@ -79,12 +81,10 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name=".PaypalActivity"
-            android:screenOrientation="nosensor"
-            android:exported="true"/>
-
-<!--        <activity-->
-<!--            android:name=".LoginActivity"-->
-<!--            android:screenOrientation="nosensor" />-->
+            android:exported="true"
+            android:screenOrientation="nosensor" /> <!-- <activity -->
+        <!-- android:name=".LoginActivity" -->
+        <!-- android:screenOrientation="nosensor" /> -->
         <activity
             android:name=".LoginActivity"
             android:exported="true"

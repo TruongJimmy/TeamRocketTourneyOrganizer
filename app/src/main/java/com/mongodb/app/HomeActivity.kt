@@ -22,6 +22,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var suggestionButton: Button
     private lateinit var rankingButton: Button
     private lateinit var payButton: Button
+    private lateinit var reTourneyButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,7 +58,16 @@ class HomeActivity : AppCompatActivity() {
         payButton = findViewById(R.id.payPalButton)
         payButton.setOnClickListener { toPaypalPage() }
 
+
+        reTourneyButton = findViewById(R.id.reActiveTourneyButton)
+        reTourneyButton.setOnClickListener { toActiveTourney() }
+
     }
+
+    private fun toActiveTourney (){
+        startActivity(Intent(this, ActiveTournament::class.java))
+    }
+
 
     private fun toPaypalPage(){
         startActivity(Intent(this,PaypalActivity::class.java))

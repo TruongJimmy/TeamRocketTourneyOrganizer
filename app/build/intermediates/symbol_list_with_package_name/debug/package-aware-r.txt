@@ -2076,6 +2076,7 @@ id bracketFragment
 id bracketFragment2
 id bracket_view
 id builtWithSync
+id button
 id buttonNotify
 id buttonPanel
 id buttonRegister
@@ -2091,6 +2092,8 @@ id button_logout
 id cache_measures
 id cancel_action
 id cancel_button
+id cardRecyclerView
+id card_view
 id carryVelocity
 id center
 id center_horizontal
@@ -2240,6 +2243,9 @@ id input_username
 id invisible
 id inward
 id italic
+id itemDetail
+id itemImage
+id itemTitle
 id item_touch_helper_previous_elevation
 id join_button
 id jumpToEnd
@@ -2376,9 +2382,11 @@ id project_users_list
 id qr_code
 id radio
 id ratio
+id reActiveTourneyButton
 id rectangles
 id recycler_view
 id registerButton
+id relativeLayout
 id remove_button
 id reportReason
 id reverseSawtooth
@@ -2642,6 +2650,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_active_tournament
 layout activity_after_notification
 layout activity_bracket
 layout activity_create_tournament
@@ -2658,6 +2667,7 @@ layout activity_search_tournament
 layout activity_task
 layout activity_tournament
 layout add_game_layout
+layout card_view
 layout change_password_view
 layout custom_dialog
 layout design_bottom_navigation_item

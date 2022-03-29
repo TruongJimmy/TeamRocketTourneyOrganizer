@@ -11,8 +11,10 @@
         android:id="@+id/imageView3"
         android:layout_width="382dp"
         android:layout_height="132dp"
-        app:layout_constraintBottom_toTopOf="@+id/Search_Tournament"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Profile"
         app:srcCompat="@drawable/home" />
@@ -128,5 +130,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reActiveTourneyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testing Active Recycler"
+        app:layout_constraintBottom_toTopOf="@+id/memberButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
