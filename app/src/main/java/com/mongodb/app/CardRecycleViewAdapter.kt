@@ -31,6 +31,7 @@ class CardViewRecyclerAdapter: RecyclerView.Adapter<CardViewRecyclerAdapter.View
     var details = realm!!.where<Tournament>().findAllAsync()
     var host = realm!!.where<Tournament>().findAllAsync()
     var startTime = realm!!.where<Tournament>().findAllAsync()
+    var gameName = realm!!.where<Tournament>().findAllAsync()
 //    private var title = arrayOf("Chap 1","Chap 2","Chap 3","Chap 4","Chap 5","Chap 6","Chap 7","Chap 8","Chap 9")
 //    private var details = arrayOf("detail 1","detail 2","detail 3", "detail 4", "detail 5", "detail 6", "detail 7", "detail 8", "detail 9")
     private var images = intArrayOf(
@@ -71,6 +72,7 @@ class CardViewRecyclerAdapter: RecyclerView.Adapter<CardViewRecyclerAdapter.View
         holder.itemDetail.text = details[position]?.tournamentType.toString()
         holder.itemHost.text = host[position]?.location.toString()
         holder.itemStartTime.text = startTime[position]?.startTime.toString()
+        holder.itemGameName.text = gameName[position]?.game.toString()
         holder.itemImage.setImageResource(images[position])
     }
 
@@ -84,6 +86,7 @@ class CardViewRecyclerAdapter: RecyclerView.Adapter<CardViewRecyclerAdapter.View
         var itemDetail: TextView
         var itemHost: TextView
         var itemStartTime: TextView
+        var itemGameName: TextView
 
         init {
             itemImage = itemView.findViewById(R.id.itemImage)
@@ -91,7 +94,7 @@ class CardViewRecyclerAdapter: RecyclerView.Adapter<CardViewRecyclerAdapter.View
             itemDetail = itemView.findViewById(R.id.itemDetail)
             itemHost = itemView.findViewById(R.id.itemHost)
             itemStartTime = itemView.findViewById(R.id.itemStartTime)
-
+            itemGameName= itemView.findViewById(R.id.itemGameName)
         }
     }
 

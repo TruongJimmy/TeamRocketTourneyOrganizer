@@ -27,6 +27,9 @@ public final class CardViewBinding implements ViewBinding {
   public final TextView itemDetail;
 
   @NonNull
+  public final TextView itemGameName;
+
+  @NonNull
   public final TextView itemHost;
 
   @NonNull
@@ -42,12 +45,13 @@ public final class CardViewBinding implements ViewBinding {
   public final ConstraintLayout relativeLayout;
 
   private CardViewBinding(@NonNull CardView rootView, @NonNull CardView cardView,
-      @NonNull TextView itemDetail, @NonNull TextView itemHost, @NonNull ImageView itemImage,
-      @NonNull TextView itemStartTime, @NonNull TextView itemTitle,
+      @NonNull TextView itemDetail, @NonNull TextView itemGameName, @NonNull TextView itemHost,
+      @NonNull ImageView itemImage, @NonNull TextView itemStartTime, @NonNull TextView itemTitle,
       @NonNull ConstraintLayout relativeLayout) {
     this.rootView = rootView;
     this.cardView = cardView;
     this.itemDetail = itemDetail;
+    this.itemGameName = itemGameName;
     this.itemHost = itemHost;
     this.itemImage = itemImage;
     this.itemStartTime = itemStartTime;
@@ -90,6 +94,12 @@ public final class CardViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.itemGameName;
+      TextView itemGameName = rootView.findViewById(id);
+      if (itemGameName == null) {
+        break missingId;
+      }
+
       id = R.id.itemHost;
       TextView itemHost = rootView.findViewById(id);
       if (itemHost == null) {
@@ -120,8 +130,8 @@ public final class CardViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new CardViewBinding((CardView) rootView, cardView, itemDetail, itemHost, itemImage,
-          itemStartTime, itemTitle, relativeLayout);
+      return new CardViewBinding((CardView) rootView, cardView, itemDetail, itemGameName, itemHost,
+          itemImage, itemStartTime, itemTitle, relativeLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -14,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="279dp"
         android:padding="16dp">
 
         <ImageView
@@ -28,42 +29,52 @@
 
         <TextView
             android:id="@+id/itemTitle"
-            android:textColor="@color/black"
             android:layout_width="237dp"
             android:layout_height="102dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="4dp"
+            android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintLeft_toRightOf="@+id/itemImage"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/itemDetail"
-            android:textColor="@color/black"
+            android:id="@+id/itemGameName"
             android:layout_width="236dp"
             android:layout_height="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="20dp"
+            android:textColor="@color/black"
             app:layout_constraintLeft_toRightOf="@id/itemImage"
             app:layout_constraintTop_toBottomOf="@+id/itemTitle" />
 
         <TextView
-            android:id="@+id/itemHost"
-            android:textColor="@color/black"
+            android:id="@+id/itemDetail"
             android:layout_width="236dp"
             android:layout_height="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="52dp"
+            android:textColor="@color/black"
             app:layout_constraintLeft_toRightOf="@id/itemImage"
             app:layout_constraintTop_toBottomOf="@+id/itemTitle" />
 
         <TextView
             android:id="@+id/itemStartTime"
+            android:layout_width="232dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="108dp"
             android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/itemImage"
+            app:layout_constraintTop_toBottomOf="@+id/itemTitle" />
+
+        <TextView
+            android:id="@+id/itemHost"
             android:layout_width="236dp"
             android:layout_height="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="80dp"
+            android:textColor="@color/black"
             app:layout_constraintLeft_toRightOf="@id/itemImage"
             app:layout_constraintTop_toBottomOf="@+id/itemTitle" />
 
