@@ -43,6 +43,16 @@ class CardViewRecyclerAdapter: RecyclerView.Adapter<CardViewRecyclerAdapter.View
         R.mipmap.dbz_round,
         R.mipmap.dbz_round,
         R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
         R.mipmap.dbz_round
     )
 

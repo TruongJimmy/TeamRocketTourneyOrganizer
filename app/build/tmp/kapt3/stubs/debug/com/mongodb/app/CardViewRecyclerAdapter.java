@@ -14,7 +14,7 @@ public final class CardViewRecyclerAdapter extends androidx.recyclerview.widget.
     private io.realm.RealmResults<com.mongodb.app.Tournament> details;
     private io.realm.RealmResults<com.mongodb.app.Tournament> host;
     private io.realm.RealmResults<com.mongodb.app.Tournament> startTime;
-    private int[] images = {com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round};
+    private int[] images = {com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round, com.mongodb.app.R.mipmap.dbz_round};
     
     public CardViewRecyclerAdapter() {
         super();
