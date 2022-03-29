@@ -57,12 +57,10 @@ class CardViewRecyclerAdapter: RecyclerView.Adapter<CardViewRecyclerAdapter.View
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        holder.itemTitle.text = title[position].toString()
-        holder.itemDetail.text = details[position].toString()
-        holder.itemHost.text = host[position].toString()
-        holder.itemStartTime.text = startTime[position].toString()
-        holder.itemHost.text = host[position].toString()
-        holder.itemStartTime.text = startTime[position].toString()
+        holder.itemTitle.text = title[position]?.name.toString()
+        holder.itemDetail.text = details[position]?.tournamentType.toString()
+        holder.itemHost.text = host[position]?.location.toString()
+        holder.itemStartTime.text = startTime[position]?.startTime.toString()
         holder.itemImage.setImageResource(images[position])
     }
 
