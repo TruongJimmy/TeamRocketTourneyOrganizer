@@ -27,7 +27,13 @@ public final class CardViewBinding implements ViewBinding {
   public final TextView itemDetail;
 
   @NonNull
+  public final TextView itemHost;
+
+  @NonNull
   public final ImageView itemImage;
+
+  @NonNull
+  public final TextView itemStartTime;
 
   @NonNull
   public final TextView itemTitle;
@@ -36,12 +42,15 @@ public final class CardViewBinding implements ViewBinding {
   public final ConstraintLayout relativeLayout;
 
   private CardViewBinding(@NonNull CardView rootView, @NonNull CardView cardView,
-      @NonNull TextView itemDetail, @NonNull ImageView itemImage, @NonNull TextView itemTitle,
+      @NonNull TextView itemDetail, @NonNull TextView itemHost, @NonNull ImageView itemImage,
+      @NonNull TextView itemStartTime, @NonNull TextView itemTitle,
       @NonNull ConstraintLayout relativeLayout) {
     this.rootView = rootView;
     this.cardView = cardView;
     this.itemDetail = itemDetail;
+    this.itemHost = itemHost;
     this.itemImage = itemImage;
+    this.itemStartTime = itemStartTime;
     this.itemTitle = itemTitle;
     this.relativeLayout = relativeLayout;
   }
@@ -81,9 +90,21 @@ public final class CardViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.itemHost;
+      TextView itemHost = rootView.findViewById(id);
+      if (itemHost == null) {
+        break missingId;
+      }
+
       id = R.id.itemImage;
       ImageView itemImage = rootView.findViewById(id);
       if (itemImage == null) {
+        break missingId;
+      }
+
+      id = R.id.itemStartTime;
+      TextView itemStartTime = rootView.findViewById(id);
+      if (itemStartTime == null) {
         break missingId;
       }
 
@@ -99,8 +120,8 @@ public final class CardViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new CardViewBinding((CardView) rootView, cardView, itemDetail, itemImage, itemTitle,
-          relativeLayout);
+      return new CardViewBinding((CardView) rootView, cardView, itemDetail, itemHost, itemImage,
+          itemStartTime, itemTitle, relativeLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

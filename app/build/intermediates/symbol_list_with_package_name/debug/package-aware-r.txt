@@ -2244,7 +2244,9 @@ id invisible
 id inward
 id italic
 id itemDetail
+id itemHost
 id itemImage
+id itemStartTime
 id itemTitle
 id item_touch_helper_previous_elevation
 id join_button
