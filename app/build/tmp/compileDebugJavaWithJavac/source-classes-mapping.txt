@@ -14,8 +14,8 @@ com/mongodb/app/databinding/ActivityBracketBinding.java
  com.mongodb.app.databinding.ActivityBracketBinding
 com/mongodb/app/databinding/FragmentActiveTournamentsBinding.java
  com.mongodb.app.databinding.FragmentActiveTournamentsBinding
-com/mongodb/app/databinding/GameItemBinding.java
- com.mongodb.app.databinding.GameItemBinding
+io/realm/DefaultRealmModuleMediator.java
+ io.realm.DefaultRealmModuleMediator
 com/mongodb/app/databinding/ActivityGameBinding.java
  com.mongodb.app.databinding.ActivityGameBinding
 com/mongodb/app/databinding/ActivityCreateTournamentBinding.java
@@ -28,6 +28,8 @@ com/mongodb/app/databinding/TaskViewBinding.java
  com.mongodb.app.databinding.TaskViewBinding
 com/mongodb/app/databinding/ProfileViewBinding.java
  com.mongodb.app.databinding.ProfileViewBinding
+com/mongodb/app/databinding/TournamentPageCardViewBinding.java
+ com.mongodb.app.databinding.TournamentPageCardViewBinding
 com/mongodb/app/databinding/LoginViewBinding.java
  com.mongodb.app.databinding.LoginViewBinding
 com/mongodb/app/databinding/ChangePasswordViewBinding.java
@@ -109,7 +111,9 @@ com/mongodb/app/databinding/HomeViewBinding.java
  com.mongodb.app.databinding.HomeViewBinding
 com/mongodb/app/databinding/ActivityReportBinding.java
  com.mongodb.app.databinding.ActivityReportBinding
+com/mongodb/app/databinding/ActivityTournamentPageBinding.java
+ com.mongodb.app.databinding.ActivityTournamentPageBinding
 com/mongodb/app/databinding/FragmentSettingsBinding.java
  com.mongodb.app.databinding.FragmentSettingsBinding
-io/realm/DefaultRealmModuleMediator.java
- io.realm.DefaultRealmModuleMediator
+com/mongodb/app/databinding/GameItemBinding.java
+ com.mongodb.app.databinding.GameItemBinding

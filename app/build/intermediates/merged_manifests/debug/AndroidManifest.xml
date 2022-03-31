@@ -33,6 +33,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.App" >
         <activity
+            android:name="com.mongodb.app.TournamentPageActivity"
+            android:exported="false" />
+        <activity
             android:name="com.mongodb.app.ActiveUpcomingTournament"
             android:exported="false" />
         <activity

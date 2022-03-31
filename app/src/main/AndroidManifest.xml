@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
         <activity
+            android:name=".TournamentPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActiveUpcomingTournament"
             android:exported="false" />
         <activity

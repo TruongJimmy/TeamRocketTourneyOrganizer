@@ -1879,6 +1879,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable csgo_background
+drawable curve_background
 drawable custom_xp_bar
 drawable dbz_background
 drawable design_fab_background
@@ -1898,10 +1899,12 @@ drawable ic_home
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_money
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_person
 drawable ic_profile
 drawable ic_search
 drawable ic_send
@@ -2066,6 +2069,7 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id bodyDetail
 id bottom
 id bottomNavigationView
 id bounce
@@ -2213,6 +2217,7 @@ id group_divider
 id grouping
 id groups
 id guideline
+id headerTitle
 id header_title
 id hideable
 id home
@@ -2296,6 +2301,7 @@ id memberRankingButton
 id message
 id middle
 id mini
+id moneyIcon
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2363,6 +2369,8 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id participantNumber
+id participantText
 id participant_input
 id password_toggle
 id path
@@ -2370,12 +2378,15 @@ id pathRelative
 id payPalButton
 id peekHeight
 id percent
+id personIcon
 id pin
 id play_date
 id popup_menu
 id position
 id position_textview
 id postLayout
+id prizeAmount
+id prizePool
 id prize_pool
 id profileFragment
 id profile_back
@@ -2387,6 +2398,7 @@ id radio
 id ratio
 id reActiveTourneyButton
 id rectangles
+id recyclerViewTourneyPage
 id recycler_view
 id registerButton
 id relativeLayout
@@ -2537,14 +2549,17 @@ id top
 id topPanel
 id touch_outside
 id tournamentGame_input
+id tournamentImage
 id tournamentName
 id tournamentName_input
+id tournamentPageCardView
 id tournamentPic
 id tournamentType
 id tournament_date
 id tournament_list
 id tournament_menu
 id tournament_name
+id tourneyPage
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -2669,6 +2684,7 @@ layout activity_row_ranking
 layout activity_search_tournament
 layout activity_task
 layout activity_tournament
+layout activity_tournament_page
 layout add_game_layout
 layout card_view
 layout change_password_view
@@ -2791,6 +2807,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout tournament_detail_view
+layout tournament_page_card_view
 layout tournament_view
 menu bottom_menu
 menu task_menu

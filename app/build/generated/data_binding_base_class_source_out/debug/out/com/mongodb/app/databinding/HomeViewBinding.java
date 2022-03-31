@@ -55,12 +55,16 @@ public final class HomeViewBinding implements ViewBinding {
   @NonNull
   public final Button suggestionPageButton;
 
+  @NonNull
+  public final Button tourneyPage;
+
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
       @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
       @NonNull Button activeTournament, @NonNull Button createTournament,
       @NonNull ImageView imageView3, @NonNull Button memberButton,
       @NonNull ConstraintLayout memberRankingButton, @NonNull Button payPalButton,
-      @NonNull Button reActiveTourneyButton, @NonNull Button suggestionPageButton) {
+      @NonNull Button reActiveTourneyButton, @NonNull Button suggestionPageButton,
+      @NonNull Button tourneyPage) {
     this.rootView = rootView;
     this.CreateTournament = CreateTournament;
     this.Profile = Profile;
@@ -74,6 +78,7 @@ public final class HomeViewBinding implements ViewBinding {
     this.payPalButton = payPalButton;
     this.reActiveTourneyButton = reActiveTourneyButton;
     this.suggestionPageButton = suggestionPageButton;
+    this.tourneyPage = tourneyPage;
   }
 
   @Override
@@ -171,9 +176,16 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tourneyPage;
+      Button tourneyPage = rootView.findViewById(id);
+      if (tourneyPage == null) {
+        break missingId;
+      }
+
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
           SearchTournament, Settings, activeTournament, createTournament, imageView3, memberButton,
-          memberRankingButton, payPalButton, reActiveTourneyButton, suggestionPageButton);
+          memberRankingButton, payPalButton, reActiveTourneyButton, suggestionPageButton,
+          tourneyPage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -17,6 +17,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var rankingButton: Button
     private lateinit var payButton: Button
     private lateinit var reTourneyButton: Button
+    private lateinit var tourneyPageButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,7 +57,15 @@ class HomeActivity : AppCompatActivity() {
         reTourneyButton = findViewById(R.id.reActiveTourneyButton)
         reTourneyButton.setOnClickListener { toActiveTourney() }
 
+        tourneyPageButton = findViewById(R.id.tourneyPage)
+        tourneyPageButton.setOnClickListener { toTourneyPage() }
+
     }
+
+    private fun toTourneyPage (){
+        startActivity(Intent(this, TournamentPageActivity::class.java))
+    }
+
 
     private fun toActiveTourney (){
         startActivity(Intent(this, ActiveUpcomingTournament::class.java))
