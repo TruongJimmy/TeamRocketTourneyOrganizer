@@ -60,6 +60,8 @@ class ActiveUpcomingAdapter: RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHold
         holder.itemHost.text = tourneyQuery[position]!!.location
         holder.itemStartTime.text = tourneyQuery[position]!!.startTime
         holder.itemGameName.text = tourneyQuery[position]!!.game
+        holder.itemPerson.text = tourneyQuery[position]!!.participant
+        //holder.itemMoney.text = tourneyQuery[position]!!.p
         holder.itemImage.setImageResource(images[position])
     }
 
@@ -74,6 +76,8 @@ class ActiveUpcomingAdapter: RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHold
         var itemHost: TextView
         var itemStartTime: TextView
         var itemGameName: TextView
+        var itemPerson: TextView
+        //var itemMoney: TextView
 
         init {
             itemImage = itemView.findViewById(R.id.itemImage)
@@ -82,6 +86,8 @@ class ActiveUpcomingAdapter: RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHold
             itemHost = itemView.findViewById(R.id.itemHost)
             itemStartTime = itemView.findViewById(R.id.itemStartTime)
             itemGameName= itemView.findViewById(R.id.itemGameName)
+            itemPerson = itemView.findViewById(R.id.itemPerson)
+           // itemMoney = itemView.findViewById(R.id.itemMoney)
         }
     }
 

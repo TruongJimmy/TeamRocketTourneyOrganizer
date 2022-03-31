@@ -36,26 +36,43 @@ public final class CardViewBinding implements ViewBinding {
   public final ImageView itemImage;
 
   @NonNull
+  public final TextView itemMoney;
+
+  @NonNull
+  public final TextView itemPerson;
+
+  @NonNull
   public final TextView itemStartTime;
 
   @NonNull
   public final TextView itemTitle;
 
   @NonNull
+  public final ImageView moneyIcon;
+
+  @NonNull
+  public final ImageView personIcon;
+
+  @NonNull
   public final ConstraintLayout relativeLayout;
 
   private CardViewBinding(@NonNull CardView rootView, @NonNull CardView cardView,
       @NonNull TextView itemDetail, @NonNull TextView itemGameName, @NonNull TextView itemHost,
-      @NonNull ImageView itemImage, @NonNull TextView itemStartTime, @NonNull TextView itemTitle,
-      @NonNull ConstraintLayout relativeLayout) {
+      @NonNull ImageView itemImage, @NonNull TextView itemMoney, @NonNull TextView itemPerson,
+      @NonNull TextView itemStartTime, @NonNull TextView itemTitle, @NonNull ImageView moneyIcon,
+      @NonNull ImageView personIcon, @NonNull ConstraintLayout relativeLayout) {
     this.rootView = rootView;
     this.cardView = cardView;
     this.itemDetail = itemDetail;
     this.itemGameName = itemGameName;
     this.itemHost = itemHost;
     this.itemImage = itemImage;
+    this.itemMoney = itemMoney;
+    this.itemPerson = itemPerson;
     this.itemStartTime = itemStartTime;
     this.itemTitle = itemTitle;
+    this.moneyIcon = moneyIcon;
+    this.personIcon = personIcon;
     this.relativeLayout = relativeLayout;
   }
 
@@ -112,6 +129,18 @@ public final class CardViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.itemMoney;
+      TextView itemMoney = rootView.findViewById(id);
+      if (itemMoney == null) {
+        break missingId;
+      }
+
+      id = R.id.itemPerson;
+      TextView itemPerson = rootView.findViewById(id);
+      if (itemPerson == null) {
+        break missingId;
+      }
+
       id = R.id.itemStartTime;
       TextView itemStartTime = rootView.findViewById(id);
       if (itemStartTime == null) {
@@ -124,6 +153,18 @@ public final class CardViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.moneyIcon;
+      ImageView moneyIcon = rootView.findViewById(id);
+      if (moneyIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.personIcon;
+      ImageView personIcon = rootView.findViewById(id);
+      if (personIcon == null) {
+        break missingId;
+      }
+
       id = R.id.relativeLayout;
       ConstraintLayout relativeLayout = rootView.findViewById(id);
       if (relativeLayout == null) {
@@ -131,7 +172,8 @@ public final class CardViewBinding implements ViewBinding {
       }
 
       return new CardViewBinding((CardView) rootView, cardView, itemDetail, itemGameName, itemHost,
-          itemImage, itemStartTime, itemTitle, relativeLayout);
+          itemImage, itemMoney, itemPerson, itemStartTime, itemTitle, moneyIcon, personIcon,
+          relativeLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

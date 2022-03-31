@@ -97,7 +97,7 @@
                     android:includeFontPadding="false"
                     android:text="Participants"
                     android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
 
             </RelativeLayout>
@@ -145,7 +145,7 @@
                     android:includeFontPadding="false"
                     android:text="Prize Amount"
                     android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
 
             </RelativeLayout>

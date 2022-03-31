@@ -4,6 +4,7 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,13 +26,18 @@ public final class TournamentPageCardViewBinding implements ViewBinding {
   public final TextView headerTitle;
 
   @NonNull
+  public final ImageView listIcon;
+
+  @NonNull
   public final CardView tournamentPageCardView;
 
   private TournamentPageCardViewBinding(@NonNull CardView rootView, @NonNull TextView bodyDetail,
-      @NonNull TextView headerTitle, @NonNull CardView tournamentPageCardView) {
+      @NonNull TextView headerTitle, @NonNull ImageView listIcon,
+      @NonNull CardView tournamentPageCardView) {
     this.rootView = rootView;
     this.bodyDetail = bodyDetail;
     this.headerTitle = headerTitle;
+    this.listIcon = listIcon;
     this.tournamentPageCardView = tournamentPageCardView;
   }
 
@@ -74,10 +80,16 @@ public final class TournamentPageCardViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.listIcon;
+      ImageView listIcon = rootView.findViewById(id);
+      if (listIcon == null) {
+        break missingId;
+      }
+
       CardView tournamentPageCardView = (CardView) rootView;
 
       return new TournamentPageCardViewBinding((CardView) rootView, bodyDetail, headerTitle,
-          tournamentPageCardView);
+          listIcon, tournamentPageCardView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
