@@ -10,8 +10,8 @@ import org.w3c.dom.Text
 
 class TournamentPageAdapter: RecyclerView.Adapter<TournamentPageAdapter.ViewHolder>() {
 
-    private var title = arrayOf("Location", "Start Time", "Rules")
-    private var details = arrayOf("long beach", "2:30", "DONT BITE")
+    private var title = arrayOf("Location", "Start Time", "Rules", "Contact Tournament Organizer", "Chat Room")
+    private var details = arrayOf("long beach", "2:30", "Tap for details", "TO Name", "Text with other participants")
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -27,7 +27,7 @@ class TournamentPageAdapter: RecyclerView.Adapter<TournamentPageAdapter.ViewHold
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return title.size
     }
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
