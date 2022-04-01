@@ -1,5 +1,7 @@
 package com.mongodb.app
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +18,8 @@ import com.mongodb.app.games.GamesListActivity
 import com.mongodb.app.games.NAME_GAME
 import io.realm.Sort
 
-class ActiveUpcomingAdapter: RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHolder>() {
+class ActiveUpcomingAdapter(private val mContext: Context): RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHolder>() {
+
 
     val user = realmApp.currentUser()
     val partition = "123"
@@ -63,6 +66,11 @@ class ActiveUpcomingAdapter: RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHold
         holder.itemPerson.text = tourneyQuery[position]!!.participant
         //holder.itemMoney.text = tourneyQuery[position]!!.p
         holder.itemImage.setImageResource(images[position])
+
+    }
+
+    private fun onItemClicked(holder: ActiveUpcomingAdapter.ViewHolder) {
+        mContext.startActivity(Intent(mContext, HomeActivity::class.java))
     }
 
     override fun getItemCount(): Int {

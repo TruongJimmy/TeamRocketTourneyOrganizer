@@ -1902,6 +1902,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_location
 drawable ic_money
+drawable ic_money_bill
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle

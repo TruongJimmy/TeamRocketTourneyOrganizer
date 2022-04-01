@@ -8,7 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import org.w3c.dom.Text
 
-class TournamentPageAdapter: RecyclerView.Adapter<TournamentPageAdapter.ViewHolder>() {
+class
+TournamentPageAdapter: RecyclerView.Adapter<TournamentPageAdapter.ViewHolder>() {
 
     private var title = arrayOf("Location", "Start Time", "Rules", "Contact TO", "Chat Room")
     private var details = arrayOf("long beach", "2:30", "Tap for details", "TO Name", "Text with other participants")

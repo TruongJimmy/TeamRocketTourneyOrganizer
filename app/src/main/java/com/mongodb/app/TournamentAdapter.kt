@@ -49,7 +49,7 @@ internal class TournamentAdapter(data: OrderedRealmCollection<Tournament>, priva
 
     }
     private fun onMenuClicked(holder: TournamentAdapter.TournamentViewHolder) {
-        //mContext.startActivity(Intent(mContext, TournamentDetailActivity::class.java))
+       // mContext.startActivity(Intent(mContext, TournamentDetailActivity::class.java))
 
         intent.putExtra(GAME_ID, currentGameId)
         mContext.startActivity(intent)

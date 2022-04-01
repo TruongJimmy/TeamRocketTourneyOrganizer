@@ -18,7 +18,7 @@ class ActiveUpcomingTournament:AppCompatActivity() {
         layoutManager = LinearLayoutManager(this)
         cardRecyclerView.layoutManager = layoutManager
 
-        adapter = ActiveUpcomingAdapter()
+        adapter = ActiveUpcomingAdapter(this@ActiveUpcomingTournament)
         cardRecyclerView.adapter = adapter
 
 

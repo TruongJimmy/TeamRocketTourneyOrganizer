@@ -512,6 +512,10 @@
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\csgo_background.xml"
     },
     {
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_money_bill.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\ic_money_bill.xml"
+    },
+    {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_xp_bar.xml.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\custom_xp_bar.xml"
     },
