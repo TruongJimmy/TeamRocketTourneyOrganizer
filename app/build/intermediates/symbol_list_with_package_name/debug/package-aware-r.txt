@@ -2556,6 +2556,7 @@ id toolbar_CurrentTournament
 id top
 id topPanel
 id touch_outside
+id tournamentGame
 id tournamentGame_input
 id tournamentImage
 id tournamentName

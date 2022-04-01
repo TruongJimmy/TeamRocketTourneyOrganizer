@@ -42,6 +42,9 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
   public final RecyclerView recyclerViewTourneyPage;
 
   @NonNull
+  public final TextView tournamentGame;
+
+  @NonNull
   public final ImageView tournamentImage;
 
   @NonNull
@@ -51,8 +54,8 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
       @NonNull ImageView moneyIcon, @NonNull TextView participantNumber,
       @NonNull TextView participantText, @NonNull ImageView personIcon,
       @NonNull TextView prizeAmount, @NonNull TextView prizePool,
-      @NonNull RecyclerView recyclerViewTourneyPage, @NonNull ImageView tournamentImage,
-      @NonNull TextView tournamentName) {
+      @NonNull RecyclerView recyclerViewTourneyPage, @NonNull TextView tournamentGame,
+      @NonNull ImageView tournamentImage, @NonNull TextView tournamentName) {
     this.rootView = rootView;
     this.moneyIcon = moneyIcon;
     this.participantNumber = participantNumber;
@@ -61,6 +64,7 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
     this.prizeAmount = prizeAmount;
     this.prizePool = prizePool;
     this.recyclerViewTourneyPage = recyclerViewTourneyPage;
+    this.tournamentGame = tournamentGame;
     this.tournamentImage = tournamentImage;
     this.tournamentName = tournamentName;
   }
@@ -134,6 +138,12 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tournamentGame;
+      TextView tournamentGame = rootView.findViewById(id);
+      if (tournamentGame == null) {
+        break missingId;
+      }
+
       id = R.id.tournamentImage;
       ImageView tournamentImage = rootView.findViewById(id);
       if (tournamentImage == null) {
@@ -148,7 +158,7 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
 
       return new ActivityTournamentPageBinding((LinearLayout) rootView, moneyIcon,
           participantNumber, participantText, personIcon, prizeAmount, prizePool,
-          recyclerViewTourneyPage, tournamentImage, tournamentName);
+          recyclerViewTourneyPage, tournamentGame, tournamentImage, tournamentName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

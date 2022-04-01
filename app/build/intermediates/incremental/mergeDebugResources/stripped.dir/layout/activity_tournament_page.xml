@@ -36,6 +36,7 @@
             android:textSize="30sp" />
 
         <TextView
+            android:id="@+id/tournamentGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tournamentName"
@@ -43,7 +44,7 @@
             android:layout_toRightOf="@+id/tournamentImage"
             android:fontFamily="sans-serif-medium"
             android:includeFontPadding="false"
-            android:text="Tournament Organizer"
+            android:text="Tournament Game"
             android:textColor="#FFEB3B"
             android:textSize="20sp" />
 
