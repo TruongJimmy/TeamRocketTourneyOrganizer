@@ -18,7 +18,7 @@ import com.mongodb.app.games.GamesListActivity
 import com.mongodb.app.games.NAME_GAME
 import io.realm.Sort
 
-class ActiveUpcomingAdapter(private val mContext: Context): RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHolder>() {
+class ActiveUpcomingAdapter(): RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHolder>() {
 
 
     val user = realmApp.currentUser()
@@ -69,9 +69,9 @@ class ActiveUpcomingAdapter(private val mContext: Context): RecyclerView.Adapter
 
     }
 
-    private fun onItemClicked(holder: ActiveUpcomingAdapter.ViewHolder) {
-        mContext.startActivity(Intent(mContext, HomeActivity::class.java))
-    }
+//    private fun onItemClicked(holder: ActiveUpcomingAdapter.ViewHolder) {
+//        mContext.startActivity(Intent(mContext, HomeActivity::class.java))
+//    }
 
     override fun getItemCount(): Int {
         return images.size
