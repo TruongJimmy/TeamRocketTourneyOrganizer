@@ -63,6 +63,7 @@ class ActiveUpcomingTournament:AppCompatActivity() {
                 intent.putExtra("location", tourneyQuery[position]!!.location)
                 intent.putExtra("startTime", tourneyQuery[position]!!.startTime)
                 intent.putExtra("tourneyName", tourneyQuery[position]!!.name)
+                intent.putExtra("tournamentType", tourneyQuery[position]!!.tournamentType)
 //                intent.putExtra("tourneyPicture", images[position])
                 startActivity(intent)
             }

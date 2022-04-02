@@ -2,11 +2,13 @@ package com.mongodb.app
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import io.realm.kotlin.where
 import io.realm.mongodb.sync.SyncConfiguration
@@ -15,6 +17,7 @@ import com.mongodb.app.games.GAME_ID
 import com.mongodb.app.games.GamesListActivity
 import com.mongodb.app.games.NAME_GAME
 import io.realm.*
+import java.util.*
 
 class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, private var images: IntArray): RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHolder>() {
 
@@ -66,6 +69,10 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+        val rnd = Random()
+        val currentColor = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
+        holder.cardview.setCardBackgroundColor(currentColor)
+
         holder.itemTitle.text = tourneyQuery[position]!!.name
         holder.itemDetail.text = tourneyQuery[position]!!.tournamentType
         holder.itemHost.text = tourneyQuery[position]!!.location
@@ -90,6 +97,7 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
         var itemGameName: TextView
         var itemPerson: TextView
         //var itemMoney: TextView
+        var cardview: CardView
 
         init {
             itemImage = itemView.findViewById(R.id.itemImage)
@@ -100,6 +108,7 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
             itemGameName= itemView.findViewById(R.id.itemGameName)
             itemPerson = itemView.findViewById(R.id.itemPerson)
            // itemMoney = itemView.findViewById(R.id.itemMoney)
+            cardview = itemView.findViewById(R.id.card_view)
 
             itemView.setOnClickListener {
                 listener.onItemClick(absoluteAdapterPosition)

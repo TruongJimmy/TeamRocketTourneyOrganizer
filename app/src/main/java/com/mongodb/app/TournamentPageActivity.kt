@@ -33,10 +33,11 @@ class TournamentPageActivity : AppCompatActivity() {
         var tourneyGameCall = bundle!!.getString("tourneyGame")
         var location = bundle!!.getString("location")
         var startTime = bundle!!.getString("startTime")
+        var tournamentType = bundle!!.getString("tournamentType")
 
-        var title = arrayOf("Location", "Start Time", "Rules", "Contact TO", "Chat Room")
-        var details = arrayOf(location, startTime, "Tap for details", "TO Name", "Text with other participants")
-        var images = intArrayOf(R.drawable.ic_location, R.drawable.ic_time, R.drawable.ic_rules, R.drawable.ic_send, R.drawable.ic_chat)
+        var title = arrayOf("Tournament Bracket", "Tournament Type", "Location", "Start Time", "Game", "Participants", "Rules", "Contact TO", "Chat Room")
+        var details = arrayOf("Tap to see bracket", tournamentType, location, startTime, tourneyGameCall, participantCall, "Tap for details", "TO Name", "Text with other participants")
+        var images = intArrayOf(R.drawable.ic_bracket, R.drawable.ic_type, R.drawable.ic_location, R.drawable.ic_time, R.drawable.ic_game, R.drawable.ic_person, R.drawable.ic_rules, R.drawable.ic_send, R.drawable.ic_chat)
         participants.text = participantCall
         tourneyName.text = tourneyNameCall
         tourneyGame.text = tourneyGameCall
