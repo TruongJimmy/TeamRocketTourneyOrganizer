@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import io.realm.Realm
@@ -23,6 +24,8 @@ class ActiveUpcomingTournament:AppCompatActivity() {
     // open the realm
     private var realm = Realm.getInstance(config)
     private var tourneyQuery = realm!!.where<Tournament>().findAllAsync()
+
+
 
 
     private var images = intArrayOf(
@@ -71,6 +74,7 @@ class ActiveUpcomingTournament:AppCompatActivity() {
 
 
     }
+
 
 }
 

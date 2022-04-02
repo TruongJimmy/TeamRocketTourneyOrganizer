@@ -69,9 +69,9 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val rnd = Random()
-        val currentColor = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
-        holder.cardview.setCardBackgroundColor(currentColor)
+//        val rnd = Random()
+//        val currentColor = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
+//        holder.
 
         holder.itemTitle.text = tourneyQuery[position]!!.name
         holder.itemDetail.text = tourneyQuery[position]!!.tournamentType
@@ -113,6 +113,8 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
             itemView.setOnClickListener {
                 listener.onItemClick(absoluteAdapterPosition)
             }
+
+
         }
     }
 
