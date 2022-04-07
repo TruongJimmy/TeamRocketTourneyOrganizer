@@ -80,12 +80,38 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
         holder.itemGameName.text = tourneyQuery[position]!!.game
         holder.itemPerson.text = tourneyQuery[position]!!.participant
         //holder.itemMoney.text = tourneyQuery[position]!!.p
-        holder.itemImage.setImageResource(images[position])
+        //holder.itemImage.setImageResource(images[position])
+
+        if (holder.itemGameName.text == "Valorant") {
+            holder.itemImage.setImageResource(R.mipmap.valorant_foreground)
+        } else if (holder.itemGameName.text == "Fortnite") {
+            holder.itemImage.setImageResource(R.mipmap.fortnite_foreground)
+        } else if (holder.itemGameName.text == "Apex Legends") {
+            holder.itemImage.setImageResource(R.mipmap.apex_foreground)
+        } else if (holder.itemGameName.text == "Dragon Ball FighterZ") {
+            holder.itemImage.setImageResource(R.mipmap.dbz_foreground)
+        } else if (holder.itemGameName.text == "Super Smash Bros.") {
+            holder.itemImage.setImageResource(R.mipmap.smash_foreground)
+        } else if (holder.itemGameName.text == "League of Legends") {
+            holder.itemImage.setImageResource(R.mipmap.lol_foreground)
+        } else if (holder.itemGameName.text == "Dota") {
+            holder.itemImage.setImageResource(R.mipmap.dota_foreground)
+        } else if (holder.itemGameName.text == "Counter-Strike: Global Offensive") {
+            holder.itemImage.setImageResource(R.mipmap.csgo_foreground)
+        } else if (holder.itemGameName.text == "Tom Clancy's Rainbow Six Siege") {
+            holder.itemImage.setImageResource(R.mipmap.r6_foreground)
+        } else if (holder.itemGameName.text == "Rocket League") {
+            holder.itemImage.setImageResource(R.mipmap.rocket_foreground)
+        } else {
+            holder.itemImage.setImageResource(R.mipmap.dbz_foreground)
+        }
+
 
     }
 
     override fun getItemCount(): Int {
         return images.size
+//        return tourneyQuery.size
     }
 
     inner class ViewHolder(itemView: View, listener: onItemClickListener): RecyclerView.ViewHolder(itemView) {

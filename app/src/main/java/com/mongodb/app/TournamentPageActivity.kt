@@ -34,6 +34,7 @@ class TournamentPageActivity : AppCompatActivity() {
         var location = bundle!!.getString("location")
         var startTime = bundle!!.getString("startTime")
         var tournamentType = bundle!!.getString("tournamentType")
+        var tourneyPicture = bundle!!.getString("tourneyPicture")
 
         var title = arrayOf("Tournament Bracket", "Tournament Type", "Location", "Start Time", "Game", "Participants", "Rules", "Contact TO", "Chat Room")
         var details = arrayOf("Tap to see bracket", tournamentType, location, startTime, tourneyGameCall, participantCall, "Tap for details", "TO Name", "Text with other participants")

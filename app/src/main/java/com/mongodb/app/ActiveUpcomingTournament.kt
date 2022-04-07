@@ -26,8 +26,6 @@ class ActiveUpcomingTournament:AppCompatActivity() {
     private var tourneyQuery = realm!!.where<Tournament>().findAllAsync()
 
 
-
-
     private var images = intArrayOf(
         R.mipmap.dbz_round,
         R.mipmap.dbz_round,
@@ -68,6 +66,31 @@ class ActiveUpcomingTournament:AppCompatActivity() {
                 intent.putExtra("tourneyName", tourneyQuery[position]!!.name)
                 intent.putExtra("tournamentType", tourneyQuery[position]!!.tournamentType)
 //                intent.putExtra("tourneyPicture", images[position])
+
+                if (tourneyQuery[position]!!.game == "Valorant") {
+                    intent.putExtra("tourneyPicture", R.mipmap.valorant_foreground)
+                } else if (tourneyQuery[position]!!.game == "Fortnite") {
+                    intent.putExtra("tourneyPicture", R.mipmap.fortnite_foreground)
+                } else if (tourneyQuery[position]!!.game == "Apex Legends") {
+                    intent.putExtra("tourneyPicture", R.mipmap.apex_foreground)
+                } else if (tourneyQuery[position]!!.game == "Dragon Ball FighterZ") {
+                    intent.putExtra("tourneyPicture", R.mipmap.dbz_foreground)
+                } else if (tourneyQuery[position]!!.game == "Super Smash Bros.") {
+                    intent.putExtra("tourneyPicture", R.mipmap.smash_foreground)
+                } else if (tourneyQuery[position]!!.game == "League of Legends") {
+                    intent.putExtra("tourneyPicture", R.mipmap.lol_foreground)
+                } else if (tourneyQuery[position]!!.game == "Dota") {
+                    intent.putExtra("tourneyPicture", R.mipmap.dota_foreground)
+                } else if (tourneyQuery[position]!!.game == "Counter-Strike: Global Offensive") {
+                    intent.putExtra("tourneyPicture", R.mipmap.csgo_foreground)
+                } else if (tourneyQuery[position]!!.game == "Tom Clancy's Rainbow Six Siege") {
+                    intent.putExtra("tourneyPicture", R.mipmap.r6_foreground)
+                } else if (tourneyQuery[position]!!.game == "Rocket League") {
+                    intent.putExtra("tourneyPicture", R.mipmap.rocket_foreground)
+                } else {
+                    intent.putExtra("tourneyPicture", R.mipmap.dbz_foreground)
+                }
+
                 startActivity(intent)
             }
         })
