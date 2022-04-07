@@ -43,6 +43,27 @@
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/menu/task_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/tournamentBracketsPoolsLibrary/TournamentBracketLib-master/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/activity_task.xml" value="0.11503623188405797" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/activity_tournament.xml" value="0.33" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_active_tournaments.xml" value="0.11503623188405797" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_bracket.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_bracket_v2.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_create_tourney.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_create_v2.xml" value="0.11503623188405797" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_home.xml" value="0.13" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_home_v2.xml" value="0.25" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_profile.xml" value="0.11503623188405797" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_profile_v2.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_search.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/fragment_search_v2.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/home_view.xml" value="0.18584070796460178" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/profile_view.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/rework_home_view.xml" value="0.1" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/tournament_detail_view.xml" value="0.25" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/layout/tournament_view.xml" value="0.18" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/menu/bot_menu_v2.xml" value="0.17" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/menu/bottom_menu.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/jtruo/Documents/GitHub/TeamRocketTourneyOrganizer/app/src/main/res/menu/bottom_menu_v2.xml" value="0.22447916666666667" />
         <entry key="app/src/main/res/layout/activity_after_notification.xml" value="0.259963768115942" />
         <entry key="app/src/main/res/layout/activity_create_tournament.xml" value="0.259963768115942" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.259963768115942" />

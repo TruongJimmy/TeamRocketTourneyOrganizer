@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_v2"
+    app:startDestination="@id/fragment_homeV2">
+
+    <fragment
+        android:id="@+id/fragment_homeV2"
+        android:name="com.mongodb.app.fragment_homeV2"
+        android:label="fragment_home_v2"
+        tools:layout="@layout/fragment_home_v2" />
+    <fragment
+        android:id="@+id/fragment_searchV2"
+        android:name="com.mongodb.app.fragment_searchV2"
+        android:label="fragment_search_v2"
+        tools:layout="@layout/fragment_search_v2" />
+    <fragment
+        android:id="@+id/fragment_createV2"
+        android:name="com.mongodb.app.fragment_createV2"
+        android:label="fragment_create_v2"
+        tools:layout="@layout/fragment_create_v2" />
+    <fragment
+        android:id="@+id/fragment_settingsV2"
+        android:name="com.mongodb.app.fragment_settingsV2"
+        android:label="fragment_settings_v2"
+        tools:layout="@layout/fragment_settings_v2" />
+    <fragment
+        android:id="@+id/fragment_profileV2"
+        android:name="com.mongodb.app.fragment_profileV2"
+        android:label="fragment_profile_v2"
+        tools:layout="@layout/fragment_profile_v2" />
+</navigation>

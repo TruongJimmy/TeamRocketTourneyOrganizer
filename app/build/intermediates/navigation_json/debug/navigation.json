@@ -3,5 +3,10 @@
     "name": "navigation_graph",
     "navigationXmlIds": [],
     "deepLinks": []
+  },
+  {
+    "name": "nav_graph_v2",
+    "navigationXmlIds": [],
+    "deepLinks": []
   }
 ]

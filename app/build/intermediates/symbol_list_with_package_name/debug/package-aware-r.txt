@@ -2068,6 +2068,7 @@ id bestChoice
 id blocking
 id bottom
 id bottomNavigationView
+id bottomNavigationView2
 id bounce
 id bounceBoth
 id bounceEnd
@@ -2191,7 +2192,13 @@ id floating_action_button
 id following
 id forever
 id fragmentContainerView
+id fragmentContainerView3
 id fragment_container_view_tag
+id fragment_createV2
+id fragment_homeV2
+id fragment_profileV2
+id fragment_searchV2
+id fragment_settingsV2
 id frost
 id game_detail_description
 id game_detail_image
@@ -2320,6 +2327,7 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id name
 id nav_controller_view_tag
+id nav_graph_v2
 id nav_host_fragment_container
 id navigation_bar_item_icon_view
 id navigation_bar_item_labels_group
@@ -2681,9 +2689,14 @@ layout fragment_bracket
 layout fragment_brackets_colomn
 layout fragment_brackts
 layout fragment_create_tourney
+layout fragment_create_v2
+layout fragment_home_v2
 layout fragment_profile
+layout fragment_profile_v2
 layout fragment_search
+layout fragment_search_v2
 layout fragment_settings
+layout fragment_settings_v2
 layout game_detail_activity
 layout game_header
 layout game_item
@@ -2779,6 +2792,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout tournament_detail_view
 layout tournament_view
+menu bot_menu_v2
 menu bottom_menu
 menu task_menu
 mipmap apex
@@ -2818,6 +2832,7 @@ mipmap smash_round
 mipmap valorant
 mipmap valorant_foreground
 mipmap valorant_round
+navigation nav_graph_v2
 navigation navigation_graph
 plurals mtrl_badge_content_description
 string Edit_Profile

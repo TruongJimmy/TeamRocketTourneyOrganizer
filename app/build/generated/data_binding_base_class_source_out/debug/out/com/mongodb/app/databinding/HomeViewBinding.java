@@ -9,7 +9,9 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -35,7 +37,13 @@ public final class HomeViewBinding implements ViewBinding {
   public final Button activeTournament;
 
   @NonNull
+  public final BottomNavigationView bottomNavigationView2;
+
+  @NonNull
   public final Button createTournament;
+
+  @NonNull
+  public final FragmentContainerView fragmentContainerView3;
 
   @NonNull
   public final ImageView imageView3;
@@ -54,7 +62,8 @@ public final class HomeViewBinding implements ViewBinding {
 
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
       @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
-      @NonNull Button activeTournament, @NonNull Button createTournament,
+      @NonNull Button activeTournament, @NonNull BottomNavigationView bottomNavigationView2,
+      @NonNull Button createTournament, @NonNull FragmentContainerView fragmentContainerView3,
       @NonNull ImageView imageView3, @NonNull Button memberButton,
       @NonNull ConstraintLayout memberRankingButton, @NonNull Button payPalButton,
       @NonNull Button suggestionPageButton) {
@@ -64,7 +73,9 @@ public final class HomeViewBinding implements ViewBinding {
     this.SearchTournament = SearchTournament;
     this.Settings = Settings;
     this.activeTournament = activeTournament;
+    this.bottomNavigationView2 = bottomNavigationView2;
     this.createTournament = createTournament;
+    this.fragmentContainerView3 = fragmentContainerView3;
     this.imageView3 = imageView3;
     this.memberButton = memberButton;
     this.memberRankingButton = memberRankingButton;
@@ -129,9 +140,21 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.bottomNavigationView2;
+      BottomNavigationView bottomNavigationView2 = rootView.findViewById(id);
+      if (bottomNavigationView2 == null) {
+        break missingId;
+      }
+
       id = R.id.create_Tournament;
       Button createTournament = rootView.findViewById(id);
       if (createTournament == null) {
+        break missingId;
+      }
+
+      id = R.id.fragmentContainerView3;
+      FragmentContainerView fragmentContainerView3 = rootView.findViewById(id);
+      if (fragmentContainerView3 == null) {
         break missingId;
       }
 
@@ -162,8 +185,9 @@ public final class HomeViewBinding implements ViewBinding {
       }
 
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings, activeTournament, createTournament, imageView3, memberButton,
-          memberRankingButton, payPalButton, suggestionPageButton);
+          SearchTournament, Settings, activeTournament, bottomNavigationView2, createTournament,
+          fragmentContainerView3, imageView3, memberButton, memberRankingButton, payPalButton,
+          suggestionPageButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
