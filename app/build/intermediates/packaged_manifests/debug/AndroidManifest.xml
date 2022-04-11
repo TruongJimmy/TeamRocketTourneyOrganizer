@@ -105,6 +105,9 @@
         <activity
             android:name="com.mongodb.app.PaypalActivity"
             android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.mongodb.app.NewProfile"
             android:screenOrientation="nosensor" /> <!-- <activity -->
         <!-- android:name=".LoginActivity" -->
         <!-- android:screenOrientation="nosensor" /> -->

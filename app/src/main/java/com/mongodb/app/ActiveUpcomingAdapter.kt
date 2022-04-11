@@ -72,6 +72,8 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
 //        val rnd = Random()
 //        val currentColor = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
 //        holder.
+        var moneySign = "$"
+        var prizeMoneyText = tourneyQuery[position]!!.prizeAmount
 
         holder.itemTitle.text = tourneyQuery[position]!!.name
         holder.itemDetail.text = tourneyQuery[position]!!.tournamentType
@@ -79,8 +81,8 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
         holder.itemStartTime.text = tourneyQuery[position]!!.startTime
         holder.itemGameName.text = tourneyQuery[position]!!.game
         holder.itemPerson.text = tourneyQuery[position]!!.participant
-        //holder.itemMoney.text = tourneyQuery[position]!!.p
-        //holder.itemImage.setImageResource(images[position])
+        holder.itemMoney.text = moneySign + prizeMoneyText
+//        holder.itemImage.setImageResource(images[position])
 
         if (holder.itemGameName.text == "Valorant") {
             holder.itemImage.setImageResource(R.mipmap.valorant_foreground)
@@ -111,7 +113,7 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
 
     override fun getItemCount(): Int {
         return images.size
-//        return tourneyQuery.size
+
     }
 
     inner class ViewHolder(itemView: View, listener: onItemClickListener): RecyclerView.ViewHolder(itemView) {
@@ -122,7 +124,7 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
         var itemStartTime: TextView
         var itemGameName: TextView
         var itemPerson: TextView
-        //var itemMoney: TextView
+        var itemMoney: TextView
         var cardview: CardView
 
         init {
@@ -133,7 +135,7 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
             itemStartTime = itemView.findViewById(R.id.itemStartTime)
             itemGameName= itemView.findViewById(R.id.itemGameName)
             itemPerson = itemView.findViewById(R.id.itemPerson)
-           // itemMoney = itemView.findViewById(R.id.itemMoney)
+            itemMoney = itemView.findViewById(R.id.itemMoney)
             cardview = itemView.findViewById(R.id.card_view)
 
             itemView.setOnClickListener {

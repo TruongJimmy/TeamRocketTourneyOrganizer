@@ -28,22 +28,37 @@ class ParticipantActivity: AppCompatActivity() {
         recyclerView = findViewById(R.id.participant_list)
         user = realmApp.currentUser()
         val functionsManager: Functions = realmApp.getFunctions(user)
-        functionsManager.callFunctionAsync("getParticipants", listOf("SMASHING BROS NIGHT"), ArrayList::class.java) { result ->
+        functionsManager.callFunctionAsync(
+            "getParticipants",
+            listOf("SMASHING BROS NIGHT"),
+            ArrayList::class.java
+        ) { result ->
             if (result.isSuccess) {
-                Log.v(TAG(), "successfully fetched team members. Number of team members: ${result.get().size}")
+                Log.v(
+                    TAG(),
+                    "successfully fetched team members. Number of team members: ${result.get().size}"
+                )
                 // The `getMyTeamMembers` function returns team members as Document objects. Convert them into Member objects so the MemberAdapter can display them.
-                this.participants= ArrayList(result.get().map { item -> Participant(item as Document) })
+                this.participants =
+                    ArrayList(result.get().map { item -> Participant(item as Document) })
                 recyclerView.layoutManager = LinearLayoutManager(this)
                 recyclerView.adapter = ParticipantAdapter(participants)
                 recyclerView.setHasFixedSize(true)
-                recyclerView.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
+                recyclerView.addItemDecoration(
+                    DividerItemDecoration(
+                        this,
+                        DividerItemDecoration.VERTICAL
+                    )
+                )
             } else {
                 Log.e(TAG(), "failed to get team members with: " + result.error)
             }
         }
 
     }
+
     override fun onDestroy() {
         super.onDestroy()
         recyclerView.adapter = null
     }
+}

@@ -104,9 +104,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun onProfileButtonClicked(){
-        val intent = Intent(Intent(this, ProfileActivity::class.java))
-        val email = getIntent().getStringExtra("EMAIL")
-        intent.putExtra("EMAIL", email)
+        val intent = Intent(Intent(this, NewProfile::class.java))
+//        val email = getIntent().getStringExtra("EMAIL")
+//        intent.putExtra("EMAIL", email)
         startActivity(intent)
     }
 }

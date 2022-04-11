@@ -85,7 +85,10 @@
         <activity
             android:name=".PaypalActivity"
             android:exported="true"
-            android:screenOrientation="nosensor" /> <!-- <activity -->
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".NewProfile"
+            android:screenOrientation="nosensor" /><!-- <activity -->
         <!-- android:name=".LoginActivity" -->
         <!-- android:screenOrientation="nosensor" /> -->
         <activity

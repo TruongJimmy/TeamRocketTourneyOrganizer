@@ -4,6 +4,10 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RatingBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -19,12 +23,29 @@ public final class SuggestionPageBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button button3;
+
+  @NonNull
+  public final ImageView imageView;
+
+  @NonNull
+  public final RatingBar ratingBar;
+
+  @NonNull
   public final RecyclerView recyclerView;
 
-  private SuggestionPageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView recyclerView) {
+  @NonNull
+  public final TextView textView2;
+
+  private SuggestionPageBinding(@NonNull ConstraintLayout rootView, @NonNull Button button3,
+      @NonNull ImageView imageView, @NonNull RatingBar ratingBar,
+      @NonNull RecyclerView recyclerView, @NonNull TextView textView2) {
     this.rootView = rootView;
+    this.button3 = button3;
+    this.imageView = imageView;
+    this.ratingBar = ratingBar;
     this.recyclerView = recyclerView;
+    this.textView2 = textView2;
   }
 
   @Override
@@ -54,13 +75,38 @@ public final class SuggestionPageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button3;
+      Button button3 = rootView.findViewById(id);
+      if (button3 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView;
+      ImageView imageView = rootView.findViewById(id);
+      if (imageView == null) {
+        break missingId;
+      }
+
+      id = R.id.ratingBar;
+      RatingBar ratingBar = rootView.findViewById(id);
+      if (ratingBar == null) {
+        break missingId;
+      }
+
       id = R.id.recycler_view;
       RecyclerView recyclerView = rootView.findViewById(id);
       if (recyclerView == null) {
         break missingId;
       }
 
-      return new SuggestionPageBinding((ConstraintLayout) rootView, recyclerView);
+      id = R.id.textView2;
+      TextView textView2 = rootView.findViewById(id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
+      return new SuggestionPageBinding((ConstraintLayout) rootView, button3, imageView, ratingBar,
+          recyclerView, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -20,16 +20,20 @@ public final class SuggestionPageRowBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView tournamentName;
+  public final TextView textView3;
 
   @NonNull
   public final ImageView tournamentPic;
 
-  private SuggestionPageRowBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView tournamentName, @NonNull ImageView tournamentPic) {
+  @NonNull
+  public final TextView userName;
+
+  private SuggestionPageRowBinding(@NonNull ConstraintLayout rootView, @NonNull TextView textView3,
+      @NonNull ImageView tournamentPic, @NonNull TextView userName) {
     this.rootView = rootView;
-    this.tournamentName = tournamentName;
+    this.textView3 = textView3;
     this.tournamentPic = tournamentPic;
+    this.userName = userName;
   }
 
   @Override
@@ -59,9 +63,9 @@ public final class SuggestionPageRowBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.tournamentName;
-      TextView tournamentName = rootView.findViewById(id);
-      if (tournamentName == null) {
+      id = R.id.textView3;
+      TextView textView3 = rootView.findViewById(id);
+      if (textView3 == null) {
         break missingId;
       }
 
@@ -71,8 +75,14 @@ public final class SuggestionPageRowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SuggestionPageRowBinding((ConstraintLayout) rootView, tournamentName,
-          tournamentPic);
+      id = R.id.userName;
+      TextView userName = rootView.findViewById(id);
+      if (userName == null) {
+        break missingId;
+      }
+
+      return new SuggestionPageRowBinding((ConstraintLayout) rootView, textView3, tournamentPic,
+          userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

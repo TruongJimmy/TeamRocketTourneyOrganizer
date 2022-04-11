@@ -43,6 +43,36 @@ class ActiveUpcomingTournament:AppCompatActivity() {
         R.mipmap.dbz_round,
         R.mipmap.dbz_round,
         R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
+        R.mipmap.dbz_round,
         R.mipmap.dbz_round
     )
 
@@ -65,7 +95,8 @@ class ActiveUpcomingTournament:AppCompatActivity() {
                 intent.putExtra("startTime", tourneyQuery[position]!!.startTime)
                 intent.putExtra("tourneyName", tourneyQuery[position]!!.name)
                 intent.putExtra("tournamentType", tourneyQuery[position]!!.tournamentType)
-//                intent.putExtra("tourneyPicture", images[position])
+                intent.putExtra("prizeAmount", tourneyQuery[position]!!.prizeAmount)
+                intent.putExtra("tourneyPicture", images[position])
 
                 if (tourneyQuery[position]!!.game == "Valorant") {
                     intent.putExtra("tourneyPicture", R.mipmap.valorant_foreground)

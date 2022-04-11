@@ -4,8 +4,8 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -21,10 +21,7 @@ public final class LoginViewBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatButton buttonLogin;
-
-  @NonNull
-  public final Button buttonNotify;
+  public final ImageView imageView2;
 
   @NonNull
   public final EditText inputPassword;
@@ -33,16 +30,19 @@ public final class LoginViewBinding implements ViewBinding {
   public final EditText inputUsername;
 
   @NonNull
-  public final Button registerButton;
+  public final AppCompatButton loginButton;
 
-  private LoginViewBinding(@NonNull ConstraintLayout rootView, @NonNull AppCompatButton buttonLogin,
-      @NonNull Button buttonNotify, @NonNull EditText inputPassword,
-      @NonNull EditText inputUsername, @NonNull Button registerButton) {
+  @NonNull
+  public final AppCompatButton registerButton;
+
+  private LoginViewBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView2,
+      @NonNull EditText inputPassword, @NonNull EditText inputUsername,
+      @NonNull AppCompatButton loginButton, @NonNull AppCompatButton registerButton) {
     this.rootView = rootView;
-    this.buttonLogin = buttonLogin;
-    this.buttonNotify = buttonNotify;
+    this.imageView2 = imageView2;
     this.inputPassword = inputPassword;
     this.inputUsername = inputUsername;
+    this.loginButton = loginButton;
     this.registerButton = registerButton;
   }
 
@@ -73,15 +73,9 @@ public final class LoginViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button_login;
-      AppCompatButton buttonLogin = rootView.findViewById(id);
-      if (buttonLogin == null) {
-        break missingId;
-      }
-
-      id = R.id.buttonNotify;
-      Button buttonNotify = rootView.findViewById(id);
-      if (buttonNotify == null) {
+      id = R.id.imageView2;
+      ImageView imageView2 = rootView.findViewById(id);
+      if (imageView2 == null) {
         break missingId;
       }
 
@@ -97,14 +91,20 @@ public final class LoginViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.loginButton;
+      AppCompatButton loginButton = rootView.findViewById(id);
+      if (loginButton == null) {
+        break missingId;
+      }
+
       id = R.id.registerButton;
-      Button registerButton = rootView.findViewById(id);
+      AppCompatButton registerButton = rootView.findViewById(id);
       if (registerButton == null) {
         break missingId;
       }
 
-      return new LoginViewBinding((ConstraintLayout) rootView, buttonLogin, buttonNotify,
-          inputPassword, inputUsername, registerButton);
+      return new LoginViewBinding((ConstraintLayout) rootView, imageView2, inputPassword,
+          inputUsername, loginButton, registerButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -20,7 +20,7 @@ class SuggestionPageAdapter:RecyclerView.Adapter<CustomViewHolder>() {
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         val tournamentTitles = tournamentTitles.get(position)
-        holder?.view?.tournamentName.text = tournamentTitles
+//        holder?.view?.tournamentName.text = tournamentTitles
 
         //var tournamentPics = tournamentPics.get(position)
         holder?.view?.tournamentPic.setImageResource(tournamentPics[position])

@@ -10,12 +10,14 @@ com/mongodb/app/databinding/ActivityRankingBinding.java
  com.mongodb.app.databinding.ActivityRankingBinding
 com/mongodb/app/databinding/FragmentProfileBinding.java
  com.mongodb.app.databinding.FragmentProfileBinding
+com/mongodb/app/databinding/ActivityParticipantsBinding.java
+ com.mongodb.app.databinding.ActivityParticipantsBinding
 com/mongodb/app/databinding/ActivityBracketBinding.java
  com.mongodb.app.databinding.ActivityBracketBinding
 com/mongodb/app/databinding/FragmentActiveTournamentsBinding.java
  com.mongodb.app.databinding.FragmentActiveTournamentsBinding
-io/realm/DefaultRealmModuleMediator.java
- io.realm.DefaultRealmModuleMediator
+com/mongodb/app/databinding/GameItemBinding.java
+ com.mongodb.app.databinding.GameItemBinding
 com/mongodb/app/databinding/ActivityGameBinding.java
  com.mongodb.app.databinding.ActivityGameBinding
 com/mongodb/app/databinding/ActivityCreateTournamentBinding.java
@@ -54,10 +56,12 @@ io/realm/com_mongodb_app_TaskRealmProxy.java
  io.realm.com_mongodb_app_TaskRealmProxy$TaskColumnInfo
 com/mongodb/app/databinding/AddGameLayoutBinding.java
  com.mongodb.app.databinding.AddGameLayoutBinding
-com/mongodb/app/databinding/ReworkHomeViewBinding.java
- com.mongodb.app.databinding.ReworkHomeViewBinding
+io/realm/DefaultRealmModuleMediator.java
+ io.realm.DefaultRealmModuleMediator
 com/mongodb/app/databinding/QrcodeViewBinding.java
  com.mongodb.app.databinding.QrcodeViewBinding
+com/mongodb/app/databinding/ActivityNewProfileBinding.java
+ com.mongodb.app.databinding.ActivityNewProfileBinding
 io/realm/com_mongodb_app_TournamentRealmProxy.java
  io.realm.com_mongodb_app_TournamentRealmProxy
  io.realm.com_mongodb_app_TournamentRealmProxy$ClassNameHelper
@@ -111,9 +115,11 @@ com/mongodb/app/databinding/HomeViewBinding.java
  com.mongodb.app.databinding.HomeViewBinding
 com/mongodb/app/databinding/ActivityReportBinding.java
  com.mongodb.app.databinding.ActivityReportBinding
+com/mongodb/app/databinding/ParticipantViewBinding.java
+ com.mongodb.app.databinding.ParticipantViewBinding
 com/mongodb/app/databinding/ActivityTournamentPageBinding.java
  com.mongodb.app.databinding.ActivityTournamentPageBinding
 com/mongodb/app/databinding/FragmentSettingsBinding.java
  com.mongodb.app.databinding.FragmentSettingsBinding
-com/mongodb/app/databinding/GameItemBinding.java
- com.mongodb.app.databinding.GameItemBinding
+com/mongodb/app/databinding/ReworkHomeViewBinding.java
+ com.mongodb.app.databinding.ReworkHomeViewBinding

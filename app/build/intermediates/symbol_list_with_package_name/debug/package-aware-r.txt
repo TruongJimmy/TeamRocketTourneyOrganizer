@@ -1859,6 +1859,9 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable budokai_background
+drawable button
+drawable circle
+drawable circle_bg
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1888,9 +1891,11 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dota_background
+drawable edit_text_bg
 drawable fortnite_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable grad
 drawable home
 drawable ic_baseline_add_24
 drawable ic_bracket
@@ -2089,7 +2094,8 @@ id bracketFragment2
 id bracket_view
 id builtWithSync
 id button
-id buttonNotify
+id button2
+id button3
 id buttonPanel
 id buttonRegister
 id button_cancel_change_pass
@@ -2099,7 +2105,6 @@ id button_create_login
 id button_edit_profile
 id button_existing_account
 id button_help
-id button_login
 id button_logout
 id cache_measures
 id cancel_action
@@ -2242,7 +2247,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id imageView2
 id imageView3
+id imgUser
 id immediateStop
 id included
 id info
@@ -2278,11 +2286,13 @@ id light
 id line1
 id line3
 id linear
+id linlay1
 id listIcon
 id listMode
 id list_item
 id locale
 id location_input
+id loginButton
 id ltr
 id masked
 id match_constraint
@@ -2383,6 +2393,8 @@ id parent_matrix
 id participantNumber
 id participantText
 id participant_input
+id participant_list
+id participant_menu
 id password_toggle
 id path
 id pathRelative
@@ -2399,6 +2411,7 @@ id postLayout
 id prizeAmount
 id prizePool
 id prize_pool
+id profileEmail
 id profileFragment
 id profile_back
 id progress_circular
@@ -2406,6 +2419,7 @@ id progress_horizontal
 id project_users_list
 id qr_code
 id radio
+id ratingBar
 id ratio
 id reActiveTourneyButton
 id rectangles
@@ -2413,6 +2427,7 @@ id recyclerViewTourneyPage
 id recycler_view
 id registerButton
 id relativeLayout
+id rellay1
 id remove_button
 id reportReason
 id reverseSawtooth
@@ -2451,6 +2466,7 @@ id select_dialog_listview
 id selected
 id selection_type
 id sendReport
+id setting
 id settingsFragment
 id sharedValueSet
 id sharedValueUnset
@@ -2534,6 +2550,8 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2580,12 +2598,15 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_address
+id tv_name
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
 id userList
+id userName
 id userReport
 id user_avatar
 id user_avatar_profile
@@ -2687,6 +2708,8 @@ layout activity_create_tournament
 layout activity_game
 layout activity_login
 layout activity_main
+layout activity_new_profile
+layout activity_participants
 layout activity_paypal
 layout activity_player
 layout activity_ranking
@@ -2790,6 +2813,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout participant_view
 layout player_view
 layout profile_view
 layout qrcode_view

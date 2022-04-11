@@ -20,5 +20,7 @@ open class Tournament(
 
     var startTime: String = "",
 
-    var tournamentType: String = ""
+    var tournamentType: String = "",
+
+    var prizeAmount: String = ""
 ): RealmObject() {}

@@ -37,7 +37,7 @@
 21-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:19:9-33
 22
 23    <application
-23-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:7:5-102:19
+23-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:7:5-105:19
 24        android:name="com.mongodb.app.App"
 24-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:8:9-28
 25        android:allowBackup="true"
@@ -203,105 +203,111 @@
 106-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:86:13-43
 107            android:exported="true"
 107-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:87:13-36
-108            android:screenOrientation="nosensor" /> <!-- <activity -->
+108            android:screenOrientation="nosensor" />
 108-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:88:13-49
-109        <!-- android:name=".LoginActivity" -->
-110        <!-- android:screenOrientation="nosensor" /> -->
-111        <activity
-111-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:91:9-101:20
-112            android:name="com.mongodb.app.LoginActivity"
-112-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:92:13-42
-113            android:exported="true"
-113-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:93:13-36
-114            android:label="@string/app_name"
-114-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:94:13-45
-115            android:screenOrientation="nosensor" >
-115-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:95:13-49
-116            <intent-filter>
-116-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:96:13-100:29
-117                <action android:name="android.intent.action.MAIN" />
-117-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:97:17-69
-117-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:97:25-66
-118
-119                <category android:name="android.intent.category.LAUNCHER" />
-119-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:99:17-77
-119-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:99:27-74
-120            </intent-filter>
-121        </activity>
-122
-123        <uses-library
-123-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-124            android:name="androidx.window.extensions"
-124-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-125            android:required="false" />
-125-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+109        <activity
+109-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:89:9-91:52
+110            android:name="com.mongodb.app.NewProfile"
+110-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:90:13-39
+111            android:screenOrientation="nosensor" /> <!-- <activity -->
+111-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:91:13-49
+112        <!-- android:name=".LoginActivity" -->
+113        <!-- android:screenOrientation="nosensor" /> -->
+114        <activity
+114-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:94:9-104:20
+115            android:name="com.mongodb.app.LoginActivity"
+115-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:95:13-42
+116            android:exported="true"
+116-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:96:13-36
+117            android:label="@string/app_name"
+117-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:97:13-45
+118            android:screenOrientation="nosensor" >
+118-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:98:13-49
+119            <intent-filter>
+119-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:99:13-103:29
+120                <action android:name="android.intent.action.MAIN" />
+120-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:100:17-69
+120-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:100:25-66
+121
+122                <category android:name="android.intent.category.LAUNCHER" />
+122-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:102:17-77
+122-->C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:102:27-74
+123            </intent-filter>
+124        </activity>
+125
 126        <uses-library
-126-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-127            android:name="androidx.window.sidecar"
-127-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+126-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+127            android:name="androidx.window.extensions"
+127-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
 128            android:required="false" />
-128-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-129
-130        <activity
-130-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-131            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-131-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-132            android:exported="false"
-132-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-133            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-133-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-134
-135        <meta-data
-135-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-136            android:name="com.google.android.gms.version"
-136-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-137            android:value="@integer/google_play_services_version" />
-137-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-138
-139        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
-139-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:13:9-84
-139-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:13:19-81
-140        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
-140-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:14:9-90
-140-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:14:19-87
-141        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
-141-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:15:9-91
-141-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:15:19-88
-142        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
-142-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:16:9-82
-142-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:16:19-79
-143        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
-143-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:17:9-96
-143-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:17:19-93
-144        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
-144-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:18:9-97
-144-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:18:19-94
-145        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
-145-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:19:9-94
-145-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:19:19-91
-146        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
-146-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:20:9-97
-146-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:20:19-94
-147        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
-147-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:21:9-98
-147-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:21:19-95
-148
-149        <service
-149-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:23:9-25:40
-150            android:name="com.paypal.android.sdk.payments.PayPalService"
-150-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:24:13-73
-151            android:exported="false" />
-151-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:25:13-37
-152
-153        <activity
-153-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:22:9-24:66
-154            android:name="io.card.payment.CardIOActivity"
-154-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:23:13-58
-155            android:configChanges="keyboardHidden|orientation" />
-155-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:24:13-63
-156        <activity android:name="io.card.payment.DataEntryActivity" />
-156-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:25:9-70
-156-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:25:19-67
-157    </application>
-158
-159</manifest>
+128-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+129        <uses-library
+129-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+130            android:name="androidx.window.sidecar"
+130-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+131            android:required="false" />
+131-->[androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+132
+133        <activity
+133-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+134            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+134-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+135            android:exported="false"
+135-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+136            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+136-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\432443eaee8f15f26f90968382e56747\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+137
+138        <meta-data
+138-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+139            android:name="com.google.android.gms.version"
+139-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+140            android:value="@integer/google_play_services_version" />
+140-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\07d9de5a4294010294eb39ff73e0f5e5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+141
+142        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+142-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:13:9-84
+142-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:13:19-81
+143        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+143-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:14:9-90
+143-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:14:19-87
+144        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+144-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:15:9-91
+144-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:15:19-88
+145        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+145-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:16:9-82
+145-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:16:19-79
+146        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+146-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:17:9-96
+146-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:17:19-93
+147        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+147-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:18:9-97
+147-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:18:19-94
+148        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+148-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:19:9-94
+148-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:19:19-91
+149        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+149-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:20:9-97
+149-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:20:19-94
+150        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+150-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:21:9-98
+150-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:21:19-95
+151
+152        <service
+152-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:23:9-25:40
+153            android:name="com.paypal.android.sdk.payments.PayPalService"
+153-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:24:13-73
+154            android:exported="false" />
+154-->[com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a9afd3c19c38f6dfb3e3974ae16a819f\jetified-paypal-android-sdk-2.14.2\AndroidManifest.xml:25:13-37
+155
+156        <activity
+156-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:22:9-24:66
+157            android:name="io.card.payment.CardIOActivity"
+157-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:23:13-58
+158            android:configChanges="keyboardHidden|orientation" />
+158-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:24:13-63
+159        <activity android:name="io.card.payment.DataEntryActivity" />
+159-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:25:9-70
+159-->[io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:25:19-67
+160    </application>
+161
+162</manifest>

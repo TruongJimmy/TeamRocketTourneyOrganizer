@@ -1,7 +1,9 @@
 package com.mongodb.app
 
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +17,9 @@ class TournamentPageActivity : AppCompatActivity() {
     private lateinit var tourneyName: TextView
     private lateinit var prize: TextView
     private lateinit var tourneyGame: TextView
+    private lateinit var tourneyImage: ImageView
+    private var moneySign = "$"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +30,7 @@ class TournamentPageActivity : AppCompatActivity() {
         prize = findViewById(R.id.prizeAmount)
         tourneyName = findViewById(R.id.tournamentName)
         tourneyGame = findViewById(R.id.tournamentGame)
-
+        tourneyImage = findViewById(R.id.tournamentImage)
 
         var bundle: Bundle? = intent.extras
         var participantCall = bundle!!.getString("participant")
@@ -34,6 +39,7 @@ class TournamentPageActivity : AppCompatActivity() {
         var location = bundle!!.getString("location")
         var startTime = bundle!!.getString("startTime")
         var tournamentType = bundle!!.getString("tournamentType")
+        var prizeAmount = bundle!!.getString("prizeAmount")
         var tourneyPicture = bundle!!.getString("tourneyPicture")
 
         var title = arrayOf("Tournament Bracket", "Tournament Type", "Location", "Start Time", "Game", "Participants", "Rules", "Contact TO", "Chat Room")
@@ -42,6 +48,13 @@ class TournamentPageActivity : AppCompatActivity() {
         participants.text = participantCall
         tourneyName.text = tourneyNameCall
         tourneyGame.text = tourneyGameCall
+        prize.text = moneySign + prizeAmount
+
+        //Setting the game image
+        if (tourneyGameCall != null) {
+            setTourneyImage(tourneyGameCall)
+        }
+
 
 
         layoutManager = LinearLayoutManager(this)
@@ -49,6 +62,32 @@ class TournamentPageActivity : AppCompatActivity() {
 
         adapter = TournamentPageAdapter(title, details, images)
         recyclerViewTourneyPage.adapter = adapter
+    }
+
+    private fun setTourneyImage(tourneyGameName: String) {
+        if (tourneyGameName == "Valorant") {
+            tourneyImage.setImageResource(R.mipmap.valorant_foreground)
+        } else if (tourneyGameName == "Fortnite") {
+            tourneyImage.setImageResource(R.mipmap.fortnite_foreground)
+        } else if (tourneyGameName == "Apex Legends") {
+            tourneyImage.setImageResource(R.mipmap.apex_foreground)
+        } else if (tourneyGameName == "Dragon Ball FighterZ") {
+            tourneyImage.setImageResource(R.mipmap.dbz_foreground)
+        } else if (tourneyGameName == "Super Smash Bros.") {
+            tourneyImage.setImageResource(R.mipmap.smash_foreground)
+        } else if (tourneyGameName == "League of Legends") {
+            tourneyImage.setImageResource(R.mipmap.lol_foreground)
+        } else if (tourneyGameName == "Dota") {
+            tourneyImage.setImageResource(R.mipmap.dota_foreground)
+        } else if (tourneyGameName == "Counter-Strike: Global Offensive") {
+            tourneyImage.setImageResource(R.mipmap.csgo_foreground)
+        } else if (tourneyGameName == "Tom Clancy's Rainbow Six Siege") {
+            tourneyImage.setImageResource(R.mipmap.r6_foreground)
+        } else if (tourneyGameName == "Rocket League") {
+            tourneyImage.setImageResource(R.mipmap.rocket_foreground)
+        } else {
+            tourneyImage.setImageResource(R.mipmap.dbz_foreground)
+        }
     }
 }
 
