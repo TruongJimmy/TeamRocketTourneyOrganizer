@@ -16,6 +16,12 @@
             android:name=".TournamentPageActivity"
             android:exported="false" />
         <activity
+            android:name=".TournamentsOwnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParticipantActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActiveUpcomingTournament"
             android:exported="false" />
         <activity

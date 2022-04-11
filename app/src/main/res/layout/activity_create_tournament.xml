@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:autofillHints="Prize Amount"
     tools:context=".CreateTournamentActivity">
 
     <TextView
@@ -116,6 +117,25 @@
         app:layout_constraintTop_toBottomOf="@+id/startTime_input" />
 
     <EditText
+        android:id="@+id/pAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+
+        android:ems="10"
+        android:hint="Prize Amount"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/startTime_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/startTime_input"
+        app:layout_constraintTop_toBottomOf="@+id/startTime_input" />
+
+    <EditText
         android:id="@+id/tournamentGame_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -137,12 +157,14 @@
         android:id="@+id/createTournamentButton_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
 
+        android:layout_marginTop="40dp"
         android:text="Create the Tournament!"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tournamentType"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tournamentType"
-        app:layout_constraintTop_toBottomOf="@+id/tournamentType" />
+        app:layout_constraintTop_toBottomOf="@+id/pAmount" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar_createTournamentActivity"

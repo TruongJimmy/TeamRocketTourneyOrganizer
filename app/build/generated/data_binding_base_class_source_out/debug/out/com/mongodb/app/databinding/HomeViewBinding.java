@@ -35,50 +35,31 @@ public final class HomeViewBinding implements ViewBinding {
   public final Button activeTournament;
 
   @NonNull
-  public final Button createTournament;
-
-  @NonNull
-  public final ImageView imageView3;
+  public final ImageView appLogo;
 
   @NonNull
   public final Button memberButton;
 
   @NonNull
-  public final ConstraintLayout memberRankingButton;
-
-  @NonNull
   public final Button payPalButton;
-
-  @NonNull
-  public final Button reActiveTourneyButton;
 
   @NonNull
   public final Button suggestionPageButton;
 
-  @NonNull
-  public final Button tourneyPage;
-
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
       @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
-      @NonNull Button activeTournament, @NonNull Button createTournament,
-      @NonNull ImageView imageView3, @NonNull Button memberButton,
-      @NonNull ConstraintLayout memberRankingButton, @NonNull Button payPalButton,
-      @NonNull Button reActiveTourneyButton, @NonNull Button suggestionPageButton,
-      @NonNull Button tourneyPage) {
+      @NonNull Button activeTournament, @NonNull ImageView appLogo, @NonNull Button memberButton,
+      @NonNull Button payPalButton, @NonNull Button suggestionPageButton) {
     this.rootView = rootView;
     this.CreateTournament = CreateTournament;
     this.Profile = Profile;
     this.SearchTournament = SearchTournament;
     this.Settings = Settings;
     this.activeTournament = activeTournament;
-    this.createTournament = createTournament;
-    this.imageView3 = imageView3;
+    this.appLogo = appLogo;
     this.memberButton = memberButton;
-    this.memberRankingButton = memberRankingButton;
     this.payPalButton = payPalButton;
-    this.reActiveTourneyButton = reActiveTourneyButton;
     this.suggestionPageButton = suggestionPageButton;
-    this.tourneyPage = tourneyPage;
   }
 
   @Override
@@ -138,15 +119,9 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.create_Tournament;
-      Button createTournament = rootView.findViewById(id);
-      if (createTournament == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView3;
-      ImageView imageView3 = rootView.findViewById(id);
-      if (imageView3 == null) {
+      id = R.id.appLogo;
+      ImageView appLogo = rootView.findViewById(id);
+      if (appLogo == null) {
         break missingId;
       }
 
@@ -156,17 +131,9 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout memberRankingButton = (ConstraintLayout) rootView;
-
       id = R.id.payPalButton;
       Button payPalButton = rootView.findViewById(id);
       if (payPalButton == null) {
-        break missingId;
-      }
-
-      id = R.id.reActiveTourneyButton;
-      Button reActiveTourneyButton = rootView.findViewById(id);
-      if (reActiveTourneyButton == null) {
         break missingId;
       }
 
@@ -176,16 +143,9 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tourneyPage;
-      Button tourneyPage = rootView.findViewById(id);
-      if (tourneyPage == null) {
-        break missingId;
-      }
-
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings, activeTournament, createTournament, imageView3, memberButton,
-          memberRankingButton, payPalButton, reActiveTourneyButton, suggestionPageButton,
-          tourneyPage);
+          SearchTournament, Settings, activeTournament, appLogo, memberButton, payPalButton,
+          suggestionPageButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

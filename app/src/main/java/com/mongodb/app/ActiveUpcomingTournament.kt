@@ -27,53 +27,7 @@ class ActiveUpcomingTournament:AppCompatActivity() {
 
 
     private var images = intArrayOf(
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round,
-        R.mipmap.dbz_round
+        R.drawable.dbz_background
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -96,7 +50,7 @@ class ActiveUpcomingTournament:AppCompatActivity() {
                 intent.putExtra("tourneyName", tourneyQuery[position]!!.name)
                 intent.putExtra("tournamentType", tourneyQuery[position]!!.tournamentType)
                 intent.putExtra("prizeAmount", tourneyQuery[position]!!.prizeAmount)
-                intent.putExtra("tourneyPicture", images[position])
+                //intent.putExtra("tourneyPicture", images[position])
 
                 if (tourneyQuery[position]!!.game == "Valorant") {
                     intent.putExtra("tourneyPicture", R.mipmap.valorant_foreground)

@@ -22,12 +22,6 @@ public final class ActivityNewProfileBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final Button button;
-
-  @NonNull
-  public final Button button2;
-
-  @NonNull
   public final RelativeLayout imgUser;
 
   @NonNull
@@ -43,23 +37,30 @@ public final class ActivityNewProfileBinding implements ViewBinding {
   public final ImageView setting;
 
   @NonNull
+  public final Button tournamentsIn;
+
+  @NonNull
+  public final Button tournamentsOwn;
+
+  @NonNull
   public final TextView tvAddress;
 
   @NonNull
   public final TextView tvName;
 
-  private ActivityNewProfileBinding(@NonNull RelativeLayout rootView, @NonNull Button button,
-      @NonNull Button button2, @NonNull RelativeLayout imgUser, @NonNull LinearLayout linlay1,
+  private ActivityNewProfileBinding(@NonNull RelativeLayout rootView,
+      @NonNull RelativeLayout imgUser, @NonNull LinearLayout linlay1,
       @NonNull TextView profileEmail, @NonNull RelativeLayout rellay1, @NonNull ImageView setting,
-      @NonNull TextView tvAddress, @NonNull TextView tvName) {
+      @NonNull Button tournamentsIn, @NonNull Button tournamentsOwn, @NonNull TextView tvAddress,
+      @NonNull TextView tvName) {
     this.rootView = rootView;
-    this.button = button;
-    this.button2 = button2;
     this.imgUser = imgUser;
     this.linlay1 = linlay1;
     this.profileEmail = profileEmail;
     this.rellay1 = rellay1;
     this.setting = setting;
+    this.tournamentsIn = tournamentsIn;
+    this.tournamentsOwn = tournamentsOwn;
     this.tvAddress = tvAddress;
     this.tvName = tvName;
   }
@@ -91,18 +92,6 @@ public final class ActivityNewProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = rootView.findViewById(id);
-      if (button == null) {
-        break missingId;
-      }
-
-      id = R.id.button2;
-      Button button2 = rootView.findViewById(id);
-      if (button2 == null) {
-        break missingId;
-      }
-
       id = R.id.imgUser;
       RelativeLayout imgUser = rootView.findViewById(id);
       if (imgUser == null) {
@@ -133,6 +122,18 @@ public final class ActivityNewProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tournamentsIn;
+      Button tournamentsIn = rootView.findViewById(id);
+      if (tournamentsIn == null) {
+        break missingId;
+      }
+
+      id = R.id.tournamentsOwn;
+      Button tournamentsOwn = rootView.findViewById(id);
+      if (tournamentsOwn == null) {
+        break missingId;
+      }
+
       id = R.id.tv_address;
       TextView tvAddress = rootView.findViewById(id);
       if (tvAddress == null) {
@@ -145,8 +146,8 @@ public final class ActivityNewProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNewProfileBinding((RelativeLayout) rootView, button, button2, imgUser,
-          linlay1, profileEmail, rellay1, setting, tvAddress, tvName);
+      return new ActivityNewProfileBinding((RelativeLayout) rootView, imgUser, linlay1,
+          profileEmail, rellay1, setting, tournamentsIn, tournamentsOwn, tvAddress, tvName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -303,38 +303,40 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/tournamentsIn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="43dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="260dp"
-            android:layout_marginBottom="358dp"
+            android:layout_marginEnd="222dp"
+            android:layout_marginBottom="351dp"
             android:backgroundTint="#fece2f"
-            android:text="Button1"
+            android:text="Tournaments In"
             android:textColor="@color/black"
+            android:textSize="10dp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/tournamentsOwn"
+            android:layout_width="148dp"
+            android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="260dp"
+            android:layout_marginStart="226dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="358dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="354dp"
             android:backgroundTint="#fece2f"
-            android:text="Button2"
+            android:text="Tournaments Own"
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textSize="10dp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

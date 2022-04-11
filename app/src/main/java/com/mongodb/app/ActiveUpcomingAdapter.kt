@@ -112,8 +112,8 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
     }
 
     override fun getItemCount(): Int {
-        return images.size
-
+        //return images.size
+        return 47
     }
 
     inner class ViewHolder(itemView: View, listener: onItemClickListener): RecyclerView.ViewHolder(itemView) {

@@ -1,13 +1,20 @@
 package com.mongodb.app
 
+import android.content.Intent
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.DocumentsContract
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import io.realm.Realm
+import io.realm.mongodb.functions.Functions
 import kotlinx.android.synthetic.main.activity_tournament_page.*
+import org.bson.Document
 
 class TournamentPageActivity : AppCompatActivity() {
 
@@ -19,18 +26,21 @@ class TournamentPageActivity : AppCompatActivity() {
     private lateinit var tourneyGame: TextView
     private lateinit var tourneyImage: ImageView
     private var moneySign = "$"
+    private lateinit var join: TextView
+    private var user: io.realm.mongodb.User? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tournament_page)
-
+        user = realmApp.currentUser()
 
         participants = findViewById(R.id.participantNumber)
         prize = findViewById(R.id.prizeAmount)
         tourneyName = findViewById(R.id.tournamentName)
         tourneyGame = findViewById(R.id.tournamentGame)
         tourneyImage = findViewById(R.id.tournamentImage)
+        join = findViewById(R.id.Join)
 
         var bundle: Bundle? = intent.extras
         var participantCall = bundle!!.getString("participant")
@@ -53,6 +63,29 @@ class TournamentPageActivity : AppCompatActivity() {
         //Setting the game image
         if (tourneyGameCall != null) {
             setTourneyImage(tourneyGameCall)
+        }
+
+        participants.setOnClickListener {
+            val intent = Intent(this@TournamentPageActivity, ParticipantActivity::class.java)
+            intent.putExtra("tourneyName", tourneyNameCall)
+            startActivity(intent)
+        }
+
+        join.setOnClickListener{
+            val functionsManager: Functions = realmApp.getFunctions(user)
+            functionsManager.callFunctionAsync(
+                "addParticipant",
+                listOf(tourneyNameCall), // game name
+                Document::class.java
+            ) { result ->
+                if (result.isSuccess) {
+                    Log.v(TAG(), "Attempted to add participant. Result: ${result.get()}")
+                    Toast.makeText(this, "Joined tournament", Toast.LENGTH_LONG).show()
+                } else {
+                    Log.e(TAG(), "failed to add participant with: " + result.error)
+                    Toast.makeText(this, result.error.errorMessage, Toast.LENGTH_LONG).show()
+                }
+            }
         }
 
 

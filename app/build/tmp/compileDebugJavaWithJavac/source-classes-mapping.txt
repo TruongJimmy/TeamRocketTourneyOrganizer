@@ -16,8 +16,8 @@ com/mongodb/app/databinding/ActivityBracketBinding.java
  com.mongodb.app.databinding.ActivityBracketBinding
 com/mongodb/app/databinding/FragmentActiveTournamentsBinding.java
  com.mongodb.app.databinding.FragmentActiveTournamentsBinding
-com/mongodb/app/databinding/GameItemBinding.java
- com.mongodb.app.databinding.GameItemBinding
+io/realm/DefaultRealmModuleMediator.java
+ io.realm.DefaultRealmModuleMediator
 com/mongodb/app/databinding/ActivityGameBinding.java
  com.mongodb.app.databinding.ActivityGameBinding
 com/mongodb/app/databinding/ActivityCreateTournamentBinding.java
@@ -56,8 +56,8 @@ io/realm/com_mongodb_app_TaskRealmProxy.java
  io.realm.com_mongodb_app_TaskRealmProxy$TaskColumnInfo
 com/mongodb/app/databinding/AddGameLayoutBinding.java
  com.mongodb.app.databinding.AddGameLayoutBinding
-io/realm/DefaultRealmModuleMediator.java
- io.realm.DefaultRealmModuleMediator
+com/mongodb/app/databinding/ReworkHomeViewBinding.java
+ com.mongodb.app.databinding.ReworkHomeViewBinding
 com/mongodb/app/databinding/QrcodeViewBinding.java
  com.mongodb.app.databinding.QrcodeViewBinding
 com/mongodb/app/databinding/ActivityNewProfileBinding.java
@@ -121,5 +121,5 @@ com/mongodb/app/databinding/ActivityTournamentPageBinding.java
  com.mongodb.app.databinding.ActivityTournamentPageBinding
 com/mongodb/app/databinding/FragmentSettingsBinding.java
  com.mongodb.app.databinding.FragmentSettingsBinding
-com/mongodb/app/databinding/ReworkHomeViewBinding.java
- com.mongodb.app.databinding.ReworkHomeViewBinding
+com/mongodb/app/databinding/GameItemBinding.java
+ com.mongodb.app.databinding.GameItemBinding

@@ -36,6 +36,12 @@
             android:name="com.mongodb.app.TournamentPageActivity"
             android:exported="false" />
         <activity
+            android:name="com.mongodb.app.TournamentsOwnActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mongodb.app.ParticipantActivity"
+            android:exported="false" />
+        <activity
             android:name="com.mongodb.app.ActiveUpcomingTournament"
             android:exported="false" />
         <activity

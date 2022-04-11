@@ -1977,6 +1977,7 @@ id Create_Tournament
 id ExperienceBar
 id FUNCTION
 id GiveXP
+id Join
 id META
 id NO_DEBUG
 id Profile
@@ -2067,6 +2068,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appLogo
 id arc
 id asConfigured
 id async
@@ -2093,8 +2095,6 @@ id bracketFragment
 id bracketFragment2
 id bracket_view
 id builtWithSync
-id button
-id button2
 id button3
 id buttonPanel
 id buttonRegister
@@ -2147,7 +2147,6 @@ id counterclockwise
 id createTournamentButton_Button
 id createTournamentLogo
 id createTourneyFragment
-id create_Tournament
 id currentState
 id custom
 id customPanel
@@ -2249,7 +2248,6 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
-id imageView3
 id imgUser
 id immediateStop
 id included
@@ -2273,6 +2271,7 @@ id itemPerson
 id itemStartTime
 id itemTitle
 id item_touch_helper_previous_elevation
+id joinButton
 id join_button
 id jumpToEnd
 id jumpToStart
@@ -2318,7 +2317,6 @@ id material_timepicker_view
 id material_value_index
 id media_actions
 id memberButton
-id memberRankingButton
 id message
 id middle
 id mini
@@ -2383,6 +2381,7 @@ id on
 id outline
 id outward
 id overshoot
+id pAmount
 id pBar
 id packed
 id parallax
@@ -2409,7 +2408,6 @@ id position
 id position_textview
 id postLayout
 id prizeAmount
-id prizePool
 id prize_pool
 id profileEmail
 id profileFragment
@@ -2421,7 +2419,6 @@ id qr_code
 id radio
 id ratingBar
 id ratio
-id reActiveTourneyButton
 id rectangles
 id recyclerViewTourneyPage
 id recycler_view
@@ -2589,7 +2586,8 @@ id tournament_date
 id tournament_list
 id tournament_menu
 id tournament_name
-id tourneyPage
+id tournamentsIn
+id tournamentsOwn
 id transitionToEnd
 id transitionToStart
 id transition_current_scene

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,6 +20,12 @@ import java.lang.String;
 public final class ActivityTournamentPageBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
+
+  @NonNull
+  public final TextView Join;
+
+  @NonNull
+  public final RelativeLayout joinButton;
 
   @NonNull
   public final ImageView moneyIcon;
@@ -36,9 +43,6 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
   public final TextView prizeAmount;
 
   @NonNull
-  public final TextView prizePool;
-
-  @NonNull
   public final RecyclerView recyclerViewTourneyPage;
 
   @NonNull
@@ -50,19 +54,20 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
   @NonNull
   public final TextView tournamentName;
 
-  private ActivityTournamentPageBinding(@NonNull LinearLayout rootView,
-      @NonNull ImageView moneyIcon, @NonNull TextView participantNumber,
-      @NonNull TextView participantText, @NonNull ImageView personIcon,
-      @NonNull TextView prizeAmount, @NonNull TextView prizePool,
+  private ActivityTournamentPageBinding(@NonNull LinearLayout rootView, @NonNull TextView Join,
+      @NonNull RelativeLayout joinButton, @NonNull ImageView moneyIcon,
+      @NonNull TextView participantNumber, @NonNull TextView participantText,
+      @NonNull ImageView personIcon, @NonNull TextView prizeAmount,
       @NonNull RecyclerView recyclerViewTourneyPage, @NonNull TextView tournamentGame,
       @NonNull ImageView tournamentImage, @NonNull TextView tournamentName) {
     this.rootView = rootView;
+    this.Join = Join;
+    this.joinButton = joinButton;
     this.moneyIcon = moneyIcon;
     this.participantNumber = participantNumber;
     this.participantText = participantText;
     this.personIcon = personIcon;
     this.prizeAmount = prizeAmount;
-    this.prizePool = prizePool;
     this.recyclerViewTourneyPage = recyclerViewTourneyPage;
     this.tournamentGame = tournamentGame;
     this.tournamentImage = tournamentImage;
@@ -96,6 +101,18 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Join;
+      TextView Join = rootView.findViewById(id);
+      if (Join == null) {
+        break missingId;
+      }
+
+      id = R.id.joinButton;
+      RelativeLayout joinButton = rootView.findViewById(id);
+      if (joinButton == null) {
+        break missingId;
+      }
+
       id = R.id.moneyIcon;
       ImageView moneyIcon = rootView.findViewById(id);
       if (moneyIcon == null) {
@@ -126,12 +143,6 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.prizePool;
-      TextView prizePool = rootView.findViewById(id);
-      if (prizePool == null) {
-        break missingId;
-      }
-
       id = R.id.recyclerViewTourneyPage;
       RecyclerView recyclerViewTourneyPage = rootView.findViewById(id);
       if (recyclerViewTourneyPage == null) {
@@ -156,9 +167,9 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTournamentPageBinding((LinearLayout) rootView, moneyIcon,
-          participantNumber, participantText, personIcon, prizeAmount, prizePool,
-          recyclerViewTourneyPage, tournamentGame, tournamentImage, tournamentName);
+      return new ActivityTournamentPageBinding((LinearLayout) rootView, Join, joinButton, moneyIcon,
+          participantNumber, participantText, personIcon, prizeAmount, recyclerViewTourneyPage,
+          tournamentGame, tournamentImage, tournamentName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

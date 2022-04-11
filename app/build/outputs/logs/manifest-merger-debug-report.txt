@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-107:12
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-113:12
+INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-113:12
+INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-113:12
+INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-113:12
 MERGED from [io.realm:realm-android-library-object-server:10.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\6b3aa52f542403f687a767b76ceb7987\jetified-realm-android-library-object-server-10.3.1\AndroidManifest.xml:2:1-13:12
 MERGED from [io.realm:realm-android-kotlin-extensions-object-server:10.3.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\78bc5216ad9a3004e400f4a5b4b6ba70\jetified-realm-android-kotlin-extensions-object-server-10.3.1\AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.databinding:viewbinding:4.1.2] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\f6a00dc0909e1f2b7014890487dec64c\jetified-viewbinding-4.1.2\AndroidManifest.xml:17:1-22:12
@@ -80,20 +80,20 @@ MERGED from [com.getkeepsafe.relinker:relinker:1.4.0] C:\Users\Lewis\.gradle\cac
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\acb329e3bf451e5d5c6ef4ce1fbf1c22\jetified-rxandroid-2.1.1\AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\5df3b45d3b5ff62c59f74e9aaf0195d1\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [io.card:android-sdk:5.3.4] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\9a0604fbb430682b7c4becb7852dbae4\jetified-android-sdk-5.3.4\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-107:12
+INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-113:12
+INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-113:12
+INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-113:12
 	package
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-107:12
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-113:12
 		INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-107:12
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:1-113:12
 		INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -106,7 +106,7 @@ MERGED from [com.paypal.sdk:paypal-android-sdk:2.14.2] C:\Users\Lewis\.gradle\ca
 	android:name
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:7:5-105:19
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:7:5-111:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\44f65ea3e28b195328d0521bc93d22fd\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Lewis\.gradle\caches\transforms-2\files-2.1\a216a9c2148e3959d97a4d3e4251a991\material-1.4.0\AndroidManifest.xml:22:5-20
@@ -157,174 +157,186 @@ ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidMan
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:16:13-51
-activity#com.mongodb.app.ActiveUpcomingTournament
+activity#com.mongodb.app.TournamentsOwnActivity
 ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:19:13-53
-activity#com.mongodb.app.BracketActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:21:9-24:58
-	android:parentActivityName
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:24:13-55
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:19:13-51
+activity#com.mongodb.app.ParticipantActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:22:13-44
-activity#com.mongodb.app.PlayerActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:25:9-28:52
-	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:28:13-49
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:22:13-48
+activity#com.mongodb.app.ActiveUpcomingTournament
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:24:9-26:40
+	android:exported
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:25:13-53
+activity#com.mongodb.app.BracketActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:27:9-30:58
 	android:parentActivityName
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:27:13-58
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:30:13-55
+	android:exported
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:26:13-43
-activity#com.mongodb.app.afterNotification
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:29:9-31:52
-	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:31:13-49
-	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:30:13-46
-activity#com.mongodb.app.ReportActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:32:9-34:52
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:28:13-44
+activity#com.mongodb.app.PlayerActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:31:9-34:52
 	android:screenOrientation
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:34:13-49
+	android:parentActivityName
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:33:13-58
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:33:13-43
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:32:13-43
+activity#com.mongodb.app.afterNotification
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:35:9-37:52
+	android:screenOrientation
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:37:13-49
+	android:name
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:36:13-46
+activity#com.mongodb.app.ReportActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:38:9-40:52
+	android:screenOrientation
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:40:13-49
+	android:name
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:39:13-43
 activity#com.mongodb.app.SearchTournamentActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:35:9-38:52
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:41:9-44:52
 	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:38:13-49
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:44:13-49
 	android:parentActivityName
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:37:13-55
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:43:13-55
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:36:13-53
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:42:13-53
 activity#com.mongodb.app.RegisterActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:39:9-42:52
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:45:9-48:52
 	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:42:13-49
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:48:13-49
 	android:parentActivityName
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:41:13-56
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:47:13-56
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:40:13-45
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:46:13-45
 activity#com.mongodb.app.CreateTournamentActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:43:9-46:52
-	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:46:13-49
-	android:parentActivityName
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:45:13-55
-	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:44:13-53
-activity#com.mongodb.app.HomeActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:47:9-49:52
-	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:49:13-49
-	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:48:13-41
-activity#com.mongodb.app.games.GamesListActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:50:9-52:52
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:49:9-52:52
 	android:screenOrientation
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:52:13-49
+	android:parentActivityName
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:51:13-55
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:51:13-52
-activity#com.mongodb.app.games.GameDetailActivity
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:50:13-53
+activity#com.mongodb.app.HomeActivity
 ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:53:9-55:52
 	android:screenOrientation
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:55:13-49
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:54:13-53
-activity#com.mongodb.app.TournamentActivity
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:54:13-41
+activity#com.mongodb.app.games.GamesListActivity
 ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:56:9-58:52
 	android:screenOrientation
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:58:13-49
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:57:13-47
-activity#com.mongodb.app.TournamentDetailActivity
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:57:13-52
+activity#com.mongodb.app.games.GameDetailActivity
 ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:59:9-61:52
 	android:screenOrientation
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:61:13-49
 	android:name
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:60:13-53
+activity#com.mongodb.app.TournamentActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:62:9-64:52
+	android:screenOrientation
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:64:13-49
+	android:name
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:63:13-47
+activity#com.mongodb.app.TournamentDetailActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:65:9-67:52
+	android:screenOrientation
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:67:13-49
+	android:name
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:66:13-53
 activity#com.mongodb.app.ProfileActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:62:9-65:52
-	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:65:13-49
-	android:parentActivityName
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:64:13-55
-	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:63:13-44
-activity#com.mongodb.app.EditProfileActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:66:9-68:52
-	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:68:13-49
-	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:67:13-48
-activity#com.mongodb.app.ChangePassActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:69:9-71:52
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:68:9-71:52
 	android:screenOrientation
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:71:13-49
-	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:70:13-47
-activity#com.mongodb.app.SettingsActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:72:9-75:52
-	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:75:13-49
 	android:parentActivityName
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:74:13-55
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:70:13-55
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:73:13-45
-activity#com.mongodb.app.QRCodeActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:76:9-78:52
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:69:13-44
+activity#com.mongodb.app.EditProfileActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:72:9-74:52
 	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:78:13-49
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:74:13-49
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:77:13-43
-activity#com.mongodb.app.SuggestionPageActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:79:9-81:52
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:73:13-48
+activity#com.mongodb.app.ChangePassActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:75:9-77:52
+	android:screenOrientation
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:77:13-49
+	android:name
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:76:13-47
+activity#com.mongodb.app.SettingsActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:78:9-81:52
 	android:screenOrientation
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:81:13-49
+	android:parentActivityName
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:80:13-55
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:80:13-51
-activity#com.mongodb.app.RankingActivity
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:79:13-45
+activity#com.mongodb.app.QRCodeActivity
 ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:82:9-84:52
 	android:screenOrientation
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:84:13-49
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:83:13-44
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:83:13-43
+activity#com.mongodb.app.SuggestionPageActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:85:9-87:52
+	android:screenOrientation
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:87:13-49
+	android:name
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:86:13-51
+activity#com.mongodb.app.RankingActivity
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:88:9-90:52
+	android:screenOrientation
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:90:13-49
+	android:name
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:89:13-44
 activity#com.mongodb.app.PaypalActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:85:9-88:52
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:91:9-94:52
 	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:88:13-49
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:94:13-49
 	android:exported
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:87:13-36
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:93:13-36
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:86:13-43
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:92:13-43
 activity#com.mongodb.app.NewProfile
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:89:9-91:52
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:95:9-97:52
 	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:91:13-49
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:97:13-49
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:90:13-39
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:96:13-39
 activity#com.mongodb.app.LoginActivity
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:94:9-104:20
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:100:9-110:20
 	android:screenOrientation
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:98:13-49
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:104:13-49
 	android:label
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:97:13-45
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:103:13-45
 	android:exported
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:96:13-36
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:102:13-36
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:95:13-42
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:101:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:99:13-103:29
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:105:13-109:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:100:17-69
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:106:17-69
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:100:25-66
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:106:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:102:17-77
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:108:17-77
 	android:name
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:102:27-74
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:108:27-74
 uses-sdk
 INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml

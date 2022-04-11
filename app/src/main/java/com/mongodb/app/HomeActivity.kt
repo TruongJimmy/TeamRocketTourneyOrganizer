@@ -42,7 +42,7 @@ class HomeActivity : AppCompatActivity() {
         profileButton.setOnClickListener {onProfileButtonClicked()}
 
         activeButton = findViewById(R.id.activeTournament)
-        activeButton.setOnClickListener { toBracketActivity() }
+        activeButton.setOnClickListener { toActiveTourney() }
 
         suggestionButton = findViewById(R.id.suggestionPageButton)
         suggestionButton.setOnClickListener { toSuggetionPage() }
@@ -54,11 +54,11 @@ class HomeActivity : AppCompatActivity() {
         payButton.setOnClickListener { toPaypalPage() }
 
 
-        reTourneyButton = findViewById(R.id.reActiveTourneyButton)
-        reTourneyButton.setOnClickListener { toActiveTourney() }
+//        reTourneyButton = findViewById(R.id.reActiveTourneyButton)
+//        reTourneyButton.setOnClickListener { toActiveTourney() }
 
-        tourneyPageButton = findViewById(R.id.tourneyPage)
-        tourneyPageButton.setOnClickListener { toTourneyPage() }
+//        tourneyPageButton = findViewById(R.id.tourneyPage)
+//        tourneyPageButton.setOnClickListener { toTourneyPage() }
 
     }
 
