@@ -65,6 +65,10 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr ConstraintRotate
 attr SharedValue
 attr SharedValueId
@@ -1968,6 +1972,9 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable tournament
 drawable valorant_background
+font archivo_black
+font armata
+font gentium_book_basic
 id ALT
 id AppName
 id BOTTOM_END
