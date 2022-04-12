@@ -43,7 +43,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15sp"
             android:fontFamily="sans-serif-light"
-            android:text="COLIN GEGE"
+            android:text="lewis@gmail.com"
             android:textColor="@color/black"
             android:textSize="32sp"
             android:textStyle="bold" />
@@ -149,7 +149,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="0"
+                    android:text="8"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -206,7 +206,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:minHeight="48dp"
-                    android:text="xxx@gmail.com"
+                    android:text="lewis@gmail.com"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -238,7 +238,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:minHeight="48dp"
-                    android:text="+1-202-555-0157"
+                    android:text="xxx"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -271,7 +271,7 @@
                     android:fontFamily="sans-serif-light"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
-                    android:text="'@'"
+                    android:text="xxx"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -304,7 +304,7 @@
                     android:fontFamily="sans-serif-light"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
-                    android:text="'@'"
+                    android:text="xxx"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
