@@ -4,9 +4,9 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,7 +25,7 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
   public final TextView Join;
 
   @NonNull
-  public final Button joinButton;
+  public final RelativeLayout joinButton;
 
   @NonNull
   public final ImageView moneyIcon;
@@ -55,11 +55,11 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
   public final TextView tournamentName;
 
   private ActivityTournamentPageBinding(@NonNull LinearLayout rootView, @NonNull TextView Join,
-      @NonNull Button joinButton, @NonNull ImageView moneyIcon, @NonNull TextView participantNumber,
-      @NonNull TextView participantText, @NonNull ImageView personIcon,
-      @NonNull TextView prizeAmount, @NonNull RecyclerView recyclerViewTourneyPage,
-      @NonNull TextView tournamentGame, @NonNull ImageView tournamentImage,
-      @NonNull TextView tournamentName) {
+      @NonNull RelativeLayout joinButton, @NonNull ImageView moneyIcon,
+      @NonNull TextView participantNumber, @NonNull TextView participantText,
+      @NonNull ImageView personIcon, @NonNull TextView prizeAmount,
+      @NonNull RecyclerView recyclerViewTourneyPage, @NonNull TextView tournamentGame,
+      @NonNull ImageView tournamentImage, @NonNull TextView tournamentName) {
     this.rootView = rootView;
     this.Join = Join;
     this.joinButton = joinButton;
@@ -108,7 +108,7 @@ public final class ActivityTournamentPageBinding implements ViewBinding {
       }
 
       id = R.id.joinButton;
-      Button joinButton = rootView.findViewById(id);
+      RelativeLayout joinButton = rootView.findViewById(id);
       if (joinButton == null) {
         break missingId;
       }

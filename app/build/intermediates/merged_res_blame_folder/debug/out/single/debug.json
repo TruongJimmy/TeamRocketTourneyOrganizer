@@ -156,20 +156,20 @@
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\budokai_background.xml"
     },
     {
-        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_budokai_foreground.png.flat",
-        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\budokai_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_chat.xml.flat",
-        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\ic_chat.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_rocket.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\rocket.xml"
     },
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_lol_foreground.png.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\lol_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_rocket.xml.flat",
-        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\rocket.xml"
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_chat.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\ic_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_budokai_foreground.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\budokai_foreground.png"
     },
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_r6_foreground.png.flat",
@@ -270,10 +270,6 @@
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_r6_foreground.png.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\r6_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\font_armata.xml.flat",
-        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\font\\armata.xml"
     },
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
@@ -1052,10 +1048,6 @@
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\csgo_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\font_gentium_book_basic.xml.flat",
-        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\font\\gentium_book_basic.xml"
-    },
-    {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_sampleimage_round.png.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\sampleimage_round.png"
     },
@@ -1122,10 +1114,6 @@
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_valorant_round.png.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-mdpi\\valorant_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\font_archivo_black.xml.flat",
-        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\font\\archivo_black.xml"
     },
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_csgo_round.png.flat",
