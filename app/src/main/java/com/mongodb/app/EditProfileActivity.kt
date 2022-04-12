@@ -2,37 +2,40 @@ package com.mongodb.app
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.ImageView
+import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import io.realm.Realm
-import io.realm.RealmConfiguration
+import kotlinx.android.synthetic.main.activity_new_profile.*
 
-class EditProfileActivity: AppCompatActivity() {
+class EditProfileActivity : AppCompatActivity() {
+    private lateinit var profileName: EditText
+    private lateinit var profileEmail: EditText
+    private lateinit var twitter: EditText
+    private lateinit var fb: EditText
+    private lateinit var save: Button
 
-    private lateinit var backButton: Button
-    private lateinit var profileView: ImageView
-    private lateinit var playerName: TextView
 
-    public override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.edit_profile_view)
-        backButton = findViewById((R.id.profile_back))
-        backButton.setOnClickListener {
-            // go to home page after back button is clicked
+
+        profileName = findViewById(R.id.tv_name)
+        profileEmail = findViewById(R.id.profileEmail)
+        twitter = findViewById(R.id.twit)
+        fb = findViewById(R.id.fb)
+        save = findViewById(R.id.save_button)
+        save.setOnClickListener{
             startActivity(Intent(this, SettingsActivity::class.java))
         }
-        profileView = findViewById((R.id.user_avatar))
-        playerName = findViewById((R.id.user_name))
-        profileView.setOnClickListener {onProfileClicked()}
+
+
+//        var bundle: Bundle? = intent.extras
+//        var userEmail= bundle!!.getString("EMAIL")
+//
+//
+//        profileEmail.text = userEmail
+//        profileName.text = userEmail
     }
-    private fun onProfileClicked() {
-        profileView.setImageResource(R.drawable.sampleimage_foreground)
-    }
+
 }
