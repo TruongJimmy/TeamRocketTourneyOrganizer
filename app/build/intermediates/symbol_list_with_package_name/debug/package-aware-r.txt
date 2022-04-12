@@ -2205,7 +2205,6 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
-id fb
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2242,7 +2241,6 @@ id header_title
 id hideable
 id home
 id homeAsUp
-id home_button
 id honorRequest
 id horizontal_only
 id icon
@@ -2257,7 +2255,6 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
-id imageView5
 id imgUser
 id immediateStop
 id included
@@ -2411,7 +2408,6 @@ id payPalButton
 id peekHeight
 id percent
 id personIcon
-id phone
 id pin
 id play_date
 id popup_menu
@@ -2422,6 +2418,7 @@ id prizeAmount
 id prize_pool
 id profileEmail
 id profileFragment
+id profile_back
 id progress_circular
 id progress_horizontal
 id project_users_list
@@ -2446,7 +2443,6 @@ id rounded
 id row_index_key
 id rtl
 id rv_score_board
-id save_button
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2609,7 +2605,6 @@ id transition_transform
 id triangle
 id tv_address
 id tv_name
-id twit
 id unchecked
 id uniform
 id unlabeled
@@ -2618,6 +2613,7 @@ id useLogo
 id userList
 id userName
 id userReport
+id user_avatar
 id user_avatar_profile
 id user_level
 id user_listview
@@ -2729,7 +2725,6 @@ layout activity_search_tournament
 layout activity_task
 layout activity_tournament
 layout activity_tournament_page
-layout activity_tournamentsown
 layout add_game_layout
 layout card_view
 layout change_password_view

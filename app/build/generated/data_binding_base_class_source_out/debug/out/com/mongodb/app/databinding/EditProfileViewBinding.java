@@ -5,13 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
@@ -20,63 +18,28 @@ import java.lang.String;
 
 public final class EditProfileViewBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText fb;
+  public final Button profileBack;
 
   @NonNull
-  public final RelativeLayout imgUser;
+  public final ImageView userAvatar;
 
   @NonNull
-  public final LinearLayout linlay1;
+  public final TextView userName;
 
-  @NonNull
-  public final EditText phone;
-
-  @NonNull
-  public final EditText profileEmail;
-
-  @NonNull
-  public final RelativeLayout rellay1;
-
-  @NonNull
-  public final Button saveButton;
-
-  @NonNull
-  public final ImageView setting;
-
-  @NonNull
-  public final TextView tvAddress;
-
-  @NonNull
-  public final EditText tvName;
-
-  @NonNull
-  public final EditText twit;
-
-  private EditProfileViewBinding(@NonNull RelativeLayout rootView, @NonNull EditText fb,
-      @NonNull RelativeLayout imgUser, @NonNull LinearLayout linlay1, @NonNull EditText phone,
-      @NonNull EditText profileEmail, @NonNull RelativeLayout rellay1, @NonNull Button saveButton,
-      @NonNull ImageView setting, @NonNull TextView tvAddress, @NonNull EditText tvName,
-      @NonNull EditText twit) {
+  private EditProfileViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button profileBack,
+      @NonNull ImageView userAvatar, @NonNull TextView userName) {
     this.rootView = rootView;
-    this.fb = fb;
-    this.imgUser = imgUser;
-    this.linlay1 = linlay1;
-    this.phone = phone;
-    this.profileEmail = profileEmail;
-    this.rellay1 = rellay1;
-    this.saveButton = saveButton;
-    this.setting = setting;
-    this.tvAddress = tvAddress;
-    this.tvName = tvName;
-    this.twit = twit;
+    this.profileBack = profileBack;
+    this.userAvatar = userAvatar;
+    this.userName = userName;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -101,74 +64,26 @@ public final class EditProfileViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fb;
-      EditText fb = rootView.findViewById(id);
-      if (fb == null) {
+      id = R.id.profile_back;
+      Button profileBack = rootView.findViewById(id);
+      if (profileBack == null) {
         break missingId;
       }
 
-      id = R.id.imgUser;
-      RelativeLayout imgUser = rootView.findViewById(id);
-      if (imgUser == null) {
+      id = R.id.user_avatar;
+      ImageView userAvatar = rootView.findViewById(id);
+      if (userAvatar == null) {
         break missingId;
       }
 
-      id = R.id.linlay1;
-      LinearLayout linlay1 = rootView.findViewById(id);
-      if (linlay1 == null) {
+      id = R.id.user_name;
+      TextView userName = rootView.findViewById(id);
+      if (userName == null) {
         break missingId;
       }
 
-      id = R.id.phone;
-      EditText phone = rootView.findViewById(id);
-      if (phone == null) {
-        break missingId;
-      }
-
-      id = R.id.profileEmail;
-      EditText profileEmail = rootView.findViewById(id);
-      if (profileEmail == null) {
-        break missingId;
-      }
-
-      id = R.id.rellay1;
-      RelativeLayout rellay1 = rootView.findViewById(id);
-      if (rellay1 == null) {
-        break missingId;
-      }
-
-      id = R.id.save_button;
-      Button saveButton = rootView.findViewById(id);
-      if (saveButton == null) {
-        break missingId;
-      }
-
-      id = R.id.setting;
-      ImageView setting = rootView.findViewById(id);
-      if (setting == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_address;
-      TextView tvAddress = rootView.findViewById(id);
-      if (tvAddress == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_name;
-      EditText tvName = rootView.findViewById(id);
-      if (tvName == null) {
-        break missingId;
-      }
-
-      id = R.id.twit;
-      EditText twit = rootView.findViewById(id);
-      if (twit == null) {
-        break missingId;
-      }
-
-      return new EditProfileViewBinding((RelativeLayout) rootView, fb, imgUser, linlay1, phone,
-          profileEmail, rellay1, saveButton, setting, tvAddress, tvName, twit);
+      return new EditProfileViewBinding((ConstraintLayout) rootView, profileBack, userAvatar,
+          userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

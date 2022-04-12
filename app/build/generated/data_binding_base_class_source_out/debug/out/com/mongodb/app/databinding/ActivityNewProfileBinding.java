@@ -22,9 +22,6 @@ public final class ActivityNewProfileBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final TextView following;
-
-  @NonNull
   public final RelativeLayout imgUser;
 
   @NonNull
@@ -51,13 +48,12 @@ public final class ActivityNewProfileBinding implements ViewBinding {
   @NonNull
   public final TextView tvName;
 
-  private ActivityNewProfileBinding(@NonNull RelativeLayout rootView, @NonNull TextView following,
+  private ActivityNewProfileBinding(@NonNull RelativeLayout rootView,
       @NonNull RelativeLayout imgUser, @NonNull LinearLayout linlay1,
       @NonNull TextView profileEmail, @NonNull RelativeLayout rellay1, @NonNull ImageView setting,
       @NonNull Button tournamentsIn, @NonNull Button tournamentsOwn, @NonNull TextView tvAddress,
       @NonNull TextView tvName) {
     this.rootView = rootView;
-    this.following = following;
     this.imgUser = imgUser;
     this.linlay1 = linlay1;
     this.profileEmail = profileEmail;
@@ -96,12 +92,6 @@ public final class ActivityNewProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.following;
-      TextView following = rootView.findViewById(id);
-      if (following == null) {
-        break missingId;
-      }
-
       id = R.id.imgUser;
       RelativeLayout imgUser = rootView.findViewById(id);
       if (imgUser == null) {
@@ -156,7 +146,7 @@ public final class ActivityNewProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNewProfileBinding((RelativeLayout) rootView, following, imgUser, linlay1,
+      return new ActivityNewProfileBinding((RelativeLayout) rootView, imgUser, linlay1,
           profileEmail, rellay1, setting, tournamentsIn, tournamentsOwn, tvAddress, tvName);
     }
     String missingId = rootView.getResources().getResourceName(id);
