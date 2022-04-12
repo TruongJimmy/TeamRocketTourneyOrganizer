@@ -105,6 +105,8 @@ com/mongodb/app/databinding/EditProfileViewBinding.java
  com.mongodb.app.databinding.EditProfileViewBinding
 com/mongodb/app/databinding/CardViewBinding.java
  com.mongodb.app.databinding.CardViewBinding
+com/mongodb/app/databinding/ActivityTournamentsownBinding.java
+ com.mongodb.app.databinding.ActivityTournamentsownBinding
 com/mongodb/app/databinding/SettingsBinding.java
  com.mongodb.app.databinding.SettingsBinding
 com/mongodb/app/databinding/ActivityPlayerBinding.java
