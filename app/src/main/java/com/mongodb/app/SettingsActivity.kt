@@ -12,6 +12,7 @@ class SettingsActivity: AppCompatActivity() {
     private lateinit var changePasswordButton: Button
     private lateinit var helpButton: Button
     private lateinit var logoutButton: Button
+    private lateinit var homeButton: Button
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings)
@@ -26,6 +27,11 @@ class SettingsActivity: AppCompatActivity() {
         helpButton.setOnClickListener { onHelpButtonClicked()}
         logoutButton = findViewById(R.id.button_logout)
         logoutButton.setOnClickListener {onLogoutClicked()}
+
+        homeButton = findViewById(R.id.home_button)
+        homeButton.setOnClickListener{
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
 
         //Below 2 lines - Back button for this page supported by the toolbar in xml file
 //        setSupportActionBar(findViewById(R.id.toolBar_Settings))
