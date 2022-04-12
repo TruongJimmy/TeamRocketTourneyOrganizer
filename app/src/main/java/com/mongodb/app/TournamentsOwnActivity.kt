@@ -24,8 +24,8 @@ class TournamentsOwnActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tournamentsown)
-        recyclerView = findViewById(R.id.tournament_list)
+        setContentView(R.layout.activity_participants)
+        recyclerView = findViewById(R.id.participant_list)
         user = realmApp.currentUser()
         val functionsManager: Functions = realmApp.getFunctions(user)
         functionsManager.callFunctionAsync("getTournamentOwn", listOf(ArrayList<String>()), ArrayList::class.java) { result ->
