@@ -10,9 +10,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:padding="20dp"
         android:background="@drawable/curve_background"
-        >
+        android:padding="20dp">
 
 
         <ImageView
@@ -114,7 +113,6 @@
             app:cardElevation="10dp">
 
             <RelativeLayout
-                android:id="@+id/joinButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="5dp">
@@ -158,9 +156,19 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTourneyPage"
+        android:layout_width="match_parent"
+        android:layout_height="320dp" />
+
+    <Button
+        android:id="@+id/joinButton"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recyclerViewTourneyPage"/>
+        android:backgroundTint="#fece2f"
+        android:fontFamily="sans-serif-black"
+        android:text="Join Tournament"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
 
 </LinearLayout>

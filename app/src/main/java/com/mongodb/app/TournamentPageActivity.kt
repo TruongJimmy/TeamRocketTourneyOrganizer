@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.DocumentsContract
 import android.util.Log
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -26,7 +27,7 @@ class TournamentPageActivity : AppCompatActivity() {
     private lateinit var tourneyGame: TextView
     private lateinit var tourneyImage: ImageView
     private var moneySign = "$"
-    private lateinit var join: TextView
+    private lateinit var join: Button
     private var user: io.realm.mongodb.User? = null
 
 
@@ -40,7 +41,7 @@ class TournamentPageActivity : AppCompatActivity() {
         tourneyName = findViewById(R.id.tournamentName)
         tourneyGame = findViewById(R.id.tournamentGame)
         tourneyImage = findViewById(R.id.tournamentImage)
-        join = findViewById(R.id.Join)
+        join = findViewById(R.id.joinButton)
 
         var bundle: Bundle? = intent.extras
         var participantCall = bundle!!.getString("participant")
