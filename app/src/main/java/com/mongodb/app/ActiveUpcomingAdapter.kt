@@ -73,7 +73,7 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
 //        val currentColor = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
 //        holder.
         var moneySign = "$"
-        var prizeMoneyText = tourneyQuery[position]!!.prizeAmount
+//        var prizeMoneyText = tourneyQuery[position]!!.prizeAmount
 
         holder.itemTitle.text = tourneyQuery[position]!!.name
         holder.itemDetail.text = tourneyQuery[position]!!.tournamentType
@@ -81,7 +81,7 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
         holder.itemStartTime.text = tourneyQuery[position]!!.startTime
         holder.itemGameName.text = tourneyQuery[position]!!.game
         holder.itemPerson.text = tourneyQuery[position]!!.participant
-        holder.itemMoney.text = moneySign + prizeMoneyText
+//        holder.itemMoney.text = moneySign + prizeMoneyText
 //        holder.itemImage.setImageResource(images[position])
 
         if (holder.itemGameName.text == "Valorant") {

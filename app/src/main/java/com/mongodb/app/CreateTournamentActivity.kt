@@ -91,7 +91,7 @@ class CreateTournamentActivity : AppCompatActivity() {
         tournament.participant = participantInput.text.toString()
         tournament.startTime = startTimeInput.text.toString()
         tournament.tournamentType = tournamentTypeInput.text.toString()
-        tournament.prizeAmount = prize.text.toString()
+//        tournament.prizeAmount = prize.text.toString()
 
         userRealm.executeTransactionAsync { realm ->
             realm.insert(tournament)

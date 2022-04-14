@@ -49,7 +49,7 @@ class ActiveUpcomingTournament:AppCompatActivity() {
                 intent.putExtra("startTime", tourneyQuery[position]!!.startTime)
                 intent.putExtra("tourneyName", tourneyQuery[position]!!.name)
                 intent.putExtra("tournamentType", tourneyQuery[position]!!.tournamentType)
-                intent.putExtra("prizeAmount", tourneyQuery[position]!!.prizeAmount)
+//                intent.putExtra("prizeAmount", tourneyQuery[position]!!.prizeAmount)
                 //intent.putExtra("tourneyPicture", images[position])
 
                 if (tourneyQuery[position]!!.game == "Valorant") {
