@@ -37,14 +37,14 @@ class NewProfile : AppCompatActivity() {
         tOwn.setOnClickListener{
             showTournamentsOwn()
         }
-        tIn.setOnClickListener{
-            showTournamentsIn()
-        }
+//        tIn.setOnClickListener{
+//            showTournamentsIn()
+//        }
     }
     private fun showTournamentsOwn() {
         startActivity(Intent(this, TournamentsOwnActivity::class.java))
     }
-    private fun showTournamentsIn() {
-        startActivity(Intent(this, TournamentsInActivity::class.java))
-    }
+//    private fun showTournamentsIn() {
+//        startActivity(Intent(this, TournamentsInActivity::class.java))
+//    }
 }
