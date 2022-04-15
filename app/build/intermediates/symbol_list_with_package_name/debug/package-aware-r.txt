@@ -1962,10 +1962,12 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable r6_background
+drawable registration
 drawable rocket_background
 drawable sampleimage_background
 drawable sampleimage_foreground
 drawable searchview_background
+drawable settings
 drawable smash_background
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1988,7 +1990,6 @@ id Join
 id META
 id NO_DEBUG
 id Profile
-id RegisterLogo
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2242,7 +2243,6 @@ id header_title
 id hideable
 id home
 id homeAsUp
-id home_button
 id honorRequest
 id horizontal_only
 id icon
@@ -2257,6 +2257,7 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
+id imageView4
 id imageView5
 id imgUser
 id immediateStop

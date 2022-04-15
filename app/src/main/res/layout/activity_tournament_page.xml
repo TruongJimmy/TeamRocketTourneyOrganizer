@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:background="@drawable/curve_background"
         android:padding="20dp">
 
@@ -158,7 +158,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewTourneyPage"
         android:layout_width="match_parent"
-        android:layout_height="320dp" />
+        android:layout_height="380dp" />
 
     <Button
         android:id="@+id/joinButton"

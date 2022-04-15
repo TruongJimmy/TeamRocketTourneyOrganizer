@@ -54,10 +54,10 @@ io/realm/com_mongodb_app_TaskRealmProxy.java
  io.realm.com_mongodb_app_TaskRealmProxy
  io.realm.com_mongodb_app_TaskRealmProxy$ClassNameHelper
  io.realm.com_mongodb_app_TaskRealmProxy$TaskColumnInfo
-com/mongodb/app/databinding/ReworkHomeViewBinding.java
- com.mongodb.app.databinding.ReworkHomeViewBinding
 com/mongodb/app/databinding/AddGameLayoutBinding.java
  com.mongodb.app.databinding.AddGameLayoutBinding
+com/mongodb/app/databinding/ReworkHomeViewBinding.java
+ com.mongodb.app.databinding.ReworkHomeViewBinding
 com/mongodb/app/databinding/QrcodeViewBinding.java
  com.mongodb.app.databinding.QrcodeViewBinding
 com/mongodb/app/databinding/ActivityNewProfileBinding.java
@@ -77,12 +77,12 @@ com/mongodb/app/databinding/ActivityAfterNotificationBinding.java
  com.mongodb.app.databinding.ActivityAfterNotificationBinding
 com/mongodb/app/databinding/ActivityRegisterBinding.java
  com.mongodb.app.databinding.ActivityRegisterBinding
-com/mongodb/app/databinding/TestingBinding.java
- com.mongodb.app.databinding.TestingBinding
 com/mongodb/app/databinding/ActivityLoginBinding.java
  com.mongodb.app.databinding.ActivityLoginBinding
 com/mongodb/app/databinding/SuggestionPageRowBinding.java
  com.mongodb.app.databinding.SuggestionPageRowBinding
+com/mongodb/app/databinding/TestingBinding.java
+ com.mongodb.app.databinding.TestingBinding
 io/realm/com_mongodb_app_UserRealmProxy.java
  io.realm.com_mongodb_app_UserRealmProxy
  io.realm.com_mongodb_app_UserRealmProxy$ClassNameHelper

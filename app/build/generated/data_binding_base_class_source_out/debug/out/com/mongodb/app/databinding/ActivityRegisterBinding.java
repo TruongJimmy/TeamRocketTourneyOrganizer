@@ -4,11 +4,11 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
@@ -22,13 +22,13 @@ public final class ActivityRegisterBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView RegisterLogo;
+  public final AppCompatButton alreadyAccountButton;
 
   @NonNull
-  public final Button alreadyAccountButton;
+  public final AppCompatButton buttonRegister;
 
   @NonNull
-  public final Button buttonRegister;
+  public final ImageView imageView2;
 
   @NonNull
   public final EditText inputConfirmEmail;
@@ -49,15 +49,15 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final Toolbar toolBarRegisterActivity;
 
   private ActivityRegisterBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView RegisterLogo, @NonNull Button alreadyAccountButton,
-      @NonNull Button buttonRegister, @NonNull EditText inputConfirmEmail,
+      @NonNull AppCompatButton alreadyAccountButton, @NonNull AppCompatButton buttonRegister,
+      @NonNull ImageView imageView2, @NonNull EditText inputConfirmEmail,
       @NonNull EditText inputConfirmPassword, @NonNull EditText inputEmail,
       @NonNull EditText inputPassword, @NonNull EditText inputUsername,
       @NonNull Toolbar toolBarRegisterActivity) {
     this.rootView = rootView;
-    this.RegisterLogo = RegisterLogo;
     this.alreadyAccountButton = alreadyAccountButton;
     this.buttonRegister = buttonRegister;
+    this.imageView2 = imageView2;
     this.inputConfirmEmail = inputConfirmEmail;
     this.inputConfirmPassword = inputConfirmPassword;
     this.inputEmail = inputEmail;
@@ -93,21 +93,21 @@ public final class ActivityRegisterBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.RegisterLogo;
-      TextView RegisterLogo = rootView.findViewById(id);
-      if (RegisterLogo == null) {
-        break missingId;
-      }
-
       id = R.id.alreadyAccountButton;
-      Button alreadyAccountButton = rootView.findViewById(id);
+      AppCompatButton alreadyAccountButton = rootView.findViewById(id);
       if (alreadyAccountButton == null) {
         break missingId;
       }
 
       id = R.id.buttonRegister;
-      Button buttonRegister = rootView.findViewById(id);
+      AppCompatButton buttonRegister = rootView.findViewById(id);
       if (buttonRegister == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView2;
+      ImageView imageView2 = rootView.findViewById(id);
+      if (imageView2 == null) {
         break missingId;
       }
 
@@ -147,8 +147,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRegisterBinding((ConstraintLayout) rootView, RegisterLogo,
-          alreadyAccountButton, buttonRegister, inputConfirmEmail, inputConfirmPassword, inputEmail,
+      return new ActivityRegisterBinding((ConstraintLayout) rootView, alreadyAccountButton,
+          buttonRegister, imageView2, inputConfirmEmail, inputConfirmPassword, inputEmail,
           inputPassword, inputUsername, toolBarRegisterActivity);
     }
     String missingId = rootView.getResources().getResourceName(id);

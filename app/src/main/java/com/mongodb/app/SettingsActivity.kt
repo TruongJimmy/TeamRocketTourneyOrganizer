@@ -28,10 +28,10 @@ class SettingsActivity: AppCompatActivity() {
         logoutButton = findViewById(R.id.button_logout)
         logoutButton.setOnClickListener {onLogoutClicked()}
 
-        homeButton = findViewById(R.id.home_button)
-        homeButton.setOnClickListener{
-            startActivity(Intent(this, HomeActivity::class.java))
-        }
+//        homeButton = findViewById(R.id.home_button)
+//        homeButton.setOnClickListener{
+//            startActivity(Intent(this, HomeActivity::class.java))
+//        }
 
         //Below 2 lines - Back button for this page supported by the toolbar in xml file
 //        setSupportActionBar(findViewById(R.id.toolBar_Settings))
