@@ -46,8 +46,8 @@ io/realm/com_mongodb_app_TaskRealmProxyInterface.java
  io.realm.com_mongodb_app_TaskRealmProxyInterface
 com/mongodb/app/databinding/ActivityActiveUpcomingTournamentBinding.java
  com.mongodb.app.databinding.ActivityActiveUpcomingTournamentBinding
-com/mongodb/app/databinding/TournamentViewBinding.java
- com.mongodb.app.databinding.TournamentViewBinding
+com/mongodb/app/databinding/GameItemBinding.java
+ com.mongodb.app.databinding.GameItemBinding
 com/mongodb/app/databinding/SuggestionPageBinding.java
  com.mongodb.app.databinding.SuggestionPageBinding
 io/realm/com_mongodb_app_TaskRealmProxy.java
@@ -121,5 +121,5 @@ com/mongodb/app/databinding/ActivityTournamentPageBinding.java
  com.mongodb.app.databinding.ActivityTournamentPageBinding
 com/mongodb/app/databinding/FragmentSettingsBinding.java
  com.mongodb.app.databinding.FragmentSettingsBinding
-com/mongodb/app/databinding/GameItemBinding.java
- com.mongodb.app.databinding.GameItemBinding
+com/mongodb/app/databinding/TournamentViewBinding.java
+ com.mongodb.app.databinding.TournamentViewBinding
