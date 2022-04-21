@@ -4,6 +4,7 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,13 +23,17 @@ public final class TournamentViewBinding implements ViewBinding {
   public final TextView name;
 
   @NonNull
-  public final TextView popupMenu;
+  public final ImageView popupMenu;
+
+  @NonNull
+  public final RelativeLayout pressButton;
 
   private TournamentViewBinding(@NonNull RelativeLayout rootView, @NonNull TextView name,
-      @NonNull TextView popupMenu) {
+      @NonNull ImageView popupMenu, @NonNull RelativeLayout pressButton) {
     this.rootView = rootView;
     this.name = name;
     this.popupMenu = popupMenu;
+    this.pressButton = pressButton;
   }
 
   @Override
@@ -65,12 +70,14 @@ public final class TournamentViewBinding implements ViewBinding {
       }
 
       id = R.id.popup_menu;
-      TextView popupMenu = rootView.findViewById(id);
+      ImageView popupMenu = rootView.findViewById(id);
       if (popupMenu == null) {
         break missingId;
       }
 
-      return new TournamentViewBinding((RelativeLayout) rootView, name, popupMenu);
+      RelativeLayout pressButton = (RelativeLayout) rootView;
+
+      return new TournamentViewBinding((RelativeLayout) rootView, name, popupMenu, pressButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

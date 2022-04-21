@@ -1901,6 +1901,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable grad
 drawable home
+drawable ic_arrow_right
 drawable ic_baseline_add_24
 drawable ic_bracket
 drawable ic_chat
@@ -2419,6 +2420,7 @@ id popup_menu
 id position
 id position_textview
 id postLayout
+id pressButton
 id prizeAmount
 id prize_pool
 id profileEmail

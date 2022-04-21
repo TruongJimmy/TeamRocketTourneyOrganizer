@@ -27,20 +27,20 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     private static final Set<Class<? extends RealmModel>> MODEL_CLASSES;
     static {
         Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>(4);
-        modelClasses.add(com.mongodb.app.User.class);
+        modelClasses.add(com.mongodb.app.Games.class);
         modelClasses.add(com.mongodb.app.Tournament.class);
         modelClasses.add(com.mongodb.app.Task.class);
-        modelClasses.add(com.mongodb.app.Games.class);
+        modelClasses.add(com.mongodb.app.User.class);
         MODEL_CLASSES = Collections.unmodifiableSet(modelClasses);
     }
 
     @Override
     public Map<Class<? extends RealmModel>, OsObjectSchemaInfo> getExpectedObjectSchemaInfoMap() {
         Map<Class<? extends RealmModel>, OsObjectSchemaInfo> infoMap = new HashMap<Class<? extends RealmModel>, OsObjectSchemaInfo>(4);
-        infoMap.put(com.mongodb.app.User.class, io.realm.com_mongodb_app_UserRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.mongodb.app.Games.class, io.realm.com_mongodb_app_GamesRealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(com.mongodb.app.Tournament.class, io.realm.com_mongodb_app_TournamentRealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(com.mongodb.app.Task.class, io.realm.com_mongodb_app_TaskRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(com.mongodb.app.Games.class, io.realm.com_mongodb_app_GamesRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.mongodb.app.User.class, io.realm.com_mongodb_app_UserRealmProxy.getExpectedObjectSchemaInfo());
         return infoMap;
     }
 
@@ -48,8 +48,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public ColumnInfo createColumnInfo(Class<? extends RealmModel> clazz, OsSchemaInfo schemaInfo) {
         checkClass(clazz);
 
-        if (clazz.equals(com.mongodb.app.User.class)) {
-            return io.realm.com_mongodb_app_UserRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(com.mongodb.app.Games.class)) {
+            return io.realm.com_mongodb_app_GamesRealmProxy.createColumnInfo(schemaInfo);
         }
         if (clazz.equals(com.mongodb.app.Tournament.class)) {
             return io.realm.com_mongodb_app_TournamentRealmProxy.createColumnInfo(schemaInfo);
@@ -57,8 +57,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.mongodb.app.Task.class)) {
             return io.realm.com_mongodb_app_TaskRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(com.mongodb.app.Games.class)) {
-            return io.realm.com_mongodb_app_GamesRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(com.mongodb.app.User.class)) {
+            return io.realm.com_mongodb_app_UserRealmProxy.createColumnInfo(schemaInfo);
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -67,8 +67,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public String getSimpleClassNameImpl(Class<? extends RealmModel> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(com.mongodb.app.User.class)) {
-            return "User";
+        if (clazz.equals(com.mongodb.app.Games.class)) {
+            return "Games";
         }
         if (clazz.equals(com.mongodb.app.Tournament.class)) {
             return "Tournament";
@@ -76,8 +76,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.mongodb.app.Task.class)) {
             return "Task";
         }
-        if (clazz.equals(com.mongodb.app.Games.class)) {
-            return "Games";
+        if (clazz.equals(com.mongodb.app.User.class)) {
+            return "User";
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -89,8 +89,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             objectContext.set((BaseRealm) baseRealm, row, columnInfo, acceptDefaultValue, excludeFields);
             checkClass(clazz);
 
-            if (clazz.equals(com.mongodb.app.User.class)) {
-                return clazz.cast(new io.realm.com_mongodb_app_UserRealmProxy());
+            if (clazz.equals(com.mongodb.app.Games.class)) {
+                return clazz.cast(new io.realm.com_mongodb_app_GamesRealmProxy());
             }
             if (clazz.equals(com.mongodb.app.Tournament.class)) {
                 return clazz.cast(new io.realm.com_mongodb_app_TournamentRealmProxy());
@@ -98,8 +98,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             if (clazz.equals(com.mongodb.app.Task.class)) {
                 return clazz.cast(new io.realm.com_mongodb_app_TaskRealmProxy());
             }
-            if (clazz.equals(com.mongodb.app.Games.class)) {
-                return clazz.cast(new io.realm.com_mongodb_app_GamesRealmProxy());
+            if (clazz.equals(com.mongodb.app.User.class)) {
+                return clazz.cast(new io.realm.com_mongodb_app_UserRealmProxy());
             }
             throw getMissingProxyClassException(clazz);
         } finally {
@@ -118,9 +118,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(com.mongodb.app.User.class)) {
-            com_mongodb_app_UserRealmProxy.UserColumnInfo columnInfo = (com_mongodb_app_UserRealmProxy.UserColumnInfo) realm.getSchema().getColumnInfo(com.mongodb.app.User.class);
-            return clazz.cast(io.realm.com_mongodb_app_UserRealmProxy.copyOrUpdate(realm, columnInfo, (com.mongodb.app.User) obj, update, cache, flags));
+        if (clazz.equals(com.mongodb.app.Games.class)) {
+            com_mongodb_app_GamesRealmProxy.GamesColumnInfo columnInfo = (com_mongodb_app_GamesRealmProxy.GamesColumnInfo) realm.getSchema().getColumnInfo(com.mongodb.app.Games.class);
+            return clazz.cast(io.realm.com_mongodb_app_GamesRealmProxy.copyOrUpdate(realm, columnInfo, (com.mongodb.app.Games) obj, update, cache, flags));
         }
         if (clazz.equals(com.mongodb.app.Tournament.class)) {
             com_mongodb_app_TournamentRealmProxy.TournamentColumnInfo columnInfo = (com_mongodb_app_TournamentRealmProxy.TournamentColumnInfo) realm.getSchema().getColumnInfo(com.mongodb.app.Tournament.class);
@@ -130,9 +130,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             com_mongodb_app_TaskRealmProxy.TaskColumnInfo columnInfo = (com_mongodb_app_TaskRealmProxy.TaskColumnInfo) realm.getSchema().getColumnInfo(com.mongodb.app.Task.class);
             return clazz.cast(io.realm.com_mongodb_app_TaskRealmProxy.copyOrUpdate(realm, columnInfo, (com.mongodb.app.Task) obj, update, cache, flags));
         }
-        if (clazz.equals(com.mongodb.app.Games.class)) {
-            com_mongodb_app_GamesRealmProxy.GamesColumnInfo columnInfo = (com_mongodb_app_GamesRealmProxy.GamesColumnInfo) realm.getSchema().getColumnInfo(com.mongodb.app.Games.class);
-            return clazz.cast(io.realm.com_mongodb_app_GamesRealmProxy.copyOrUpdate(realm, columnInfo, (com.mongodb.app.Games) obj, update, cache, flags));
+        if (clazz.equals(com.mongodb.app.User.class)) {
+            com_mongodb_app_UserRealmProxy.UserColumnInfo columnInfo = (com_mongodb_app_UserRealmProxy.UserColumnInfo) realm.getSchema().getColumnInfo(com.mongodb.app.User.class);
+            return clazz.cast(io.realm.com_mongodb_app_UserRealmProxy.copyOrUpdate(realm, columnInfo, (com.mongodb.app.User) obj, update, cache, flags));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -143,14 +143,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-        if (clazz.equals(com.mongodb.app.User.class)) {
-            io.realm.com_mongodb_app_UserRealmProxy.insert(realm, (com.mongodb.app.User) object, cache);
+        if (clazz.equals(com.mongodb.app.Games.class)) {
+            io.realm.com_mongodb_app_GamesRealmProxy.insert(realm, (com.mongodb.app.Games) object, cache);
         } else if (clazz.equals(com.mongodb.app.Tournament.class)) {
             io.realm.com_mongodb_app_TournamentRealmProxy.insert(realm, (com.mongodb.app.Tournament) object, cache);
         } else if (clazz.equals(com.mongodb.app.Task.class)) {
             io.realm.com_mongodb_app_TaskRealmProxy.insert(realm, (com.mongodb.app.Task) object, cache);
-        } else if (clazz.equals(com.mongodb.app.Games.class)) {
-            io.realm.com_mongodb_app_GamesRealmProxy.insert(realm, (com.mongodb.app.Games) object, cache);
+        } else if (clazz.equals(com.mongodb.app.User.class)) {
+            io.realm.com_mongodb_app_UserRealmProxy.insert(realm, (com.mongodb.app.User) object, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -168,26 +168,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(com.mongodb.app.User.class)) {
-                io.realm.com_mongodb_app_UserRealmProxy.insert(realm, (com.mongodb.app.User) object, cache);
+            if (clazz.equals(com.mongodb.app.Games.class)) {
+                io.realm.com_mongodb_app_GamesRealmProxy.insert(realm, (com.mongodb.app.Games) object, cache);
             } else if (clazz.equals(com.mongodb.app.Tournament.class)) {
                 io.realm.com_mongodb_app_TournamentRealmProxy.insert(realm, (com.mongodb.app.Tournament) object, cache);
             } else if (clazz.equals(com.mongodb.app.Task.class)) {
                 io.realm.com_mongodb_app_TaskRealmProxy.insert(realm, (com.mongodb.app.Task) object, cache);
-            } else if (clazz.equals(com.mongodb.app.Games.class)) {
-                io.realm.com_mongodb_app_GamesRealmProxy.insert(realm, (com.mongodb.app.Games) object, cache);
+            } else if (clazz.equals(com.mongodb.app.User.class)) {
+                io.realm.com_mongodb_app_UserRealmProxy.insert(realm, (com.mongodb.app.User) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(com.mongodb.app.User.class)) {
-                    io.realm.com_mongodb_app_UserRealmProxy.insert(realm, iterator, cache);
+                if (clazz.equals(com.mongodb.app.Games.class)) {
+                    io.realm.com_mongodb_app_GamesRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.mongodb.app.Tournament.class)) {
                     io.realm.com_mongodb_app_TournamentRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.mongodb.app.Task.class)) {
                     io.realm.com_mongodb_app_TaskRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.mongodb.app.Games.class)) {
-                    io.realm.com_mongodb_app_GamesRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.mongodb.app.User.class)) {
+                    io.realm.com_mongodb_app_UserRealmProxy.insert(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -201,14 +201,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(com.mongodb.app.User.class)) {
-            io.realm.com_mongodb_app_UserRealmProxy.insertOrUpdate(realm, (com.mongodb.app.User) obj, cache);
+        if (clazz.equals(com.mongodb.app.Games.class)) {
+            io.realm.com_mongodb_app_GamesRealmProxy.insertOrUpdate(realm, (com.mongodb.app.Games) obj, cache);
         } else if (clazz.equals(com.mongodb.app.Tournament.class)) {
             io.realm.com_mongodb_app_TournamentRealmProxy.insertOrUpdate(realm, (com.mongodb.app.Tournament) obj, cache);
         } else if (clazz.equals(com.mongodb.app.Task.class)) {
             io.realm.com_mongodb_app_TaskRealmProxy.insertOrUpdate(realm, (com.mongodb.app.Task) obj, cache);
-        } else if (clazz.equals(com.mongodb.app.Games.class)) {
-            io.realm.com_mongodb_app_GamesRealmProxy.insertOrUpdate(realm, (com.mongodb.app.Games) obj, cache);
+        } else if (clazz.equals(com.mongodb.app.User.class)) {
+            io.realm.com_mongodb_app_UserRealmProxy.insertOrUpdate(realm, (com.mongodb.app.User) obj, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -226,26 +226,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(com.mongodb.app.User.class)) {
-                io.realm.com_mongodb_app_UserRealmProxy.insertOrUpdate(realm, (com.mongodb.app.User) object, cache);
+            if (clazz.equals(com.mongodb.app.Games.class)) {
+                io.realm.com_mongodb_app_GamesRealmProxy.insertOrUpdate(realm, (com.mongodb.app.Games) object, cache);
             } else if (clazz.equals(com.mongodb.app.Tournament.class)) {
                 io.realm.com_mongodb_app_TournamentRealmProxy.insertOrUpdate(realm, (com.mongodb.app.Tournament) object, cache);
             } else if (clazz.equals(com.mongodb.app.Task.class)) {
                 io.realm.com_mongodb_app_TaskRealmProxy.insertOrUpdate(realm, (com.mongodb.app.Task) object, cache);
-            } else if (clazz.equals(com.mongodb.app.Games.class)) {
-                io.realm.com_mongodb_app_GamesRealmProxy.insertOrUpdate(realm, (com.mongodb.app.Games) object, cache);
+            } else if (clazz.equals(com.mongodb.app.User.class)) {
+                io.realm.com_mongodb_app_UserRealmProxy.insertOrUpdate(realm, (com.mongodb.app.User) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(com.mongodb.app.User.class)) {
-                    io.realm.com_mongodb_app_UserRealmProxy.insertOrUpdate(realm, iterator, cache);
+                if (clazz.equals(com.mongodb.app.Games.class)) {
+                    io.realm.com_mongodb_app_GamesRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.mongodb.app.Tournament.class)) {
                     io.realm.com_mongodb_app_TournamentRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.mongodb.app.Task.class)) {
                     io.realm.com_mongodb_app_TaskRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.mongodb.app.Games.class)) {
-                    io.realm.com_mongodb_app_GamesRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.mongodb.app.User.class)) {
+                    io.realm.com_mongodb_app_UserRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -258,8 +258,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws JSONException {
         checkClass(clazz);
 
-        if (clazz.equals(com.mongodb.app.User.class)) {
-            return clazz.cast(io.realm.com_mongodb_app_UserRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.mongodb.app.Games.class)) {
+            return clazz.cast(io.realm.com_mongodb_app_GamesRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         if (clazz.equals(com.mongodb.app.Tournament.class)) {
             return clazz.cast(io.realm.com_mongodb_app_TournamentRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
@@ -267,8 +267,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.mongodb.app.Task.class)) {
             return clazz.cast(io.realm.com_mongodb_app_TaskRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.mongodb.app.Games.class)) {
-            return clazz.cast(io.realm.com_mongodb_app_GamesRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.mongodb.app.User.class)) {
+            return clazz.cast(io.realm.com_mongodb_app_UserRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -278,8 +278,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws IOException {
         checkClass(clazz);
 
-        if (clazz.equals(com.mongodb.app.User.class)) {
-            return clazz.cast(io.realm.com_mongodb_app_UserRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.mongodb.app.Games.class)) {
+            return clazz.cast(io.realm.com_mongodb_app_GamesRealmProxy.createUsingJsonStream(realm, reader));
         }
         if (clazz.equals(com.mongodb.app.Tournament.class)) {
             return clazz.cast(io.realm.com_mongodb_app_TournamentRealmProxy.createUsingJsonStream(realm, reader));
@@ -287,8 +287,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.mongodb.app.Task.class)) {
             return clazz.cast(io.realm.com_mongodb_app_TaskRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.mongodb.app.Games.class)) {
-            return clazz.cast(io.realm.com_mongodb_app_GamesRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.mongodb.app.User.class)) {
+            return clazz.cast(io.realm.com_mongodb_app_UserRealmProxy.createUsingJsonStream(realm, reader));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -299,8 +299,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) realmObject.getClass().getSuperclass();
 
-        if (clazz.equals(com.mongodb.app.User.class)) {
-            return clazz.cast(io.realm.com_mongodb_app_UserRealmProxy.createDetachedCopy((com.mongodb.app.User) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.mongodb.app.Games.class)) {
+            return clazz.cast(io.realm.com_mongodb_app_GamesRealmProxy.createDetachedCopy((com.mongodb.app.Games) realmObject, 0, maxDepth, cache));
         }
         if (clazz.equals(com.mongodb.app.Tournament.class)) {
             return clazz.cast(io.realm.com_mongodb_app_TournamentRealmProxy.createDetachedCopy((com.mongodb.app.Tournament) realmObject, 0, maxDepth, cache));
@@ -308,15 +308,15 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.mongodb.app.Task.class)) {
             return clazz.cast(io.realm.com_mongodb_app_TaskRealmProxy.createDetachedCopy((com.mongodb.app.Task) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.mongodb.app.Games.class)) {
-            return clazz.cast(io.realm.com_mongodb_app_GamesRealmProxy.createDetachedCopy((com.mongodb.app.Games) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.mongodb.app.User.class)) {
+            return clazz.cast(io.realm.com_mongodb_app_UserRealmProxy.createDetachedCopy((com.mongodb.app.User) realmObject, 0, maxDepth, cache));
         }
         throw getMissingProxyClassException(clazz);
     }
 
     @Override
     public <E extends RealmModel> boolean isEmbedded(Class<E> clazz) {
-        if (clazz.equals(com.mongodb.app.User.class)) {
+        if (clazz.equals(com.mongodb.app.Games.class)) {
             return false;
         }
         if (clazz.equals(com.mongodb.app.Tournament.class)) {
@@ -325,7 +325,7 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.mongodb.app.Task.class)) {
             return false;
         }
-        if (clazz.equals(com.mongodb.app.Games.class)) {
+        if (clazz.equals(com.mongodb.app.User.class)) {
             return false;
         }
         throw getMissingProxyClassException(clazz);
@@ -337,14 +337,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) managedObject.getClass().getSuperclass();
 
-        if (clazz.equals(com.mongodb.app.User.class)) {
-            throw getNotEmbeddedClassException("com.mongodb.app.User");
+        if (clazz.equals(com.mongodb.app.Games.class)) {
+            throw getNotEmbeddedClassException("com.mongodb.app.Games");
         } else if (clazz.equals(com.mongodb.app.Tournament.class)) {
             throw getNotEmbeddedClassException("com.mongodb.app.Tournament");
         } else if (clazz.equals(com.mongodb.app.Task.class)) {
             throw getNotEmbeddedClassException("com.mongodb.app.Task");
-        } else if (clazz.equals(com.mongodb.app.Games.class)) {
-            throw getNotEmbeddedClassException("com.mongodb.app.Games");
+        } else if (clazz.equals(com.mongodb.app.User.class)) {
+            throw getNotEmbeddedClassException("com.mongodb.app.User");
         } else {
             throw getMissingProxyClassException(clazz);
         }
