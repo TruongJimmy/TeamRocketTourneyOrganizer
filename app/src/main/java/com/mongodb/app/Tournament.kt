@@ -22,5 +22,7 @@ open class Tournament(
 
     var tournamentType: String = "",
 
-    var prizeAmount: String = ""
+    var prizeAmount: String = "",
+
+    var rules: String = ""
 ): RealmObject() {}

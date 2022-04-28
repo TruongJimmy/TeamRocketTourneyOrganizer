@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.mongodb.app.games.GamesListActivity
+import java.util.*
 
 
 class HomeActivity : AppCompatActivity() {
@@ -18,6 +19,9 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var payButton: Button
     private lateinit var reTourneyButton: Button
     private lateinit var tourneyPageButton: Button
+    private lateinit var group: Button
+
+    // lateinit var timerButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,6 +57,15 @@ class HomeActivity : AppCompatActivity() {
         payButton = findViewById(R.id.payPalButton)
         payButton.setOnClickListener { toPaypalPage() }
 
+        payButton = findViewById(R.id.payPalButton)
+        payButton.setOnClickListener { toPaypalPage() }
+
+        group = findViewById(R.id.groupButton)
+        group.setOnClickListener { toGroupPage() }
+
+//        timerButton = findViewById(R.id.timerButton)
+//        timerButton.setOnClickListener { toTimerPage() }
+
 
 //        reTourneyButton = findViewById(R.id.reActiveTourneyButton)
 //        reTourneyButton.setOnClickListener { toActiveTourney() }
@@ -61,6 +74,15 @@ class HomeActivity : AppCompatActivity() {
 //        tourneyPageButton.setOnClickListener { toTourneyPage() }
 
     }
+
+    private fun toGroupPage (){
+        startActivity(Intent(this, CreateGroupActivity::class.java))
+    }
+
+    private fun toTimerPage (){
+        startActivity(Intent(this, TimerActivity::class.java))
+    }
+
 
     private fun toTourneyPage (){
         startActivity(Intent(this, TournamentPageActivity::class.java))

@@ -516,6 +516,10 @@
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\fortnite.png"
     },
     {
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rules.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_rules.xml"
+    },
+    {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_game_header.xml.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\game_header.xml"
     },
@@ -744,6 +748,10 @@
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\csgo.png"
     },
     {
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_timer.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_timer.xml"
+    },
+    {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_curve_background.xml.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\drawable\\curve_background.xml"
     },
@@ -928,6 +936,10 @@
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxhdpi\\csgo.png"
     },
     {
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_group.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_group.xml"
+    },
+    {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -998,6 +1010,10 @@
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_r6.png.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\r6.png"
+    },
+    {
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rating.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_rating.xml"
     },
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fortnite_background.xml.flat",
@@ -1098,6 +1114,10 @@
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_lol_round.png.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xhdpi\\lol_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps.xml.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\activity_maps.xml"
     },
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_lol_foreground.png.flat",

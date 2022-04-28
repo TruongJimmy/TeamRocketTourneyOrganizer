@@ -13,6 +13,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
         <activity
+            android:name=".RulesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapsMarkerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RateOrganizerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimerActivity"
+            android:exported="false" />
+        <activity
             android:name=".TournamentPageActivity"
             android:exported="false" />
         <activity
@@ -94,7 +109,7 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name=".NewProfile"
-            android:screenOrientation="nosensor" /><!-- <activity -->
+            android:screenOrientation="nosensor" /> <!-- <activity -->
         <!-- android:name=".LoginActivity" -->
         <!-- android:screenOrientation="nosensor" /> -->
         <activity
@@ -108,6 +123,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

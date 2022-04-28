@@ -33,7 +33,7 @@
         android:id="@+id/participant_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
 
         android:hint="Participant"
@@ -46,6 +46,7 @@
 
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/tournamentGame_input"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tournamentGame_input"
         app:layout_constraintTop_toBottomOf="@+id/tournamentGame_input" />
 
@@ -53,7 +54,7 @@
         android:id="@+id/location_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
 
         android:ems="10"
         android:hint="Location"
@@ -65,6 +66,7 @@
         android:textColor="#FFFFFF"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/participant_input"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/participant_input"
         app:layout_constraintTop_toBottomOf="@+id/participant_input" />
 
@@ -72,7 +74,7 @@
         android:id="@+id/startTime_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
 
         android:ems="10"
         android:hint="Start Time"
@@ -85,15 +87,35 @@
 
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/location_input"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/location_input"
         app:layout_constraintTop_toBottomOf="@+id/location_input" />
+
+    <EditText
+        android:id="@+id/rulesInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Rules"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/location_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/location_input"
+        app:layout_constraintTop_toBottomOf="@+id/startTime_input" />
 
     <EditText
         android:id="@+id/tournamentType"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
 
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Tournament Type"
         android:inputType="textPersonName"
@@ -101,20 +123,20 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="#FFFFFF"
 
+        android:textColor="#FFFFFF"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/startTime_input"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/startTime_input"
-        app:layout_constraintTop_toBottomOf="@+id/startTime_input" />
+        app:layout_constraintTop_toBottomOf="@+id/rulesInput" />
 
     <EditText
         android:id="@+id/pAmount"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Prize Amount"
         android:inputType="textPersonName"
@@ -134,7 +156,7 @@
         android:id="@+id/tournamentGame_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
 
         android:hint="Game"
@@ -147,6 +169,7 @@
 
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/tournamentName_input"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tournamentName_input"
         app:layout_constraintTop_toBottomOf="@+id/tournamentName_input" />
 
@@ -154,7 +177,7 @@
         android:id="@+id/createTournamentButton_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/button"
         android:text="Create the Tournament!"
         android:textStyle="bold"
@@ -178,8 +201,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="386dp"
-        android:layout_height="128dp"
+        android:layout_width="361dp"
+        android:layout_height="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"

@@ -38,6 +38,9 @@ public final class HomeViewBinding implements ViewBinding {
   public final ImageView appLogo;
 
   @NonNull
+  public final Button groupButton;
+
+  @NonNull
   public final Button memberButton;
 
   @NonNull
@@ -48,8 +51,9 @@ public final class HomeViewBinding implements ViewBinding {
 
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
       @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
-      @NonNull Button activeTournament, @NonNull ImageView appLogo, @NonNull Button memberButton,
-      @NonNull Button payPalButton, @NonNull Button suggestionPageButton) {
+      @NonNull Button activeTournament, @NonNull ImageView appLogo, @NonNull Button groupButton,
+      @NonNull Button memberButton, @NonNull Button payPalButton,
+      @NonNull Button suggestionPageButton) {
     this.rootView = rootView;
     this.CreateTournament = CreateTournament;
     this.Profile = Profile;
@@ -57,6 +61,7 @@ public final class HomeViewBinding implements ViewBinding {
     this.Settings = Settings;
     this.activeTournament = activeTournament;
     this.appLogo = appLogo;
+    this.groupButton = groupButton;
     this.memberButton = memberButton;
     this.payPalButton = payPalButton;
     this.suggestionPageButton = suggestionPageButton;
@@ -125,6 +130,12 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.groupButton;
+      Button groupButton = rootView.findViewById(id);
+      if (groupButton == null) {
+        break missingId;
+      }
+
       id = R.id.memberButton;
       Button memberButton = rootView.findViewById(id);
       if (memberButton == null) {
@@ -144,8 +155,8 @@ public final class HomeViewBinding implements ViewBinding {
       }
 
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings, activeTournament, appLogo, memberButton, payPalButton,
-          suggestionPageButton);
+          SearchTournament, Settings, activeTournament, appLogo, groupButton, memberButton,
+          payPalButton, suggestionPageButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

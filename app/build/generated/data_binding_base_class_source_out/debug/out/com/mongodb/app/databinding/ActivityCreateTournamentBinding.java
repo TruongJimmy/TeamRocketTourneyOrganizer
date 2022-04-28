@@ -37,6 +37,9 @@ public final class ActivityCreateTournamentBinding implements ViewBinding {
   public final EditText participantInput;
 
   @NonNull
+  public final EditText rulesInput;
+
+  @NonNull
   public final EditText startTimeInput;
 
   @NonNull
@@ -54,15 +57,17 @@ public final class ActivityCreateTournamentBinding implements ViewBinding {
   private ActivityCreateTournamentBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppCompatButton createTournamentButtonButton, @NonNull ImageView imageView4,
       @NonNull EditText locationInput, @NonNull EditText pAmount,
-      @NonNull EditText participantInput, @NonNull EditText startTimeInput,
-      @NonNull Toolbar toolBarCreateTournamentActivity, @NonNull EditText tournamentGameInput,
-      @NonNull EditText tournamentNameInput, @NonNull EditText tournamentType) {
+      @NonNull EditText participantInput, @NonNull EditText rulesInput,
+      @NonNull EditText startTimeInput, @NonNull Toolbar toolBarCreateTournamentActivity,
+      @NonNull EditText tournamentGameInput, @NonNull EditText tournamentNameInput,
+      @NonNull EditText tournamentType) {
     this.rootView = rootView;
     this.createTournamentButtonButton = createTournamentButtonButton;
     this.imageView4 = imageView4;
     this.locationInput = locationInput;
     this.pAmount = pAmount;
     this.participantInput = participantInput;
+    this.rulesInput = rulesInput;
     this.startTimeInput = startTimeInput;
     this.toolBarCreateTournamentActivity = toolBarCreateTournamentActivity;
     this.tournamentGameInput = tournamentGameInput;
@@ -127,6 +132,12 @@ public final class ActivityCreateTournamentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.rulesInput;
+      EditText rulesInput = rootView.findViewById(id);
+      if (rulesInput == null) {
+        break missingId;
+      }
+
       id = R.id.startTime_input;
       EditText startTimeInput = rootView.findViewById(id);
       if (startTimeInput == null) {
@@ -159,8 +170,8 @@ public final class ActivityCreateTournamentBinding implements ViewBinding {
 
       return new ActivityCreateTournamentBinding((ConstraintLayout) rootView,
           createTournamentButtonButton, imageView4, locationInput, pAmount, participantInput,
-          startTimeInput, toolBarCreateTournamentActivity, tournamentGameInput, tournamentNameInput,
-          tournamentType);
+          rulesInput, startTimeInput, toolBarCreateTournamentActivity, tournamentGameInput,
+          tournamentNameInput, tournamentType);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

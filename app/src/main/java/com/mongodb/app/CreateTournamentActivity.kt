@@ -32,7 +32,7 @@ class CreateTournamentActivity : AppCompatActivity() {
     private lateinit var config: RealmConfiguration
     private var user: io.realm.mongodb.User? = null
     private lateinit var prize: TextView
-
+    private lateinit var rules: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +47,7 @@ class CreateTournamentActivity : AppCompatActivity() {
         tournamentTypeInput = findViewById(R.id.tournamentType)
         createTourneyButton = findViewById(R.id.createTournamentButton_Button)
         prize = findViewById(R.id.pAmount)
+        rules = findViewById(R.id.rulesInput)
 
 
         //Below 2 lines - Back button for this page supported by the toolbar in xml file
@@ -92,6 +93,7 @@ class CreateTournamentActivity : AppCompatActivity() {
         tournament.startTime = startTimeInput.text.toString()
         tournament.tournamentType = tournamentTypeInput.text.toString()
         tournament.prizeAmount = prize.text.toString()
+        tournament.rules = rules.text.toString()
 
         userRealm.executeTransactionAsync { realm ->
             realm.insert(tournament)
