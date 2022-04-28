@@ -4,7 +4,7 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
 import androidx.annotation.NonNull;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class FragmentSearchBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final SearchView searchView;
@@ -29,7 +29,7 @@ public final class FragmentSearchBinding implements ViewBinding {
   @NonNull
   public final ListView userList;
 
-  private FragmentSearchBinding(@NonNull LinearLayout rootView, @NonNull SearchView searchView,
+  private FragmentSearchBinding(@NonNull FrameLayout rootView, @NonNull SearchView searchView,
       @NonNull Toolbar toolBarSearchTournament, @NonNull ListView userList) {
     this.rootView = rootView;
     this.searchView = searchView;
@@ -39,7 +39,7 @@ public final class FragmentSearchBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -82,7 +82,7 @@ public final class FragmentSearchBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSearchBinding((LinearLayout) rootView, searchView, toolBarSearchTournament,
+      return new FragmentSearchBinding((FrameLayout) rootView, searchView, toolBarSearchTournament,
           userList);
     }
     String missingId = rootView.getResources().getResourceName(id);

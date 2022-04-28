@@ -4,6 +4,7 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,10 +22,14 @@ public final class ReworkHomeViewBinding implements ViewBinding {
   @NonNull
   public final BottomNavigationView bottomNavigationView;
 
+  @NonNull
+  public final FrameLayout frameLayout;
+
   private ReworkHomeViewBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView) {
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull FrameLayout frameLayout) {
     this.rootView = rootView;
     this.bottomNavigationView = bottomNavigationView;
+    this.frameLayout = frameLayout;
   }
 
   @Override
@@ -60,7 +65,14 @@ public final class ReworkHomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ReworkHomeViewBinding((ConstraintLayout) rootView, bottomNavigationView);
+      id = R.id.frameLayout;
+      FrameLayout frameLayout = rootView.findViewById(id);
+      if (frameLayout == null) {
+        break missingId;
+      }
+
+      return new ReworkHomeViewBinding((ConstraintLayout) rootView, bottomNavigationView,
+          frameLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

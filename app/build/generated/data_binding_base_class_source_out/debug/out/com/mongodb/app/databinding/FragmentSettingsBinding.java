@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class FragmentSettingsBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final Button buttonChangePass;
@@ -34,7 +34,7 @@ public final class FragmentSettingsBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolBarSettings;
 
-  private FragmentSettingsBinding(@NonNull LinearLayout rootView, @NonNull Button buttonChangePass,
+  private FragmentSettingsBinding(@NonNull FrameLayout rootView, @NonNull Button buttonChangePass,
       @NonNull Button buttonEditProfile, @NonNull Button buttonHelp, @NonNull Button buttonLogout,
       @NonNull Toolbar toolBarSettings) {
     this.rootView = rootView;
@@ -47,7 +47,7 @@ public final class FragmentSettingsBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -102,7 +102,7 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSettingsBinding((LinearLayout) rootView, buttonChangePass,
+      return new FragmentSettingsBinding((FrameLayout) rootView, buttonChangePass,
           buttonEditProfile, buttonHelp, buttonLogout, toolBarSettings);
     }
     String missingId = rootView.getResources().getResourceName(id);

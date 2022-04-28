@@ -6,11 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class FragmentCreateTourneyBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final Button createTournamentButtonButton;
@@ -48,7 +48,7 @@ public final class FragmentCreateTourneyBinding implements ViewBinding {
   @NonNull
   public final EditText tournamentType;
 
-  private FragmentCreateTourneyBinding(@NonNull ConstraintLayout rootView,
+  private FragmentCreateTourneyBinding(@NonNull FrameLayout rootView,
       @NonNull Button createTournamentButtonButton, @NonNull TextView createTournamentLogo,
       @NonNull EditText locationInput, @NonNull EditText participantInput,
       @NonNull EditText startTimeInput, @NonNull Toolbar toolBarCreateTournamentActivity,
@@ -68,7 +68,7 @@ public final class FragmentCreateTourneyBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -147,9 +147,9 @@ public final class FragmentCreateTourneyBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCreateTourneyBinding((ConstraintLayout) rootView,
-          createTournamentButtonButton, createTournamentLogo, locationInput, participantInput,
-          startTimeInput, toolBarCreateTournamentActivity, tournamentGameInput, tournamentNameInput,
+      return new FragmentCreateTourneyBinding((FrameLayout) rootView, createTournamentButtonButton,
+          createTournamentLogo, locationInput, participantInput, startTimeInput,
+          toolBarCreateTournamentActivity, tournamentGameInput, tournamentNameInput,
           tournamentType);
     }
     String missingId = rootView.getResources().getResourceName(id);

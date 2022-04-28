@@ -88,12 +88,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_game.xml"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_dbz.xml.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\dbz.xml"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_dbz_foreground.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xhdpi\\dbz_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_dbz.xml.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\dbz.xml"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_csgo_round.png.flat",
@@ -104,12 +104,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xhdpi\\lol_round.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_tournament_detail_view.xml.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\tournament_detail_view.xml"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_lol_round.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\lol_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_tournament_detail_view.xml.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\tournament_detail_view.xml"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_rocket_round.png.flat",
@@ -140,12 +140,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\dota_foreground.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_dota_foreground.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\dota_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lol_background.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\drawable\\lol_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_dota_foreground.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\dota_foreground.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_budokai.xml.flat",
@@ -184,16 +184,16 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\valorant_foreground.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_active_upcoming_tournament.xml.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_active_upcoming_tournament.xml"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_dota.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\dota.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_r6.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\r6.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_active_upcoming_tournament.xml.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_active_upcoming_tournament.xml"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_player_view.xml.flat",
@@ -244,12 +244,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\valorant_round.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_fortnite.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\fortnite.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_fortnite.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\fortnite.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_valorant.png.flat",
@@ -292,12 +292,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_participants.xml"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\drawable\\circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_csgo_round.xml.flat",
@@ -424,12 +424,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\smash.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_fortnite_foreground.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\fortnite_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_lol_round.png.flat",
@@ -456,12 +456,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\fortnite_round.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_register.xml"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_budokai_round.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\budokai_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_type.xml.flat",
@@ -516,12 +516,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_timer.xml"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_budokai_round.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\budokai_round.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_valorant_round.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\valorant_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_budokai_round.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\budokai_round.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_r6.png.flat",
@@ -536,36 +536,36 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\rocket_foreground.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_dbz_foreground.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\dbz_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_budokai.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\budokai.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_dbz_foreground.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\dbz_foreground.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_r6_foreground.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\r6_foreground.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_dbz_round.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\dbz_round.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_r6_round.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\r6_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_dbz_round.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\dbz_round.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_tournament_view.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\tournament_view.xml"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_smash_foreground.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\smash_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_tournament_page_card_view.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\tournament_page_card_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_smash_foreground.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\smash_foreground.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_budokai_foreground.png.flat",
@@ -656,12 +656,16 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\lol_round.png"
     },
     {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_apex_foreground.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xhdpi\\apex_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_apex_foreground.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\apex_foreground.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_apex_foreground.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xhdpi\\apex_foreground.png"
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_dota_foreground.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\dota_foreground.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_edit_profile_view.xml.flat",
@@ -670,10 +674,6 @@
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_r6.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\r6.png"
-    },
-    {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_dota_foreground.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\dota_foreground.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bracket.xml.flat",
@@ -720,12 +720,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\r6.xml"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_rocket.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\rocket.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_sampleimage_round.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\sampleimage_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_rocket.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\rocket.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_apex_round.xml.flat",
@@ -808,16 +808,16 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\drawable\\ic_settings.xml"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_rocket_round.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\rocket_round.png"
-    },
-    {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\fragment_profile.xml"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_csgo_foreground.png.flat",
@@ -884,36 +884,36 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\dbz_round.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_participant_view.xml.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\participant_view.xml"
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_apex_round.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\apex_round.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_rework_home_view.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\rework_home_view.xml"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_apex_round.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\apex_round.png"
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_participant_view.xml.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\participant_view.xml"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dota_background.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\drawable\\dota_background.xml"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_rocket_foreground.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\rocket_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tournament.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\drawable-v24\\tournament.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_csgo.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\csgo.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_fortnite_foreground.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\fortnite_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_rocket_foreground.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\rocket_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_csgo.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\csgo.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_smash_foreground.png.flat",
@@ -924,12 +924,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\fortnite_round.xml"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_budokai.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\budokai.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_rocket_round.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\rocket_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_budokai.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\budokai.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_apex.png.flat",
@@ -940,12 +940,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\game_item.xml"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_dota.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xhdpi\\dota.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_dbz.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\dbz.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_dota.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xhdpi\\dota.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_sampleimage_foreground.xml.flat",
@@ -1068,12 +1068,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-mdpi\\dbz.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_lol.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\lol.png"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_fortnite_foreground.png.flat",
@@ -1136,16 +1136,16 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_create_tournament.xml"
     },
     {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_smash_foreground.png.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\smash_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_registration.png.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\drawable\\registration.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_rocket_round.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\rocket_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_smash_foreground.png.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxhdpi\\smash_foreground.png"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_valorant.png.flat",
@@ -1216,12 +1216,12 @@
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\rocket.png"
     },
     {
-        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_sampleimage_round.xml.flat",
-        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\sampleimage_round.xml"
-    },
-    {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ranking.xml.flat",
         "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\layout\\activity_ranking.xml"
+    },
+    {
+        "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_sampleimage_round.xml.flat",
+        "source": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\sampleimage_round.xml"
     },
     {
         "merged": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_lol_foreground.png.flat",

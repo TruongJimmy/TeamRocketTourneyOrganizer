@@ -1,10 +1,17 @@
 package com.mongodb.app
 
+import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationBarView
 import com.mongodb.app.games.GamesListActivity
+import kotlinx.android.synthetic.main.rework_home_view.*
 
 
 class HomeActivity : AppCompatActivity() {
@@ -19,9 +26,38 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var reTourneyButton: Button
     private lateinit var tourneyPageButton: Button
 
+    private lateinit var bottomNavigationView: BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.home_view)
+        setContentView(R.layout.rework_home_view)
+
+        bottomNavigationView = findViewById(R.id.bottomNavigationView)
+        bottomNavigationView.setOnItemSelectedListener(NavigationBarView.OnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.profileFragment-> {
+                    openFragment(ProfileFragment())
+                    return@OnItemSelectedListener true
+                }
+                R.id.searchFragment-> {
+                    openFragment(SearchFragment())
+                    return@OnItemSelectedListener true
+                }
+                R.id.createTourneyFragment -> {
+                    openFragment(CreateTourneyFragment())
+                    return@OnItemSelectedListener true
+                }
+                R.id.bracketFragment -> {
+                    openFragment(BracketFragment())
+                    return@OnItemSelectedListener true
+                }
+                R.id.settingsFragment -> {
+                    openFragment(SettingsFragment())
+                    return@OnItemSelectedListener true
+                }
+            }
+            false
+        })
 //
 //        val bottomNavigationBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 //        val navController = findNavController(R.id.fragmentContainerView)
@@ -108,5 +144,13 @@ class HomeActivity : AppCompatActivity() {
 //        val email = getIntent().getStringExtra("EMAIL")
 //        intent.putExtra("EMAIL", email)
         startActivity(intent)
+    }
+
+    private fun openFragment(fragment: Fragment) {
+        Log.d(ContentValues.TAG, "openFragment: ")
+        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.frameLayout, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 }

@@ -5,12 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final Button following;
@@ -36,7 +36,7 @@ public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   public final TextView userName;
 
-  private FragmentProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button following,
+  private FragmentProfileBinding(@NonNull FrameLayout rootView, @NonNull Button following,
       @NonNull Toolbar toolBarProfileActivity, @NonNull ImageView userAvatarProfile,
       @NonNull TextView userLevel, @NonNull TextView userName) {
     this.rootView = rootView;
@@ -49,7 +49,7 @@ public final class FragmentProfileBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -104,8 +104,8 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((ConstraintLayout) rootView, following,
-          toolBarProfileActivity, userAvatarProfile, userLevel, userName);
+      return new FragmentProfileBinding((FrameLayout) rootView, following, toolBarProfileActivity,
+          userAvatarProfile, userLevel, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

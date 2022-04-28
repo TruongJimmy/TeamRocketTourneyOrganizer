@@ -4,10 +4,10 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import com.ventura.bracketslib.BracketsView;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class FragmentBracketBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final BracketsView bracketView;
@@ -25,8 +25,8 @@ public final class FragmentBracketBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbarCurrentTournament;
 
-  private FragmentBracketBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BracketsView bracketView, @NonNull Toolbar toolbarCurrentTournament) {
+  private FragmentBracketBinding(@NonNull FrameLayout rootView, @NonNull BracketsView bracketView,
+      @NonNull Toolbar toolbarCurrentTournament) {
     this.rootView = rootView;
     this.bracketView = bracketView;
     this.toolbarCurrentTournament = toolbarCurrentTournament;
@@ -34,7 +34,7 @@ public final class FragmentBracketBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -71,7 +71,7 @@ public final class FragmentBracketBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentBracketBinding((ConstraintLayout) rootView, bracketView,
+      return new FragmentBracketBinding((FrameLayout) rootView, bracketView,
           toolbarCurrentTournament);
     }
     String missingId = rootView.getResources().getResourceName(id);
