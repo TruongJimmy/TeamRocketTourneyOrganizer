@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "outputFile": "C:\\Users\\jtruo\\Documents\\GitHub\\TeamRocketTourneyOrganizer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lewis\\.gradle\\caches\\transforms-2\\files-2.1\\e9a3c176f8841c1f811ae835c2eb0340\\appcompat-1.3.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Users\\jtruo\\.gradle\\caches\\transforms-2\\files-2.1\\e9a3c176f8841c1f811ae835c2eb0340\\appcompat-1.3.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

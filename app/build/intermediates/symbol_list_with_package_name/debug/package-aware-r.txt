@@ -2115,6 +2115,8 @@ id button_edit_profile
 id button_existing_account
 id button_help
 id button_logout
+id button_reset
+id button_start_pause
 id cache_measures
 id cancel_action
 id cancel_button
@@ -2566,6 +2568,7 @@ id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_view_countdown
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2730,6 +2733,7 @@ layout activity_report
 layout activity_row_ranking
 layout activity_search_tournament
 layout activity_task
+layout activity_timer
 layout activity_tournament
 layout activity_tournament_page
 layout add_game_layout
