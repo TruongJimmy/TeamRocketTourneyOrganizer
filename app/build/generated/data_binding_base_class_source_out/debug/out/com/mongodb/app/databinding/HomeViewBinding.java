@@ -44,6 +44,9 @@ public final class HomeViewBinding implements ViewBinding {
   public final Button memberButton;
 
   @NonNull
+  public final Button messageButton;
+
+  @NonNull
   public final Button payPalButton;
 
   @NonNull
@@ -52,7 +55,7 @@ public final class HomeViewBinding implements ViewBinding {
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
       @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
       @NonNull Button activeTournament, @NonNull ImageView appLogo, @NonNull Button groupButton,
-      @NonNull Button memberButton, @NonNull Button payPalButton,
+      @NonNull Button memberButton, @NonNull Button messageButton, @NonNull Button payPalButton,
       @NonNull Button suggestionPageButton) {
     this.rootView = rootView;
     this.CreateTournament = CreateTournament;
@@ -63,6 +66,7 @@ public final class HomeViewBinding implements ViewBinding {
     this.appLogo = appLogo;
     this.groupButton = groupButton;
     this.memberButton = memberButton;
+    this.messageButton = messageButton;
     this.payPalButton = payPalButton;
     this.suggestionPageButton = suggestionPageButton;
   }
@@ -142,6 +146,12 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.messageButton;
+      Button messageButton = rootView.findViewById(id);
+      if (messageButton == null) {
+        break missingId;
+      }
+
       id = R.id.payPalButton;
       Button payPalButton = rootView.findViewById(id);
       if (payPalButton == null) {
@@ -156,7 +166,7 @@ public final class HomeViewBinding implements ViewBinding {
 
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
           SearchTournament, Settings, activeTournament, appLogo, groupButton, memberButton,
-          payPalButton, suggestionPageButton);
+          messageButton, payPalButton, suggestionPageButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

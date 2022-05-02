@@ -26,10 +26,14 @@
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_bracket.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_brackets_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_chat.xml" value="0.33" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_chat_forum.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_chat_message.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_chat_room.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_create_tournament.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_game.xml" value="0.21875" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_group.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_group_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_item_chat_me.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_item_chat_other.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
@@ -69,6 +73,7 @@
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/game_detail_activity.xml" value="0.21875" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/game_header.xml" value="0.21557971014492755" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/game_item.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/group_layout.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/home_view.xml" value="0.33" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/home_view_v2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Lewis/Desktop/Source Code/BudokaiApp/app/src/main/res/layout/login_view.xml" value="0.2949438202247191" />

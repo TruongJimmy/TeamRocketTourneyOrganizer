@@ -20,6 +20,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var reTourneyButton: Button
     private lateinit var tourneyPageButton: Button
     private lateinit var group: Button
+    private lateinit var message: Button
 
     // lateinit var timerButton: Button
 
@@ -63,6 +64,8 @@ class HomeActivity : AppCompatActivity() {
         group = findViewById(R.id.groupButton)
         group.setOnClickListener { toGroupPage() }
 
+        message = findViewById(R.id.messageButton)
+        message.setOnClickListener { toChatRoom() }
 //        timerButton = findViewById(R.id.timerButton)
 //        timerButton.setOnClickListener { toTimerPage() }
 
@@ -73,6 +76,10 @@ class HomeActivity : AppCompatActivity() {
 //        tourneyPageButton = findViewById(R.id.tourneyPage)
 //        tourneyPageButton.setOnClickListener { toTourneyPage() }
 
+    }
+
+    private fun toChatRoom (){
+        startActivity(Intent(this, ChatRoom::class.java))
     }
 
     private fun toGroupPage (){

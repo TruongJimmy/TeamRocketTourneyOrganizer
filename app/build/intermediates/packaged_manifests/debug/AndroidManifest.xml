@@ -44,6 +44,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.App" >
         <activity
+            android:name="com.mongodb.app.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mongodb.app.GroupListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mongodb.app.ChatRoom"
+            android:exported="false" />
+        <activity
             android:name="com.mongodb.app.RulesActivity"
             android:exported="false" />
         <activity
@@ -178,6 +187,10 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.mongodb.app.com.squareup.picasso"
+            android:exported="false" />
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.mongodb.app.androidx-startup"
