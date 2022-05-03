@@ -50,7 +50,7 @@ public class ChatActivity extends AppCompatActivity {
         }
         initViews();
         addListener();
-//        fetchPreviousMessages();
+        fetchPreviousMessages();
     }
 
     private void fetchPreviousMessages() {
