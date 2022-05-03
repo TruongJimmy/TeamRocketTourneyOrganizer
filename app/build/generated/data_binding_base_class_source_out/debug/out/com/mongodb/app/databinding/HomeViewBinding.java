@@ -45,9 +45,6 @@ public final class HomeViewBinding implements ViewBinding {
   public final TextView email;
 
   @NonNull
-  public final Button googlePayButton;
-
-  @NonNull
   public final Button groupButton;
 
   @NonNull
@@ -68,9 +65,9 @@ public final class HomeViewBinding implements ViewBinding {
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
       @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
       @NonNull Button activeTournament, @NonNull ImageView appLogo, @NonNull Button brackets,
-      @NonNull TextView email, @NonNull Button googlePayButton, @NonNull Button groupButton,
-      @NonNull Button memberButton, @NonNull Button messageButton, @NonNull Button payPalButton,
-      @NonNull Button ratingsPage, @NonNull Button suggestionPageButton) {
+      @NonNull TextView email, @NonNull Button groupButton, @NonNull Button memberButton,
+      @NonNull Button messageButton, @NonNull Button payPalButton, @NonNull Button ratingsPage,
+      @NonNull Button suggestionPageButton) {
     this.rootView = rootView;
     this.CreateTournament = CreateTournament;
     this.Profile = Profile;
@@ -80,7 +77,6 @@ public final class HomeViewBinding implements ViewBinding {
     this.appLogo = appLogo;
     this.brackets = brackets;
     this.email = email;
-    this.googlePayButton = googlePayButton;
     this.groupButton = groupButton;
     this.memberButton = memberButton;
     this.messageButton = messageButton;
@@ -164,12 +160,6 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.googlePayButton;
-      Button googlePayButton = rootView.findViewById(id);
-      if (googlePayButton == null) {
-        break missingId;
-      }
-
       id = R.id.groupButton;
       Button groupButton = rootView.findViewById(id);
       if (groupButton == null) {
@@ -207,9 +197,8 @@ public final class HomeViewBinding implements ViewBinding {
       }
 
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings, activeTournament, appLogo, brackets, email, googlePayButton,
-          groupButton, memberButton, messageButton, payPalButton, ratingsPage,
-          suggestionPageButton);
+          SearchTournament, Settings, activeTournament, appLogo, brackets, email, groupButton,
+          memberButton, messageButton, payPalButton, ratingsPage, suggestionPageButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

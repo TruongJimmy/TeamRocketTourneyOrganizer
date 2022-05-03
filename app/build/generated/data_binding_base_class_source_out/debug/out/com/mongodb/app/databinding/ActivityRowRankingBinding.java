@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
@@ -16,7 +16,10 @@ import java.lang.String;
 
 public final class ActivityRowRankingBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CardView rootView;
+
+  @NonNull
+  public final CardView groupCardView;
 
   @NonNull
   public final TextView positionTextview;
@@ -24,16 +27,17 @@ public final class ActivityRowRankingBinding implements ViewBinding {
   @NonNull
   public final TextView textView;
 
-  private ActivityRowRankingBinding(@NonNull ConstraintLayout rootView,
+  private ActivityRowRankingBinding(@NonNull CardView rootView, @NonNull CardView groupCardView,
       @NonNull TextView positionTextview, @NonNull TextView textView) {
     this.rootView = rootView;
+    this.groupCardView = groupCardView;
     this.positionTextview = positionTextview;
     this.textView = textView;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CardView getRoot() {
     return rootView;
   }
 
@@ -58,6 +62,8 @@ public final class ActivityRowRankingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      CardView groupCardView = (CardView) rootView;
+
       id = R.id.position_textview;
       TextView positionTextview = rootView.findViewById(id);
       if (positionTextview == null) {
@@ -70,7 +76,8 @@ public final class ActivityRowRankingBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRowRankingBinding((ConstraintLayout) rootView, positionTextview, textView);
+      return new ActivityRowRankingBinding((CardView) rootView, groupCardView, positionTextview,
+          textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

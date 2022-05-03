@@ -114,8 +114,10 @@ ChatActivity extends AppCompatActivity {
     }
 
     private void sendMessage(String message) {
+        if (message.contains("bitch") || message.contains("fuck")) {
+            message = "*****";
+        }
         TextMessage textMessage = new TextMessage(groupId, message,  CometChatConstants.RECEIVER_TYPE_GROUP);
-
         CometChat.sendMessage(textMessage, new CometChat.CallbackListener<TextMessage>() {
             @Override
             public void onSuccess(TextMessage textMessage) {

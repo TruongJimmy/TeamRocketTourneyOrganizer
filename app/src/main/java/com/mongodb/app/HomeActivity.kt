@@ -1,5 +1,6 @@
 package com.mongodb.app
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -90,9 +91,9 @@ class HomeActivity : AppCompatActivity() {
 
 //        tourneyPageButton = findViewById(R.id.tourneyPage)
 //        tourneyPageButton.setOnClickListener { toTourneyPage() }
-
-        gPay = findViewById(R.id.googlePayButton)
-        gPay.setOnClickListener { toPaypalPage() }
+//
+//        gPay = findViewById(R.id.googlePayButton)
+//        gPay.setOnClickListener { toPaypalPage() }
 
     }
 

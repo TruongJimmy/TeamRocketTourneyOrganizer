@@ -2389,7 +2389,6 @@ id bracket_view
 id brackets
 id bubble
 id builtWithSync
-id button3
 id buttonPanel
 id buttonRegister
 id button_cancel_change_pass
@@ -2774,6 +2773,7 @@ id popup_menu
 id position
 id position_textview
 id postLayout
+id presentText
 id pressButton
 id prizeAmount
 id prize_pool
@@ -2895,6 +2895,7 @@ id submenuarrow
 id submit
 id submit_area
 id suggestionPageButton
+id suggestionText
 id supportScrollUp
 id syncRealTime
 id tabMode
@@ -2936,7 +2937,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
 id textView3
 id text_input_end_icon
 id text_input_error_icon

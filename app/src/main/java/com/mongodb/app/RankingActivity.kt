@@ -10,6 +10,9 @@ import android.widget.BaseAdapter
 import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.mongodb.app.R
+import com.mongodb.app.User
+import com.mongodb.app.realmApp
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import io.realm.RealmResults
@@ -33,7 +36,7 @@ class RankingActivity : AppCompatActivity()
         Realm.getInstanceAsync(config, object : Realm.Callback() {
             override fun onSuccess(realm: Realm) {
                 this@RankingActivity.userRealm = realm
-                listView.adapter = MyCustomAdapter(this@RankingActivity,realm.where<User>().findAllAsync())
+                listView.adapter = MyCustomAdapter(this@RankingActivity,realm.where<User>().findAll())
             }
         })
     }
@@ -44,7 +47,7 @@ class RankingActivity : AppCompatActivity()
     override fun onDestroy() {
         super.onDestroy()
         userRealm.close()
-       // listView.adapter = null
+//        listView.adapter = null
 
     }
     private class MyCustomAdapter(context: Context, private var users: RealmResults<User>): BaseAdapter()
@@ -57,7 +60,7 @@ class RankingActivity : AppCompatActivity()
 
         //how many rows in my list
         override fun getCount(): Int {
-            return names.size
+            return users.size
         }
 
         override fun getItem(position: Int): Any {
@@ -80,8 +83,16 @@ class RankingActivity : AppCompatActivity()
             val nameTextView = rowMain.findViewById<TextView>(R.id.textView)
             //nameTextView.text = names.get(position)
             nameTextView.text = users[position]!!.name
-            if(position == 0 || position == 1 || position == 2)
+            if(position == 0) {
                 nameTextView.setTextColor(Color.RED)
+            }
+            else if (position == 1) {
+                nameTextView.setTextColor(Color.GREEN)
+            }
+            else if (position == 2) {
+                nameTextView.setTextColor(Color.BLUE)
+            }
+
 
             val positionTextView = rowMain.findViewById<TextView>(R.id.position_textview)
             positionTextView.text = "Ranking:$position"
@@ -93,4 +104,3 @@ class RankingActivity : AppCompatActivity()
 
     }
 }
-

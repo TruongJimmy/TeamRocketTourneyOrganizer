@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -23,12 +24,16 @@ public final class QrcodeViewBinding implements ViewBinding {
   public final Button generateQr;
 
   @NonNull
+  public final TextView presentText;
+
+  @NonNull
   public final ImageView qrCode;
 
   private QrcodeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button generateQr,
-      @NonNull ImageView qrCode) {
+      @NonNull TextView presentText, @NonNull ImageView qrCode) {
     this.rootView = rootView;
     this.generateQr = generateQr;
+    this.presentText = presentText;
     this.qrCode = qrCode;
   }
 
@@ -65,13 +70,19 @@ public final class QrcodeViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.presentText;
+      TextView presentText = rootView.findViewById(id);
+      if (presentText == null) {
+        break missingId;
+      }
+
       id = R.id.qr_code;
       ImageView qrCode = rootView.findViewById(id);
       if (qrCode == null) {
         break missingId;
       }
 
-      return new QrcodeViewBinding((ConstraintLayout) rootView, generateQr, qrCode);
+      return new QrcodeViewBinding((ConstraintLayout) rootView, generateQr, presentText, qrCode);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

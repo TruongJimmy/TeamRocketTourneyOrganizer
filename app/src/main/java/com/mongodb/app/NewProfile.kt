@@ -5,6 +5,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import io.realm.Realm
+import io.realm.RealmConfiguration
+import io.realm.kotlin.where
+import io.realm.mongodb.sync.SyncConfiguration
 import kotlinx.android.synthetic.main.activity_new_profile.*
 
 class NewProfile : AppCompatActivity() {
@@ -13,6 +17,8 @@ class NewProfile : AppCompatActivity() {
     private lateinit var follow: TextView
     private lateinit var tIn: Button
     private lateinit var tOwn: Button
+    private lateinit var userRealm: Realm
+    private lateinit var config: RealmConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +29,19 @@ class NewProfile : AppCompatActivity() {
         tIn = findViewById(R.id.tournamentsIn)
         tOwn = findViewById(R.id.tournamentsOwn)
         follow = findViewById(R.id.following)
+
+        val user = realmApp.currentUser()
+        val partition = "123"
+
+        config = SyncConfiguration.Builder(user, partition).build()
+        Realm.getInstanceAsync(config, object : Realm.Callback() {
+            override fun onSuccess(realm: Realm) {
+                this@NewProfile.userRealm = realm
+                val realmResults = realm.where<User>().findAll()
+                follow.text = (realmResults.size - 1).toString()
+            }
+        })
+
         following.setOnClickListener{
             startActivity(Intent(this, PlayerActivity::class.java))
         }

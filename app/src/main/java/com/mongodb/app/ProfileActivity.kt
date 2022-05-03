@@ -37,6 +37,7 @@ class ProfileActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
+
         profileView = findViewById((R.id.user_avatar_profile))
         playerName = findViewById((R.id.user_name))
         val email = getIntent().getStringExtra("EMAIL")
