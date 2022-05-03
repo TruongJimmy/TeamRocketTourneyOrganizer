@@ -30,7 +30,7 @@ class ProfileActivity : AppCompatActivity() {
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.profile_view)
+        setContentView(R.layout.profile_view)
 
         //Below 2 lines - Back button for this page supported by the toolbar in xml file
         setSupportActionBar(findViewById(R.id.toolBar_ProfileActivity))
@@ -47,10 +47,10 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(Intent(this, PlayerActivity::class.java))
         }
 
-//        progressBar = findViewById(R.id.ExperienceBar)
-//
-//        giveXPButton = findViewById((R.id.GiveXP))
-//        giveXPButton.setOnClickListener {onGiveXPButtonClicked()}
+        progressBar = findViewById(R.id.ExperienceBar)
+
+        giveXPButton = findViewById((R.id.GiveXP))
+        giveXPButton.setOnClickListener {onGiveXPButtonClicked()}
 
 
 

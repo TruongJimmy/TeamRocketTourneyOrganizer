@@ -24,7 +24,10 @@ public final class TournamentDetailViewBinding implements ViewBinding {
   public final TextView background;
 
   @NonNull
-  public final ImageView gameImage;
+  public final TextView gameName;
+
+  @NonNull
+  public final ImageView imageView;
 
   @NonNull
   public final Button joinButton;
@@ -35,20 +38,16 @@ public final class TournamentDetailViewBinding implements ViewBinding {
   @NonNull
   public final TextView tournamentDate;
 
-  @NonNull
-  public final TextView tournamentName;
-
   private TournamentDetailViewBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView background, @NonNull ImageView gameImage, @NonNull Button joinButton,
-      @NonNull TextView prizePool, @NonNull TextView tournamentDate,
-      @NonNull TextView tournamentName) {
+      @NonNull TextView background, @NonNull TextView gameName, @NonNull ImageView imageView,
+      @NonNull Button joinButton, @NonNull TextView prizePool, @NonNull TextView tournamentDate) {
     this.rootView = rootView;
     this.background = background;
-    this.gameImage = gameImage;
+    this.gameName = gameName;
+    this.imageView = imageView;
     this.joinButton = joinButton;
     this.prizePool = prizePool;
     this.tournamentDate = tournamentDate;
-    this.tournamentName = tournamentName;
   }
 
   @Override
@@ -84,9 +83,15 @@ public final class TournamentDetailViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.game_image;
-      ImageView gameImage = rootView.findViewById(id);
-      if (gameImage == null) {
+      id = R.id.gameName;
+      TextView gameName = rootView.findViewById(id);
+      if (gameName == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView;
+      ImageView imageView = rootView.findViewById(id);
+      if (imageView == null) {
         break missingId;
       }
 
@@ -108,14 +113,8 @@ public final class TournamentDetailViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tournament_name;
-      TextView tournamentName = rootView.findViewById(id);
-      if (tournamentName == null) {
-        break missingId;
-      }
-
-      return new TournamentDetailViewBinding((ConstraintLayout) rootView, background, gameImage,
-          joinButton, prizePool, tournamentDate, tournamentName);
+      return new TournamentDetailViewBinding((ConstraintLayout) rootView, background, gameName,
+          imageView, joinButton, prizePool, tournamentDate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

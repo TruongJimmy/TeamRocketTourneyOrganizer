@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.emil-ep:TournamentBracketLib:1.0.4@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f49eea04d1eccbad1fb5ed0d1bdc108e/jetified-TournamentBracketLib-1.0.4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f49eea04d1eccbad1fb5ed0d1bdc108e/jetified-TournamentBracketLib-1.0.4/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f49eea04d1eccbad1fb5ed0d1bdc108e/jetified-TournamentBracketLib-1.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/26730e8d6bdca262bdc6029ca422ee31/jetified-TournamentBracketLib-1.0.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/26730e8d6bdca262bdc6029ca422ee31/jetified-TournamentBracketLib-1.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/26730e8d6bdca262bdc6029ca422ee31/jetified-TournamentBracketLib-1.0.4/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

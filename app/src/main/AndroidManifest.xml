@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mongodb.app">
-    <!-- Added below for paypal to work -->
+
+<!--    Added below for paypal to work -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,45 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
-        <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MyRatingsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GroupListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ChatRoom"
-            android:exported="false" />
-        <activity
-            android:name=".RulesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MapsMarkerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RateOrganizerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CreateGroupActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TimerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TournamentPageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TournamentsOwnActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ParticipantActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ActiveUpcomingTournament"
-            android:exported="false" />
         <activity
             android:name=".BracketActivity"
             android:exported="false"
@@ -117,13 +79,15 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name=".PaypalActivity"
-            android:exported="true"
             android:screenOrientation="nosensor" />
+
         <activity
-            android:name=".NewProfile"
-            android:screenOrientation="nosensor" /> <!-- <activity -->
-        <!-- android:name=".LoginActivity" -->
-        <!-- android:screenOrientation="nosensor" /> -->
+            android:name=".activty.CheckoutActivity"
+            android:screenOrientation="nosensor" />
+
+<!--        <activity-->
+<!--            android:name=".LoginActivity"-->
+<!--            android:screenOrientation="nosensor" />-->
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -136,9 +100,11 @@
             </intent-filter>
         </activity>
 
+<!--        // google API implementation-->
         <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
     </application>
 
 </manifest>

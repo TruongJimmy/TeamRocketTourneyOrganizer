@@ -22,13 +22,13 @@ public final class TournamentViewBinding implements ViewBinding {
   public final TextView name;
 
   @NonNull
-  public final RelativeLayout pressButton;
+  public final TextView popupMenu;
 
   private TournamentViewBinding(@NonNull RelativeLayout rootView, @NonNull TextView name,
-      @NonNull RelativeLayout pressButton) {
+      @NonNull TextView popupMenu) {
     this.rootView = rootView;
     this.name = name;
-    this.pressButton = pressButton;
+    this.popupMenu = popupMenu;
   }
 
   @Override
@@ -64,9 +64,13 @@ public final class TournamentViewBinding implements ViewBinding {
         break missingId;
       }
 
-      RelativeLayout pressButton = (RelativeLayout) rootView;
+      id = R.id.popup_menu;
+      TextView popupMenu = rootView.findViewById(id);
+      if (popupMenu == null) {
+        break missingId;
+      }
 
-      return new TournamentViewBinding((RelativeLayout) rootView, name, pressButton);
+      return new TournamentViewBinding((RelativeLayout) rootView, name, popupMenu);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

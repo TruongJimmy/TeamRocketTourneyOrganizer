@@ -4,14 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateTournamentActivity"
-    android:background="#202020">
+    tools:context=".CreateTournamentActivity">
+
+    <TextView
+        android:id="@+id/createTournamentLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Create Tournament"
+
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
 
     <EditText
         android:id="@+id/tournamentName_input"
-        android:layout_width="344dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
 
         android:ems="10"
         android:hint="Tournament Name"
@@ -21,32 +37,26 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
 
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="@+id/createTournamentLogo"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/createTournamentLogo"
+        app:layout_constraintTop_toBottomOf="@+id/createTournamentLogo" />
 
     <EditText
         android:id="@+id/participant_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:ems="10"
+        android:layout_marginTop="16dp"
 
+        android:ems="10"
         android:hint="Participant"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="#FFFFFF"
 
-        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/tournamentGame_input"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tournamentGame_input"
         app:layout_constraintTop_toBottomOf="@+id/tournamentGame_input" />
 
@@ -54,7 +64,7 @@
         android:id="@+id/location_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
 
         android:ems="10"
         android:hint="Location"
@@ -63,10 +73,8 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
+
         app:layout_constraintEnd_toEndOf="@+id/participant_input"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/participant_input"
         app:layout_constraintTop_toBottomOf="@+id/participant_input" />
 
@@ -74,7 +82,7 @@
         android:id="@+id/startTime_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
 
         android:ems="10"
         android:hint="Start Time"
@@ -83,39 +91,17 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="#FFFFFF"
 
-        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/location_input"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/location_input"
         app:layout_constraintTop_toBottomOf="@+id/location_input" />
-
-    <EditText
-        android:id="@+id/rulesInput"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:hint="Rules"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/location_input"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/location_input"
-        app:layout_constraintTop_toBottomOf="@+id/startTime_input" />
 
     <EditText
         android:id="@+id/tournamentType"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="12dp"
+
         android:ems="10"
         android:hint="Tournament Type"
         android:inputType="textPersonName"
@@ -124,67 +110,39 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
 
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/startTime_input"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/startTime_input"
-        app:layout_constraintTop_toBottomOf="@+id/rulesInput" />
-
-    <EditText
-        android:id="@+id/pAmount"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:hint="Prize Amount"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/startTime_input"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/startTime_input"
-        app:layout_constraintTop_toBottomOf="@+id/tournamentType" />
+        app:layout_constraintTop_toBottomOf="@+id/startTime_input" />
 
     <EditText
         android:id="@+id/tournamentGame_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:ems="10"
+        android:layout_marginTop="16dp"
 
+        android:ems="10"
         android:hint="Game"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="#FFFFFF"
 
-        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/tournamentName_input"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tournamentName_input"
         app:layout_constraintTop_toBottomOf="@+id/tournamentName_input" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/createTournamentButton_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/button"
+        android:layout_marginTop="32dp"
+
         android:text="Create the Tournament!"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tournamentType"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tournamentType"
-        app:layout_constraintTop_toBottomOf="@+id/pAmount" />
+        app:layout_constraintTop_toBottomOf="@+id/tournamentType" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar_createTournamentActivity"
@@ -198,17 +156,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="Create Tournament" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="361dp"
-        android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112"
-        tools:srcCompat="@drawable/tournament" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

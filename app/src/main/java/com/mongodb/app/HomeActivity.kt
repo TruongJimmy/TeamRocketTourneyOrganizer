@@ -3,10 +3,16 @@ package com.mongodb.app
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.mongodb.app.activty.CheckoutActivity
 import com.mongodb.app.games.GamesListActivity
-import java.util.*
+import kotlinx.android.synthetic.main.home_view.*
+
 
 
 class HomeActivity : AppCompatActivity() {
@@ -18,26 +24,11 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var suggestionButton: Button
     private lateinit var rankingButton: Button
     private lateinit var payButton: Button
-    private lateinit var reTourneyButton: Button
-    private lateinit var tourneyPageButton: Button
-    private lateinit var group: Button
-    private lateinit var message: Button
-    private lateinit var userEmail: TextView
-    private lateinit var rateButton: Button
-
-    // lateinit var timerButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_view)
-
-        val bundle: Bundle? = intent.extras
-        var currentEmail: String? = null
-        if (bundle != null) {
-            currentEmail = bundle.getString("EMAIL")
-        }
-        userEmail = findViewById(R.id.email)
-        userEmail.text = currentEmail
+//
 //        val bottomNavigationBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 //        val navController = findNavController(R.id.fragmentContainerView)
 //        val appBarConfiguration = AppBarConfiguration(setOf(R.id.searchFragment, R.id.createTourneyFragment, R.id.profileFragment, R.id.settingsFragment))
@@ -57,7 +48,7 @@ class HomeActivity : AppCompatActivity() {
         profileButton.setOnClickListener {onProfileButtonClicked()}
 
         activeButton = findViewById(R.id.activeTournament)
-        activeButton.setOnClickListener { toActiveTourney() }
+        activeButton.setOnClickListener { toBracketActivity() }
 
         suggestionButton = findViewById(R.id.suggestionPageButton)
         suggestionButton.setOnClickListener { toSuggetionPage() }
@@ -68,61 +59,10 @@ class HomeActivity : AppCompatActivity() {
         payButton = findViewById(R.id.payPalButton)
         payButton.setOnClickListener { toPaypalPage() }
 
-        payButton = findViewById(R.id.payPalButton)
-        payButton.setOnClickListener { toPaypalPage() }
-
-        group = findViewById(R.id.groupButton)
-        group.setOnClickListener { toGroupPage() }
-
-        message = findViewById(R.id.messageButton)
-        message.setOnClickListener { toChatRoom() }
-
-        rateButton = findViewById(R.id.ratingsPage)
-        rateButton.setOnClickListener { toMyRatingsPage() }
-//        timerButton = findViewById(R.id.timerButton)
-//        timerButton.setOnClickListener { toTimerPage() }
-
-
-//        reTourneyButton = findViewById(R.id.reActiveTourneyButton)
-//        reTourneyButton.setOnClickListener { toActiveTourney() }
-
-//        tourneyPageButton = findViewById(R.id.tourneyPage)
-//        tourneyPageButton.setOnClickListener { toTourneyPage() }
-
     }
-
-    private fun toMyRatingsPage() {
-        val intent = Intent(Intent(this, MyRatingsActivity::class.java))
-        intent.putExtra("EMAIL", userEmail.text)
-        startActivity(intent)
-    }
-
-
-    private fun toChatRoom (){
-        startActivity(Intent(this, ChatRoom::class.java))
-    }
-
-    private fun toGroupPage (){
-        startActivity(Intent(this, CreateGroupActivity::class.java))
-    }
-
-    private fun toTimerPage (){
-        startActivity(Intent(this, TimerActivity::class.java))
-    }
-
-
-    private fun toTourneyPage (){
-        startActivity(Intent(this, TournamentPageActivity::class.java))
-    }
-
-
-    private fun toActiveTourney (){
-        startActivity(Intent(this, ActiveUpcomingTournament::class.java))
-    }
-
 
     private fun toPaypalPage(){
-        startActivity(Intent(this,PaypalActivity::class.java))
+        startActivity(Intent(this,CheckoutActivity::class.java))
     }
 
     private fun toMemberRank(){
@@ -153,9 +93,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun onProfileButtonClicked(){
-        val intent = Intent(Intent(this, NewProfile::class.java))
-//        val email = getIntent().getStringExtra("EMAIL")
-//        intent.putExtra("EMAIL", email)
+        val intent = Intent(Intent(this, ProfileActivity::class.java))
+        val email = getIntent().getStringExtra("EMAIL")
+        intent.putExtra("EMAIL", email)
         startActivity(intent)
     }
 }

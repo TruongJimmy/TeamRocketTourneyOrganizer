@@ -74,7 +74,6 @@ public class PaypalActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PaymentActivity.class);
 
         //putting the paypal configuration to the intent
-
         intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
 
         // Putting paypal payment to the intent

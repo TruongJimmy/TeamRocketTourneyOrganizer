@@ -10,49 +10,21 @@ import android.widget.BaseAdapter
 import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import io.realm.Realm
-import io.realm.RealmConfiguration
-import io.realm.RealmResults
-import io.realm.kotlin.where
-import io.realm.mongodb.sync.SyncConfiguration
 
 class RankingActivity : AppCompatActivity()
 {
-    private lateinit var userRealm: Realm
-    private lateinit var config: RealmConfiguration
-    private lateinit var listView: ListView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ranking)
         val listView  = findViewById<ListView>(R.id.user_listview)
 
-        //listView.adapter = MyCustomAdapter(this)//
-        val user = realmApp.currentUser()
-        val partition = "123"
-        config = SyncConfiguration.Builder(user, partition).build()
-        Realm.getInstanceAsync(config, object : Realm.Callback() {
-            override fun onSuccess(realm: Realm) {
-                this@RankingActivity.userRealm = realm
-                listView.adapter = MyCustomAdapter(this@RankingActivity,realm.where<User>().findAllAsync())
-            }
-        })
+        listView.adapter = MyCustomAdapter(this)//
     }
-
-    /**
-     * Destroys the User Realm when exiting the activity
-     */
-    override fun onDestroy() {
-        super.onDestroy()
-        userRealm.close()
-       // listView.adapter = null
-
-    }
-    private class MyCustomAdapter(context: Context, private var users: RealmResults<User>): BaseAdapter()
+    private class MyCustomAdapter(context: Context): BaseAdapter()
     {
         private val mContext: Context = context
 
         //member name
-
         private val names = arrayListOf<String>("name1","name2","name3","name4")
 
         //how many rows in my list
@@ -78,8 +50,7 @@ class RankingActivity : AppCompatActivity()
 
             //name
             val nameTextView = rowMain.findViewById<TextView>(R.id.textView)
-            //nameTextView.text = names.get(position)
-            nameTextView.text = users[position]!!.name
+            nameTextView.text = names.get(position)
             if(position == 0 || position == 1 || position == 2)
                 nameTextView.setTextColor(Color.RED)
 
@@ -93,4 +64,3 @@ class RankingActivity : AppCompatActivity()
 
     }
 }
-

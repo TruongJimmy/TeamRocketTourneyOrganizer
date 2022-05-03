@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mongodb.app.games.GAME_ID
-import com.mongodb.app.games.GamesListActivity
 import com.mongodb.app.games.NAME_GAME
 import io.realm.Realm
 import io.realm.RealmConfiguration
@@ -41,11 +40,9 @@ class TournamentActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         var currentGameName: String? = null
-        var currentGameId: Long? = null
         val bundle: Bundle? = intent.extras
         if (bundle != null) {
             currentGameName = bundle.getString(NAME_GAME)
-            currentGameId = bundle.getLong(GAME_ID)
         }
 
         val user = realmApp.currentUser()
@@ -54,9 +51,11 @@ class TournamentActivity : AppCompatActivity() {
         Realm.getInstanceAsync(config, object : Realm.Callback() {
             override fun onSuccess(realm: Realm) {
                 this@TournamentActivity.userRealm = realm
-                recyclerView.adapter = TournamentAdapter(realm.where<Tournament>().equalTo("game", currentGameName).findAllAsync(), config, this@TournamentActivity, currentGameId)
+                recyclerView.adapter = TournamentAdapter(realm.where<Tournament>().equalTo("game", currentGameName).findAllAsync(), config, this@TournamentActivity)
             }
         })
+
+
 
     }
 
@@ -74,8 +73,16 @@ class TournamentActivity : AppCompatActivity() {
     }
     override fun onOptionsItemSelected(menuItem: MenuItem): Boolean {
         return when (menuItem.itemId) {
-            R.id.action_home -> {
-                startActivity(Intent(this, GamesListActivity::class.java))
+            R.id.action_logout -> {
+                realmApp.currentUser()?.logOutAsync {
+                    if (it.isSuccess) {
+                        Log.v(TAG(), "user logged out")
+                        startActivity(Intent(this, LoginActivity::class.java))
+
+                    } else {
+                        Log.e(TAG(), "log out failed! Error: ${it.error}")
+                    }
+                }
                 true
             }
             else -> {

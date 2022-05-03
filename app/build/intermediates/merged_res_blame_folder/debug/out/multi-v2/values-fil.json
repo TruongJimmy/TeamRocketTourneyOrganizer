@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fil\\values-fil.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Lewis\\.gradle\\caches\\transforms-2\\files-2.1\\743b99a0c0e873df13721232d56c7f8f\\jetified-play-services-wallet-19.1.0\\res\\values-fil\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "203",
+                        "endColumns": "78",
+                        "endOffsets": "281"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "82",
+                        "endOffsets": "133"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -2,40 +2,37 @@ package com.mongodb.app
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
-import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_new_profile.*
+import androidx.appcompat.widget.Toolbar
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import io.realm.Realm
+import io.realm.RealmConfiguration
 
-class EditProfileActivity : AppCompatActivity() {
-    private lateinit var profileName: EditText
-    private lateinit var profileEmail: EditText
-    private lateinit var twitter: EditText
-    private lateinit var fb: EditText
-    private lateinit var save: Button
+class EditProfileActivity: AppCompatActivity() {
 
+    private lateinit var backButton: Button
+    private lateinit var profileView: ImageView
+    private lateinit var playerName: TextView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.edit_profile_view)
-
-        profileName = findViewById(R.id.tv_name)
-        profileEmail = findViewById(R.id.profileEmail)
-        twitter = findViewById(R.id.twit)
-        fb = findViewById(R.id.fb)
-        save = findViewById(R.id.save_button)
-        save.setOnClickListener{
+        backButton = findViewById((R.id.profile_back))
+        backButton.setOnClickListener {
+            // go to home page after back button is clicked
             startActivity(Intent(this, SettingsActivity::class.java))
         }
-
-
-//        var bundle: Bundle? = intent.extras
-//        var userEmail= bundle!!.getString("EMAIL")
-//
-//
-//        profileEmail.text = userEmail
-//        profileName.text = userEmail
+        profileView = findViewById((R.id.user_avatar))
+        playerName = findViewById((R.id.user_name))
+        profileView.setOnClickListener {onProfileClicked()}
     }
-
+    private fun onProfileClicked() {
+        profileView.setImageResource(R.drawable.sampleimage_foreground)
+    }
 }

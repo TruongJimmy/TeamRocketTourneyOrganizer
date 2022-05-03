@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -27,6 +28,9 @@ public final class ProfileViewBinding implements ViewBinding {
 
   @NonNull
   public final Button GiveXP;
+
+  @NonNull
+  public final BottomNavigationView bottomNavigationView;
 
   @NonNull
   public final Button following;
@@ -44,12 +48,14 @@ public final class ProfileViewBinding implements ViewBinding {
   public final TextView userName;
 
   private ProfileViewBinding(@NonNull ConstraintLayout rootView, @NonNull ProgressBar ExperienceBar,
-      @NonNull Button GiveXP, @NonNull Button following, @NonNull Toolbar toolBarProfileActivity,
+      @NonNull Button GiveXP, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull Button following, @NonNull Toolbar toolBarProfileActivity,
       @NonNull ImageView userAvatarProfile, @NonNull TextView userLevel,
       @NonNull TextView userName) {
     this.rootView = rootView;
     this.ExperienceBar = ExperienceBar;
     this.GiveXP = GiveXP;
+    this.bottomNavigationView = bottomNavigationView;
     this.following = following;
     this.toolBarProfileActivity = toolBarProfileActivity;
     this.userAvatarProfile = userAvatarProfile;
@@ -96,6 +102,12 @@ public final class ProfileViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.bottomNavigationView;
+      BottomNavigationView bottomNavigationView = rootView.findViewById(id);
+      if (bottomNavigationView == null) {
+        break missingId;
+      }
+
       id = R.id.following;
       Button following = rootView.findViewById(id);
       if (following == null) {
@@ -126,8 +138,9 @@ public final class ProfileViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ProfileViewBinding((ConstraintLayout) rootView, ExperienceBar, GiveXP, following,
-          toolBarProfileActivity, userAvatarProfile, userLevel, userName);
+      return new ProfileViewBinding((ConstraintLayout) rootView, ExperienceBar, GiveXP,
+          bottomNavigationView, following, toolBarProfileActivity, userAvatarProfile, userLevel,
+          userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

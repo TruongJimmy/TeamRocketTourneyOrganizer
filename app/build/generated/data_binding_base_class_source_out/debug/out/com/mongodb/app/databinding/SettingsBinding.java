@@ -4,11 +4,10 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
@@ -21,33 +20,28 @@ public final class SettingsBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final AppCompatButton buttonChangePass;
+  public final Button buttonChangePass;
 
   @NonNull
-  public final AppCompatButton buttonEditProfile;
+  public final Button buttonEditProfile;
 
   @NonNull
-  public final AppCompatButton buttonHelp;
+  public final Button buttonHelp;
 
   @NonNull
-  public final AppCompatButton buttonLogout;
-
-  @NonNull
-  public final ImageView imageView5;
+  public final Button buttonLogout;
 
   @NonNull
   public final Toolbar toolBarSettings;
 
-  private SettingsBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton buttonChangePass,
-      @NonNull AppCompatButton buttonEditProfile, @NonNull AppCompatButton buttonHelp,
-      @NonNull AppCompatButton buttonLogout, @NonNull ImageView imageView5,
+  private SettingsBinding(@NonNull LinearLayout rootView, @NonNull Button buttonChangePass,
+      @NonNull Button buttonEditProfile, @NonNull Button buttonHelp, @NonNull Button buttonLogout,
       @NonNull Toolbar toolBarSettings) {
     this.rootView = rootView;
     this.buttonChangePass = buttonChangePass;
     this.buttonEditProfile = buttonEditProfile;
     this.buttonHelp = buttonHelp;
     this.buttonLogout = buttonLogout;
-    this.imageView5 = imageView5;
     this.toolBarSettings = toolBarSettings;
   }
 
@@ -79,32 +73,26 @@ public final class SettingsBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.button_change_pass;
-      AppCompatButton buttonChangePass = rootView.findViewById(id);
+      Button buttonChangePass = rootView.findViewById(id);
       if (buttonChangePass == null) {
         break missingId;
       }
 
       id = R.id.button_edit_profile;
-      AppCompatButton buttonEditProfile = rootView.findViewById(id);
+      Button buttonEditProfile = rootView.findViewById(id);
       if (buttonEditProfile == null) {
         break missingId;
       }
 
       id = R.id.button_help;
-      AppCompatButton buttonHelp = rootView.findViewById(id);
+      Button buttonHelp = rootView.findViewById(id);
       if (buttonHelp == null) {
         break missingId;
       }
 
       id = R.id.button_logout;
-      AppCompatButton buttonLogout = rootView.findViewById(id);
+      Button buttonLogout = rootView.findViewById(id);
       if (buttonLogout == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView5;
-      ImageView imageView5 = rootView.findViewById(id);
-      if (imageView5 == null) {
         break missingId;
       }
 
@@ -115,7 +103,7 @@ public final class SettingsBinding implements ViewBinding {
       }
 
       return new SettingsBinding((LinearLayout) rootView, buttonChangePass, buttonEditProfile,
-          buttonHelp, buttonLogout, imageView5, toolBarSettings);
+          buttonHelp, buttonLogout, toolBarSettings);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

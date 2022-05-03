@@ -16,8 +16,4 @@ public interface com_mongodb_app_TournamentRealmProxyInterface {
     public void realmSet$startTime(String value);
     public String realmGet$tournamentType();
     public void realmSet$tournamentType(String value);
-    public String realmGet$prizeAmount();
-    public void realmSet$prizeAmount(String value);
-    public String realmGet$rules();
-    public void realmSet$rules(String value);
 }

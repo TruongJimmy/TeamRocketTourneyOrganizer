@@ -54,7 +54,6 @@ class GameDetailActivity : AppCompatActivity() {
             removeGameButton.setOnClickListener {
                 val intent = Intent(this, TournamentActivity()::class.java)
                 intent.putExtra(NAME_GAME, currentGameName)
-                intent.putExtra(GAME_ID, currentGameId)
                 startActivity(intent)
                 finish()
             }
