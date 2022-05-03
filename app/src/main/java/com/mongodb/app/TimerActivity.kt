@@ -44,7 +44,7 @@ class TimerActivity : AppCompatActivity() {
 
 
         StartTime =  tournament.startTime
-        StartTime = StartTime.substring(0, StartTime.indexOf(' ')+1)
+        StartTime = StartTime.substring(0, StartTime.indexOf(' '))
         date = SimpleDateFormat("h:mm a")
         StartDate = date.parse(StartTime)
         milliStart = StartDate.getTime().toDouble()
@@ -54,33 +54,35 @@ class TimerActivity : AppCompatActivity() {
 
 
         mTextViewCountDown = findViewById(R.id.text_view_countdown)
-        mButtonStartPause = findViewById(R.id.button_start_pause)
-        mButtonReset = findViewById(R.id.button_reset)
-        mButtonStartPause!!.setOnClickListener {
-            if (mTimerRunning) {
-                pauseTimer()
-            } else {
-                startTimer()
-            }
+        if(currentMillis as Long == clockStart){
+            startTimer()
         }
+
+//        mButtonStartPause = findViewById(R.id.button_start_pause)
+//        mButtonReset = findViewById(R.id.button_reset)
+//        mButtonStartPause!!.setOnClickListener {
+//            if (mTimerRunning) {
+//                pauseTimer()
+//            } else {
+//                startTimer()
+//            }
+//        }
         mButtonReset!!.setOnClickListener { resetTimer() }
         updateCountDownText()
     }
 
     private fun startTimer() {
-        if(currentMillis as Long == clockStart){
-            mTimerRunning = true
-            mCountDownTimer = object : CountDownTimer(clockStart as Long, 1000) {
-                override fun onTick(millisUntilFinished: Long) {
-                    clockStart = millisUntilFinished
-                    updateCountDownText()
-                }
+        mTimerRunning = true
+        mCountDownTimer = object : CountDownTimer(clockStart as Long, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                clockStart = millisUntilFinished
+                updateCountDownText()
+            }
 
-                override fun onFinish() {
-                    mTimerRunning = false
-                }
-            }.start()
-        }
+            override fun onFinish() {
+                mTimerRunning = false
+            }
+        }.start()
 
         mTimerRunning = true
         mButtonStartPause!!.text = "pause"
