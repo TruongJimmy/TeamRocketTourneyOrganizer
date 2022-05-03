@@ -3,6 +3,7 @@ package com.mongodb.app
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.mongodb.app.games.GamesListActivity
 import java.util.*
@@ -21,13 +22,22 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var tourneyPageButton: Button
     private lateinit var group: Button
     private lateinit var message: Button
+    private lateinit var userEmail: TextView
+    private lateinit var rateButton: Button
 
     // lateinit var timerButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_view)
-//
+
+        val bundle: Bundle? = intent.extras
+        var currentEmail: String? = null
+        if (bundle != null) {
+            currentEmail = bundle.getString("EMAIL")
+        }
+        userEmail = findViewById(R.id.email)
+        userEmail.text = currentEmail
 //        val bottomNavigationBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 //        val navController = findNavController(R.id.fragmentContainerView)
 //        val appBarConfiguration = AppBarConfiguration(setOf(R.id.searchFragment, R.id.createTourneyFragment, R.id.profileFragment, R.id.settingsFragment))
@@ -66,6 +76,9 @@ class HomeActivity : AppCompatActivity() {
 
         message = findViewById(R.id.messageButton)
         message.setOnClickListener { toChatRoom() }
+
+        rateButton = findViewById(R.id.ratingsPage)
+        rateButton.setOnClickListener { toMyRatingsPage() }
 //        timerButton = findViewById(R.id.timerButton)
 //        timerButton.setOnClickListener { toTimerPage() }
 
@@ -77,6 +90,13 @@ class HomeActivity : AppCompatActivity() {
 //        tourneyPageButton.setOnClickListener { toTourneyPage() }
 
     }
+
+    private fun toMyRatingsPage() {
+        val intent = Intent(Intent(this, MyRatingsActivity::class.java))
+        intent.putExtra("EMAIL", userEmail.text)
+        startActivity(intent)
+    }
+
 
     private fun toChatRoom (){
         startActivity(Intent(this, ChatRoom::class.java))

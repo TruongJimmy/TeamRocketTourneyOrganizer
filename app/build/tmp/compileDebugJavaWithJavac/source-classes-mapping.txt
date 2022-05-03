@@ -45,8 +45,9 @@ com/mongodb/app/databinding/TournamentPageCardViewBinding.java
  com.mongodb.app.databinding.TournamentPageCardViewBinding
 com/mongodb/app/databinding/LoginViewBinding.java
  com.mongodb.app.databinding.LoginViewBinding
-com/mongodb/app/databinding/FragmentSettingsBinding.java
- com.mongodb.app.databinding.FragmentSettingsBinding
+com/mongodb/app/GroupsAdapter.java
+ com.mongodb.app.GroupsAdapter
+ com.mongodb.app.GroupsAdapter$GroupViewHolder
 com/mongodb/app/databinding/ChangePasswordViewBinding.java
  com.mongodb.app.databinding.ChangePasswordViewBinding
 com/mongodb/app/databinding/FragmentSearchBinding.java
@@ -61,6 +62,8 @@ com/mongodb/app/databinding/ActivityActiveUpcomingTournamentBinding.java
  com.mongodb.app.databinding.ActivityActiveUpcomingTournamentBinding
 com/mongodb/app/databinding/TournamentViewBinding.java
  com.mongodb.app.databinding.TournamentViewBinding
+com/mongodb/app/databinding/RatingViewBinding.java
+ com.mongodb.app.databinding.RatingViewBinding
 com/mongodb/app/databinding/SuggestionPageBinding.java
  com.mongodb.app.databinding.SuggestionPageBinding
 com/mongodb/app/databinding/ActivityChatBinding.java
@@ -126,6 +129,8 @@ com/mongodb/app/ChatRoom.java
  com.mongodb.app.ChatRoom$2
 com/mongodb/app/databinding/ActivityPaypalBinding.java
  com.mongodb.app.databinding.ActivityPaypalBinding
+com/mongodb/app/databinding/RatingItemBinding.java
+ com.mongodb.app.databinding.RatingItemBinding
 com/mongodb/app/databinding/GameHeaderBinding.java
  com.mongodb.app.databinding.GameHeaderBinding
 io/realm/com_mongodb_app_GamesRealmProxyInterface.java
@@ -156,8 +161,11 @@ io/realm/com_mongodb_app_TournamentRealmProxyInterface.java
  io.realm.com_mongodb_app_TournamentRealmProxyInterface
 com/mongodb/app/databinding/HomeViewBinding.java
  com.mongodb.app.databinding.HomeViewBinding
-com/mongodb/app/databinding/GameItemBinding.java
- com.mongodb.app.databinding.GameItemBinding
+com/mongodb/app/ChatActivity.java
+ com.mongodb.app.ChatActivity
+ com.mongodb.app.ChatActivity$1
+ com.mongodb.app.ChatActivity$2
+ com.mongodb.app.ChatActivity$3
 com/mongodb/app/databinding/ActivityReportBinding.java
  com.mongodb.app.databinding.ActivityReportBinding
 com/mongodb/app/databinding/ActivityRulesBinding.java
@@ -166,11 +174,7 @@ com/mongodb/app/databinding/ParticipantViewBinding.java
  com.mongodb.app.databinding.ParticipantViewBinding
 com/mongodb/app/databinding/ActivityTournamentPageBinding.java
  com.mongodb.app.databinding.ActivityTournamentPageBinding
-com/mongodb/app/ChatActivity.java
- com.mongodb.app.ChatActivity
- com.mongodb.app.ChatActivity$1
- com.mongodb.app.ChatActivity$2
- com.mongodb.app.ChatActivity$3
-com/mongodb/app/GroupsAdapter.java
- com.mongodb.app.GroupsAdapter
- com.mongodb.app.GroupsAdapter$GroupViewHolder
+com/mongodb/app/databinding/FragmentSettingsBinding.java
+ com.mongodb.app.databinding.FragmentSettingsBinding
+com/mongodb/app/databinding/GameItemBinding.java
+ com.mongodb.app.databinding.GameItemBinding
