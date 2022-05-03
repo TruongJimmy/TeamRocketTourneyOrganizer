@@ -36,6 +36,7 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.GroupViewH
 
     @Override
     public int getItemCount() {
+
         return groups.size();
     }
 

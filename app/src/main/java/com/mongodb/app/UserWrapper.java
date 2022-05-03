@@ -24,4 +24,5 @@ public class UserWrapper implements IUser {
     public String getAvatar() {
         return user.getAvatar();
     }
+
 }

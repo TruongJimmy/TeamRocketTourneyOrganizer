@@ -18,10 +18,14 @@ com/mongodb/app/databinding/ActivityParticipantsBinding.java
  com.mongodb.app.databinding.ActivityParticipantsBinding
 com/mongodb/app/databinding/ActivityBracketBinding.java
  com.mongodb.app.databinding.ActivityBracketBinding
+com/mongodb/app/databinding/BuyWithGooglepayButtonBinding.java
+ com.mongodb.app.databinding.BuyWithGooglepayButtonBinding
 com/mongodb/app/databinding/FragmentActiveTournamentsBinding.java
  com.mongodb.app.databinding.FragmentActiveTournamentsBinding
 io/realm/DefaultRealmModuleMediator.java
  io.realm.DefaultRealmModuleMediator
+com/mongodb/app/ChatConstants/ChatConstants.java
+ com.mongodb.app.ChatConstants.ChatConstants
 com/mongodb/app/databinding/ActivityGameBinding.java
  com.mongodb.app.databinding.ActivityGameBinding
 com/mongodb/app/databinding/ActivityGroupListBinding.java
@@ -31,6 +35,8 @@ com/mongodb/app/databinding/ActivityCreateTournamentBinding.java
 com/mongodb/app/GroupListActivity.java
  com.mongodb.app.GroupListActivity
  com.mongodb.app.GroupListActivity$1
+com/mongodb/app/databinding/ActivityCheckoutPayBinding.java
+ com.mongodb.app.databinding.ActivityCheckoutPayBinding
 com/mongodb/app/databinding/ActivityTaskBinding.java
  com.mongodb.app.databinding.ActivityTaskBinding
 com/mongodb/app/databinding/PlayerViewBinding.java
@@ -129,10 +135,14 @@ com/mongodb/app/ChatRoom.java
  com.mongodb.app.ChatRoom$2
 com/mongodb/app/databinding/ActivityPaypalBinding.java
  com.mongodb.app.databinding.ActivityPaypalBinding
+com/mongodb/app/databinding/GroupRowBinding.java
+ com.mongodb.app.databinding.GroupRowBinding
 com/mongodb/app/databinding/RatingItemBinding.java
  com.mongodb.app.databinding.RatingItemBinding
 com/mongodb/app/databinding/GameHeaderBinding.java
  com.mongodb.app.databinding.GameHeaderBinding
+com/mongodb/app/databinding/GroupPageBinding.java
+ com.mongodb.app.databinding.GroupPageBinding
 io/realm/com_mongodb_app_GamesRealmProxyInterface.java
  io.realm.com_mongodb_app_GamesRealmProxyInterface
 io/realm/com_mongodb_app_GroupRealmProxyInterface.java
@@ -141,8 +151,6 @@ com/mongodb/app/databinding/ActivitySearchTournamentBinding.java
  com.mongodb.app.databinding.ActivitySearchTournamentBinding
 com/mongodb/app/databinding/ActivityTournamentBinding.java
  com.mongodb.app.databinding.ActivityTournamentBinding
-com/mongodb/app/Constants/Constants.java
- com.mongodb.app.Constants.Constants
 io/realm/DefaultRealmModule.java
  io.realm.DefaultRealmModule
 com/mongodb/app/databinding/EditProfileViewBinding.java

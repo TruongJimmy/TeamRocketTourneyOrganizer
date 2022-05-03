@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lewis\\.gradle\\caches\\transforms-2\\files-2.1\\cee29536c48f777af6adcd0fbcf285d9\\appcompat-1.4.1\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Program Files\\Android\\jdk\\caches\\transforms-2\\files-2.1\\cee29536c48f777af6adcd0fbcf285d9\\appcompat-1.4.1\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

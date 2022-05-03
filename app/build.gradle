@@ -98,10 +98,15 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-
+    //Below 3 were added for cometchat / chatmessaging
     implementation 'com.cometchat:pro-android-chat-sdk:3.0.5'
-
     implementation 'com.github.stfalcon-studio:Chatkit:0.4.1'
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+    //added below for gpay
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation "com.google.android.gms:play-services-wallet:19.1.0"
+    implementation "androidx.activity:activity-ktx:1.4.0"
 }
 

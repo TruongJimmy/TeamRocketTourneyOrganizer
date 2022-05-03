@@ -12,7 +12,7 @@ import android.widget.EditText;
 import com.cometchat.pro.core.AppSettings;
 import com.cometchat.pro.core.CometChat;
 import com.cometchat.pro.exceptions.CometChatException;
-import com.mongodb.app.Constants.Constants;
+import com.mongodb.app.ChatConstants.ChatConstants;
 import com.cometchat.pro.models.User;
 
 public class ChatRoom extends AppCompatActivity {
@@ -30,7 +30,7 @@ public class ChatRoom extends AppCompatActivity {
     private void initViews() {
         EditText userIdEditText = findViewById(R.id.userIdEditText);
         Button loginButton = findViewById(R.id.loginButton);
-        loginButton.setOnClickListener(view -> { CometChat.login(userIdEditText.getText().toString(), Constants.API_KEY, new CometChat.CallbackListener<User>() {
+        loginButton.setOnClickListener(view -> { CometChat.login(userIdEditText.getText().toString(), ChatConstants.API_KEY, new CometChat.CallbackListener<User>() {
 
                     @Override
                     public void onSuccess(User user) {
@@ -51,8 +51,8 @@ public class ChatRoom extends AppCompatActivity {
     }
 
     private void initCometChat() {
-        String appID = Constants.APP_ID; // Replace with your App ID
-        String region = Constants.REGION; // Replace with your App Region ("eu" or "us")
+        String appID = ChatConstants.APP_ID; // Replace with your App ID
+        String region = ChatConstants.REGION; // Replace with your App Region ("eu" or "us")
 
         AppSettings appSettings=new AppSettings.AppSettingsBuilder()
                 .subscribePresenceForAllUsers()

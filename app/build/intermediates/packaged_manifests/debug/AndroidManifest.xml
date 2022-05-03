@@ -94,6 +94,9 @@
             android:name="com.mongodb.app.afterNotification"
             android:screenOrientation="nosensor" />
         <activity
+            android:name="com.mongodb.app.MyGroupsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
             android:name="com.mongodb.app.ReportActivity"
             android:screenOrientation="nosensor" />
         <activity
@@ -151,6 +154,10 @@
             android:exported="true"
             android:screenOrientation="nosensor" />
         <activity
+            android:name="com.mongodb.app.activty.CheckoutActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
             android:name="com.mongodb.app.NewProfile"
             android:screenOrientation="nosensor" /> <!-- <activity -->
         <!-- android:name=".LoginActivity" -->
@@ -170,6 +177,11 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <!-- // google API implementation -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
 
         <uses-library
             android:name="androidx.window.extensions"

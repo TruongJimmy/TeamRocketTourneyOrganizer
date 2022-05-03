@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.mongodb.app.activty.CheckoutActivity
 import com.mongodb.app.games.GamesListActivity
 import java.util.*
 
@@ -18,12 +19,13 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var suggestionButton: Button
     private lateinit var rankingButton: Button
     private lateinit var payButton: Button
-    private lateinit var reTourneyButton: Button
+    private lateinit var brackets: Button
     private lateinit var tourneyPageButton: Button
     private lateinit var group: Button
     private lateinit var message: Button
     private lateinit var userEmail: TextView
     private lateinit var rateButton: Button
+    private lateinit var gPay: Button
 
     // lateinit var timerButton: Button
 
@@ -83,13 +85,17 @@ class HomeActivity : AppCompatActivity() {
 //        timerButton.setOnClickListener { toTimerPage() }
 
 
-//        reTourneyButton = findViewById(R.id.reActiveTourneyButton)
-//        reTourneyButton.setOnClickListener { toActiveTourney() }
+        brackets = findViewById(R.id.brackets)
+        brackets.setOnClickListener { toBracketActivity() }
 
 //        tourneyPageButton = findViewById(R.id.tourneyPage)
 //        tourneyPageButton.setOnClickListener { toTourneyPage() }
 
+        gPay = findViewById(R.id.googlePayButton)
+        gPay.setOnClickListener { toPaypalPage() }
+
     }
+
 
     private fun toMyRatingsPage() {
         val intent = Intent(Intent(this, MyRatingsActivity::class.java))
@@ -122,7 +128,7 @@ class HomeActivity : AppCompatActivity() {
 
 
     private fun toPaypalPage(){
-        startActivity(Intent(this,PaypalActivity::class.java))
+        startActivity(Intent(this,CheckoutActivity::class.java))
     }
 
     private fun toMemberRank(){

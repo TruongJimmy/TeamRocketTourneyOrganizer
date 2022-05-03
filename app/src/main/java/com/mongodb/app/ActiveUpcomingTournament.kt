@@ -23,7 +23,7 @@ class ActiveUpcomingTournament:AppCompatActivity() {
     var config = SyncConfiguration.Builder(user, partition).build()
     // open the realm
     private var realm = Realm.getInstance(config)
-    private var tourneyQuery = realm!!.where<Tournament>().findAllAsync()
+    private var tourneyQuery = realm!!.where<Tournament>().findAll()
 
 
     private var images = intArrayOf(

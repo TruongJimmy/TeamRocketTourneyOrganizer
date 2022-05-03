@@ -50,5 +50,6 @@ public class GroupListActivity extends AppCompatActivity {
         groupsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         GroupsAdapter groupsAdapter = new GroupsAdapter(list, this);
         groupsRecyclerView.setAdapter(groupsAdapter);
+
     }
 }

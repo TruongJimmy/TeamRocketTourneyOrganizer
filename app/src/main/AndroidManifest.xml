@@ -63,6 +63,9 @@
             android:name=".afterNotification"
             android:screenOrientation="nosensor" />
         <activity
+            android:name=".MyGroupsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
             android:name=".ReportActivity"
             android:screenOrientation="nosensor" />
         <activity
@@ -120,6 +123,10 @@
             android:exported="true"
             android:screenOrientation="nosensor" />
         <activity
+            android:name=".activty.CheckoutActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
             android:name=".NewProfile"
             android:screenOrientation="nosensor" /> <!-- <activity -->
         <!-- android:name=".LoginActivity" -->
@@ -139,6 +146,11 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <!--        // google API implementation-->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
     </application>
 
 </manifest>

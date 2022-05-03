@@ -16,7 +16,7 @@ import com.cometchat.pro.models.BaseMessage;
 import com.cometchat.pro.models.CustomMessage;
 import com.cometchat.pro.models.MediaMessage;
 import com.cometchat.pro.models.TextMessage;
-import com.mongodb.app.Constants.Constants;
+import com.mongodb.app.ChatConstants.ChatConstants;
 import com.squareup.picasso.Picasso;
 import com.stfalcon.chatkit.commons.ImageLoader;
 import com.stfalcon.chatkit.commons.models.IMessage;
@@ -29,14 +29,15 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChatActivity extends AppCompatActivity {
+public class
+ChatActivity extends AppCompatActivity {
 
     private String groupId;
     private MessagesListAdapter<IMessage> adapter;
 
     public static void start(Context context, String groupId) {
         Intent starter = new Intent(context, ChatActivity.class);
-        starter.putExtra(Constants.GROUP_ID, groupId);
+        starter.putExtra(ChatConstants.GROUP_ID, groupId);
         context.startActivity(starter);
     }
     @Override
@@ -46,7 +47,7 @@ public class ChatActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         if(intent != null) {
-            groupId = intent.getStringExtra(Constants.GROUP_ID);
+            groupId = intent.getStringExtra(ChatConstants.GROUP_ID);
         }
         initViews();
         addListener();

@@ -53,9 +53,45 @@ class TournamentPageActivity : AppCompatActivity() {
         var prizeAmount = bundle!!.getString("prizeAmount")
         var tourneyPicture = bundle!!.getString("tourneyPicture")
 
-        var title = arrayOf("Tournament Bracket", "Tournament Type", "Location", "Start Time", "Game", "Participants", "Rules", "Contact TO", "Chat Room")
-        var details = arrayOf("Tap to see bracket", tournamentType, location, startTime, tourneyGameCall, participantCall, "Tap for details", "TO Name", "Text with other participants")
-        var images = intArrayOf(R.drawable.ic_bracket, R.drawable.ic_type, R.drawable.ic_location, R.drawable.ic_time, R.drawable.ic_game, R.drawable.ic_person, R.drawable.ic_rules, R.drawable.ic_send, R.drawable.ic_chat)
+        var title = arrayOf(
+            "Tournament Bracket",
+            "Tournament Type",
+            "Location",
+            "Start Time",
+            "Game",
+            "Participants",
+            "Groups",
+            "QR Code",
+            "Rules",
+            "Contact TO",
+            "Chat Room"
+        )
+        var details = arrayOf(
+            "Tap to see bracket",
+            tournamentType,
+            location,
+            startTime,
+            tourneyGameCall,
+            participantCall,
+            "Tap for Groups",
+            "Tap for QR Code",
+            "Tap for details",
+            "TO Name",
+            "Text with other participants"
+        )
+        var images = intArrayOf(
+            R.drawable.ic_bracket,
+            R.drawable.ic_type,
+            R.drawable.ic_location,
+            R.drawable.ic_time,
+            R.drawable.ic_game,
+            R.drawable.ic_person,
+            R.drawable.ic_group,
+            R.drawable.ic_qrcode,
+            R.drawable.ic_rules,
+            R.drawable.ic_send,
+            R.drawable.ic_chat
+        )
         participants.text = participantCall
         tourneyName.text = tourneyNameCall
         tourneyGame.text = tourneyGameCall
@@ -72,7 +108,8 @@ class TournamentPageActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        join.setOnClickListener{
+        join.setOnClickListener {
+
             val functionsManager: Functions = realmApp.getFunctions(user)
             functionsManager.callFunctionAsync(
                 "addParticipant",
@@ -96,6 +133,25 @@ class TournamentPageActivity : AppCompatActivity() {
 
         adapter = TournamentPageAdapter(title, details, images)
         recyclerViewTourneyPage.adapter = adapter
+
+        (adapter as TournamentPageAdapter).setOnItemClickListener(object :
+            TournamentPageAdapter.onItemClickListener {
+            override fun onItemClick(position: Int) {
+                if (title[position] == "Groups") {
+                    val intent = Intent(this@TournamentPageActivity, MyGroupsActivity::class.java)
+                    startActivity(intent)
+                } else if (title[position] == "QR Code") {
+                    val intent = Intent(this@TournamentPageActivity, QRCodeActivity::class.java)
+                    startActivity(intent)
+                } else if (title[position] == "Participants") {
+                    val intent = Intent(this@TournamentPageActivity, ParticipantActivity::class.java)
+                    intent.putExtra("tourneyName", tourneyNameCall)
+                    startActivity(intent)
+                }
+
+            }
+
+        })
     }
 
     private fun setTourneyImage(tourneyGameName: String) {

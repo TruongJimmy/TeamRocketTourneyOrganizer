@@ -131,6 +131,7 @@ attr animateCircleAngleTo
 attr animateRelativeTo
 attr animationMode
 attr appBarLayoutStyle
+attr appTheme
 attr applyMotionScene
 attr arcMode
 attr argType
@@ -223,6 +224,10 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr buyButtonAppearance
+attr buyButtonHeight
+attr buyButtonText
+attr buyButtonWidth
 attr cameraBearing
 attr cameraMaxZoomPreference
 attr cameraMinZoomPreference
@@ -390,6 +395,7 @@ attr customNavigationLayout
 attr customPixelDimension
 attr customReference
 attr customStringValue
+attr customThemeStyle
 attr data
 attr dataPattern
 attr dateHeaderFormat
@@ -488,6 +494,7 @@ attr enforceMaterialTheme
 attr enforceTextAppearance
 attr ensureMinTouchTargetSize
 attr enterAnim
+attr environment
 attr errorContentDescription
 attr errorEnabled
 attr errorIconDrawable
@@ -560,6 +567,8 @@ attr fontVariationSettings
 attr fontWeight
 attr forceApplySystemWindowInsetTop
 attr foregroundInsidePadding
+attr fragmentMode
+attr fragmentStyle
 attr framePosition
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
@@ -802,6 +811,13 @@ attr logo
 attr logoDescription
 attr mapId
 attr mapType
+attr maskedWalletDetailsBackground
+attr maskedWalletDetailsButtonBackground
+attr maskedWalletDetailsButtonTextAppearance
+attr maskedWalletDetailsHeaderTextAppearance
+attr maskedWalletDetailsLogoImageType
+attr maskedWalletDetailsLogoTextColor
+attr maskedWalletDetailsTextAppearance
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
 attr materialAlertDialogTitleIconStyle
@@ -1209,6 +1225,7 @@ attr titleTextStyle
 attr toolbarId
 attr toolbarNavigationButtonStyle
 attr toolbarStyle
+attr toolbarTextColorStyle
 attr tooltipForegroundColor
 attr tooltipFrameBackground
 attr tooltipStyle
@@ -1274,6 +1291,7 @@ attr windowFixedWidthMinor
 attr windowMinWidthMajor
 attr windowMinWidthMinor
 attr windowNoTitle
+attr windowTransitionStyle
 attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
@@ -1522,6 +1540,19 @@ color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
 color transparent
+color wallet_bright_foreground_disabled_holo_light
+color wallet_bright_foreground_holo_dark
+color wallet_bright_foreground_holo_light
+color wallet_dim_foreground_disabled_holo_dark
+color wallet_dim_foreground_holo_dark
+color wallet_highlighted_text_holo_dark
+color wallet_highlighted_text_holo_light
+color wallet_hint_foreground_holo_dark
+color wallet_hint_foreground_holo_light
+color wallet_holo_blue_light
+color wallet_link_text_light
+color wallet_primary_text_holo_light
+color wallet_secondary_text_holo_dark
 color warm_grey
 color warm_grey_four
 color warm_grey_three
@@ -1617,6 +1648,9 @@ dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
+dimen buy_button_height
+dimen buy_button_min_width
+dimen buy_button_width
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1711,6 +1745,8 @@ dimen input_text_size
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen margin_large
+dimen margin_xlarge
 dimen material_bottom_sheet_max_width
 dimen material_clock_display_padding
 dimen material_clock_face_margin_top
@@ -1969,6 +2005,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen padding_small
 dimen sliding_pane_detail_pane_width
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
@@ -2088,6 +2125,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable bubble_circle
 drawable budokai_background
 drawable button
+drawable buy_with_googlepay_button_content
 drawable circle
 drawable circle_bg
 drawable common_full_open_on_phone
@@ -2123,6 +2161,11 @@ drawable edit_text_bg
 drawable fortnite_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable googlepay_button_background
+drawable googlepay_button_content
+drawable googlepay_button_no_shadow_background
+drawable googlepay_button_no_shadow_background_image
+drawable googlepay_button_overlay
 drawable grad
 drawable home
 drawable ic_add_attachment
@@ -2133,6 +2176,7 @@ drawable ic_chat
 drawable ic_clock_black_24dp
 drawable ic_create
 drawable ic_game
+drawable ic_group
 drawable ic_home
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2146,6 +2190,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_person
 drawable ic_profile
+drawable ic_qrcode
 drawable ic_rules
 drawable ic_search
 drawable ic_send
@@ -2302,6 +2347,10 @@ id all
 id allStates
 id alreadyAccountButton
 id always
+id android_pay
+id android_pay_dark
+id android_pay_light
+id android_pay_light_with_border
 id androidx_window_activity_scope
 id animateToEnd
 id animateToStart
@@ -2327,6 +2376,7 @@ id bestChoice
 id blocking
 id bodyDetail
 id bold
+id book_now
 id bottom
 id bottomNavigationView
 id bounce
@@ -2336,6 +2386,7 @@ id bounceStart
 id bracketFragment
 id bracketFragment2
 id bracket_view
+id brackets
 id bubble
 id builtWithSync
 id button3
@@ -2351,6 +2402,10 @@ id button_help
 id button_logout
 id button_reset
 id button_start_pause
+id buyButton
+id buy_now
+id buy_with
+id buy_with_google
 id cache_measures
 id cancel_action
 id cancel_button
@@ -2371,6 +2426,7 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id classic
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2414,6 +2470,9 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailDescription
+id detailPrice
+id detailTitle
 id dialogAvatar
 id dialogContainer
 id dialogDate
@@ -2432,6 +2491,8 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id donate_with
+id donate_with_google
 id done_button
 id dragAnticlockwise
 id dragClockwise
@@ -2486,12 +2547,21 @@ id gf_container
 id ghost_view
 id ghost_view_holder
 id gone
+id googleMaterial2
+id googlePayButton
+id google_wallet_classic
+id google_wallet_grayscale
+id google_wallet_monochrome
 id graph
 id graph_wrap
+id grayscale
 id groupButton
+id groupLogo
 id groupName
 id groupNameTextView
+id group_cardView
 id group_divider
+id group_name
 id grouping
 id groups
 id groupsRecyclerView
@@ -2499,6 +2569,8 @@ id guideline
 id headerTitle
 id header_title
 id hideable
+id holo_dark
+id holo_light
 id home
 id homeAsUp
 id honorRequest
@@ -2568,11 +2640,13 @@ id list_item
 id locale
 id location_input
 id loginButton
+id logo_only
 id ltr
 id map
 id masked
 id match_constraint
 id match_parent
+id material
 id material_clock_display
 id material_clock_face
 id material_clock_hand
@@ -2598,6 +2672,7 @@ id mem2
 id mem3
 id mem4
 id memberButton
+id memberNames
 id message
 id messageButton
 id messageInput
@@ -2609,6 +2684,7 @@ id messagesList
 id middle
 id mini
 id moneyIcon
+id monochrome
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2701,6 +2777,7 @@ id postLayout
 id pressButton
 id prizeAmount
 id prize_pool
+id production
 id profileEmail
 id profileFragment
 id progress_circular
@@ -2736,6 +2813,7 @@ id rulesDoneButton
 id rulesInput
 id rulesText
 id rv_score_board
+id sandbox
 id satellite
 id save_button
 id save_non_transition_alpha
@@ -2763,6 +2841,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id selectionDetails
 id selection_type
 id sendButtonSpace
 id sendReport
@@ -2810,6 +2889,7 @@ id staticPostLayout
 id status_bar_latest_event_content
 id stop
 id stretch
+id strict_sandbox
 id subjectText
 id submenuarrow
 id submit
@@ -2843,6 +2923,7 @@ id team_two_layout
 id team_two_name
 id team_two_score
 id terrain
+id test
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -3017,6 +3098,7 @@ layout activity_after_notification
 layout activity_bracket
 layout activity_chat
 layout activity_chat_room
+layout activity_checkout_pay
 layout activity_create_tournament
 layout activity_game
 layout activity_group
@@ -3040,6 +3122,7 @@ layout activity_timer
 layout activity_tournament
 layout activity_tournament_page
 layout add_game_layout
+layout buy_with_googlepay_button
 layout card_view
 layout change_password_view
 layout custom_dialog
@@ -3071,6 +3154,8 @@ layout game_detail_activity
 layout game_header
 layout game_item
 layout group_layout
+layout group_page
+layout group_row
 layout home_view
 layout item_date_header
 layout item_dialog
@@ -3174,6 +3259,7 @@ layout tournament_detail_view
 layout tournament_page_card_view
 layout tournament_view
 layout view_message_input
+layout wallet_test_layout
 menu bottom_menu
 menu example_menu
 menu example_menu2
@@ -3375,6 +3461,7 @@ string second_fragment_label
 string settings
 string status_bar_notification_info_overflow
 string title_activity_follow
+string wallet_buy_button_place_holder
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -3909,6 +3996,10 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
+style WalletFragmentDefaultButtonTextAppearance
+style WalletFragmentDefaultDetailsHeaderTextAppearance
+style WalletFragmentDefaultDetailsTextAppearance
+style WalletFragmentDefaultStyle
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -4166,6 +4257,7 @@ styleable ConstraintSet android_orientation android_id android_visibility androi
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customReference customStringValue methodName
+styleable CustomWalletTheme customThemeStyle toolbarTextColorStyle windowTransitionStyle
 styleable DialogFragmentNavigator android_name
 styleable DialogsList dialogAvatarHeight dialogAvatarWidth dialogDateColor dialogDateSize dialogDateStyle dialogDividerColor dialogDividerEnabled dialogDividerLeftPadding dialogDividerRightPadding dialogItemBackground dialogMessageAvatarEnabled dialogMessageAvatarHeight dialogMessageAvatarWidth dialogMessageTextColor dialogMessageTextSize dialogMessageTextStyle dialogTitleTextColor dialogTitleTextSize dialogTitleTextStyle dialogUnreadBubbleBackgroundColor dialogUnreadBubbleEnabled dialogUnreadBubbleTextColor dialogUnreadBubbleTextSize dialogUnreadBubbleTextStyle dialogUnreadDateColor dialogUnreadDateStyle dialogUnreadItemBackground dialogUnreadMessageTextColor dialogUnreadMessageTextStyle dialogUnreadTitleTextColor dialogUnreadTitleTextStyle
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
@@ -4286,6 +4378,8 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
+styleable WalletFragmentOptions appTheme environment fragmentMode fragmentStyle
+styleable WalletFragmentStyle buyButtonAppearance buyButtonHeight buyButtonText buyButtonWidth maskedWalletDetailsBackground maskedWalletDetailsButtonBackground maskedWalletDetailsButtonTextAppearance maskedWalletDetailsHeaderTextAppearance maskedWalletDetailsLogoImageType maskedWalletDetailsLogoTextColor maskedWalletDetailsTextAppearance
 styleable include constraintSet
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
