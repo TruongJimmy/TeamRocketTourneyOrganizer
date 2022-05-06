@@ -323,6 +323,25 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
+            android:id="@+id/viewRatings"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="355dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#fece2f"
+            android:text="View My Ratings"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
             android:id="@+id/tournamentsOwn"
             android:layout_width="wrap_content"
             android:layout_height="48dp"

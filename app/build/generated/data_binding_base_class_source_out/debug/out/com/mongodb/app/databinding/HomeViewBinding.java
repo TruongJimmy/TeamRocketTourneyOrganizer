@@ -39,34 +39,21 @@ public final class HomeViewBinding implements ViewBinding {
   public final ImageView appLogo;
 
   @NonNull
-  public final Button brackets;
-
-  @NonNull
   public final TextView email;
-
-  @NonNull
-  public final Button groupButton;
 
   @NonNull
   public final Button memberButton;
 
   @NonNull
-  public final Button messageButton;
-
-  @NonNull
   public final Button payPalButton;
-
-  @NonNull
-  public final Button ratingsPage;
 
   @NonNull
   public final Button suggestionPageButton;
 
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
       @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
-      @NonNull Button activeTournament, @NonNull ImageView appLogo, @NonNull Button brackets,
-      @NonNull TextView email, @NonNull Button groupButton, @NonNull Button memberButton,
-      @NonNull Button messageButton, @NonNull Button payPalButton, @NonNull Button ratingsPage,
+      @NonNull Button activeTournament, @NonNull ImageView appLogo, @NonNull TextView email,
+      @NonNull Button memberButton, @NonNull Button payPalButton,
       @NonNull Button suggestionPageButton) {
     this.rootView = rootView;
     this.CreateTournament = CreateTournament;
@@ -75,13 +62,9 @@ public final class HomeViewBinding implements ViewBinding {
     this.Settings = Settings;
     this.activeTournament = activeTournament;
     this.appLogo = appLogo;
-    this.brackets = brackets;
     this.email = email;
-    this.groupButton = groupButton;
     this.memberButton = memberButton;
-    this.messageButton = messageButton;
     this.payPalButton = payPalButton;
-    this.ratingsPage = ratingsPage;
     this.suggestionPageButton = suggestionPageButton;
   }
 
@@ -148,21 +131,9 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.brackets;
-      Button brackets = rootView.findViewById(id);
-      if (brackets == null) {
-        break missingId;
-      }
-
       id = R.id.email;
       TextView email = rootView.findViewById(id);
       if (email == null) {
-        break missingId;
-      }
-
-      id = R.id.groupButton;
-      Button groupButton = rootView.findViewById(id);
-      if (groupButton == null) {
         break missingId;
       }
 
@@ -172,21 +143,9 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.messageButton;
-      Button messageButton = rootView.findViewById(id);
-      if (messageButton == null) {
-        break missingId;
-      }
-
       id = R.id.payPalButton;
       Button payPalButton = rootView.findViewById(id);
       if (payPalButton == null) {
-        break missingId;
-      }
-
-      id = R.id.ratingsPage;
-      Button ratingsPage = rootView.findViewById(id);
-      if (ratingsPage == null) {
         break missingId;
       }
 
@@ -197,8 +156,8 @@ public final class HomeViewBinding implements ViewBinding {
       }
 
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings, activeTournament, appLogo, brackets, email, groupButton,
-          memberButton, messageButton, payPalButton, ratingsPage, suggestionPageButton);
+          SearchTournament, Settings, activeTournament, appLogo, email, memberButton, payPalButton,
+          suggestionPageButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

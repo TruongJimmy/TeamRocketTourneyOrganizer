@@ -2,6 +2,7 @@ package com.mongodb.app
 
 import android.content.Intent
 import android.media.Image
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.DocumentsContract
@@ -12,9 +13,15 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.mongodb.app.activty.CheckoutActivity
+import com.mongodb.app.games.GAME_ID
+import com.mongodb.app.games.GameDetailActivity
+import com.mongodb.app.games.GamesListActivity
+import com.mongodb.app.games.NAME_GAME
 import io.realm.Realm
 import io.realm.mongodb.functions.Functions
 import kotlinx.android.synthetic.main.activity_tournament_page.*
+import kotlinx.android.synthetic.main.qrcode_view.*
 import org.bson.Document
 
 class TournamentPageActivity : AppCompatActivity() {
@@ -52,45 +59,59 @@ class TournamentPageActivity : AppCompatActivity() {
         var tournamentType = bundle!!.getString("tournamentType")
         var prizeAmount = bundle!!.getString("prizeAmount")
         var tourneyPicture = bundle!!.getString("tourneyPicture")
+        var rulesCall = bundle!!.getString("rules")
+
 
         var title = arrayOf(
             "Tournament Bracket",
             "Tournament Type",
+            "Pay for Tournament",
             "Location",
             "Start Time",
             "Game",
             "Participants",
             "Groups",
+            "Twitch Stream",
+            "Timer",
             "QR Code",
             "Rules",
             "Contact TO",
-            "Chat Room"
+            "Chat Room",
+            "Rate TO"
         )
         var details = arrayOf(
             "Tap to see bracket",
             tournamentType,
-            location,
+            "Pay for tournament fee",
+            "location",
             startTime,
             tourneyGameCall,
             participantCall,
             "Tap for Groups",
+            "View Twitch Stream",
+            "View Timer to Check In",
             "Tap for QR Code",
             "Tap for details",
             "TO Name",
-            "Text with other participants"
+            "Text with other participants",
+            "Rate Tournament Organizer"
         )
         var images = intArrayOf(
             R.drawable.ic_bracket,
             R.drawable.ic_type,
+            R.drawable.ic_money_bill,
             R.drawable.ic_location,
             R.drawable.ic_time,
             R.drawable.ic_game,
             R.drawable.ic_person,
             R.drawable.ic_group,
+            R.drawable.ic_stream,
+            R.drawable.ic_timer,
             R.drawable.ic_qrcode,
             R.drawable.ic_rules,
             R.drawable.ic_send,
-            R.drawable.ic_chat
+            R.drawable.ic_chat,
+            R.drawable.ic_rate
         )
         participants.text = participantCall
         tourneyName.text = tourneyNameCall
@@ -147,7 +168,39 @@ class TournamentPageActivity : AppCompatActivity() {
                     val intent = Intent(this@TournamentPageActivity, ParticipantActivity::class.java)
                     intent.putExtra("tourneyName", tourneyNameCall)
                     startActivity(intent)
+                } else if (title[position] == "Twitch Stream") {
+                    val viewIntent = Intent(
+                        "android.intent.action.VIEW",
+                        Uri.parse("https://www.twitch.tv/teamrocketbudokaiapp"))
+                    startActivity(viewIntent)
+                } else if (title[position] == "Rules") {
+                    val intent = Intent(this@TournamentPageActivity, RulesActivity::class.java)
+                    intent.putExtra("rulesToView", rulesCall)
+                    startActivity(intent)
+                } else if (title[position] == "Tournament Bracket") {
+                    val intent = Intent(this@TournamentPageActivity, BracketActivity::class.java)
+                    startActivity(intent)
+                } else if (title[position] == "Game") {
+                    val intent = Intent(this@TournamentPageActivity, GameDetailActivity::class.java)
+                    val gameMap = mapOf("Valorant" to 1, "Fortnite" to 2, "Apex Legends" to 3, "Dragon Ball FigherZ" to 4, "Super Smash Bros." to 5, "League of Legends" to 6,
+                                        "Dota" to 7, "Counter-Strike: Global Offensive" to 8, "Tom Clancy's Rainbow Six Siege" to 9, "Rocket League" to 10)
+                    intent.putExtra(GAME_ID, gameMap[tourneyGameCall])
+                    intent.putExtra(NAME_GAME, tourneyGameCall)
+                    startActivity(intent)
+                } else if (title[position] == "Timer") {
+                    val intent = Intent(this@TournamentPageActivity, TimerActivity::class.java)
+                    startActivity(intent)
+                } else if (title[position] == "Contact TO" || title[position] == "Chat Room") {
+                    val intent = Intent(this@TournamentPageActivity, ChatRoom::class.java)
+                    startActivity(intent)
+                } else if (title[position] == "Rate TO") {
+                    val intent = Intent(this@TournamentPageActivity, RateOrganizerActivity::class.java)
+                    startActivity(intent)
+                } else if (title[position] == "Pay for Tournament") {
+                    val intent = Intent(this@TournamentPageActivity, CheckoutActivity::class.java)
+                    startActivity(intent)
                 }
+
 
             }
 

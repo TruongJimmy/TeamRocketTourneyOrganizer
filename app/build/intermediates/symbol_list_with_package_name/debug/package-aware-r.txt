@@ -2191,11 +2191,14 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_person
 drawable ic_profile
 drawable ic_qrcode
+drawable ic_rate
 drawable ic_rules
 drawable ic_search
 drawable ic_send
 drawable ic_settings
+drawable ic_stream
 drawable ic_time
+drawable ic_timer
 drawable ic_type
 drawable logo
 drawable lol_background
@@ -2386,7 +2389,6 @@ id bounceStart
 id bracketFragment
 id bracketFragment2
 id bracket_view
-id brackets
 id bubble
 id builtWithSync
 id buttonPanel
@@ -2447,6 +2449,7 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id createLogo
 id createTournamentButton_Button
 id createTournamentLogo
 id createTourneyFragment
@@ -2554,7 +2557,6 @@ id google_wallet_monochrome
 id graph
 id graph_wrap
 id grayscale
-id groupButton
 id groupLogo
 id groupName
 id groupNameTextView
@@ -2588,8 +2590,6 @@ id image
 id imageOverlay
 id imageView
 id imageView2
-id imageView4
-id imageView5
 id imgUser
 id immediateStop
 id included
@@ -2673,7 +2673,6 @@ id mem4
 id memberButton
 id memberNames
 id message
-id messageButton
 id messageInput
 id messageSendButton
 id messageText
@@ -2789,7 +2788,6 @@ id ratingBar
 id ratingDescription
 id rating_list
 id rating_menu
-id ratingsPage
 id ratio
 id rectangles
 id recyclerViewTourneyPage
@@ -2809,6 +2807,7 @@ id row
 id row_index_key
 id row_reverse
 id rtl
+id rules
 id rulesDoneButton
 id rulesInput
 id rulesText
@@ -2847,6 +2846,7 @@ id sendButtonSpace
 id sendReport
 id setting
 id settingsFragment
+id settingsLogo
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3005,6 +3005,7 @@ id user_listview
 id user_name
 id vertical_only
 id view
+id viewRatings
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner

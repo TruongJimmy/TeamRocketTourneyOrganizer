@@ -74,20 +74,20 @@ class HomeActivity : AppCompatActivity() {
         payButton = findViewById(R.id.payPalButton)
         payButton.setOnClickListener { toPaypalPage() }
 
-        group = findViewById(R.id.groupButton)
-        group.setOnClickListener { toGroupPage() }
-
-        message = findViewById(R.id.messageButton)
-        message.setOnClickListener { toChatRoom() }
-
-        rateButton = findViewById(R.id.ratingsPage)
-        rateButton.setOnClickListener { toMyRatingsPage() }
+//        group = findViewById(R.id.groupButton)
+//        group.setOnClickListener { toGroupPage() }
+//
+//        message = findViewById(R.id.messageButton)
+//        message.setOnClickListener { toChatRoom() }
+//
+//        rateButton = findViewById(R.id.ratingsPage)
+//        rateButton.setOnClickListener { toMyRatingsPage() }
 //        timerButton = findViewById(R.id.timerButton)
 //        timerButton.setOnClickListener { toTimerPage() }
 
-
-        brackets = findViewById(R.id.brackets)
-        brackets.setOnClickListener { toBracketActivity() }
+//
+//        brackets = findViewById(R.id.brackets)
+//        brackets.setOnClickListener { toBracketActivity() }
 
 //        tourneyPageButton = findViewById(R.id.tourneyPage)
 //        tourneyPageButton.setOnClickListener { toTourneyPage() }

@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.DocumentsContract
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import io.realm.kotlin.createObject
@@ -33,12 +30,14 @@ class CreateTournamentActivity : AppCompatActivity() {
     private var user: io.realm.mongodb.User? = null
     private lateinit var prize: TextView
     private lateinit var rules: TextView
+    private lateinit var logo: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_tournament)
         user = realmApp.currentUser()
 
+        logo = findViewById(R.id.createLogo)
         tournamentNameInput = findViewById(R.id.tournamentName_input)
         typeOfGameInput = findViewById(R.id.tournamentGame_input)
         participantInput = findViewById(R.id.participant_input)
@@ -125,6 +124,8 @@ class CreateTournamentActivity : AppCompatActivity() {
                 Toast.makeText(this, result.error.errorMessage, Toast.LENGTH_LONG).show()
             }
         }
+
+
         startActivity(Intent(this,HomeActivity::class.java))
     }
 

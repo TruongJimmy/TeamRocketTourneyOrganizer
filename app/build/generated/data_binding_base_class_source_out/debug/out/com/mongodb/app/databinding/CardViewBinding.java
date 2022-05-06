@@ -56,11 +56,18 @@ public final class CardViewBinding implements ViewBinding {
   @NonNull
   public final ConstraintLayout relativeLayout;
 
+  @NonNull
+  public final TextView rules;
+
+  @NonNull
+  public final TextView rulesText;
+
   private CardViewBinding(@NonNull CardView rootView, @NonNull CardView cardView,
       @NonNull TextView itemDetail, @NonNull TextView itemGameName, @NonNull TextView itemHost,
       @NonNull ImageView itemImage, @NonNull TextView itemMoney, @NonNull TextView itemPerson,
       @NonNull TextView itemStartTime, @NonNull TextView itemTitle, @NonNull ImageView moneyIcon,
-      @NonNull ImageView personIcon, @NonNull ConstraintLayout relativeLayout) {
+      @NonNull ImageView personIcon, @NonNull ConstraintLayout relativeLayout,
+      @NonNull TextView rules, @NonNull TextView rulesText) {
     this.rootView = rootView;
     this.cardView = cardView;
     this.itemDetail = itemDetail;
@@ -74,6 +81,8 @@ public final class CardViewBinding implements ViewBinding {
     this.moneyIcon = moneyIcon;
     this.personIcon = personIcon;
     this.relativeLayout = relativeLayout;
+    this.rules = rules;
+    this.rulesText = rulesText;
   }
 
   @Override
@@ -171,9 +180,21 @@ public final class CardViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.rules;
+      TextView rules = rootView.findViewById(id);
+      if (rules == null) {
+        break missingId;
+      }
+
+      id = R.id.rulesText;
+      TextView rulesText = rootView.findViewById(id);
+      if (rulesText == null) {
+        break missingId;
+      }
+
       return new CardViewBinding((CardView) rootView, cardView, itemDetail, itemGameName, itemHost,
           itemImage, itemMoney, itemPerson, itemStartTime, itemTitle, moneyIcon, personIcon,
-          relativeLayout);
+          relativeLayout, rules, rulesText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

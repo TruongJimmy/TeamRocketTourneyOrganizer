@@ -17,6 +17,7 @@ import com.cometchat.pro.models.CustomMessage;
 import com.cometchat.pro.models.MediaMessage;
 import com.cometchat.pro.models.TextMessage;
 import com.mongodb.app.ChatConstants.ChatConstants;
+import com.mongodb.app.ChatConstants.CheckMessage;
 import com.squareup.picasso.Picasso;
 import com.stfalcon.chatkit.commons.ImageLoader;
 import com.stfalcon.chatkit.commons.models.IMessage;
@@ -114,9 +115,11 @@ ChatActivity extends AppCompatActivity {
     }
 
     private void sendMessage(String message) {
-        if (message.contains("bitch") || message.contains("fuck")) {
-            message = "*****";
-        }
+//        if (message.contains("bitch") || message.contains("fuck")) {
+//            message = "*****";
+//        }
+        CheckMessage checkMessage = new CheckMessage();
+        message = checkMessage.getReplaceWord(message);
         TextMessage textMessage = new TextMessage(groupId, message,  CometChatConstants.RECEIVER_TYPE_GROUP);
         CometChat.sendMessage(textMessage, new CometChat.CallbackListener<TextMessage>() {
             @Override

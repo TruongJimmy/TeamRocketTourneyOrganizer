@@ -82,6 +82,8 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
         holder.itemGameName.text = tourneyQuery[position]!!.game
         holder.itemPerson.text = tourneyQuery[position]!!.participant
         holder.itemMoney.text = moneySign + prizeMoneyText
+        holder.itemRules.text = tourneyQuery[position]!!.rules
+
 //        holder.itemImage.setImageResource(images[position])
 
         if (holder.itemGameName.text == "Valorant") {
@@ -126,6 +128,7 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
         var itemPerson: TextView
         var itemMoney: TextView
         var cardview: CardView
+        var itemRules: TextView
 
         init {
             itemImage = itemView.findViewById(R.id.itemImage)
@@ -137,6 +140,7 @@ class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, 
             itemPerson = itemView.findViewById(R.id.itemPerson)
             itemMoney = itemView.findViewById(R.id.itemMoney)
             cardview = itemView.findViewById(R.id.card_view)
+            itemRules = itemView.findViewById(R.id.rulesText)
 
             itemView.setOnClickListener {
                 listener.onItemClick(absoluteAdapterPosition)

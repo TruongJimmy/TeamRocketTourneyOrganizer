@@ -143,46 +143,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.366" />
 
-    <Button
-        android:id="@+id/groupButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Group"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.325"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/ratingsPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ratings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/brackets"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Brackets"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.958"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/messageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Message"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"

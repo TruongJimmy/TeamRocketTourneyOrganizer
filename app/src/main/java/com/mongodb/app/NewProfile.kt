@@ -19,6 +19,7 @@ class NewProfile : AppCompatActivity() {
     private lateinit var tOwn: Button
     private lateinit var userRealm: Realm
     private lateinit var config: RealmConfiguration
+    private lateinit var rating: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,16 +30,19 @@ class NewProfile : AppCompatActivity() {
         tIn = findViewById(R.id.tournamentsIn)
         tOwn = findViewById(R.id.tournamentsOwn)
         follow = findViewById(R.id.following)
+        rating = findViewById(R.id.viewRatings)
 
         val user = realmApp.currentUser()
         val partition = "123"
+
+        rating.setOnClickListener{ toRatingsPage() }
 
         config = SyncConfiguration.Builder(user, partition).build()
         Realm.getInstanceAsync(config, object : Realm.Callback() {
             override fun onSuccess(realm: Realm) {
                 this@NewProfile.userRealm = realm
                 val realmResults = realm.where<User>().findAll()
-                follow.text = (realmResults.size - 1).toString()
+                follow.text = (realmResults.size).toString()
             }
         })
 
@@ -59,6 +63,14 @@ class NewProfile : AppCompatActivity() {
 //        tIn.setOnClickListener{
 //            showTournamentsIn()
 //        }
+    }
+
+    private fun toRatingsPage() {
+        var userEmail = User().name
+
+        val intent = Intent(Intent(this, MyRatingsActivity::class.java))
+        intent.putExtra("EMAIL", userEmail)
+        startActivity(intent)
     }
     private fun showTournamentsOwn() {
         startActivity(Intent(this, TournamentsOwnActivity::class.java))

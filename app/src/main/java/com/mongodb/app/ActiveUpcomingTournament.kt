@@ -50,6 +50,7 @@ class ActiveUpcomingTournament:AppCompatActivity() {
                 intent.putExtra("tourneyName", tourneyQuery[position]!!.name)
                 intent.putExtra("tournamentType", tourneyQuery[position]!!.tournamentType)
                 intent.putExtra("prizeAmount", tourneyQuery[position]!!.prizeAmount)
+                intent.putExtra("rules", tourneyQuery[position]!!.rules)
                 //intent.putExtra("tourneyPicture", images[position])
 
                 if (tourneyQuery[position]!!.game == "Valorant") {

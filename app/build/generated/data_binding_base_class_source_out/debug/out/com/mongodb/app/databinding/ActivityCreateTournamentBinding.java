@@ -22,10 +22,10 @@ public final class ActivityCreateTournamentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatButton createTournamentButtonButton;
+  public final ImageView createLogo;
 
   @NonNull
-  public final ImageView imageView4;
+  public final AppCompatButton createTournamentButtonButton;
 
   @NonNull
   public final EditText locationInput;
@@ -55,15 +55,15 @@ public final class ActivityCreateTournamentBinding implements ViewBinding {
   public final EditText tournamentType;
 
   private ActivityCreateTournamentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatButton createTournamentButtonButton, @NonNull ImageView imageView4,
+      @NonNull ImageView createLogo, @NonNull AppCompatButton createTournamentButtonButton,
       @NonNull EditText locationInput, @NonNull EditText pAmount,
       @NonNull EditText participantInput, @NonNull EditText rulesInput,
       @NonNull EditText startTimeInput, @NonNull Toolbar toolBarCreateTournamentActivity,
       @NonNull EditText tournamentGameInput, @NonNull EditText tournamentNameInput,
       @NonNull EditText tournamentType) {
     this.rootView = rootView;
+    this.createLogo = createLogo;
     this.createTournamentButtonButton = createTournamentButtonButton;
-    this.imageView4 = imageView4;
     this.locationInput = locationInput;
     this.pAmount = pAmount;
     this.participantInput = participantInput;
@@ -102,15 +102,15 @@ public final class ActivityCreateTournamentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.createTournamentButton_Button;
-      AppCompatButton createTournamentButtonButton = rootView.findViewById(id);
-      if (createTournamentButtonButton == null) {
+      id = R.id.createLogo;
+      ImageView createLogo = rootView.findViewById(id);
+      if (createLogo == null) {
         break missingId;
       }
 
-      id = R.id.imageView4;
-      ImageView imageView4 = rootView.findViewById(id);
-      if (imageView4 == null) {
+      id = R.id.createTournamentButton_Button;
+      AppCompatButton createTournamentButtonButton = rootView.findViewById(id);
+      if (createTournamentButtonButton == null) {
         break missingId;
       }
 
@@ -168,10 +168,10 @@ public final class ActivityCreateTournamentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCreateTournamentBinding((ConstraintLayout) rootView,
-          createTournamentButtonButton, imageView4, locationInput, pAmount, participantInput,
-          rulesInput, startTimeInput, toolBarCreateTournamentActivity, tournamentGameInput,
-          tournamentNameInput, tournamentType);
+      return new ActivityCreateTournamentBinding((ConstraintLayout) rootView, createLogo,
+          createTournamentButtonButton, locationInput, pAmount, participantInput, rulesInput,
+          startTimeInput, toolBarCreateTournamentActivity, tournamentGameInput, tournamentNameInput,
+          tournamentType);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

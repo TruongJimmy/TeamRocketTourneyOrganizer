@@ -31,11 +31,6 @@ internal class ParticipantAdapter(private val data: ArrayList<Participant>) :
         holder.data = obj
         holder.name.text = obj.name
 
-
-
-
-
-
     }
 
     // Return the size of your dataset (invoked by the layout manager)

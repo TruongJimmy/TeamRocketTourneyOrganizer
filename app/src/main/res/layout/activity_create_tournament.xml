@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateTournamentActivity"
-    android:background="#202020">
+    android:background="#202020"
+    tools:context=".CreateTournamentActivity">
 
     <EditText
         android:id="@+id/tournamentName_input"
@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/createLogo"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -200,15 +200,13 @@
         app:title="Create Tournament" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/createLogo"
         android:layout_width="361dp"
         android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112"
-        tools:srcCompat="@drawable/tournament" />
+        app:layout_constraintTop_toBottomOf="@+id/toolBar_createTournamentActivity"
+        android:src="@drawable/tournament" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

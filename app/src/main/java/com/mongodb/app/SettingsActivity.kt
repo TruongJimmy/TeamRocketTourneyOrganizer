@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -13,10 +14,12 @@ class SettingsActivity: AppCompatActivity() {
     private lateinit var helpButton: Button
     private lateinit var logoutButton: Button
     private lateinit var homeButton: Button
+    private lateinit var settings: ImageView
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings)
 
+        settings = findViewById(R.id.settingsLogo)
         editProfileButton = findViewById(R.id.button_edit_profile)
         editProfileButton.setOnClickListener {onEditProfileButtonClicked()}
 

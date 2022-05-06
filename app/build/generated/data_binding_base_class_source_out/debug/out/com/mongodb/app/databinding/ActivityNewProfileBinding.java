@@ -51,11 +51,14 @@ public final class ActivityNewProfileBinding implements ViewBinding {
   @NonNull
   public final TextView tvName;
 
+  @NonNull
+  public final Button viewRatings;
+
   private ActivityNewProfileBinding(@NonNull RelativeLayout rootView, @NonNull TextView following,
       @NonNull RelativeLayout imgUser, @NonNull LinearLayout linlay1,
       @NonNull TextView profileEmail, @NonNull RelativeLayout rellay1, @NonNull ImageView setting,
       @NonNull Button tournamentsIn, @NonNull Button tournamentsOwn, @NonNull TextView tvAddress,
-      @NonNull TextView tvName) {
+      @NonNull TextView tvName, @NonNull Button viewRatings) {
     this.rootView = rootView;
     this.following = following;
     this.imgUser = imgUser;
@@ -67,6 +70,7 @@ public final class ActivityNewProfileBinding implements ViewBinding {
     this.tournamentsOwn = tournamentsOwn;
     this.tvAddress = tvAddress;
     this.tvName = tvName;
+    this.viewRatings = viewRatings;
   }
 
   @Override
@@ -156,8 +160,15 @@ public final class ActivityNewProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.viewRatings;
+      Button viewRatings = rootView.findViewById(id);
+      if (viewRatings == null) {
+        break missingId;
+      }
+
       return new ActivityNewProfileBinding((RelativeLayout) rootView, following, imgUser, linlay1,
-          profileEmail, rellay1, setting, tournamentsIn, tournamentsOwn, tvAddress, tvName);
+          profileEmail, rellay1, setting, tournamentsIn, tournamentsOwn, tvAddress, tvName,
+          viewRatings);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
