@@ -192,9 +192,9 @@ MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Program Fi
 	android:name
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:16:13-58
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:22:9-24:71
+ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:22:9-24:44
 	android:value
-		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:24:13-68
+		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:24:13-41
 	android:name
 		ADDED from C:\Users\Lewis\Desktop\Source Code\BudokaiApp\app\src\main\AndroidManifest.xml:23:13-58
 activity#com.mongodb.app.ChatActivity

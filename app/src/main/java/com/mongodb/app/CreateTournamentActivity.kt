@@ -8,10 +8,15 @@ import android.util.Log
 import android.widget.*
 import com.cometchat.pro.constants.CometChatConstants
 import com.cometchat.pro.constants.CometChatConstants.Params.UID
+import com.cometchat.pro.core.AppSettings
+import com.cometchat.pro.core.AppSettings.AppSettingsBuilder
 import com.cometchat.pro.core.CometChat
+import com.cometchat.pro.core.CometChat.CallbackListener
 import com.cometchat.pro.exceptions.CometChatException
 import com.cometchat.pro.models.Group
 import com.cometchat.pro.models.GroupMember
+import com.cometchat.pro.models.User
+import com.mongodb.app.ChatConstants.ChatConstants
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import io.realm.kotlin.createObject
@@ -33,7 +38,7 @@ class CreateTournamentActivity : AppCompatActivity() {
     private lateinit var createTourneyButton: Button
     private lateinit var userRealm: Realm
     private lateinit var config: RealmConfiguration
-    private var user: io.realm.mongodb.User? = null
+    private var currentUser: io.realm.mongodb.User? = null
     private lateinit var prize: TextView
     private lateinit var rules: TextView
     private lateinit var logo: ImageView
@@ -41,7 +46,7 @@ class CreateTournamentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_tournament)
-        user = realmApp.currentUser()
+        currentUser = realmApp.currentUser()
 
         logo = findViewById(R.id.createLogo)
         tournamentNameInput = findViewById(R.id.tournamentName_input)
@@ -54,13 +59,18 @@ class CreateTournamentActivity : AppCompatActivity() {
         prize = findViewById(R.id.pAmount)
         rules = findViewById(R.id.rulesInput)
 
+        val endWord: String = "Group"
+        val UID: String = "ID"
+        val GUID:String= tournamentNameInput.toString() + "GUID"
+
+        initCometChat()
 
         //Below 2 lines - Back button for this page supported by the toolbar in xml file
 //        setSupportActionBar(findViewById(R.id.toolBar_createTournamentActivity))
 //        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         //Creates tournament in database
-        createTourneyButton.setOnClickListener { (createTournament()) }
+        createTourneyButton.setOnClickListener { (createTournament(GUID)) }
     }
 
 
@@ -80,39 +90,150 @@ class CreateTournamentActivity : AppCompatActivity() {
             })
     }
 
-//    private fun createGroupChat() {
-//        val GUID:String="GUID"
-//        val groupName:String=tournamentNameInput.text.toString()
-//        val groupType:String=CometChatConstants.GROUP_TYPE_PUBLIC
-//        val password:String=""
-//
-//        val group= com.cometchat.pro.models.Group(GUID, groupName, groupType, password)
-//
-//        CometChat.createGroup(group,object :CometChat.CallbackListener<com.cometchat.pro.models.Group>(){
-//            override fun onSuccess(p0: Group?) {
-//                addMembersToGroupChat(GUID)
-//            }
-//            override fun onError(p0: CometChatException?) {
-//
-//            }
-//        })
-//    }
-//
-//    private fun addMembersToGroupChat(GUID: String) {
-//        val member:MutableList<GroupMember> = arrayListOf()
-//        member.add(GroupMember(UID,CometChatConstants.SCOPE_PARTICIPANT))
-//
-//        CometChat.addMembersToGroup(GUID,member,null,object :CometChat.CallbackListener<HashMap<String,String>>(){
-//
-//            override fun onSuccess(p0: HashMap<String, String>?) {
-//            }
-//
-//            override fun onError(p0: CometChatException?) {
-//
-//            }
-//
-//        })
-//    }
+    private fun initCometChat() {
+        val appID = ChatConstants.APP_ID // Replace with your App ID
+        val region = ChatConstants.REGION // Replace with your App Region ("eu" or "us")
+        val appSettings = AppSettingsBuilder()
+            .subscribePresenceForAllUsers()
+            .setRegion(region)
+            .autoEstablishSocketConnection(true)
+            .build()
+        CometChat.init(this, appID, appSettings, object : CallbackListener<String?>() {
+            override fun onSuccess(successMessage: String?) {}
+            override fun onError(e: CometChatException) {}
+        })
+    }
+
+    private fun loginUserForGroupChat(userID: String) {
+        val UID:String=userID
+        val apiKey:String=ChatConstants.API_KEY
+
+        CometChat.login(UID,apiKey, object : CometChat.CallbackListener<User>() {
+            override fun onSuccess(p0: User?) {
+                Log.d(TAG(), "Login Successful : " + p0?.toString())
+            }
+
+            override fun onError(p0: CometChatException?) {
+                Log.d(TAG(), "Login failed with exception: " +  p0?.message)
+            }
+
+        })
+    }
+
+    private fun createUserForGroupChat(GUID: String): String? {
+        val apiKey = ChatConstants.API_KEY// Replace with your API Key.
+        val user = User()
+        user.uid = "user1" // Replace with your uid for the user to be created.
+        user.name = "Kevin" // Replace with the name of the user
+
+        CometChat.createUser(user, apiKey, object : CometChat.CallbackListener<User>() {
+            override fun onSuccess(user: User) {
+                loginUserForGroupChat(user.uid)
+                createGroupChat(GUID)
+                addMembersToGroupChat(GUID, UID)
+                Log.d("createUser", user.toString())
+            }
+
+            override fun onError(e: CometChatException) {
+                e.message?.let { Log.e("createUser", it) }
+            }
+        })
+        return user.uid
+    }
+
+    private fun createGroupChat(GUID: String) {
+        val groupName:String=tournamentNameInput.text.toString()
+        val groupType:String=CometChatConstants.GROUP_TYPE_PUBLIC
+        val password:String=""
+
+        val group= Group(GUID, groupName, groupType, password)
+
+        CometChat.createGroup(group,object :CometChat.CallbackListener<Group>(){
+            override fun onSuccess(p0: Group?) {
+                Log.d(TAG(), "Group created successfully: " + p0?.toString())
+            }
+            override fun onError(p0: CometChatException?) {
+                Log.d(TAG(), "Group creation failed with exception: " + p0?.message)
+            }
+        })
+    }
+
+    private fun addMembersToGroupChat(GUID: String, UID: String) {
+        val member:MutableList<GroupMember> = arrayListOf()
+        member.add(GroupMember(UID,CometChatConstants.SCOPE_PARTICIPANT))
+
+        CometChat.addMembersToGroup(GUID,member,null,object :CometChat.CallbackListener<HashMap<String,String>>(){
+
+            override fun onSuccess(p0: HashMap<String, String>?) {
+                Log.d(TAG(), "Added Members Succesfully: " + p0?.toString())
+            }
+
+            override fun onError(p0: CometChatException?) {
+                Log.d(TAG(), "Failed to add member to group: " + p0?.message)
+            }
+
+        })
+    }
+
+    private fun createAndLoginGroupChat() {
+        val GUID:String=tournamentNameInput.toString() + "GUID"
+        val groupName:String=tournamentNameInput.text.toString()
+        val groupType:String=CometChatConstants.GROUP_TYPE_PUBLIC
+        val password:String=""
+        val apiKey:String = ChatConstants.API_KEY // Replace with your API Key.
+        val user = User()
+        user.uid = "user1" // Replace with your uid for the user to be created.
+        user.name = "Kevin" // Replace with the name of the user
+        val UID:String=user.uid
+
+        CometChat.createUser(user, apiKey, object : CometChat.CallbackListener<User>() {
+            override fun onSuccess(user: User) {
+                Log.d("createUser", user.toString())
+            }
+
+            override fun onError(e: CometChatException) {
+                e.message?.let { Log.e("createUser", it) }
+            }
+        })
+
+        CometChat.login(UID,apiKey, object : CometChat.CallbackListener<User>() {
+            override fun onSuccess(p0: User?) {
+                Log.d(TAG(), "Login Successful : " + p0?.toString())
+            }
+
+            override fun onError(p0: CometChatException?) {
+                Log.d(TAG(), "Login failed with exception: " +  p0?.message)
+            }
+
+        })
+
+        val group=Group(GUID,groupName,groupType,password)
+
+        CometChat.createGroup(group,object :CometChat.CallbackListener<Group>(){
+            override fun onSuccess(p0: Group?) {
+                Log.d(TAG(), "Group created successfully: " + p0?.toString())
+            }
+            override fun onError(p0: CometChatException?) {
+                Log.d(TAG(), "Group creation failed with exception: " + p0?.message)
+            }
+        })
+
+
+        val member:MutableList<GroupMember> = arrayListOf()
+        member.add(GroupMember(UID,CometChatConstants.SCOPE_PARTICIPANT))
+
+        CometChat.addMembersToGroup(GUID,member,null,object :CometChat.CallbackListener<HashMap<String,String>>(){
+
+            override fun onSuccess(p0: HashMap<String, String>?) {
+                Log.d(TAG(), "Added member succesfully: " + p0?.toString())
+            }
+
+            override fun onError(p0: CometChatException?) {
+                Log.d(TAG(), "failed to added members " + p0?.message)
+            }
+
+        })
+    }
 
     /**
      * Destroys the User Realm when exiting the activity
@@ -122,7 +243,7 @@ class CreateTournamentActivity : AppCompatActivity() {
         userRealm.close()
     }
 
-    private fun createTournament() {
+    private fun createTournament(GUID: String) {
         val tournament = Tournament()
 
         tournament.game = typeOfGameInput.text.toString()
@@ -138,7 +259,7 @@ class CreateTournamentActivity : AppCompatActivity() {
             realm.insert(tournament)
         }
 
-        val functionsManager: Functions = realmApp.getFunctions(user)
+        val functionsManager: Functions = realmApp.getFunctions(currentUser)
         functionsManager.callFunctionAsync(
             "addTournamentOwner",
             listOf(tournament.name), // game name
@@ -165,6 +286,8 @@ class CreateTournamentActivity : AppCompatActivity() {
             }
         }
 
+//        createUserForGroupChat(GUID)
+        createAndLoginGroupChat()
 
         startActivity(Intent(this,HomeActivity::class.java))
     }
