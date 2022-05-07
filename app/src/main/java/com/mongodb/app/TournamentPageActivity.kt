@@ -198,6 +198,11 @@ class TournamentPageActivity : AppCompatActivity() {
                     startActivity(intent)
                 } else if (title[position] == "Pay for Tournament") {
                     val intent = Intent(this@TournamentPageActivity, CheckoutActivity::class.java)
+                    intent.putExtra("PRIZEAMOUNT", prizeAmount)
+                    intent.putExtra("DESCRIPTION", tourneyNameCall)
+                    startActivity(intent)
+                } else if (title[position] == "Location") {
+                    val intent = Intent(this@TournamentPageActivity, MapsMarkerActivity::class.java)
                     startActivity(intent)
                 }
 

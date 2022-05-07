@@ -4,6 +4,7 @@ import android.app.Application
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.IntentSenderRequest
@@ -38,6 +39,8 @@ class CheckoutActivity : AppCompatActivity() {
 
     private lateinit var layoutBinding: ActivityCheckoutPayBinding
     private lateinit var googlePayButton: View
+    private lateinit var amount: TextView
+    private lateinit var detail: TextView
 
     // Handle potential conflict from calling loadPaymentData.
     private val resolvePaymentForResult = registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) {
@@ -65,6 +68,14 @@ class CheckoutActivity : AppCompatActivity() {
         // Use view binding to access the UI elements
         layoutBinding = ActivityCheckoutPayBinding.inflate(layoutInflater)
         setContentView(layoutBinding.root)
+
+        amount = layoutBinding.detailPrice
+        amount = layoutBinding.detailDescription
+
+        var bundle: Bundle? = intent.extras
+        var prizeAmount = bundle!!.getString("PRIZEAMOUNT")
+
+
         googlePayButton = layoutBinding.googlePayButton.root
         googlePayButton.setOnClickListener { requestPayment() }
 

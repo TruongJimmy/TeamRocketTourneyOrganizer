@@ -102,8 +102,10 @@ class MapsMarkerActivity : AppCompatActivity(), OnMapReadyCallback {
         googleMap.addMarker(MarkerOptions().position(tourney19).title("Conventions Games"))
 
         val tourney20 = LatLng(39.954,-75.160)
-        googleMap.addMarker(MarkerOptions().position(tourney9).title("Hunger Games"))
+        googleMap.addMarker(MarkerOptions().position(tourney20).title("Hunger Games"))
 
+        val perthLocation = LatLng(-31.90, 115.86)
+        googleMap.addMarker(MarkerOptions().position(perthLocation).draggable(true))
 
 
         val sydney = LatLng(33.783, -118.114)

@@ -66,10 +66,8 @@ class NewProfile : AppCompatActivity() {
     }
 
     private fun toRatingsPage() {
-        var userEmail = User().name
-
         val intent = Intent(Intent(this, MyRatingsActivity::class.java))
-        intent.putExtra("EMAIL", userEmail)
+        intent.putExtra("EMAIL", profileEmail.text)
         startActivity(intent)
     }
     private fun showTournamentsOwn() {

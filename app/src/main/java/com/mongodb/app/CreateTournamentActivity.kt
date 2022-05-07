@@ -6,6 +6,12 @@ import android.os.Bundle
 import android.provider.DocumentsContract
 import android.util.Log
 import android.widget.*
+import com.cometchat.pro.constants.CometChatConstants
+import com.cometchat.pro.constants.CometChatConstants.Params.UID
+import com.cometchat.pro.core.CometChat
+import com.cometchat.pro.exceptions.CometChatException
+import com.cometchat.pro.models.Group
+import com.cometchat.pro.models.GroupMember
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import io.realm.kotlin.createObject
@@ -73,6 +79,40 @@ class CreateTournamentActivity : AppCompatActivity() {
                 }
             })
     }
+
+//    private fun createGroupChat() {
+//        val GUID:String="GUID"
+//        val groupName:String=tournamentNameInput.text.toString()
+//        val groupType:String=CometChatConstants.GROUP_TYPE_PUBLIC
+//        val password:String=""
+//
+//        val group= com.cometchat.pro.models.Group(GUID, groupName, groupType, password)
+//
+//        CometChat.createGroup(group,object :CometChat.CallbackListener<com.cometchat.pro.models.Group>(){
+//            override fun onSuccess(p0: Group?) {
+//                addMembersToGroupChat(GUID)
+//            }
+//            override fun onError(p0: CometChatException?) {
+//
+//            }
+//        })
+//    }
+//
+//    private fun addMembersToGroupChat(GUID: String) {
+//        val member:MutableList<GroupMember> = arrayListOf()
+//        member.add(GroupMember(UID,CometChatConstants.SCOPE_PARTICIPANT))
+//
+//        CometChat.addMembersToGroup(GUID,member,null,object :CometChat.CallbackListener<HashMap<String,String>>(){
+//
+//            override fun onSuccess(p0: HashMap<String, String>?) {
+//            }
+//
+//            override fun onError(p0: CometChatException?) {
+//
+//            }
+//
+//        })
+//    }
 
     /**
      * Destroys the User Realm when exiting the activity

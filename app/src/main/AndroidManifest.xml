@@ -12,6 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--
+             The API key for Google Maps-based APIs.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBKJr604TIxmLnlXc5cGbUJTEmm0hAUTO0" />
         <activity
             android:name=".ChatActivity"
             android:exported="false" />
@@ -29,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".MapsMarkerActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".RateOrganizerActivity"
             android:exported="false" />
