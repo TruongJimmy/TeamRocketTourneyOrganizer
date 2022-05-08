@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
@@ -20,15 +19,11 @@ public final class ActivityGameBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Toolbar gamesMenu;
-
-  @NonNull
   public final RecyclerView recyclerView;
 
-  private ActivityGameBinding(@NonNull ConstraintLayout rootView, @NonNull Toolbar gamesMenu,
+  private ActivityGameBinding(@NonNull ConstraintLayout rootView,
       @NonNull RecyclerView recyclerView) {
     this.rootView = rootView;
-    this.gamesMenu = gamesMenu;
     this.recyclerView = recyclerView;
   }
 
@@ -59,19 +54,13 @@ public final class ActivityGameBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.games_menu;
-      Toolbar gamesMenu = rootView.findViewById(id);
-      if (gamesMenu == null) {
-        break missingId;
-      }
-
       id = R.id.recycler_view;
       RecyclerView recyclerView = rootView.findViewById(id);
       if (recyclerView == null) {
         break missingId;
       }
 
-      return new ActivityGameBinding((ConstraintLayout) rootView, gamesMenu, recyclerView);
+      return new ActivityGameBinding((ConstraintLayout) rootView, recyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

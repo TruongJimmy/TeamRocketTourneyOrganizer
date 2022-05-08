@@ -4,10 +4,10 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
@@ -20,13 +20,13 @@ public final class ActivityReportBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button backButtonReport;
+  public final AppCompatButton backButtonReport;
 
   @NonNull
   public final EditText reportReason;
 
   @NonNull
-  public final Button sendReport;
+  public final AppCompatButton sendReport;
 
   @NonNull
   public final EditText subjectText;
@@ -35,8 +35,9 @@ public final class ActivityReportBinding implements ViewBinding {
   public final EditText userReport;
 
   private ActivityReportBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button backButtonReport, @NonNull EditText reportReason, @NonNull Button sendReport,
-      @NonNull EditText subjectText, @NonNull EditText userReport) {
+      @NonNull AppCompatButton backButtonReport, @NonNull EditText reportReason,
+      @NonNull AppCompatButton sendReport, @NonNull EditText subjectText,
+      @NonNull EditText userReport) {
     this.rootView = rootView;
     this.backButtonReport = backButtonReport;
     this.reportReason = reportReason;
@@ -73,7 +74,7 @@ public final class ActivityReportBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.backButtonReport;
-      Button backButtonReport = rootView.findViewById(id);
+      AppCompatButton backButtonReport = rootView.findViewById(id);
       if (backButtonReport == null) {
         break missingId;
       }
@@ -85,7 +86,7 @@ public final class ActivityReportBinding implements ViewBinding {
       }
 
       id = R.id.sendReport;
-      Button sendReport = rootView.findViewById(id);
+      AppCompatButton sendReport = rootView.findViewById(id);
       if (sendReport == null) {
         break missingId;
       }

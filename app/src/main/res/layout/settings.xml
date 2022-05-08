@@ -15,13 +15,15 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:title="Settings" />
+        app:title="Settings"
+        android:backgroundTint="#202020"
+        app:titleTextColor="@color/white"/>
 
     <ImageView
-        android:id="@+id/settingsLogo"
+        android:id="@+id/imageView5"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        tools:src="@drawable/settings" />
+        android:layout_height="156dp"
+        tools:srcCompat="@drawable/settings" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_edit_profile"

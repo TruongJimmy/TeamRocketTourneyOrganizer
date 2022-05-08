@@ -18,16 +18,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:title="Search Tournament"/>
+        app:title="Tournament"
+
+        android:backgroundTint="#202020"/>
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/tournament_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="#202020"
 
         android:layout_weight="1"
-        android:background="@null"
+
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+    android:background="#202020">
 
     <TextView
         android:id="@+id/game_detail_name"
@@ -15,7 +15,8 @@
         android:text="Game name"
         android:textAlignment="center"
         android:textAppearance="?attr/textAppearanceHeadline3"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"/>
 
     <ImageView
         android:id="@+id/game_detail_image"
@@ -30,11 +31,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Game description" />
+        android:text="Game description"
+        android:textColor="@color/white"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/remove_button"
-        style="?attr/materialButtonOutlinedStyle"
+        android:background="@drawable/button"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

@@ -2543,7 +2543,6 @@ id game_detail_image
 id game_detail_name
 id game_image
 id game_text
-id games_menu
 id generate_qr
 id gf_container
 id ghost_view
@@ -2590,6 +2589,7 @@ id image
 id imageOverlay
 id imageView
 id imageView2
+id imageView5
 id imgUser
 id immediateStop
 id included
@@ -2846,7 +2846,6 @@ id sendButtonSpace
 id sendReport
 id setting
 id settingsFragment
-id settingsLogo
 id sharedValueSet
 id sharedValueUnset
 id shortcut

@@ -4,12 +4,12 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
@@ -30,11 +30,11 @@ public final class GameDetailActivityBinding implements ViewBinding {
   public final TextView gameDetailName;
 
   @NonNull
-  public final Button removeButton;
+  public final AppCompatButton removeButton;
 
   private GameDetailActivityBinding(@NonNull LinearLayout rootView,
       @NonNull TextView gameDetailDescription, @NonNull ImageView gameDetailImage,
-      @NonNull TextView gameDetailName, @NonNull Button removeButton) {
+      @NonNull TextView gameDetailName, @NonNull AppCompatButton removeButton) {
     this.rootView = rootView;
     this.gameDetailDescription = gameDetailDescription;
     this.gameDetailImage = gameDetailImage;
@@ -88,7 +88,7 @@ public final class GameDetailActivityBinding implements ViewBinding {
       }
 
       id = R.id.remove_button;
-      Button removeButton = rootView.findViewById(id);
+      AppCompatButton removeButton = rootView.findViewById(id);
       if (removeButton == null) {
         break missingId;
       }

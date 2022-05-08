@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\layout\\suggestion_page.xml"
     },
     {
-        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_r6.png.flat",
-        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\r6.png"
-    },
-    {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_apex_foreground.png.flat",
         "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\apex_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_r6.png.flat",
+        "source": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\src\\main\\res\\mipmap-hdpi\\r6.png"
     },
     {
         "merged": "C:\\Users\\Lewis\\Desktop\\Source Code\\BudokaiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_sampleimage_foreground.xml.flat",

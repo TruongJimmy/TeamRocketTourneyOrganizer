@@ -4,11 +4,11 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
@@ -21,10 +21,10 @@ public final class ChangePasswordViewBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button buttonCancelChangePass;
+  public final AppCompatButton buttonCancelChangePass;
 
   @NonNull
-  public final Button buttonConfirmChangePass;
+  public final AppCompatButton buttonConfirmChangePass;
 
   @NonNull
   public final EditText confirmNewPassword;
@@ -39,9 +39,9 @@ public final class ChangePasswordViewBinding implements ViewBinding {
   public final TextView textView;
 
   private ChangePasswordViewBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button buttonCancelChangePass, @NonNull Button buttonConfirmChangePass,
-      @NonNull EditText confirmNewPassword, @NonNull EditText newPassword,
-      @NonNull EditText oldPassword, @NonNull TextView textView) {
+      @NonNull AppCompatButton buttonCancelChangePass,
+      @NonNull AppCompatButton buttonConfirmChangePass, @NonNull EditText confirmNewPassword,
+      @NonNull EditText newPassword, @NonNull EditText oldPassword, @NonNull TextView textView) {
     this.rootView = rootView;
     this.buttonCancelChangePass = buttonCancelChangePass;
     this.buttonConfirmChangePass = buttonConfirmChangePass;
@@ -79,13 +79,13 @@ public final class ChangePasswordViewBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.button_cancel_change_pass;
-      Button buttonCancelChangePass = rootView.findViewById(id);
+      AppCompatButton buttonCancelChangePass = rootView.findViewById(id);
       if (buttonCancelChangePass == null) {
         break missingId;
       }
 
       id = R.id.button_confirm_change_pass;
-      Button buttonConfirmChangePass = rootView.findViewById(id);
+      AppCompatButton buttonConfirmChangePass = rootView.findViewById(id);
       if (buttonConfirmChangePass == null) {
         break missingId;
       }

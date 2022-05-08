@@ -33,21 +33,21 @@ public final class SettingsBinding implements ViewBinding {
   public final AppCompatButton buttonLogout;
 
   @NonNull
-  public final ImageView settingsLogo;
+  public final ImageView imageView5;
 
   @NonNull
   public final Toolbar toolBarSettings;
 
   private SettingsBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton buttonChangePass,
       @NonNull AppCompatButton buttonEditProfile, @NonNull AppCompatButton buttonHelp,
-      @NonNull AppCompatButton buttonLogout, @NonNull ImageView settingsLogo,
+      @NonNull AppCompatButton buttonLogout, @NonNull ImageView imageView5,
       @NonNull Toolbar toolBarSettings) {
     this.rootView = rootView;
     this.buttonChangePass = buttonChangePass;
     this.buttonEditProfile = buttonEditProfile;
     this.buttonHelp = buttonHelp;
     this.buttonLogout = buttonLogout;
-    this.settingsLogo = settingsLogo;
+    this.imageView5 = imageView5;
     this.toolBarSettings = toolBarSettings;
   }
 
@@ -102,9 +102,9 @@ public final class SettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.settingsLogo;
-      ImageView settingsLogo = rootView.findViewById(id);
-      if (settingsLogo == null) {
+      id = R.id.imageView5;
+      ImageView imageView5 = rootView.findViewById(id);
+      if (imageView5 == null) {
         break missingId;
       }
 
@@ -115,7 +115,7 @@ public final class SettingsBinding implements ViewBinding {
       }
 
       return new SettingsBinding((LinearLayout) rootView, buttonChangePass, buttonEditProfile,
-          buttonHelp, buttonLogout, settingsLogo, toolBarSettings);
+          buttonHelp, buttonLogout, imageView5, toolBarSettings);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

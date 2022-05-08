@@ -19,7 +19,7 @@ class SettingsActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings)
 
-        settings = findViewById(R.id.settingsLogo)
+        settings = findViewById(R.id.Settings)
         editProfileButton = findViewById(R.id.button_edit_profile)
         editProfileButton.setOnClickListener {onEditProfileButtonClicked()}
 
