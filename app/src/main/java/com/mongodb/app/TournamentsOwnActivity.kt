@@ -1,51 +1,96 @@
 package com.mongodb.app
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import io.realm.Realm
-import io.realm.RealmConfiguration
+import io.realm.RealmList
 import io.realm.kotlin.where
-import io.realm.mongodb.functions.Functions
 import io.realm.mongodb.sync.SyncConfiguration
-import org.bson.Document
-import java.util.ArrayList
+import kotlinx.android.synthetic.main.activity_active_upcoming_tournament.*
 
 class TournamentsOwnActivity: AppCompatActivity() {
-    private lateinit var userRealm: Realm
-    private lateinit var config: RealmConfiguration
-    private lateinit var recyclerView: RecyclerView
-    private var user: io.realm.mongodb.User? = null
-    private lateinit var tournaments: ArrayList<TournamentsDoc>
-    private lateinit var adapter: TournamentsOwnAdapter
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<TournamentOwnsAdapter.ViewHolder>? = null
+
+    private var user = realmApp.currentUser()
+    private var partition = "123"
+    var config = SyncConfiguration.Builder(user, partition).build()
+    // open the realm
+    private var realm = Realm.getInstance(config)
+
+
+    //  ObjectId("62708b895c4ba218c94cd1f3"))
+    private var images = intArrayOf(
+        R.drawable.dbz_background
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_participants)
-        recyclerView = findViewById(R.id.participant_list)
-        user = realmApp.currentUser()
-        val functionsManager: Functions = realmApp.getFunctions(user)
-        functionsManager.callFunctionAsync("getTournamentOwn", listOf(ArrayList<String>()), ArrayList::class.java) { result ->
-            if (result.isSuccess) {
-                Log.v(TAG(), "successfully fetched team members. Number of team members: ${result.get().size}")
-                // The `getMyTeamMembers` function returns team members as Document objects. Convert them into Member objects so the MemberAdapter can display them.
-                this.tournaments= ArrayList(result.get().map { item -> TournamentsDoc(item as Document) })
-                recyclerView.layoutManager = LinearLayoutManager(this)
-                recyclerView.adapter = TournamentsOwnAdapter(tournaments)
-                recyclerView.setHasFixedSize(true)
-                recyclerView.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
-            } else {
-                Log.e(TAG(), "failed to get team members with: " + result.error)
-            }
+        setContentView(R.layout.activity_active_upcoming_tournament)
+        var bundle: Bundle? = intent.extras
+        var userEmail = bundle!!.getString("EMAIL")
+        var userQuery = realm.where<User>().equalTo("name",userEmail).findAll()
+        var tourneyQuery = RealmList<Tournament>()
+        var tourneyListSize = userQuery[0]?.tournamentOwn?.size?.minus(1)
+        for (i in 0..tourneyListSize!!) {
+            var oneTournamentQuery = realm.where<Tournament>().equalTo("_id",
+                userQuery[0]?.tournamentOwn?.get(i)).findFirst()
+            tourneyQuery.add(oneTournamentQuery)
         }
 
-    }
-    override fun onDestroy() {
-        super.onDestroy()
-        recyclerView.adapter = null
+        /*
+        var tourneyQuery = realm.where<Tournament>().equalTo("_id",
+            userQuery[0]?.tournamentOwn?.get(0)).findAll()
+
+         */
+        layoutManager = LinearLayoutManager(this)
+        cardRecyclerView.layoutManager = layoutManager
+        adapter = TournamentOwnsAdapter(tourneyQuery, images)
+        cardRecyclerView.adapter = adapter
+
+        (adapter as TournamentOwnsAdapter).setOnItemClickListener(object : TournamentOwnsAdapter.onItemClickListener {
+            override fun onItemClick(position: Int) {
+                val intent = Intent(this@TournamentsOwnActivity, TournamentPageActivity::class.java)
+                intent.putExtra("participant", tourneyQuery[position]!!.participant)
+                intent.putExtra("tourneyGame", tourneyQuery[position]!!.game)
+                intent.putExtra("location", tourneyQuery[position]!!.location)
+                intent.putExtra("startTime", tourneyQuery[position]!!.startTime)
+                intent.putExtra("tourneyName", tourneyQuery[position]!!.name)
+                intent.putExtra("tournamentType", tourneyQuery[position]!!.tournamentType)
+                intent.putExtra("prizeAmount", tourneyQuery[position]!!.prizeAmount)
+                //intent.putExtra("tourneyPicture", images[position])
+
+                if (tourneyQuery[position]!!.game == "Valorant") {
+                    intent.putExtra("tourneyPicture", R.mipmap.valorant_foreground)
+                } else if (tourneyQuery[position]!!.game == "Fortnite") {
+                    intent.putExtra("tourneyPicture", R.mipmap.fortnite_foreground)
+                } else if (tourneyQuery[position]!!.game == "Apex Legends") {
+                    intent.putExtra("tourneyPicture", R.mipmap.apex_foreground)
+                } else if (tourneyQuery[position]!!.game == "Dragon Ball FighterZ") {
+                    intent.putExtra("tourneyPicture", R.mipmap.dbz_foreground)
+                } else if (tourneyQuery[position]!!.game == "Super Smash Bros.") {
+                    intent.putExtra("tourneyPicture", R.mipmap.smash_foreground)
+                } else if (tourneyQuery[position]!!.game == "League of Legends") {
+                    intent.putExtra("tourneyPicture", R.mipmap.lol_foreground)
+                } else if (tourneyQuery[position]!!.game == "Dota") {
+                    intent.putExtra("tourneyPicture", R.mipmap.dota_foreground)
+                } else if (tourneyQuery[position]!!.game == "Counter-Strike: Global Offensive") {
+                    intent.putExtra("tourneyPicture", R.mipmap.csgo_foreground)
+                } else if (tourneyQuery[position]!!.game == "Tom Clancy's Rainbow Six Siege") {
+                    intent.putExtra("tourneyPicture", R.mipmap.r6_foreground)
+                } else if (tourneyQuery[position]!!.game == "Rocket League") {
+                    intent.putExtra("tourneyPicture", R.mipmap.rocket_foreground)
+                } else {
+                    intent.putExtra("tourneyPicture", R.mipmap.dbz_foreground)
+                }
+
+                startActivity(intent)
+            }
+        })
+
+
     }
 }
-

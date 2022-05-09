@@ -132,9 +132,9 @@ class HomeActivity : AppCompatActivity() {
 
         suggestionButton = findViewById(R.id.suggestionPageButton)
         suggestionButton.setOnClickListener { toSuggetionPage() }
-
-        rankingButton = findViewById(R.id.memberButton)
-        rankingButton.setOnClickListener { toMemberRank() }
+//
+//        rankingButton = findViewById(R.id.memberButton)
+//        rankingButton.setOnClickListener { toMemberRank() }
 
 //        payButton = findViewById(R.id.payPalButton)
 //        payButton.setOnClickListener { toPaypalPage() }
@@ -229,8 +229,8 @@ class HomeActivity : AppCompatActivity() {
 
     private fun onProfileButtonClicked(){
         val intent = Intent(Intent(this, NewProfile::class.java))
-//        val email = getIntent().getStringExtra("EMAIL")
-//        intent.putExtra("EMAIL", email)
+        intent.putExtra("EMAIL", userEmail.text.toString())
         startActivity(intent)
     }
+
 }

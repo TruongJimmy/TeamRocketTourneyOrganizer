@@ -41,13 +41,17 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         long idColKey;
         long _partitionColKey;
         long nameColKey;
+        long tournamentInColKey;
+        long tournamentOwnColKey;
 
         UserColumnInfo(OsSchemaInfo schemaInfo) {
-            super(3);
+            super(5);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("User");
             this.idColKey = addColumnDetails("id", "_id", objectSchemaInfo);
             this._partitionColKey = addColumnDetails("_partition", "_partition", objectSchemaInfo);
             this.nameColKey = addColumnDetails("name", "name", objectSchemaInfo);
+            this.tournamentInColKey = addColumnDetails("tournamentIn", "tournamentIn", objectSchemaInfo);
+            this.tournamentOwnColKey = addColumnDetails("tournamentOwn", "tournamentOwn", objectSchemaInfo);
         }
 
         UserColumnInfo(ColumnInfo src, boolean mutable) {
@@ -67,6 +71,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
             dst.idColKey = src.idColKey;
             dst._partitionColKey = src._partitionColKey;
             dst.nameColKey = src.nameColKey;
+            dst.tournamentInColKey = src.tournamentInColKey;
+            dst.tournamentOwnColKey = src.tournamentOwnColKey;
         }
     }
 
@@ -74,6 +80,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
 
     private UserColumnInfo columnInfo;
     private ProxyState<com.mongodb.app.User> proxyState;
+    private RealmList<org.bson.types.ObjectId> tournamentInRealmList;
+    private RealmList<org.bson.types.ObjectId> tournamentOwnRealmList;
 
     com_mongodb_app_UserRealmProxy() {
         proxyState.setConstructionFinished();
@@ -167,11 +175,91 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         proxyState.getRow$realm().setString(columnInfo.nameColKey, value);
     }
 
+    @Override
+    public RealmList<org.bson.types.ObjectId> realmGet$tournamentIn() {
+        proxyState.getRealm$realm().checkIfValid();
+        // use the cached value if available
+        if (tournamentInRealmList != null) {
+            return tournamentInRealmList;
+        } else {
+            OsList osList = proxyState.getRow$realm().getValueList(columnInfo.tournamentInColKey, RealmFieldType.OBJECT_ID_LIST);
+            tournamentInRealmList = new RealmList<org.bson.types.ObjectId>(org.bson.types.ObjectId.class, osList, proxyState.getRealm$realm());
+            return tournamentInRealmList;
+        }
+    }
+
+    @Override
+    public void realmSet$tournamentIn(RealmList<org.bson.types.ObjectId> value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            if (proxyState.getExcludeFields$realm().contains("tournamentIn")) {
+                return;
+            }
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        OsList osList = proxyState.getRow$realm().getValueList(columnInfo.tournamentInColKey, RealmFieldType.OBJECT_ID_LIST);
+        osList.removeAll();
+        if (value == null) {
+            return;
+        }
+        for (org.bson.types.ObjectId item : value) {
+            if (item == null) {
+                throw new IllegalArgumentException("Storing 'null' into tournamentIn' is not allowed by the schema.");
+            } else {
+                osList.addObjectId(item);
+            }
+        }
+    }
+
+    @Override
+    public RealmList<org.bson.types.ObjectId> realmGet$tournamentOwn() {
+        proxyState.getRealm$realm().checkIfValid();
+        // use the cached value if available
+        if (tournamentOwnRealmList != null) {
+            return tournamentOwnRealmList;
+        } else {
+            OsList osList = proxyState.getRow$realm().getValueList(columnInfo.tournamentOwnColKey, RealmFieldType.OBJECT_ID_LIST);
+            tournamentOwnRealmList = new RealmList<org.bson.types.ObjectId>(org.bson.types.ObjectId.class, osList, proxyState.getRealm$realm());
+            return tournamentOwnRealmList;
+        }
+    }
+
+    @Override
+    public void realmSet$tournamentOwn(RealmList<org.bson.types.ObjectId> value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            if (proxyState.getExcludeFields$realm().contains("tournamentOwn")) {
+                return;
+            }
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        OsList osList = proxyState.getRow$realm().getValueList(columnInfo.tournamentOwnColKey, RealmFieldType.OBJECT_ID_LIST);
+        osList.removeAll();
+        if (value == null) {
+            return;
+        }
+        for (org.bson.types.ObjectId item : value) {
+            if (item == null) {
+                throw new IllegalArgumentException("Storing 'null' into tournamentOwn' is not allowed by the schema.");
+            } else {
+                osList.addObjectId(item);
+            }
+        }
+    }
+
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
-        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("User", false, 3, 0);
+        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("User", false, 5, 0);
         builder.addPersistedProperty("_id", RealmFieldType.STRING, Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("_partition", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("name", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
+        builder.addPersistedValueListProperty("tournamentIn", RealmFieldType.OBJECT_ID_LIST, Property.REQUIRED);
+        builder.addPersistedValueListProperty("tournamentOwn", RealmFieldType.OBJECT_ID_LIST, Property.REQUIRED);
         return builder.build();
     }
 
@@ -194,7 +282,7 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
     @SuppressWarnings("cast")
     public static com.mongodb.app.User createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
         throws JSONException {
-        final List<String> excludeFields = Collections.<String> emptyList();
+        final List<String> excludeFields = new ArrayList<String>(2);
         com.mongodb.app.User obj = null;
         if (update) {
             Table table = realm.getTable(com.mongodb.app.User.class);
@@ -215,6 +303,12 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
             }
         }
         if (obj == null) {
+            if (json.has("tournamentIn")) {
+                excludeFields.add("tournamentIn");
+            }
+            if (json.has("tournamentOwn")) {
+                excludeFields.add("tournamentOwn");
+            }
             if (json.has("id")) {
                 if (json.isNull("id")) {
                     obj = (io.realm.com_mongodb_app_UserRealmProxy) realm.createObjectInternal(com.mongodb.app.User.class, null, true, excludeFields);
@@ -241,6 +335,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
                 objProxy.realmSet$name((String) json.getString("name"));
             }
         }
+        ProxyUtils.setRealmListWithJsonObject(objProxy.realmGet$tournamentIn(), json, "tournamentIn");
+        ProxyUtils.setRealmListWithJsonObject(objProxy.realmGet$tournamentOwn(), json, "tournamentOwn");
         return obj;
     }
 
@@ -277,6 +373,10 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
                     reader.skipValue();
                     objProxy.realmSet$name(null);
                 }
+            } else if (name.equals("tournamentIn")) {
+                objProxy.realmSet$tournamentIn(ProxyUtils.createRealmListWithJsonStream(org.bson.types.ObjectId.class, reader));
+            } else if (name.equals("tournamentOwn")) {
+                objProxy.realmSet$tournamentOwn(ProxyUtils.createRealmListWithJsonStream(org.bson.types.ObjectId.class, reader));
             } else {
                 reader.skipValue();
             }
@@ -350,6 +450,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         builder.addString(columnInfo.idColKey, unmanagedSource.realmGet$id());
         builder.addString(columnInfo._partitionColKey, unmanagedSource.realmGet$_partition());
         builder.addString(columnInfo.nameColKey, unmanagedSource.realmGet$name());
+        builder.addObjectIdList(columnInfo.tournamentInColKey, unmanagedSource.realmGet$tournamentIn());
+        builder.addObjectIdList(columnInfo.tournamentOwnColKey, unmanagedSource.realmGet$tournamentOwn());
 
         // Create the underlying object and cache it before setting any object/objectlist references
         // This will allow us to break any circular dependencies by using the object cache.
@@ -386,6 +488,30 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         String realmGet$name = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$name();
         if (realmGet$name != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.nameColKey, objKey, realmGet$name, false);
+        }
+
+        RealmList<org.bson.types.ObjectId> tournamentInList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$tournamentIn();
+        if (tournamentInList != null) {
+            OsList tournamentInOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.tournamentInColKey);
+            for (org.bson.types.ObjectId tournamentInItem : tournamentInList) {
+                if (tournamentInItem == null) {
+                    tournamentInOsList.addNull();
+                } else {
+                    tournamentInOsList.addObjectId(tournamentInItem);
+                }
+            }
+        }
+
+        RealmList<org.bson.types.ObjectId> tournamentOwnList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$tournamentOwn();
+        if (tournamentOwnList != null) {
+            OsList tournamentOwnOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.tournamentOwnColKey);
+            for (org.bson.types.ObjectId tournamentOwnItem : tournamentOwnList) {
+                if (tournamentOwnItem == null) {
+                    tournamentOwnOsList.addNull();
+                } else {
+                    tournamentOwnOsList.addObjectId(tournamentOwnItem);
+                }
+            }
         }
         return objKey;
     }
@@ -424,6 +550,30 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
             if (realmGet$name != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.nameColKey, objKey, realmGet$name, false);
             }
+
+            RealmList<org.bson.types.ObjectId> tournamentInList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$tournamentIn();
+            if (tournamentInList != null) {
+                OsList tournamentInOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.tournamentInColKey);
+                for (org.bson.types.ObjectId tournamentInItem : tournamentInList) {
+                    if (tournamentInItem == null) {
+                        tournamentInOsList.addNull();
+                    } else {
+                        tournamentInOsList.addObjectId(tournamentInItem);
+                    }
+                }
+            }
+
+            RealmList<org.bson.types.ObjectId> tournamentOwnList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$tournamentOwn();
+            if (tournamentOwnList != null) {
+                OsList tournamentOwnOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.tournamentOwnColKey);
+                for (org.bson.types.ObjectId tournamentOwnItem : tournamentOwnList) {
+                    if (tournamentOwnItem == null) {
+                        tournamentOwnOsList.addNull();
+                    } else {
+                        tournamentOwnOsList.addObjectId(tournamentOwnItem);
+                    }
+                }
+            }
         }
     }
 
@@ -456,6 +606,34 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.nameColKey, objKey, false);
         }
+
+        OsList tournamentInOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.tournamentInColKey);
+        tournamentInOsList.removeAll();
+        RealmList<org.bson.types.ObjectId> tournamentInList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$tournamentIn();
+        if (tournamentInList != null) {
+            for (org.bson.types.ObjectId tournamentInItem : tournamentInList) {
+                if (tournamentInItem == null) {
+                    tournamentInOsList.addNull();
+                } else {
+                    tournamentInOsList.addObjectId(tournamentInItem);
+                }
+            }
+        }
+
+
+        OsList tournamentOwnOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.tournamentOwnColKey);
+        tournamentOwnOsList.removeAll();
+        RealmList<org.bson.types.ObjectId> tournamentOwnList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$tournamentOwn();
+        if (tournamentOwnList != null) {
+            for (org.bson.types.ObjectId tournamentOwnItem : tournamentOwnList) {
+                if (tournamentOwnItem == null) {
+                    tournamentOwnOsList.addNull();
+                } else {
+                    tournamentOwnOsList.addObjectId(tournamentOwnItem);
+                }
+            }
+        }
+
         return objKey;
     }
 
@@ -495,6 +673,34 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
             } else {
                 Table.nativeSetNull(tableNativePtr, columnInfo.nameColKey, objKey, false);
             }
+
+            OsList tournamentInOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.tournamentInColKey);
+            tournamentInOsList.removeAll();
+            RealmList<org.bson.types.ObjectId> tournamentInList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$tournamentIn();
+            if (tournamentInList != null) {
+                for (org.bson.types.ObjectId tournamentInItem : tournamentInList) {
+                    if (tournamentInItem == null) {
+                        tournamentInOsList.addNull();
+                    } else {
+                        tournamentInOsList.addObjectId(tournamentInItem);
+                    }
+                }
+            }
+
+
+            OsList tournamentOwnOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.tournamentOwnColKey);
+            tournamentOwnOsList.removeAll();
+            RealmList<org.bson.types.ObjectId> tournamentOwnList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$tournamentOwn();
+            if (tournamentOwnList != null) {
+                for (org.bson.types.ObjectId tournamentOwnItem : tournamentOwnList) {
+                    if (tournamentOwnItem == null) {
+                        tournamentOwnOsList.addNull();
+                    } else {
+                        tournamentOwnOsList.addObjectId(tournamentOwnItem);
+                    }
+                }
+            }
+
         }
     }
 
@@ -521,6 +727,12 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         unmanagedCopy.realmSet$_partition(realmSource.realmGet$_partition());
         unmanagedCopy.realmSet$name(realmSource.realmGet$name());
 
+        unmanagedCopy.realmSet$tournamentIn(new RealmList<org.bson.types.ObjectId>());
+        unmanagedCopy.realmGet$tournamentIn().addAll(realmSource.realmGet$tournamentIn());
+
+        unmanagedCopy.realmSet$tournamentOwn(new RealmList<org.bson.types.ObjectId>());
+        unmanagedCopy.realmGet$tournamentOwn().addAll(realmSource.realmGet$tournamentOwn());
+
         return unmanagedObject;
     }
 
@@ -532,6 +744,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         builder.addString(columnInfo.idColKey, realmObjectSource.realmGet$id());
         builder.addString(columnInfo._partitionColKey, realmObjectSource.realmGet$_partition());
         builder.addString(columnInfo.nameColKey, realmObjectSource.realmGet$name());
+        builder.addObjectIdList(columnInfo.tournamentInColKey, realmObjectSource.realmGet$tournamentIn());
+        builder.addObjectIdList(columnInfo.tournamentOwnColKey, realmObjectSource.realmGet$tournamentOwn());
 
         builder.updateExistingTopLevelObject();
         return realmObject;
@@ -554,6 +768,14 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         stringBuilder.append(",");
         stringBuilder.append("{name:");
         stringBuilder.append(realmGet$name());
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{tournamentIn:");
+        stringBuilder.append("RealmList<ObjectId>[").append(realmGet$tournamentIn().size()).append("]");
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{tournamentOwn:");
+        stringBuilder.append("RealmList<ObjectId>[").append(realmGet$tournamentOwn().size()).append("]");
         stringBuilder.append("}");
         stringBuilder.append("]");
         return stringBuilder.toString();

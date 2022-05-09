@@ -42,7 +42,7 @@ class NewProfile : AppCompatActivity() {
             override fun onSuccess(realm: Realm) {
                 this@NewProfile.userRealm = realm
                 val realmResults = realm.where<User>().findAll()
-                follow.text = (realmResults.size).toString()
+                follow.text = (realmResults.size-1).toString()
             }
         })
 
@@ -50,19 +50,19 @@ class NewProfile : AppCompatActivity() {
             startActivity(Intent(this, PlayerActivity::class.java))
         }
 
-//        var bundle: Bundle? = intent.extras
-//        var userEmail= bundle!!.getString("EMAIL")
-//
-//
-//        profileEmail.text = userEmail
-//        profileName.text = userEmail
+        var bundle: Bundle? = intent.extras
+        var userEmail= bundle!!.getString("EMAIL")
+
+
+        profileEmail.text = userEmail
+        profileName.text = userEmail
 
         tOwn.setOnClickListener{
             showTournamentsOwn()
         }
-//        tIn.setOnClickListener{
-//            showTournamentsIn()
-//        }
+        tIn.setOnClickListener{
+            showTournamentsIn()
+        }
     }
 
     private fun toRatingsPage() {
@@ -71,9 +71,13 @@ class NewProfile : AppCompatActivity() {
         startActivity(intent)
     }
     private fun showTournamentsOwn() {
-        startActivity(Intent(this, TournamentsOwnActivity::class.java))
+        val intent = Intent(Intent(this, TournamentsOwnActivity::class.java))
+        intent.putExtra("EMAIL", profileEmail.text.toString())
+        startActivity(intent)
     }
-//    private fun showTournamentsIn() {
-//        startActivity(Intent(this, TournamentsInActivity::class.java))
-//    }
+    private fun showTournamentsIn() {
+        val intent = Intent(Intent(this, TournamentsInActivity::class.java))
+        intent.putExtra("EMAIL", profileEmail.text.toString())
+        startActivity(intent)
+    }
 }

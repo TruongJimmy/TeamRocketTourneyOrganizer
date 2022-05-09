@@ -23,7 +23,7 @@
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="156dp"
-        tools:srcCompat="@drawable/settings" />
+        tools:src="@drawable/settings" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_edit_profile"

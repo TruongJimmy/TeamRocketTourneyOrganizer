@@ -70,6 +70,7 @@ class TournamentPageActivity : AppCompatActivity() {
             "Start Time",
             "Game",
             "Participants",
+            "Rank of Members",
             "Groups",
             "Twitch Stream",
             "Timer",
@@ -87,6 +88,7 @@ class TournamentPageActivity : AppCompatActivity() {
             startTime,
             tourneyGameCall,
             participantCall,
+            "Tap for ranking of members",
             "Tap for Groups",
             "View Twitch Stream",
             "View Timer to Check In",
@@ -104,6 +106,7 @@ class TournamentPageActivity : AppCompatActivity() {
             R.drawable.ic_time,
             R.drawable.ic_game,
             R.drawable.ic_person,
+            R.drawable.ic_member_ranking,
             R.drawable.ic_group,
             R.drawable.ic_stream,
             R.drawable.ic_timer,
@@ -203,6 +206,9 @@ class TournamentPageActivity : AppCompatActivity() {
                     startActivity(intent)
                 } else if (title[position] == "Location") {
                     val intent = Intent(this@TournamentPageActivity, MapsMarkerActivity::class.java)
+                    startActivity(intent)
+                } else if (title[position] == "Rank of Members") {
+                    val intent = Intent(this@TournamentPageActivity, RankingActivity::class.java)
                     startActivity(intent)
                 }
 

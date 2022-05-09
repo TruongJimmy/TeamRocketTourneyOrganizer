@@ -2182,6 +2182,7 @@ drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_location
+drawable ic_member_ranking
 drawable ic_money
 drawable ic_money_bill
 drawable ic_mtrl_checked_circle
@@ -2672,7 +2673,6 @@ id mem1
 id mem2
 id mem3
 id mem4
-id memberButton
 id memberNames
 id message
 id messageInput
@@ -3102,6 +3102,7 @@ layout activity_chat
 layout activity_chat_room
 layout activity_checkout_pay
 layout activity_create_tournament
+layout activity_follower
 layout activity_game
 layout activity_group
 layout activity_group_list

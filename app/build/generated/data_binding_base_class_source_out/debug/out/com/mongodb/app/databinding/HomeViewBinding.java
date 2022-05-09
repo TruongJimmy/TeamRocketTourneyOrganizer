@@ -43,9 +43,6 @@ public final class HomeViewBinding implements ViewBinding {
   public final RecyclerView homeTourneyView;
 
   @NonNull
-  public final Button memberButton;
-
-  @NonNull
   public final Button suggestionPageButton;
 
   @NonNull
@@ -54,8 +51,7 @@ public final class HomeViewBinding implements ViewBinding {
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button Profile,
       @NonNull Button SearchTournament, @NonNull Button Settings, @NonNull Button activeTournament,
       @NonNull ImageView appLogo, @NonNull TextView email, @NonNull RecyclerView homeTourneyView,
-      @NonNull Button memberButton, @NonNull Button suggestionPageButton,
-      @NonNull TextView tourneyViewText) {
+      @NonNull Button suggestionPageButton, @NonNull TextView tourneyViewText) {
     this.rootView = rootView;
     this.Profile = Profile;
     this.SearchTournament = SearchTournament;
@@ -64,7 +60,6 @@ public final class HomeViewBinding implements ViewBinding {
     this.appLogo = appLogo;
     this.email = email;
     this.homeTourneyView = homeTourneyView;
-    this.memberButton = memberButton;
     this.suggestionPageButton = suggestionPageButton;
     this.tourneyViewText = tourneyViewText;
   }
@@ -138,12 +133,6 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.memberButton;
-      Button memberButton = rootView.findViewById(id);
-      if (memberButton == null) {
-        break missingId;
-      }
-
       id = R.id.suggestionPageButton;
       Button suggestionPageButton = rootView.findViewById(id);
       if (suggestionPageButton == null) {
@@ -157,8 +146,7 @@ public final class HomeViewBinding implements ViewBinding {
       }
 
       return new HomeViewBinding((ConstraintLayout) rootView, Profile, SearchTournament, Settings,
-          activeTournament, appLogo, email, homeTourneyView, memberButton, suggestionPageButton,
-          tourneyViewText);
+          activeTournament, appLogo, email, homeTourneyView, suggestionPageButton, tourneyViewText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

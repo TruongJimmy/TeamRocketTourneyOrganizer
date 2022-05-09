@@ -8,4 +8,8 @@ public interface com_mongodb_app_UserRealmProxyInterface {
     public void realmSet$_partition(String value);
     public String realmGet$name();
     public void realmSet$name(String value);
+    public RealmList<org.bson.types.ObjectId> realmGet$tournamentIn();
+    public void realmSet$tournamentIn(RealmList<org.bson.types.ObjectId> value);
+    public RealmList<org.bson.types.ObjectId> realmGet$tournamentOwn();
+    public void realmSet$tournamentOwn(RealmList<org.bson.types.ObjectId> value);
 }
