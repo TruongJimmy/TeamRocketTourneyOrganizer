@@ -19,7 +19,7 @@ import com.mongodb.app.games.NAME_GAME
 import io.realm.*
 import java.util.*
 
-class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>, private var images: IntArray): RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHolder>() {
+class ActiveUpcomingAdapter(private var tourneyQuery: RealmResults<Tournament>): RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHolder>() {
 
     private lateinit var mListener: onItemClickListener
 

@@ -2573,6 +2573,7 @@ id holo_dark
 id holo_light
 id home
 id homeAsUp
+id homeTourneyView
 id honorRequest
 id horizontal_only
 id hybrid
@@ -2978,6 +2979,7 @@ id tournament_menu
 id tournament_name
 id tournamentsIn
 id tournamentsOwn
+id tourneyViewText
 id transitionToEnd
 id transitionToStart
 id transition_current_scene

@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
@@ -42,6 +43,9 @@ public final class HomeViewBinding implements ViewBinding {
   public final TextView email;
 
   @NonNull
+  public final RecyclerView homeTourneyView;
+
+  @NonNull
   public final Button memberButton;
 
   @NonNull
@@ -50,11 +54,15 @@ public final class HomeViewBinding implements ViewBinding {
   @NonNull
   public final Button suggestionPageButton;
 
+  @NonNull
+  public final TextView tourneyViewText;
+
   private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
       @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
       @NonNull Button activeTournament, @NonNull ImageView appLogo, @NonNull TextView email,
-      @NonNull Button memberButton, @NonNull Button payPalButton,
-      @NonNull Button suggestionPageButton) {
+      @NonNull RecyclerView homeTourneyView, @NonNull Button memberButton,
+      @NonNull Button payPalButton, @NonNull Button suggestionPageButton,
+      @NonNull TextView tourneyViewText) {
     this.rootView = rootView;
     this.CreateTournament = CreateTournament;
     this.Profile = Profile;
@@ -63,9 +71,11 @@ public final class HomeViewBinding implements ViewBinding {
     this.activeTournament = activeTournament;
     this.appLogo = appLogo;
     this.email = email;
+    this.homeTourneyView = homeTourneyView;
     this.memberButton = memberButton;
     this.payPalButton = payPalButton;
     this.suggestionPageButton = suggestionPageButton;
+    this.tourneyViewText = tourneyViewText;
   }
 
   @Override
@@ -137,6 +147,12 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.homeTourneyView;
+      RecyclerView homeTourneyView = rootView.findViewById(id);
+      if (homeTourneyView == null) {
+        break missingId;
+      }
+
       id = R.id.memberButton;
       Button memberButton = rootView.findViewById(id);
       if (memberButton == null) {
@@ -155,9 +171,15 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tourneyViewText;
+      TextView tourneyViewText = rootView.findViewById(id);
+      if (tourneyViewText == null) {
+        break missingId;
+      }
+
       return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings, activeTournament, appLogo, email, memberButton, payPalButton,
-          suggestionPageButton);
+          SearchTournament, Settings, activeTournament, appLogo, email, homeTourneyView,
+          memberButton, payPalButton, suggestionPageButton, tourneyViewText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

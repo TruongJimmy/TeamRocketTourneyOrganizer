@@ -37,7 +37,7 @@ class ActiveUpcomingTournament:AppCompatActivity() {
         layoutManager = LinearLayoutManager(this)
         cardRecyclerView.layoutManager = layoutManager
 
-        adapter = ActiveUpcomingAdapter(tourneyQuery, images)
+        adapter = ActiveUpcomingAdapter(tourneyQuery)
         cardRecyclerView.adapter = adapter
 
         (adapter as ActiveUpcomingAdapter).setOnItemClickListener(object : ActiveUpcomingAdapter.onItemClickListener {

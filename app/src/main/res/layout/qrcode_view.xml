@@ -24,6 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:text="Generate QR Code"
+        android:textColor="@color/black"
+        android:backgroundTint="#fece2f"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qr_code" />

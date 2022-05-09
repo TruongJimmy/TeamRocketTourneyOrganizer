@@ -4,10 +4,18 @@ package com.mongodb.app
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.mongodb.app.activty.CheckoutActivity
 import com.mongodb.app.games.GamesListActivity
+import io.realm.Realm
+import io.realm.kotlin.where
+import io.realm.mongodb.sync.SyncConfiguration
+import kotlinx.android.synthetic.main.activity_active_upcoming_tournament.*
+import kotlinx.android.synthetic.main.home_view.*
 import java.util.*
 
 
@@ -27,12 +35,69 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var userEmail: TextView
     private lateinit var rateButton: Button
     private lateinit var gPay: Button
+    private lateinit var homeLogo: ImageView
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<ActiveUpcomingAdapter.ViewHolder>? = null
+    private var user = realmApp.currentUser()
+    private var partition = "123"
+    var config = SyncConfiguration.Builder(user, partition).build()
+    private var realm = Realm.getInstance(config)
+    private var tourneyQuery = realm!!.where<Tournament>().findAll()
+
 
     // lateinit var timerButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_view)
+
+        layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false)
+        homeTourneyView.layoutManager = layoutManager
+
+        adapter = ActiveUpcomingAdapter(tourneyQuery)
+        homeTourneyView.adapter = adapter
+
+        (adapter as ActiveUpcomingAdapter).setOnItemClickListener(object : ActiveUpcomingAdapter.onItemClickListener {
+            override fun onItemClick(position: Int) {
+                val intent = Intent(this@HomeActivity, TournamentPageActivity::class.java)
+                intent.putExtra("participant", tourneyQuery[position]!!.participant)
+                intent.putExtra("tourneyGame", tourneyQuery[position]!!.game)
+                intent.putExtra("location", tourneyQuery[position]!!.location)
+                intent.putExtra("startTime", tourneyQuery[position]!!.startTime)
+                intent.putExtra("tourneyName", tourneyQuery[position]!!.name)
+                intent.putExtra("tournamentType", tourneyQuery[position]!!.tournamentType)
+                intent.putExtra("prizeAmount", tourneyQuery[position]!!.prizeAmount)
+                intent.putExtra("rules", tourneyQuery[position]!!.rules)
+                //intent.putExtra("tourneyPicture", images[position])
+
+                if (tourneyQuery[position]!!.game == "Valorant") {
+                    intent.putExtra("tourneyPicture", R.mipmap.valorant_foreground)
+                } else if (tourneyQuery[position]!!.game == "Fortnite") {
+                    intent.putExtra("tourneyPicture", R.mipmap.fortnite_foreground)
+                } else if (tourneyQuery[position]!!.game == "Apex Legends") {
+                    intent.putExtra("tourneyPicture", R.mipmap.apex_foreground)
+                } else if (tourneyQuery[position]!!.game == "Dragon Ball FighterZ") {
+                    intent.putExtra("tourneyPicture", R.mipmap.dbz_foreground)
+                } else if (tourneyQuery[position]!!.game == "Super Smash Bros.") {
+                    intent.putExtra("tourneyPicture", R.mipmap.smash_foreground)
+                } else if (tourneyQuery[position]!!.game == "League of Legends") {
+                    intent.putExtra("tourneyPicture", R.mipmap.lol_foreground)
+                } else if (tourneyQuery[position]!!.game == "Dota") {
+                    intent.putExtra("tourneyPicture", R.mipmap.dota_foreground)
+                } else if (tourneyQuery[position]!!.game == "Counter-Strike: Global Offensive") {
+                    intent.putExtra("tourneyPicture", R.mipmap.csgo_foreground)
+                } else if (tourneyQuery[position]!!.game == "Tom Clancy's Rainbow Six Siege") {
+                    intent.putExtra("tourneyPicture", R.mipmap.r6_foreground)
+                } else if (tourneyQuery[position]!!.game == "Rocket League") {
+                    intent.putExtra("tourneyPicture", R.mipmap.rocket_foreground)
+                } else {
+                    intent.putExtra("tourneyPicture", R.mipmap.dbz_foreground)
+                }
+
+                startActivity(intent)
+            }
+        })
+
 
         val bundle: Bundle? = intent.extras
         var currentEmail: String? = null
@@ -46,6 +111,9 @@ class HomeActivity : AppCompatActivity() {
 //        val appBarConfiguration = AppBarConfiguration(setOf(R.id.searchFragment, R.id.createTourneyFragment, R.id.profileFragment, R.id.settingsFragment))
 //        setupActionBarWithNavController(navController, appBarConfiguration)
 //        bottomNavigationBar.setupWithNavController(navController)
+
+        homeLogo = findViewById(R.id.appLogo)
+        homeLogo.setOnClickListener{onCreateTournamentButtonClicked()}
 
         searchTournamentButton = findViewById(R.id.Search_Tournament)
         searchTournamentButton.setOnClickListener {onSearchTournamentButtonClicked()}

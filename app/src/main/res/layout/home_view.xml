@@ -23,7 +23,6 @@
         android:id="@+id/Create_Tournament"
         android:layout_width="130dp"
         android:layout_height="55dp"
-
         android:backgroundTint="#fece2f"
         android:text="Create Tournament"
         android:textColor="@color/black"
@@ -157,12 +156,28 @@
         app:layout_constraintVertical_bias="0.029" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeTourneyView"
         android:layout_width="409dp"
-        android:layout_height="313dp"
+        android:layout_height="268dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tourneyViewText"
+        android:layout_width="302dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Active Upcoming Tournaments"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeTourneyView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
