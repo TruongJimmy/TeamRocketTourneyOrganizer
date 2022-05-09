@@ -17,22 +17,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Profile"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/home" />
+        app:srcCompat="@drawable/tournament_copy" />
 
-    <Button
-        android:id="@+id/Create_Tournament"
-        android:layout_width="130dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#fece2f"
-        android:text="Create Tournament"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+    <!--    <Button-->
+    <!--        android:id="@+id/Create_Tournament"-->
+    <!--        android:layout_width="130dp"-->
+    <!--        android:layout_height="55dp"-->
+    <!--        android:backgroundTint="#fece2f"-->
+    <!--        android:text="Create Tournament"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.8"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.39" />-->
 
     <Button
         android:id="@+id/Search_Tournament"
@@ -96,20 +96,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.491" />
 
-    <Button
-        android:id="@+id/payPalButton"
-        android:layout_width="130dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#fece2f"
-        android:text="PayPal"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+    <!--    <Button-->
+    <!--        android:id="@+id/payPalButton"-->
+    <!--        android:layout_width="130dp"-->
+    <!--        android:layout_height="55dp"-->
+    <!--        android:backgroundTint="#fece2f"-->
+    <!--        android:text="PayPal"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.213"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.39" />-->
 
     <Button
         android:id="@+id/suggestionPageButton"

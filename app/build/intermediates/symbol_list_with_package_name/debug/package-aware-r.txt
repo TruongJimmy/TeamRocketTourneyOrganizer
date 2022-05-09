@@ -2252,6 +2252,8 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable tournament
+drawable tournament_copy
+drawable tournament_copy_1
 drawable valorant_background
 font archivo_black
 font armata
@@ -2261,7 +2263,6 @@ id AppName
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
-id Create_Tournament
 id ExperienceBar
 id FUNCTION
 id GiveXP
@@ -2762,7 +2763,6 @@ id participant_menu
 id password_toggle
 id path
 id pathRelative
-id payPalButton
 id peekHeight
 id percent
 id personIcon

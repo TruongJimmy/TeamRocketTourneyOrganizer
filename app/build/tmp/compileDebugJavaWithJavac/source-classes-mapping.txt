@@ -22,8 +22,8 @@ com/mongodb/app/databinding/BuyWithGooglepayButtonBinding.java
  com.mongodb.app.databinding.BuyWithGooglepayButtonBinding
 com/mongodb/app/databinding/FragmentActiveTournamentsBinding.java
  com.mongodb.app.databinding.FragmentActiveTournamentsBinding
-io/realm/DefaultRealmModuleMediator.java
- io.realm.DefaultRealmModuleMediator
+com/mongodb/app/databinding/GameItemBinding.java
+ com.mongodb.app.databinding.GameItemBinding
 com/mongodb/app/ChatConstants/ChatConstants.java
  com.mongodb.app.ChatConstants.ChatConstants
 com/mongodb/app/databinding/ActivityGameBinding.java
@@ -186,5 +186,5 @@ com/mongodb/app/databinding/ActivityTournamentPageBinding.java
  com.mongodb.app.databinding.ActivityTournamentPageBinding
 com/mongodb/app/databinding/FragmentSettingsBinding.java
  com.mongodb.app.databinding.FragmentSettingsBinding
-com/mongodb/app/databinding/GameItemBinding.java
- com.mongodb.app.databinding.GameItemBinding
+io/realm/DefaultRealmModuleMediator.java
+ io.realm.DefaultRealmModuleMediator

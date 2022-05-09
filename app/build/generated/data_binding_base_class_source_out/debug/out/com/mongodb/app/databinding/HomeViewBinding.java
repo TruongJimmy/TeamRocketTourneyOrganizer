@@ -22,9 +22,6 @@ public final class HomeViewBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button CreateTournament;
-
-  @NonNull
   public final Button Profile;
 
   @NonNull
@@ -49,22 +46,17 @@ public final class HomeViewBinding implements ViewBinding {
   public final Button memberButton;
 
   @NonNull
-  public final Button payPalButton;
-
-  @NonNull
   public final Button suggestionPageButton;
 
   @NonNull
   public final TextView tourneyViewText;
 
-  private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button CreateTournament,
-      @NonNull Button Profile, @NonNull Button SearchTournament, @NonNull Button Settings,
-      @NonNull Button activeTournament, @NonNull ImageView appLogo, @NonNull TextView email,
-      @NonNull RecyclerView homeTourneyView, @NonNull Button memberButton,
-      @NonNull Button payPalButton, @NonNull Button suggestionPageButton,
+  private HomeViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button Profile,
+      @NonNull Button SearchTournament, @NonNull Button Settings, @NonNull Button activeTournament,
+      @NonNull ImageView appLogo, @NonNull TextView email, @NonNull RecyclerView homeTourneyView,
+      @NonNull Button memberButton, @NonNull Button suggestionPageButton,
       @NonNull TextView tourneyViewText) {
     this.rootView = rootView;
-    this.CreateTournament = CreateTournament;
     this.Profile = Profile;
     this.SearchTournament = SearchTournament;
     this.Settings = Settings;
@@ -73,7 +65,6 @@ public final class HomeViewBinding implements ViewBinding {
     this.email = email;
     this.homeTourneyView = homeTourneyView;
     this.memberButton = memberButton;
-    this.payPalButton = payPalButton;
     this.suggestionPageButton = suggestionPageButton;
     this.tourneyViewText = tourneyViewText;
   }
@@ -105,12 +96,6 @@ public final class HomeViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Create_Tournament;
-      Button CreateTournament = rootView.findViewById(id);
-      if (CreateTournament == null) {
-        break missingId;
-      }
-
       id = R.id.Profile;
       Button Profile = rootView.findViewById(id);
       if (Profile == null) {
@@ -159,12 +144,6 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.payPalButton;
-      Button payPalButton = rootView.findViewById(id);
-      if (payPalButton == null) {
-        break missingId;
-      }
-
       id = R.id.suggestionPageButton;
       Button suggestionPageButton = rootView.findViewById(id);
       if (suggestionPageButton == null) {
@@ -177,9 +156,9 @@ public final class HomeViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HomeViewBinding((ConstraintLayout) rootView, CreateTournament, Profile,
-          SearchTournament, Settings, activeTournament, appLogo, email, homeTourneyView,
-          memberButton, payPalButton, suggestionPageButton, tourneyViewText);
+      return new HomeViewBinding((ConstraintLayout) rootView, Profile, SearchTournament, Settings,
+          activeTournament, appLogo, email, homeTourneyView, memberButton, suggestionPageButton,
+          tourneyViewText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

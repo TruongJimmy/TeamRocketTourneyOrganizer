@@ -118,8 +118,8 @@ class HomeActivity : AppCompatActivity() {
         searchTournamentButton = findViewById(R.id.Search_Tournament)
         searchTournamentButton.setOnClickListener {onSearchTournamentButtonClicked()}
 
-        createTournamentButton = findViewById(R.id.Create_Tournament)
-        createTournamentButton.setOnClickListener {onCreateTournamentButtonClicked()}
+//        createTournamentButton = findViewById(R.id.Create_Tournament)
+//        createTournamentButton.setOnClickListener {onCreateTournamentButtonClicked()}
 
         settingsButton = findViewById(R.id.Settings)
         settingsButton.setOnClickListener {onSettingsButtonClicked()}
@@ -136,11 +136,11 @@ class HomeActivity : AppCompatActivity() {
         rankingButton = findViewById(R.id.memberButton)
         rankingButton.setOnClickListener { toMemberRank() }
 
-        payButton = findViewById(R.id.payPalButton)
-        payButton.setOnClickListener { toPaypalPage() }
-
-        payButton = findViewById(R.id.payPalButton)
-        payButton.setOnClickListener { toPaypalPage() }
+//        payButton = findViewById(R.id.payPalButton)
+//        payButton.setOnClickListener { toPaypalPage() }
+//
+//        payButton = findViewById(R.id.payPalButton)
+//        payButton.setOnClickListener { toPaypalPage() }
 
 //        group = findViewById(R.id.groupButton)
 //        group.setOnClickListener { toGroupPage() }
