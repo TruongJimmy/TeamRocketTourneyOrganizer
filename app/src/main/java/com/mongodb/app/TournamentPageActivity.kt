@@ -185,7 +185,7 @@ class TournamentPageActivity : AppCompatActivity() {
                     startActivity(intent)
                 } else if (title[position] == "Game") {
                     val intent = Intent(this@TournamentPageActivity, GameDetailActivity::class.java)
-                    val gameMap = mapOf("Valorant" to 1, "Fortnite" to 2, "Apex Legends" to 3, "Dragon Ball FigherZ" to 4, "Super Smash Bros." to 5, "League of Legends" to 6,
+                    val gameMap = mapOf("Valorant" to 1, "Fortnite" to 2, "Apex Legends" to 3, "Dragon Ball FighterZ" to 4, "Super Smash Bros." to 5, "League of Legends" to 6,
                                         "Dota" to 7, "Counter-Strike: Global Offensive" to 8, "Tom Clancy's Rainbow Six Siege" to 9, "Rocket League" to 10)
                     intent.putExtra(GAME_ID, gameMap[tourneyGameCall])
                     intent.putExtra(NAME_GAME, tourneyGameCall)

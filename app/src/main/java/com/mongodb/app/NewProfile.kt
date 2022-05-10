@@ -3,10 +3,12 @@ package com.mongodb.app
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import io.realm.Realm
 import io.realm.RealmConfiguration
+import io.realm.RealmList
 import io.realm.kotlin.where
 import io.realm.mongodb.sync.SyncConfiguration
 import kotlinx.android.synthetic.main.activity_new_profile.*
@@ -20,6 +22,12 @@ class NewProfile : AppCompatActivity() {
     private lateinit var userRealm: Realm
     private lateinit var config: RealmConfiguration
     private lateinit var rating: Button
+    private lateinit var userLevel: TextView
+    //temporary experience bar
+    private var currentExperience = 35.0
+    private var maxLevelExp = 100.0
+    private var level = 1
+    private var progressBar: ProgressBar? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,21 +45,32 @@ class NewProfile : AppCompatActivity() {
 
         rating.setOnClickListener{ toRatingsPage() }
 
+        var bundle: Bundle? = intent.extras
+        var userEmail= bundle!!.getString("EMAIL")
         config = SyncConfiguration.Builder(user, partition).build()
         Realm.getInstanceAsync(config, object : Realm.Callback() {
             override fun onSuccess(realm: Realm) {
                 this@NewProfile.userRealm = realm
-                val realmResults = realm.where<User>().findAll()
-                follow.text = (realmResults.size-1).toString()
+                //val realmResults = realm.where<User>().findAll()
+//                var userEmail= bundle!!.getString("EMAIL")
+                var userQuery = realm.where<User>().equalTo("name",userEmail).findAll()
+                val currentUser: User? = userQuery[0]
+                var followingList = RealmList<String>()
+                if (currentUser != null) {
+                    // get user's list of following
+                    followingList = currentUser.following
+                }
+                follow.text = (followingList.size).toString()
             }
         })
+        userLevel = findViewById(R.id.level)
+        progressBar = findViewById(R.id.experienceBar)
+        progressBar?.setProgress(currentExperience.toInt())
+        progressBar?.setMax(maxLevelExp.toInt())
 
-        following.setOnClickListener{
-            startActivity(Intent(this, PlayerActivity::class.java))
-        }
 
-        var bundle: Bundle? = intent.extras
-        var userEmail= bundle!!.getString("EMAIL")
+//        var bundle: Bundle? = intent.extras
+//        var userEmail= bundle!!.getString("EMAIL")
 
 
         profileEmail.text = userEmail
@@ -62,6 +81,9 @@ class NewProfile : AppCompatActivity() {
         }
         tIn.setOnClickListener{
             showTournamentsIn()
+        }
+        following.setOnClickListener{
+            toFollowingPage()
         }
     }
 
@@ -77,6 +99,11 @@ class NewProfile : AppCompatActivity() {
     }
     private fun showTournamentsIn() {
         val intent = Intent(Intent(this, TournamentsInActivity::class.java))
+        intent.putExtra("EMAIL", profileEmail.text.toString())
+        startActivity(intent)
+    }
+    private fun toFollowingPage() {
+        val intent = Intent(Intent(this, PlayerActivity::class.java))
         intent.putExtra("EMAIL", profileEmail.text.toString())
         startActivity(intent)
     }

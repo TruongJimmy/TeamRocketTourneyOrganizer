@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RatingBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -28,7 +29,7 @@ public final class ActivityRatingBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
-  public final EditText organizer;
+  public final TextView organizer;
 
   @NonNull
   public final RatingBar ratingBar;
@@ -37,7 +38,7 @@ public final class ActivityRatingBinding implements ViewBinding {
   public final Button submit;
 
   private ActivityRatingBinding(@NonNull ConstraintLayout rootView, @NonNull EditText description,
-      @NonNull ImageView imageView, @NonNull EditText organizer, @NonNull RatingBar ratingBar,
+      @NonNull ImageView imageView, @NonNull TextView organizer, @NonNull RatingBar ratingBar,
       @NonNull Button submit) {
     this.rootView = rootView;
     this.description = description;
@@ -87,7 +88,7 @@ public final class ActivityRatingBinding implements ViewBinding {
       }
 
       id = R.id.organizer;
-      EditText organizer = rootView.findViewById(id);
+      TextView organizer = rootView.findViewById(id);
       if (organizer == null) {
         break missingId;
       }

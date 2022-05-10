@@ -4,10 +4,11 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -18,10 +19,10 @@ import java.lang.String;
 
 public final class ActivityPlayerBinding implements ViewBinding {
   @NonNull
-  private final CoordinatorLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final CoordinatorLayout activityTask;
+  public final Button backbutton;
 
   @NonNull
   public final FloatingActionButton floatingActionButton;
@@ -30,21 +31,21 @@ public final class ActivityPlayerBinding implements ViewBinding {
   public final RecyclerView projectUsersList;
 
   @NonNull
-  public final Toolbar toolBarFollowingPlayer;
+  public final Toolbar tournamentMenu;
 
-  private ActivityPlayerBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull CoordinatorLayout activityTask, @NonNull FloatingActionButton floatingActionButton,
-      @NonNull RecyclerView projectUsersList, @NonNull Toolbar toolBarFollowingPlayer) {
+  private ActivityPlayerBinding(@NonNull ConstraintLayout rootView, @NonNull Button backbutton,
+      @NonNull FloatingActionButton floatingActionButton, @NonNull RecyclerView projectUsersList,
+      @NonNull Toolbar tournamentMenu) {
     this.rootView = rootView;
-    this.activityTask = activityTask;
+    this.backbutton = backbutton;
     this.floatingActionButton = floatingActionButton;
     this.projectUsersList = projectUsersList;
-    this.toolBarFollowingPlayer = toolBarFollowingPlayer;
+    this.tournamentMenu = tournamentMenu;
   }
 
   @Override
   @NonNull
-  public CoordinatorLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -69,7 +70,11 @@ public final class ActivityPlayerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      CoordinatorLayout activityTask = (CoordinatorLayout) rootView;
+      id = R.id.backbutton;
+      Button backbutton = rootView.findViewById(id);
+      if (backbutton == null) {
+        break missingId;
+      }
 
       id = R.id.floating_action_button;
       FloatingActionButton floatingActionButton = rootView.findViewById(id);
@@ -83,14 +88,14 @@ public final class ActivityPlayerBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.toolBar_FollowingPlayer;
-      Toolbar toolBarFollowingPlayer = rootView.findViewById(id);
-      if (toolBarFollowingPlayer == null) {
+      id = R.id.tournament_menu;
+      Toolbar tournamentMenu = rootView.findViewById(id);
+      if (tournamentMenu == null) {
         break missingId;
       }
 
-      return new ActivityPlayerBinding((CoordinatorLayout) rootView, activityTask,
-          floatingActionButton, projectUsersList, toolBarFollowingPlayer);
+      return new ActivityPlayerBinding((ConstraintLayout) rootView, backbutton,
+          floatingActionButton, projectUsersList, tournamentMenu);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

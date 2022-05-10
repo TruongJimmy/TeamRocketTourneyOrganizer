@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,10 +23,16 @@ public final class ActivityNewProfileBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final ProgressBar experienceBar;
+
+  @NonNull
   public final TextView following;
 
   @NonNull
   public final RelativeLayout imgUser;
+
+  @NonNull
+  public final TextView level;
 
   @NonNull
   public final LinearLayout linlay1;
@@ -54,14 +61,17 @@ public final class ActivityNewProfileBinding implements ViewBinding {
   @NonNull
   public final Button viewRatings;
 
-  private ActivityNewProfileBinding(@NonNull RelativeLayout rootView, @NonNull TextView following,
-      @NonNull RelativeLayout imgUser, @NonNull LinearLayout linlay1,
+  private ActivityNewProfileBinding(@NonNull RelativeLayout rootView,
+      @NonNull ProgressBar experienceBar, @NonNull TextView following,
+      @NonNull RelativeLayout imgUser, @NonNull TextView level, @NonNull LinearLayout linlay1,
       @NonNull TextView profileEmail, @NonNull RelativeLayout rellay1, @NonNull ImageView setting,
       @NonNull Button tournamentsIn, @NonNull Button tournamentsOwn, @NonNull TextView tvAddress,
       @NonNull TextView tvName, @NonNull Button viewRatings) {
     this.rootView = rootView;
+    this.experienceBar = experienceBar;
     this.following = following;
     this.imgUser = imgUser;
+    this.level = level;
     this.linlay1 = linlay1;
     this.profileEmail = profileEmail;
     this.rellay1 = rellay1;
@@ -100,6 +110,12 @@ public final class ActivityNewProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.experienceBar;
+      ProgressBar experienceBar = rootView.findViewById(id);
+      if (experienceBar == null) {
+        break missingId;
+      }
+
       id = R.id.following;
       TextView following = rootView.findViewById(id);
       if (following == null) {
@@ -109,6 +125,12 @@ public final class ActivityNewProfileBinding implements ViewBinding {
       id = R.id.imgUser;
       RelativeLayout imgUser = rootView.findViewById(id);
       if (imgUser == null) {
+        break missingId;
+      }
+
+      id = R.id.level;
+      TextView level = rootView.findViewById(id);
+      if (level == null) {
         break missingId;
       }
 
@@ -166,9 +188,9 @@ public final class ActivityNewProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNewProfileBinding((RelativeLayout) rootView, following, imgUser, linlay1,
-          profileEmail, rellay1, setting, tournamentsIn, tournamentsOwn, tvAddress, tvName,
-          viewRatings);
+      return new ActivityNewProfileBinding((RelativeLayout) rootView, experienceBar, following,
+          imgUser, level, linlay1, profileEmail, rellay1, setting, tournamentsIn, tournamentsOwn,
+          tvAddress, tvName, viewRatings);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

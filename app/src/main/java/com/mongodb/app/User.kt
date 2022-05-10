@@ -15,5 +15,10 @@ open class User(
     var tournamentIn: RealmList<ObjectId> = RealmList(),
     @Required
     var tournamentOwn: RealmList<ObjectId> = RealmList(),
+    @Required
+    var followers: RealmList<String> = RealmList(),
+
+    @Required
+    var following: RealmList<String> = RealmList(),
 ): RealmObject()
 

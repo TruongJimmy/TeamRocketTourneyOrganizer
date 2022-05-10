@@ -3,10 +3,7 @@ package com.mongodb.app
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RatingBar
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.realm.Realm
@@ -17,7 +14,7 @@ import kotlinx.android.synthetic.main.suggestion_page.*
 
 class RateOrganizerActivity : AppCompatActivity() {
     private lateinit var starRating: RatingBar
-    private lateinit var organizer: EditText
+    private lateinit var organizer: TextView
     private lateinit var description: EditText
     private lateinit var submitButton: Button
     private lateinit var userRealm: Realm
@@ -28,6 +25,7 @@ class RateOrganizerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_rating)
         starRating = findViewById(R.id.ratingBar)
         organizer = findViewById(R.id.organizer)
+        organizer.text = "Chino"
         description = findViewById(R.id.description)
         submitButton = findViewById(R.id.submit)
         submitButton.setOnClickListener { (rateOrganizer()) }

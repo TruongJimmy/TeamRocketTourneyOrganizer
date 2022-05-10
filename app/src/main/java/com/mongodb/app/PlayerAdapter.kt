@@ -5,6 +5,11 @@ import android.view.*
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import io.realm.Realm
+import io.realm.RealmConfiguration
+import io.realm.RealmList
+import io.realm.kotlin.where
+import io.realm.mongodb.User
 
 import io.realm.mongodb.functions.Functions
 import org.bson.Document
@@ -14,7 +19,7 @@ import org.bson.Document
 * in a RecyclerView.
 */
 
-internal class PlayerAdapter(private val data: ArrayList<Player>, private val user : io.realm.mongodb.User) :
+internal class PlayerAdapter(private val data: RealmList<String>, private val user: User, private val config: RealmConfiguration) :
     RecyclerView.Adapter<PlayerAdapter.MemberViewHolder>() {
     lateinit var parent: ViewGroup
 
@@ -31,54 +36,28 @@ internal class PlayerAdapter(private val data: ArrayList<Player>, private val us
     }
 
     override fun onBindViewHolder(holder: MemberViewHolder, position: Int) {
-        val obj: Player = data[position]
-        holder.data = obj
-        holder.name.text = obj.name
+
+        holder.name.text = data[position].toString()
 
         holder.delete.setOnClickListener {
-            run {
-                // Double-check with the user that they would like to remove the user with a dialog
-                val dialogBuilder = AlertDialog.Builder(parent.context)
-                dialogBuilder.setMessage("Are you sure you want to remove this user from the project?")
-                    .setCancelable(true)
-                    .setPositiveButton("Remove User") { dialog, _ ->
-                        // When the function completes, remember to dismiss the dialog.
-                        // If the function successfully removes the team member, remove the team member from the displayed data and notify the Adapter that an item has been removed.
-                        val functionsManager: Functions = realmApp.getFunctions(user)
-                        functionsManager.callFunctionAsync(
-                            "removeTeamMember",
-                            listOf(obj.name), Document::class.java
-                        ) { result ->
-                            run {
-                                dialog.dismiss()
-                                if (result.isSuccess) {
-                                    Log.v(TAG(), "removed team member: ${result.get()}")
-                                    data.removeAt(position)
-                                    notifyItemRemoved(position)
-                                } else {
-                                    Log.e(
-                                        TAG(),
-                                        "failed to remove team member with: " + result.error
-                                    )
-                                    Toast.makeText(
-                                        parent.context,
-                                        result.error.toString(),
-                                        Toast.LENGTH_LONG
-                                    ).show()
-                                }
-                            }
-                        }
+            val functionsManager: Functions = realmApp.getFunctions(user)
+            functionsManager.callFunctionAsync(
+                "unfollow",
+                listOf(holder.name.text), // game name
+                Document::class.java
+            ) { result ->
+                if (result.isSuccess) {
+                    Log.v(TAG(), "Attempted to remove participant. Result: ${result.get()}")
+                    notifyItemRemoved(position)
 
-                    }
-                    .setNegativeButton("Cancel") { dialog, _ ->
-                        dialog.cancel()
-                    }
+                } else {
+                    Log.e(TAG(), "failed to remove participant with: " + result.error)
 
-                val dialog = dialogBuilder.create()
-                dialog.setTitle("Remove Team Member?")
-                dialog.show()
+                }
             }
+            notifyItemRemoved(position)
         }
+
     }
 
     // Return the size of your dataset (invoked by the layout manager)
@@ -86,7 +65,6 @@ internal class PlayerAdapter(private val data: ArrayList<Player>, private val us
 
     internal inner class MemberViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var name: TextView = view.findViewById(R.id.name)
-        var data: Player? = null
         var delete: TextView = view.findViewById(R.id.delete)
 
     }

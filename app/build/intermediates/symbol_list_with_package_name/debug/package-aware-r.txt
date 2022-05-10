@@ -2340,7 +2340,6 @@ id action_text
 id actions
 id activeTournament
 id activity_chooser_view_content
-id activity_task
 id add
 id add_game_description
 id add_game_name
@@ -2372,6 +2371,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id backButtonReport
+id backbutton
 id background
 id barrier
 id baseline
@@ -2522,6 +2522,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id experienceBar
 id fade
 id fb
 id fill
@@ -2631,6 +2632,7 @@ id layout_root
 id left
 id leftToRight
 id legacy
+id level
 id light
 id line1
 id line3
@@ -2954,7 +2956,6 @@ id titleDividerNoCustom
 id title_layout
 id title_template
 id toggle
-id toolBar_FollowingPlayer
 id toolBar_ProfileActivity
 id toolBar_Rules
 id toolBar_SearchTournament

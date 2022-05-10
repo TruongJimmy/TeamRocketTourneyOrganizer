@@ -43,15 +43,19 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         long nameColKey;
         long tournamentInColKey;
         long tournamentOwnColKey;
+        long followersColKey;
+        long followingColKey;
 
         UserColumnInfo(OsSchemaInfo schemaInfo) {
-            super(5);
+            super(7);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("User");
             this.idColKey = addColumnDetails("id", "_id", objectSchemaInfo);
             this._partitionColKey = addColumnDetails("_partition", "_partition", objectSchemaInfo);
             this.nameColKey = addColumnDetails("name", "name", objectSchemaInfo);
             this.tournamentInColKey = addColumnDetails("tournamentIn", "tournamentIn", objectSchemaInfo);
             this.tournamentOwnColKey = addColumnDetails("tournamentOwn", "tournamentOwn", objectSchemaInfo);
+            this.followersColKey = addColumnDetails("followers", "followers", objectSchemaInfo);
+            this.followingColKey = addColumnDetails("following", "following", objectSchemaInfo);
         }
 
         UserColumnInfo(ColumnInfo src, boolean mutable) {
@@ -73,6 +77,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
             dst.nameColKey = src.nameColKey;
             dst.tournamentInColKey = src.tournamentInColKey;
             dst.tournamentOwnColKey = src.tournamentOwnColKey;
+            dst.followersColKey = src.followersColKey;
+            dst.followingColKey = src.followingColKey;
         }
     }
 
@@ -82,6 +88,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
     private ProxyState<com.mongodb.app.User> proxyState;
     private RealmList<org.bson.types.ObjectId> tournamentInRealmList;
     private RealmList<org.bson.types.ObjectId> tournamentOwnRealmList;
+    private RealmList<String> followersRealmList;
+    private RealmList<String> followingRealmList;
 
     com_mongodb_app_UserRealmProxy() {
         proxyState.setConstructionFinished();
@@ -253,13 +261,93 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         }
     }
 
+    @Override
+    public RealmList<String> realmGet$followers() {
+        proxyState.getRealm$realm().checkIfValid();
+        // use the cached value if available
+        if (followersRealmList != null) {
+            return followersRealmList;
+        } else {
+            OsList osList = proxyState.getRow$realm().getValueList(columnInfo.followersColKey, RealmFieldType.STRING_LIST);
+            followersRealmList = new RealmList<java.lang.String>(java.lang.String.class, osList, proxyState.getRealm$realm());
+            return followersRealmList;
+        }
+    }
+
+    @Override
+    public void realmSet$followers(RealmList<String> value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            if (proxyState.getExcludeFields$realm().contains("followers")) {
+                return;
+            }
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        OsList osList = proxyState.getRow$realm().getValueList(columnInfo.followersColKey, RealmFieldType.STRING_LIST);
+        osList.removeAll();
+        if (value == null) {
+            return;
+        }
+        for (java.lang.String item : value) {
+            if (item == null) {
+                throw new IllegalArgumentException("Storing 'null' into followers' is not allowed by the schema.");
+            } else {
+                osList.addString(item);
+            }
+        }
+    }
+
+    @Override
+    public RealmList<String> realmGet$following() {
+        proxyState.getRealm$realm().checkIfValid();
+        // use the cached value if available
+        if (followingRealmList != null) {
+            return followingRealmList;
+        } else {
+            OsList osList = proxyState.getRow$realm().getValueList(columnInfo.followingColKey, RealmFieldType.STRING_LIST);
+            followingRealmList = new RealmList<java.lang.String>(java.lang.String.class, osList, proxyState.getRealm$realm());
+            return followingRealmList;
+        }
+    }
+
+    @Override
+    public void realmSet$following(RealmList<String> value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            if (proxyState.getExcludeFields$realm().contains("following")) {
+                return;
+            }
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        OsList osList = proxyState.getRow$realm().getValueList(columnInfo.followingColKey, RealmFieldType.STRING_LIST);
+        osList.removeAll();
+        if (value == null) {
+            return;
+        }
+        for (java.lang.String item : value) {
+            if (item == null) {
+                throw new IllegalArgumentException("Storing 'null' into following' is not allowed by the schema.");
+            } else {
+                osList.addString(item);
+            }
+        }
+    }
+
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
-        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("User", false, 5, 0);
+        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("User", false, 7, 0);
         builder.addPersistedProperty("_id", RealmFieldType.STRING, Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("_partition", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("name", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedValueListProperty("tournamentIn", RealmFieldType.OBJECT_ID_LIST, Property.REQUIRED);
         builder.addPersistedValueListProperty("tournamentOwn", RealmFieldType.OBJECT_ID_LIST, Property.REQUIRED);
+        builder.addPersistedValueListProperty("followers", RealmFieldType.STRING_LIST, Property.REQUIRED);
+        builder.addPersistedValueListProperty("following", RealmFieldType.STRING_LIST, Property.REQUIRED);
         return builder.build();
     }
 
@@ -282,7 +370,7 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
     @SuppressWarnings("cast")
     public static com.mongodb.app.User createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
         throws JSONException {
-        final List<String> excludeFields = new ArrayList<String>(2);
+        final List<String> excludeFields = new ArrayList<String>(4);
         com.mongodb.app.User obj = null;
         if (update) {
             Table table = realm.getTable(com.mongodb.app.User.class);
@@ -308,6 +396,12 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
             }
             if (json.has("tournamentOwn")) {
                 excludeFields.add("tournamentOwn");
+            }
+            if (json.has("followers")) {
+                excludeFields.add("followers");
+            }
+            if (json.has("following")) {
+                excludeFields.add("following");
             }
             if (json.has("id")) {
                 if (json.isNull("id")) {
@@ -337,6 +431,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         }
         ProxyUtils.setRealmListWithJsonObject(objProxy.realmGet$tournamentIn(), json, "tournamentIn");
         ProxyUtils.setRealmListWithJsonObject(objProxy.realmGet$tournamentOwn(), json, "tournamentOwn");
+        ProxyUtils.setRealmListWithJsonObject(objProxy.realmGet$followers(), json, "followers");
+        ProxyUtils.setRealmListWithJsonObject(objProxy.realmGet$following(), json, "following");
         return obj;
     }
 
@@ -377,6 +473,10 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
                 objProxy.realmSet$tournamentIn(ProxyUtils.createRealmListWithJsonStream(org.bson.types.ObjectId.class, reader));
             } else if (name.equals("tournamentOwn")) {
                 objProxy.realmSet$tournamentOwn(ProxyUtils.createRealmListWithJsonStream(org.bson.types.ObjectId.class, reader));
+            } else if (name.equals("followers")) {
+                objProxy.realmSet$followers(ProxyUtils.createRealmListWithJsonStream(java.lang.String.class, reader));
+            } else if (name.equals("following")) {
+                objProxy.realmSet$following(ProxyUtils.createRealmListWithJsonStream(java.lang.String.class, reader));
             } else {
                 reader.skipValue();
             }
@@ -452,6 +552,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         builder.addString(columnInfo.nameColKey, unmanagedSource.realmGet$name());
         builder.addObjectIdList(columnInfo.tournamentInColKey, unmanagedSource.realmGet$tournamentIn());
         builder.addObjectIdList(columnInfo.tournamentOwnColKey, unmanagedSource.realmGet$tournamentOwn());
+        builder.addStringList(columnInfo.followersColKey, unmanagedSource.realmGet$followers());
+        builder.addStringList(columnInfo.followingColKey, unmanagedSource.realmGet$following());
 
         // Create the underlying object and cache it before setting any object/objectlist references
         // This will allow us to break any circular dependencies by using the object cache.
@@ -510,6 +612,30 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
                     tournamentOwnOsList.addNull();
                 } else {
                     tournamentOwnOsList.addObjectId(tournamentOwnItem);
+                }
+            }
+        }
+
+        RealmList<java.lang.String> followersList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$followers();
+        if (followersList != null) {
+            OsList followersOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.followersColKey);
+            for (java.lang.String followersItem : followersList) {
+                if (followersItem == null) {
+                    followersOsList.addNull();
+                } else {
+                    followersOsList.addString(followersItem);
+                }
+            }
+        }
+
+        RealmList<java.lang.String> followingList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$following();
+        if (followingList != null) {
+            OsList followingOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.followingColKey);
+            for (java.lang.String followingItem : followingList) {
+                if (followingItem == null) {
+                    followingOsList.addNull();
+                } else {
+                    followingOsList.addString(followingItem);
                 }
             }
         }
@@ -574,6 +700,30 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
                     }
                 }
             }
+
+            RealmList<java.lang.String> followersList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$followers();
+            if (followersList != null) {
+                OsList followersOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.followersColKey);
+                for (java.lang.String followersItem : followersList) {
+                    if (followersItem == null) {
+                        followersOsList.addNull();
+                    } else {
+                        followersOsList.addString(followersItem);
+                    }
+                }
+            }
+
+            RealmList<java.lang.String> followingList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$following();
+            if (followingList != null) {
+                OsList followingOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.followingColKey);
+                for (java.lang.String followingItem : followingList) {
+                    if (followingItem == null) {
+                        followingOsList.addNull();
+                    } else {
+                        followingOsList.addString(followingItem);
+                    }
+                }
+            }
         }
     }
 
@@ -630,6 +780,34 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
                     tournamentOwnOsList.addNull();
                 } else {
                     tournamentOwnOsList.addObjectId(tournamentOwnItem);
+                }
+            }
+        }
+
+
+        OsList followersOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.followersColKey);
+        followersOsList.removeAll();
+        RealmList<java.lang.String> followersList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$followers();
+        if (followersList != null) {
+            for (java.lang.String followersItem : followersList) {
+                if (followersItem == null) {
+                    followersOsList.addNull();
+                } else {
+                    followersOsList.addString(followersItem);
+                }
+            }
+        }
+
+
+        OsList followingOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.followingColKey);
+        followingOsList.removeAll();
+        RealmList<java.lang.String> followingList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$following();
+        if (followingList != null) {
+            for (java.lang.String followingItem : followingList) {
+                if (followingItem == null) {
+                    followingOsList.addNull();
+                } else {
+                    followingOsList.addString(followingItem);
                 }
             }
         }
@@ -701,6 +879,34 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
                 }
             }
 
+
+            OsList followersOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.followersColKey);
+            followersOsList.removeAll();
+            RealmList<java.lang.String> followersList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$followers();
+            if (followersList != null) {
+                for (java.lang.String followersItem : followersList) {
+                    if (followersItem == null) {
+                        followersOsList.addNull();
+                    } else {
+                        followersOsList.addString(followersItem);
+                    }
+                }
+            }
+
+
+            OsList followingOsList = new OsList(table.getUncheckedRow(objKey), columnInfo.followingColKey);
+            followingOsList.removeAll();
+            RealmList<java.lang.String> followingList = ((com_mongodb_app_UserRealmProxyInterface) object).realmGet$following();
+            if (followingList != null) {
+                for (java.lang.String followingItem : followingList) {
+                    if (followingItem == null) {
+                        followingOsList.addNull();
+                    } else {
+                        followingOsList.addString(followingItem);
+                    }
+                }
+            }
+
         }
     }
 
@@ -733,6 +939,12 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         unmanagedCopy.realmSet$tournamentOwn(new RealmList<org.bson.types.ObjectId>());
         unmanagedCopy.realmGet$tournamentOwn().addAll(realmSource.realmGet$tournamentOwn());
 
+        unmanagedCopy.realmSet$followers(new RealmList<java.lang.String>());
+        unmanagedCopy.realmGet$followers().addAll(realmSource.realmGet$followers());
+
+        unmanagedCopy.realmSet$following(new RealmList<java.lang.String>());
+        unmanagedCopy.realmGet$following().addAll(realmSource.realmGet$following());
+
         return unmanagedObject;
     }
 
@@ -746,6 +958,8 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         builder.addString(columnInfo.nameColKey, realmObjectSource.realmGet$name());
         builder.addObjectIdList(columnInfo.tournamentInColKey, realmObjectSource.realmGet$tournamentIn());
         builder.addObjectIdList(columnInfo.tournamentOwnColKey, realmObjectSource.realmGet$tournamentOwn());
+        builder.addStringList(columnInfo.followersColKey, realmObjectSource.realmGet$followers());
+        builder.addStringList(columnInfo.followingColKey, realmObjectSource.realmGet$following());
 
         builder.updateExistingTopLevelObject();
         return realmObject;
@@ -776,6 +990,14 @@ public class com_mongodb_app_UserRealmProxy extends com.mongodb.app.User
         stringBuilder.append(",");
         stringBuilder.append("{tournamentOwn:");
         stringBuilder.append("RealmList<ObjectId>[").append(realmGet$tournamentOwn().size()).append("]");
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{followers:");
+        stringBuilder.append("RealmList<String>[").append(realmGet$followers().size()).append("]");
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{following:");
+        stringBuilder.append("RealmList<String>[").append(realmGet$following().size()).append("]");
         stringBuilder.append("}");
         stringBuilder.append("]");
         return stringBuilder.toString();

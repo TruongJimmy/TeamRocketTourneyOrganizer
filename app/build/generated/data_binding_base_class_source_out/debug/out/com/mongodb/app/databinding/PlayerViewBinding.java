@@ -4,11 +4,11 @@ package com.mongodb.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import com.mongodb.app.R;
 import java.lang.NullPointerException;
@@ -20,12 +20,12 @@ public final class PlayerViewBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final Button delete;
+  public final AppCompatButton delete;
 
   @NonNull
   public final TextView name;
 
-  private PlayerViewBinding(@NonNull RelativeLayout rootView, @NonNull Button delete,
+  private PlayerViewBinding(@NonNull RelativeLayout rootView, @NonNull AppCompatButton delete,
       @NonNull TextView name) {
     this.rootView = rootView;
     this.delete = delete;
@@ -60,7 +60,7 @@ public final class PlayerViewBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.delete;
-      Button delete = rootView.findViewById(id);
+      AppCompatButton delete = rootView.findViewById(id);
       if (delete == null) {
         break missingId;
       }

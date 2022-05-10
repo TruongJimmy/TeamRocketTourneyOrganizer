@@ -12,4 +12,8 @@ public interface com_mongodb_app_UserRealmProxyInterface {
     public void realmSet$tournamentIn(RealmList<org.bson.types.ObjectId> value);
     public RealmList<org.bson.types.ObjectId> realmGet$tournamentOwn();
     public void realmSet$tournamentOwn(RealmList<org.bson.types.ObjectId> value);
+    public RealmList<String> realmGet$followers();
+    public void realmSet$followers(RealmList<String> value);
+    public RealmList<String> realmGet$following();
+    public void realmSet$following(RealmList<String> value);
 }
